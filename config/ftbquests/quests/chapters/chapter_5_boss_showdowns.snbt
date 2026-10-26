@@ -1,0 +1,623 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_5_boss_showdowns"
+	group: ""
+	icon: {
+		Count: 1
+		id: "spartanweaponry:netherite_scythe"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "7AB24A9873730DDF"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1E4DD3FC9CDA1098"]
+			description: ["Venture into the subterranean crypts, ring the Haunted Bell, and destroy The Bellringer in combat."]
+			id: "1ADE3093EA5F122F"
+			rewards: [
+				{
+					id: "23DFDC51CFE545B3"
+					item: "meetyourfight:haunted_bell"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "1669AA4D280550E3"
+					item: "simplehats:hatbag_epic"
+					type: "item"
+				}
+				{
+					id: "01892BEC21394F52"
+					type: "xp"
+					xp: 3500
+				}
+			]
+			size: 2.0d
+			subtitle: "Defeat The Bellringer"
+			tasks: [{
+				entity: "meetyourfight:bellringer"
+				icon: "meetyourfight:haunted_bell"
+				id: "36640A574423B7A8"
+				title: "Defeat The Bellringer"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Q-BS01: The Midnight Toll"
+			x: -16.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1E4DD3FC9CDA1098"]
+			description: ["Cast the Fossil Bait into a foggy swamp or murky river at night. Prepare for the water to churn as Swampjaw—a gargantuan, skeletal prehistoric apex predator—lunges from the depths with snapping bone jaws and geyser attacks."]
+			icon: "meetyourfight:fossil_bait"
+			id: "48EDA750FF9F49BA"
+			rewards: [
+				{
+					id: "6B137F48E6FA9261"
+					item: "meetyourfight:bone_raker"
+					type: "item"
+				}
+				{
+					id: "509726DD90087157"
+					type: "xp"
+					xp: 2500
+				}
+			]
+			size: 2.0d
+			subtitle: "The Prehistoric Leviathan"
+			tasks: [{
+				entity: "meetyourfight:swampjaw"
+				id: "11168C13E775324E"
+				title: "Kill Swampjaw"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Q-BS02: Swampjaw: Terror of the Murky Waters"
+			x: -12.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Queen Piglius has declared that there are threats within this world that threated the sactity of this here town! "
+				""
+				"She has sent out for any wayward mercenaries who are brave enough to defeat these creatures in battle and save the sould of town from desruction. Also she has promised rewards."
+				""
+				"Good luck!"
+			]
+			icon: {
+				Count: 1
+				id: "morerelics:crown_of_the_legend"
+				tag: {
+					abilities: {
+						never_die: {
+							points: 0
+							stats: {
+								potency: 0.1931d
+							}
+						}
+						pig_king: {
+							points: 0
+							stats: {
+								perch: 0.26696d
+							}
+						}
+					}
+				}
+			}
+			dependencies: ["697633670703D2DE"]
+			id: "1E4DD3FC9CDA1098"
+			size: 4.0d
+			subtitle: "A request from the queen"
+			tasks: [{
+				id: "440DF17300077E91"
+				title: "By Orders of Queen Piglius"
+				type: "checkmark"
+			}]
+			x: -16.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"48EDA750FF9F49BA"
+				"1ADE3093EA5F122F"
+				"1873E1F8A85EDD65"
+			]
+			description: ["Venture into the Nether and toss the Devil's Ante into a sea of lava or a burning fortress. Challenge Dame Fortuna, a flying spectral queen of chance who attacks with explosive razor dice, roulette wheel shockwaves, and card flurries."]
+			id: "3967BA3D7175EF1D"
+			rewards: [
+				{
+					id: "4DEDE4E071DEB61A"
+					item: {
+						Count: 1
+						id: "relics:drowned_belt"
+						tag: {
+							abilities: {
+								anchor: {
+									points: 0
+									stats: {
+										sinking: 4.39516d
+										slowness: 0.4747d
+									}
+								}
+								pressure: {
+									points: 0
+									stats: {
+										damage: 1.52113d
+									}
+								}
+								riptide: {
+									points: 0
+									stats: {
+										cooldown: 6.14252d
+									}
+								}
+								slots: {
+									points: 0
+									stats: {
+										charm: 0.59878d
+									}
+								}
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "288C46D293FBC4C9"
+					type: "xp"
+					xp: 3000
+				}
+			]
+			size: 2.0d
+			subtitle: "The High-Roller of the Nether"
+			tasks: [{
+				entity: "meetyourfight:dame_fortuna"
+				icon: "meetyourfight:spectres_eye"
+				id: "274DA93011436DC5"
+				title: "Defeat Dame Fortuna"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Q-BS03: Dame Fortuna: The Gambler's Hex"
+			x: -16.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1E4DD3FC9CDA1098"]
+			description: ["Ignite ghost fire in a dark autumn forest and present the Hand of Fate to awaken the Hirschgeist—the flaming spirit of the ancient woods. Avoid its sweeping soul-antler charges, blazing spirit fire, and surrounding swarms of Wisps."]
+			id: "1873E1F8A85EDD65"
+			rewards: [
+				{
+					id: "1C1BCD5D684740E3"
+					item: {
+						Count: 1
+						id: "whisperwoods:hirschgeist_skull"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4307B26E941687A2"
+					type: "xp"
+					xp: 2500
+				}
+			]
+			size: 2.0d
+			subtitle: "The Soul-Fire Stag"
+			tasks: [{
+				entity: "whisperwoods:hirschgeist"
+				icon: {
+					Count: 1
+					id: "whisperwoods:hirschgeist_skull"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "79A329E5D653284C"
+				title: "Q-BS04: The Hirschgeist: Spirit of the Wilds"
+				type: "kill"
+				value: 1L
+			}]
+			x: -20.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1E4DD3FC9CDA1098"]
+			description: ["Mutants roam the landscape during Blood Moons or can be mutated using Chemical X. Face down and conquer one of these towering monstrosities: a ground-slamming Mutant Zombie, an explosive rib-firing Mutant Skeleton, or a jumping Mutant Creeper."]
+			id: "65024A1FC8C0D8E8"
+			rewards: [
+				{
+					id: "65E88549C58BEE06"
+					item: {
+						Count: 1
+						id: "mutantmonsters:hulk_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "75FAAC09DFB7849B"
+					item: "mutantmonsters:creeper_minion_spawn_egg"
+					type: "item"
+				}
+				{
+					id: "1769FA2B5ADE9D54"
+					type: "xp"
+					xp: 2500
+				}
+			]
+			size: 2.0d
+			subtitle: "Slaying an Abomination"
+			tasks: [
+				{
+					entity: "mutantmonsters:mutant_zombie"
+					icon: "minecraft:zombie_head"
+					id: "79C1F8467CBAD793"
+					optional_task: true
+					title: "Defeat Mutant Zombie"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "mutantmonsters:mutant_skeleton"
+					icon: {
+						Count: 1
+						id: "mutantmonsters:mutant_skeleton_skull"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "174FE933DCA718D8"
+					optional_task: true
+					title: "Defeat Mutant Skeleton"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "mutantmonsters:mutant_creeper"
+					icon: "minecraft:creeper_head"
+					id: "0FB41F25B6E3A150"
+					optional_task: true
+					title: "Defeat Mutant Creeper"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Q-BS06: Clash of the Mutants"
+			x: -20.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"3967BA3D7175EF1D"
+				"65024A1FC8C0D8E8"
+			]
+			description: ["Assemble the entire party for the final raid. Breach The Graveyard's Lich Prison, battle through elite crypt guardians, and destroy The Corrupted Lich to lift the ancient curse and save Hallowstown forever."]
+			icon: "simplehats:rgbdragonskull"
+			id: "05872A3402A1F5C2"
+			rewards: [
+				{
+					count: 64
+					id: "5E73718D009A233C"
+					item: "minecraft:gold_block"
+					type: "item"
+				}
+				{
+					command: "/say You ahve unlocked a high tier Netherite Item! Let Josh know what you would like!"
+					elevate_perms: true
+					icon: {
+						Count: 1
+						id: "minecraft:netherite_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "770DA548F43244FF"
+					title: "Loot Get!"
+					type: "command"
+				}
+				{
+					id: "41BBF45190E3CA12"
+					type: "xp"
+					xp: 5000
+				}
+			]
+			size: 4.0d
+			subtitle: "The Ultimate Halloween Showdown"
+			tasks: [{
+				entity: "graveyard:lich"
+				icon: "simplehats:demonhorns"
+				id: "717BF2FD4170B874"
+				title: "Q-BS08: Fall of the Corrupted Lich (Grand Finale)"
+				type: "kill"
+				value: 1L
+			}]
+			x: -16.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["1E4DD3FC9CDA1098"]
+			description: ["Vampiric bat-fiends from Whisperwoods that roost in dark forest canopies and cavern roofs, diving with sonic screeches. Eliminate three of these winged terrors by royal decree."]
+			icon: "minecraft:phantom_membrane"
+			id: "656965C731402A15"
+			rewards: [
+				{
+					id: "484F9DB1811D31E1"
+					item: "simplehats:hatbag_rare"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2C578467BE4A6C92"
+					item: "minecraft:phantom_membrane"
+					type: "item"
+				}
+				{
+					id: "79871A9EC76A7FB0"
+					type: "xp"
+					xp: 2000
+				}
+			]
+			size: 2.0d
+			subtitle: "The Cavern Demon of the Canopy"
+			tasks: [{
+				id: "49DCDA48150C7D7F"
+				title: "Slay 3x Zotzpyre (Whisperwoods)"
+				type: "checkmark"
+			}]
+			title: "Q-BS05: Wings of the Belfry: The Zotzpyre"
+			x: -24.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1E4DD3FC9CDA1098"]
+			description: ["Endermen across the realm have mutated to blend into murky swamps, deep caves, and dark oak woods (Enderman Overhaul). Hunt down three of these regional anomalies."]
+			icon: "minecraft:ender_eye"
+			id: "27641DD1A9C4466D"
+			rewards: [
+				{
+					count: 4
+					id: "23409958885F966C"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					id: "10CD75F51AA079B9"
+					item: "simplehats:hatbag_rare"
+					type: "item"
+				}
+				{
+					id: "7317CF170FAED4C1"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			size: 2.0d
+			subtitle: "Anomalous Biome Stalkers"
+			tasks: [{
+				id: "20421CB2037C79CA"
+				title: "Slay 3x Variant Biome Endermen"
+				type: "checkmark"
+			}]
+			title: "Q-BS11: Strange Stalkers: The Biome Endermen"
+			x: -8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["65024A1FC8C0D8E8"]
+			description: ["Queen Piglius warns of a four-armed mutated Enderman capable of hurling terrain blocks and casting blinding void screams. Conquer this abomination."]
+			icon: "minecraft:ender_pearl"
+			id: "1342BD8F4FD39E1F"
+			rewards: [
+				{
+					count: 8
+					id: "560AD7DCD2B647BC"
+					item: "minecraft:ender_eye"
+					type: "item"
+				}
+				{
+					id: "581A8D78501B65A5"
+					item: "simplehats:hatbag_epic"
+					type: "item"
+				}
+				{
+					id: "60A1547DAB5F30A5"
+					type: "xp"
+					xp: 3500
+				}
+			]
+			size: 2.0d
+			subtitle: "The Four-Armed Void Walker"
+			tasks: [{
+				id: "6E3CC88E51B1B82B"
+				title: "Defeat 1x Mutant Enderman"
+				type: "checkmark"
+			}]
+			title: "Q-BS07: The Abyssal Titan: Mutant Enderman"
+			x: -24.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1ADE3093EA5F122F"]
+			description: ["The hooded executioner patrolling The Graveyard's dark structures. Cut down The Reaper before it claims the souls of Hallowstown's scouts."]
+			icon: "spartanweaponry:netherite_scythe"
+			id: "4D293710353337EE"
+			rewards: [
+				{
+					count: 8
+					id: "77997D0E3E9737BF"
+					item: "graveyard:corruption"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4D3ED3343FC4E049"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "4DEC847CF431F101"
+					type: "xp"
+					xp: 2500
+				}
+			]
+			size: 2.0d
+			subtitle: "Specter of the Crypt Gates"
+			tasks: [{
+				id: "4ACB7007053BBA7F"
+				title: "Defeat 1x The Reaper (The Graveyard)"
+				type: "checkmark"
+			}]
+			title: "Q-BS09: Harvest of the Damned: The Reaper"
+			x: -12.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3967BA3D7175EF1D"]
+			description: ["Summon and defeat Rosalyne, Blade of Dusk from Meet Your Fight—an armored spectral duelist who unleashes rapid sword flurries and rose-thorn volleys."]
+			icon: "spartanweaponry:netherite_longsword"
+			id: "7CCECA71F11867AA"
+			rewards: [
+				{
+					count: 2
+					id: "6C98CE8D54A083D6"
+					item: "simplehats:hatbag_epic"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "282C423367E1FC83"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "76A995ACA11E8D5E"
+					type: "xp"
+					xp: 3500
+				}
+			]
+			size: 2.0d
+			subtitle: "The Red Rose Duelist"
+			tasks: [{
+				id: "5EA76BA3D6BB744C"
+				title: "Defeat Rosalyne, Blade of Dusk"
+				type: "checkmark"
+			}]
+			title: "Q-BS10: Spectral Gunslinger: Rosalyne, The Blade of Dusk"
+			x: -8.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1342BD8F4FD39E1F"]
+			description: ["Summon and vanquish the Dark Doppelganger—an arcane boss that mirrors forbidden Iron's Spells magic, summons shadow clones, and punishes hesitation."]
+			icon: "irons_spellbooks:eldritch_manuscript"
+			id: "178026FC8643F966"
+			rewards: [
+				{
+					id: "6D9B6A8AE2159B93"
+					item: "irons_spellbooks:legendary_ink"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "45BB3AEB4A68859D"
+					item: "simplehats:hatbag_epic"
+					type: "item"
+				}
+				{
+					id: "33D6118ED1F1DB21"
+					type: "xp"
+					xp: 4500
+				}
+			]
+			size: 2.0d
+			subtitle: "Mirror of Eldritch Sorcery"
+			tasks: [{
+				id: "6BE40ACEAE6AF4A3"
+				title: "Defeat 1x Dark Doppelganger"
+				type: "checkmark"
+			}]
+			title: "Q-BS12: The Shadow Usurper: Dark Doppelganger"
+			x: -24.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["4D293710353337EE"]
+			description: ["Deep within Alex's Caves Forlorn Hollows, Underzealot sacrifices summon The Forsaken—a towering, sonic-shrieking beast of pure darkness. Slay the abomination."]
+			icon: "alexscaves:pure_darkness"
+			id: "78D01A58BB006B2C"
+			rewards: [
+				{
+					count: 2
+					id: "1C9BFD7070CC67D2"
+					item: "alexscaves:pure_darkness"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1F3E7E6583DFF6B4"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "63D793C2BF505D3B"
+					type: "xp"
+					xp: 4000
+				}
+			]
+			size: 2.0d
+			subtitle: "Apex Beast of the Forlorn Hollows"
+			tasks: [{
+				id: "5E0F71F5368DA4F9"
+				title: "Defeat 1x The Forsaken (Forlorn Hollows)"
+				type: "checkmark"
+			}]
+			title: "Q-BS13: Terror of the Hollows: The Forsaken"
+			x: -12.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7CCECA71F11867AA"]
+			description: ["Venture into the Undergarden's subterranean catacombs and defeat the towering Forgotten Guardian to claim Forgotten Ingots for ancient tool upgrades."]
+			icon: "undergarden:forgotten_ingot"
+			id: "16B3519878E35457"
+			rewards: [
+				{
+					count: 2
+					id: "789D338E27442919"
+					item: "undergarden:forgotten_ingot"
+					type: "item"
+				}
+				{
+					id: "26430C5C3E420BDF"
+					item: "simplehats:hatbag_epic"
+					type: "item"
+				}
+				{
+					id: "526B9D673CFC1540"
+					type: "xp"
+					xp: 3500
+				}
+			]
+			size: 2.0d
+			subtitle: "Ancient Construct of the Catacombs"
+			tasks: [{
+				id: "29E8048F03041113"
+				title: "Defeat 1x Forgotten Guardian (The Undergarden)"
+				type: "checkmark"
+			}]
+			title: "Q-BS14: Sentinel of the Undergarden: The Forgotten Guardian"
+			x: -8.0d
+			y: 9.0d
+		}
+	]
+	title: "⚔ CHAPTER 5: BOSS SHOWDOWNS AND MONSTER HUNTERS"
+}

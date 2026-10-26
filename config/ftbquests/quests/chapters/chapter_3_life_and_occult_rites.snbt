@@ -1,0 +1,798 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_3_life_and_occult_rites"
+	group: ""
+	icon: "minecraft:skeleton_skull"
+	id: "6D180D9D8B404DDE"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Place a fire, campfire, or magma block directly beneath a Mixing Cauldron. Add water, tallow, and swamp herbs to brew potions and salves."]
+			id: "461848401CFF5512"
+			rewards: [
+				{
+					id: "4C8F001E94DC8B7B"
+					item: {
+						Count: 1
+						id: "hexerei:book_of_shadows"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "0036A65F087E8DB8"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			size: 2.0d
+			subtitle: "Witchcraft Simmering"
+			tasks: [{
+				id: "302B261D5E74BB6A"
+				item: "hexerei:mixing_cauldron"
+				type: "item"
+			}]
+			title: "Q-HX01: Hexerei: The Heated Cauldron"
+			x: -6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["461848401CFF5512"]
+			description: ["Tame a Crow with Seed Mixture. Shift + Right-Click to toggle Perching (shoulder mount), Following, or Foraging for shiny loot."]
+			icon: {
+				Count: 1
+				id: "hexerei:crow_flute"
+				tag: { }
+			}
+			id: "5D601A6226F96D2C"
+			rewards: [
+				{
+					id: "141E618950BAB1DB"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					id: "2841E77B42FBAAF9"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			subtitle: "Crow Commands"
+			tasks: [{
+				id: "49E542D16D7499C7"
+				item: {
+					Count: 1
+					id: "hexerei:crow_flute"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Q-HX02 Hexerei: Taming Your Familiar"
+			x: -6.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["5D601A6226F96D2C"]
+			description: ["Craft a Witch Broom, brush its bristles with a Broom Brush to maintain durability, and right-click to mount. Shift-click to open its saddlebags."]
+			id: "72BBCE7479409A03"
+			rewards: [
+				{
+					id: "2DF1421139D3CC6D"
+					item: "hexerei:broom_seat"
+					type: "item"
+				}
+				{
+					id: "75224C2E9454D00B"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			subtitle: "Mounting and Flying"
+			tasks: [{
+				id: "6D69B0C6832E41EB"
+				item: {
+					Count: 1
+					id: "hexerei:mahogany_broom"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Q-HX03: Hexerei: Broomstick Aviation"
+			x: -6.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["461848401CFF5512"]
+			description: ["Mount a Candle Dipper above your Mixing Cauldron filled with melted tallow or beeswax. Attach string wicks to dip decorative ritual candles that ward off the autumn gloom."]
+			icon: "minecraft:candle"
+			id: "108127AC46E6644D"
+			rewards: [
+				{
+					count: 4
+					id: "53B84B82E83E146F"
+					item: "minecraft:candle"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "65681F2A604E140A"
+					item: "minecraft:honeycomb"
+					type: "item"
+				}
+				{
+					id: "625461E83E52A1FC"
+					type: "xp"
+					xp: 750
+				}
+			]
+			subtitle: "Dipping Tallow and Warding the Dark"
+			tasks: [{
+				id: "1721E1FC01ACC6AA"
+				title: "Craft 1x Candle Dipper and 4x Candles"
+				type: "checkmark"
+			}]
+			title: "Q-HX04: Witch's Candlemaking and The Wax Bath"
+			x: -8.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["461848401CFF5512"]
+			description: ["Carve a Dowsing Rod to attune with dark wetlands and ancient willow groves. The rod's leaves rustle and point toward nearby swamp biomes where Mandrake and Belladonna flourish."]
+			icon: "minecraft:stick"
+			id: "1AEADDE52797A141"
+			rewards: [
+				{
+					count: 8
+					id: "7EBA38EE0FA7FF4A"
+					item: "minecraft:lily_pad"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "182BC5923F7D30F7"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "63951A19DB51CDB1"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			subtitle: "Tracking Swamp Bogs and Botanicals"
+			tasks: [{
+				id: "596FF0943000B6D0"
+				title: "Craft 1x Dowsing Rod and Locate a Swamp"
+				type: "checkmark"
+			}]
+			title: "Q-HX05: The Dowser's Instinct: Swamps and Willow Groves"
+			x: -11.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["461848401CFF5512"]
+			description: ["Before brewing potent witchcraft elixirs, wild herbs like Belladonna, Mandrake, and Mugwort must be hung on an Herb Drying Rack and ground into fine powder using a Pestle and Mortar."]
+			icon: "minecraft:flower_pot"
+			id: "4C3CDC676ABC282D"
+			rewards: [
+				{
+					count: 8
+					id: "1E585F2197B0317F"
+					item: "minecraft:glass_bottle"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "3956585AF745DFF7"
+					item: "minecraft:glowstone_dust"
+					type: "item"
+				}
+				{
+					id: "13A5A419CE24E4BE"
+					type: "xp"
+					xp: 750
+				}
+			]
+			subtitle: "Preserving Autumn Botanicals"
+			tasks: [{
+				id: "434F3FEEA30D98FD"
+				title: "Craft 1x Herb Drying Rack and 1x Pestle and Mortar"
+				type: "checkmark"
+			}]
+			title: "Q-HX06: The Apothecary's Herbarium: Drying Racks and Pestle"
+			x: -8.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4C3CDC676ABC282D"]
+			description: ["Organize your apothecary reagents cleanly. Glass Herb Jars store hundreds of dried botanicals with visible labels, while Witch Coffers retain their contents when picked up."]
+			icon: "minecraft:chest"
+			id: "1A0D31E3E67D0F08"
+			rewards: [
+				{
+					count: 4
+					id: "7AFC92E014ACDE49"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					id: "79F86C51AD8FB240"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			subtitle: "Portable Occult Storage"
+			tasks: [{
+				id: "480EA2D287C03C10"
+				title: "Craft 2x Herb Jars and 1x Witch Coffer"
+				type: "checkmark"
+			}]
+			title: "Q-HX07: The Witch's Satchel and Herb Jars"
+			x: -8.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["461848401CFF5512"]
+			description: ["Harvest vital blood essence from slain creatures or surgical extraction using Iron's Simple Blood syringes and glass bottles for dark alchemy and sanguine sustenance."]
+			icon: "minecraft:redstone"
+			id: "578C2DC40D5FA557"
+			rewards: [
+				{
+					count: 2
+					id: "2DAEC69A721160C7"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:strong_healing"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2B08316D223C0CB6"
+					item: "minecraft:nether_wart"
+					type: "item"
+				}
+				{
+					id: "4C71773BEE926BA0"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			subtitle: "Drawing the Vital Essence"
+			tasks: [{
+				id: "50A9AB07D6810EBD"
+				title: "Craft 1x Syringe and Collect 4x Blood Bottles"
+				type: "checkmark"
+			}]
+			title: "Q-OC02: Sanguine Extraction (Iron's Simple Blood)"
+			x: -3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["461848401CFF5512"]
+			description: ["Equip an occult curio from Relics or More Relics and channel combat experience into unlocking its secondary skill nodes and passive affinities."]
+			icon: "relics:relic_experience_bottle"
+			id: "71596BDF78AAC7EE"
+			rewards: [
+				{
+					count: 2
+					id: "4821FAB0DA626ADC"
+					item: "relics:relic_experience_bottle"
+					type: "item"
+				}
+				{
+					id: "264AAEF5DC7FFB38"
+					item: "minecraft:lapis_block"
+					type: "item"
+				}
+				{
+					id: "123C061475985970"
+					type: "xp"
+					xp: 1250
+				}
+			]
+			subtitle: "Awakening Occult Curios"
+			tasks: [{
+				id: "277B77C677CF1AE7"
+				title: "Level a Relic to Tier 2"
+				type: "checkmark"
+			}]
+			title: "Q-OC03: Relics of the Netherworld: Sanguine Attunement"
+			x: -3.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6DE25B0EBB8675EC"]
+			description: ["Venture into haunted burial grounds and subterranean crypts from The Graveyard to unseal ancient sarcophagi, smash defiled clay urns, and recover dark relics."]
+			icon: "graveyard:corruption"
+			id: "7376AA13F8C11642"
+			rewards: [
+				{
+					id: "32F1F2B3E3ABAB75"
+					item: "waystones:mossy_waystone"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "76007718CEB39C3B"
+					item: "graveyard:corruption"
+					type: "item"
+				}
+				{
+					id: "6BE2227A2E5324E5"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			subtitle: "Ransacking Ancient Sarcophagi"
+			tasks: [{
+				id: "4BA8DFEFABE8E025"
+				title: "Loot 8x Soul Shards or Corruption Essence from Crypt Urns"
+				type: "checkmark"
+			}]
+			title: "Q-OC04: Defiled Urns and Tomb Relics"
+			x: -1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4C3CDC676ABC282D"]
+			description: ["Weave Infused Fabric in your Mixing Cauldron and tailor authentic Witch Vestments (Witch Hat, Robes, and Boots) to boost magical resilience and broom flight control."]
+			icon: "simplehats:zigzagwitchhat"
+			id: "760F32645AEFBE58"
+			rewards: [
+				{
+					id: "4724363381350893"
+					item: "simplehats:hatbag_rare"
+					type: "item"
+				}
+				{
+					id: "61F0964FD06FB699"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			subtitle: "Infused Botanical Vestments"
+			tasks: [{
+				id: "6AE69B6B5B5B1328"
+				title: "Craft 1x Witch Hat and 1x Witch Chestplate Robes"
+				type: "checkmark"
+			}]
+			title: "Q-HX08: Weaving the Coven's Garb (Witch Robes)"
+			x: -8.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["72BBCE7479409A03"]
+			description: ["Upgrade your flying broomstick with metallic Broom Rings for flight speed, a Broom Satchel for mid-air storage, and a fresh Broom Brush to restore bristle durability."]
+			icon: "hexerei:broom_seat"
+			id: "66AA9AE73B40B199"
+			rewards: [
+				{
+					id: "150AE151F2DF561B"
+					item: "hexerei:broom_seat"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3CB3C32BB77BC895"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					id: "7D8352D47BD64E3D"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			subtitle: "Broom Rings, Bags and Maintenance"
+			tasks: [{
+				id: "2383D5B43D13EA43"
+				title: "Craft 1x Broom Brush and 1x Broom Rings"
+				type: "checkmark"
+			}]
+			title: "Q-HX09: Aerial Mechanics: Broom Customization"
+			x: -6.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["6DE25B0EBB8675EC"]
+			description: ["Transmute campfires into spectral Ghost Fire using wisp dust from Whisperwoods, and craft the Hand of Fate talisman required to awaken ancient forest spirits."]
+			icon: "whisperwoods:hirschgeist_skull"
+			id: "316855EFEBF6CDC2"
+			rewards: [
+				{
+					count: 4
+					id: "5C228BE1B38EA1C0"
+					item: "minecraft:soul_lantern"
+					type: "item"
+				}
+				{
+					id: "6EB565FF7BB97B8B"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			subtitle: "Spiritual Forest Talismans"
+			tasks: [{
+				id: "4B627658389CC2CD"
+				title: "Craft 1x Hand of Fate and Light 1x Ghost Fire"
+				type: "checkmark"
+			}]
+			title: "Q-OC05: Ghost Fire and The Hand of Fate"
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3A4F757F49C95BE7"]
+			description: ["Erect a divination alcove inside your cottage or apothecary using Lapis Star Balls and Clear Quartz Crystals from Magic Vibe Decorations to channel nocturnal readings."]
+			icon: "magic_vibe_decorations:lapis_crystal_star_ball"
+			id: "6422D562B674FFE0"
+			rewards: [
+				{
+					count: 4
+					id: "263ACA2899FDEE1B"
+					item: "minecraft:amethyst_cluster"
+					type: "item"
+				}
+				{
+					id: "372C3114CC678FD6"
+					type: "xp"
+					xp: 750
+				}
+			]
+			subtitle: "Divination Altars and Geodes"
+			tasks: [
+				{
+					id: "77D49517B77AD229"
+					item: "magic_vibe_decorations:lapis_crystal_star_ball"
+					type: "item"
+				}
+				{
+					id: "4A3DBDDE6D7FB452"
+					item: "magic_vibe_decorations:clear_quartz_crystal"
+					type: "item"
+				}
+			]
+			title: "Q-OC06: Crystalline Scrying and Astrology"
+			x: -11.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["578C2DC40D5FA557"]
+			description: ["Distill bottled blood with alchemical reagents to brew concentrated Sanguine Draughts that rapidly mend wounds sustained during nocturnal hunts."]
+			icon: "minecraft:dragon_breath"
+			id: "40791098C99A9FBF"
+			rewards: [
+				{
+					count: 2
+					id: "276BCDE73A8424F9"
+					item: "minecraft:ghast_tear"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "1479E0633DCD8311"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "2A6AC630A7FF9E9B"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			subtitle: "Restorative Sanguine Alchemy"
+			tasks: [{
+				id: "59C207E76EEFAA63"
+				title: "Brew 1x Sanguine Regeneration or Vitality Draught"
+				type: "checkmark"
+			}]
+			title: "Q-OC07: Sanguine Elixirs (Blood Transmutation)"
+			x: -3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1AEADDE52797A141"]
+			description: ["Follow your Dowsing Rod into deep swamp marshes to locate an expanded multi-story Witch Hut from YUNG's Better Witch Huts. Defeat the coven guard and claim their brewing apparatus."]
+			icon: "minecraft:brewing_stand"
+			id: "5E48C7FD6CDB6E52"
+			rewards: [
+				{
+					id: "2C9AE67187C83B6C"
+					item: "minecraft:brewing_stand"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6A77ECC1709DD8DC"
+					item: "minecraft:blaze_rod"
+					type: "item"
+				}
+				{
+					id: "45578B930A96FE60"
+					type: "xp"
+					xp: 1250
+				}
+			]
+			size: 1.5d
+			subtitle: "Plundering Swamp Grimoires"
+			tasks: [{
+				id: "507C1A7EECB9374B"
+				title: "Locate a Swamp Witch Hut and Defeat the Resident Witch"
+				type: "checkmark"
+			}]
+			title: "Q-OC08: Ransacking the Stilt Coven"
+			x: -11.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["7376AA13F8C11642"]
+			description: ["Chisel purified bone fragments and corruption essence from The Graveyard into ceremonial Bone Daggers, wielding them against crypt specters."]
+			icon: "graveyard:skull_pile"
+			id: "49C96C42FA460C8B"
+			rewards: [
+				{
+					count: 2
+					id: "5745D77BB8134DCF"
+					item: "relics:relic_experience_bottle"
+					type: "item"
+				}
+				{
+					id: "49A1244AF365C2F8"
+					item: "minecraft:wither_skeleton_skull"
+					type: "item"
+				}
+				{
+					id: "470E1F202D9A613C"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			size: 1.5d
+			subtitle: "Weapons of the Crypt Smiths"
+			tasks: [{
+				id: "604AD677B542672A"
+				title: "Craft 1x Bone Dagger and Slay 5x Undead"
+				type: "checkmark"
+			}]
+			title: "Q-OC09: Necrotic Forging: The Bone Blade"
+			x: -1.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["3A4F757F49C95BE7"]
+			description: [
+				"The autumn eclipse has severed Holy, Ice, and Lightning magic across the realm. Only darker and primal disciplines remain active: &cBlood&r, &5Eldritch&r, &dEnder&r, &eEvocation&r, &6Fire&r, &aNature&r, and &4Curse&r."
+				""
+				"Construct an Inscription Table and Arcane Anvil to bind found scrolls into your first Spellbook!"
+			]
+			icon: "irons_spellbooks:inscription_table"
+			id: "7FEFB87B455D51CA"
+			rewards: [
+				{
+					count: 8
+					id: "126A034450282D77"
+					item: "irons_spellbooks:arcane_essence"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "708C543E8BDC6F9F"
+					item: "irons_spellbooks:common_ink"
+					type: "item"
+				}
+				{
+					id: "2858964E687A9FD0"
+					type: "xp"
+					xp: 1250
+				}
+			]
+			size: 1.5d
+			subtitle: "Blood, Eldritch, Ender, Evocation, Fire, Nature, and Curse"
+			tasks: [
+				{
+					id: "4C22C1BDFD639E40"
+					item: "irons_spellbooks:inscription_table"
+					type: "item"
+				}
+				{
+					id: "3A37517717500D82"
+					title: "Equip a Spellbook and Bind Your First Allowed Spell"
+					type: "checkmark"
+				}
+			]
+			title: "Q-IS01: The Forbidden Grimoire (Iron's Spells and Spellbooks)"
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7FEFB87B455D51CA"]
+			description: ["Channel forbidden &4Blood&r and &5Eldritch&r magic from Iron's Spells to hex enemies with debilitating dark afflictions, and equip arcane rings and necklaces from Core Accessories to amplify your spell power and mana regeneration."]
+			icon: "irons_spellbooks:blood_staff"
+			id: "43EA4BEB773ACB32"
+			rewards: [
+				{
+					count: 2
+					id: "5A15E83170AEE14A"
+					item: "irons_spellbooks:uncommon_ink"
+					type: "item"
+				}
+				{
+					id: "4B4CD5A9E969FD22"
+					type: "xp"
+					xp: 1250
+				}
+			]
+			subtitle: "Occult Afflictions and Caster Curios"
+			tasks: [{
+				id: "327A433A3BA011DD"
+				title: "Cast a Blood or Eldritch Spell and Equip a Core Accessories Curio"
+				type: "checkmark"
+			}]
+			title: "Q-IS02: Hexes of the Wicked (Blood Magic and Core Accessories)"
+			x: 1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["43EA4BEB773ACB32"]
+			description: ["With Iron's Spells Possession, master warlocks can project their consciousness out of their body to possess nearby creatures—infiltrating monster packs or scouting perilous ruins unseen."]
+			icon: "minecraft:soul_torch"
+			id: "3AE142679C013DDA"
+			rewards: [
+				{
+					id: "51C8D20A83D3BDB6"
+					item: "irons_spellbooks:rare_ink"
+					type: "item"
+				}
+				{
+					id: "2DF12A860E31946A"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			subtitle: "Projecting Your Spirit into the Living and Undead"
+			tasks: [{
+				id: "258AFD779F5886B7"
+				title: "Successfully Possess a Creature Using Possession Magic"
+				type: "checkmark"
+			}]
+			title: "Q-IS03: Spectral Puppetry (Iron's Spells Possession)"
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["71596BDF78AAC7EE"]
+			description: ["Uncover the arcane curios and ancient scrolls of Enigmatic Legacy in dungeon vaults. Whether you wear the Enigmatic Amulet or dare to inspect the Ring of the Seven Curses, every relic carries immense power."]
+			icon: "enigmaticlegacy:enigmatic_amulet"
+			id: "62806C2D56FFFDDF"
+			rewards: [
+				{
+					count: 2
+					id: "3868AFF60D801F52"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "1651DA2FDA45F4A9"
+					type: "xp"
+					xp: 1250
+				}
+			]
+			subtitle: "Ancient Soulbound Artifacts and Scrolls"
+			tasks: [{
+				id: "61177909CDE4C061"
+				title: "Equip an Enigmatic Legacy Amulet, Ring, or Scroll"
+				type: "checkmark"
+			}]
+			title: "Q-EL01: Relics of the Seven Curses (Enigmatic Legacy)"
+			x: -3.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["49C96C42FA460C8B"]
+			description: ["Use a Spelunkery Table to translate a Forlorn Hollows Cave Tablet into a Cave Biome Map. Descend into the pitch-black Forlorn Hollows to confront subterranean Underzealot cultists, Corrodents, and Vesper bats."]
+			icon: "alexscaves:spelunkery_table"
+			id: "698AFF0AEE22C74B"
+			rewards: [
+				{
+					count: 2
+					id: "58795E92AFF2520C"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "58C1351F7E2BFAC7"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			size: 1.5d
+			subtitle: "Subterranean Rituals and Guano Caverns"
+			tasks: [
+				{
+					id: "6BB30103CBB073EF"
+					item: "alexscaves:spelunkery_table"
+					type: "item"
+				}
+				{
+					id: "6966AB354EEC30B2"
+					title: "Decode a Forlorn Hollows Map and Enter the Forlorn Hollows"
+					type: "checkmark"
+				}
+			]
+			title: "Q-AC01: The Cult of the Hollows (Alex's Caves: Forlorn Hollows)"
+			x: -1.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["6422D562B674FFE0"]
+			description: ["Not every cavern beneath Hallowstown is pitch-black dread! Decode a Candy Cavity tablet at your Spelunkery Table to discover a subterranean wonderland of Chocolate Blocks, Candy Cane hooks, Gingerbread Men, and Gummy Bears."]
+			icon: "hauntedharvest:candy_corn"
+			id: "5CCB7FB1FE382914"
+			rewards: [
+				{
+					count: 8
+					id: "283BF04C161F67C1"
+					item: "supplementaries:candy"
+					type: "item"
+				}
+				{
+					id: "2FFBADA6575C0350"
+					type: "xp"
+					xp: 1250
+				}
+			]
+			subtitle: "Subterranean Halloween Sweets and Gummy Beasts"
+			tasks: [{
+				id: "7BBBF7A79B772527"
+				title: "Locate the Candy Cavity Biome and Harvest Halloween Treats"
+				type: "checkmark"
+			}]
+			title: "Q-AC02: Confectionery Catacombs (Alex's Caves: Candy Cavity)"
+			x: -11.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["3AE142679C013DDA"]
+			description: ["Craft a Catalyst and ignite a Stone Bricks portal frame to breach The Undergarden—a vast, shadowy subterranean dimension teeming with bioluminescent fungi, Rotspawn horrors, and ancient Stoneborn traders."]
+			icon: "undergarden:catalyst"
+			id: "799ADD02566E3D39"
+			rewards: [
+				{
+					count: 3
+					id: "1F57C6677565150F"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "1352FED3F5486EC9"
+					type: "xp"
+					xp: 2000
+				}
+			]
+			size: 1.5d
+			subtitle: "Opening the Catalyst Portal to the Subterranean Realm"
+			tasks: [
+				{
+					id: "3904AACC4F6D88E8"
+					item: "undergarden:catalyst"
+					type: "item"
+				}
+				{
+					id: "26EF98EAB76A28BD"
+					title: "Ignite the Undergarden Portal and Step Across the Threshold"
+					type: "checkmark"
+				}
+			]
+			title: "Q-UG01: Beneath the Bedrock (The Undergarden)"
+			x: 1.5d
+			y: 11.5d
+		}
+	]
+	title: "🩸 CHAPTER 3: LIFE, DEATH AND THE OCCULT"
+}

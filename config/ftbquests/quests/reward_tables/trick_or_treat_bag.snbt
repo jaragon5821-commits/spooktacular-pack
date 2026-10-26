@@ -1,0 +1,27 @@
+{
+	icon: "supplementaries:candy"
+	id: "5A1B2C3D4E5F6001"
+	loot_size: 2
+	order_index: 0
+	rewards: [
+		{ count: 3, item: "hauntedharvest:popcorn", weight: 2.5f }
+		{ count: 6, item: "hauntedharvest:candy_corn", weight: 2.5f }
+		{ count: 2, item: "ls_spooky_foods:fireball_lollipop", weight: 2.2f }
+		{ count: 5, item: "supplementaries:candy", weight: 2.2f }
+		{ count: 2, item: "ls_spooky_foods:magma_cookie", weight: 1.8f }
+		{ count: 2, item: "alexscaves:sweetish_fish_red", weight: 1.8f }
+		{ count: 2, item: "alexscaves:sweetish_fish_green", weight: 1.8f }
+		{ count: 3, item: "ls_spooky_foods:ashen_apple", weight: 2.0f }
+		{ count: 2, item: "alexscaves:caramel_apple", weight: 1.8f }
+		{ count: 3, item: "alexscaves:caramel", weight: 2.0f }
+		{ count: 2, item: "alexscaves:chocolate_ice_cream_scoop", weight: 1.8f }
+		{ count: 2, item: "alexscaves:vanilla_ice_cream_scoop", weight: 1.8f }
+		{ item: "hauntedharvest:grim_apple", weight: 1.0f }
+		{ item: "simplehats:hatbag_halloween", weight: 2.0f }
+		{ item: "simplehats:hatbag_rare", weight: 1.4f }
+		{ item: "simplehats:hatbag_epic", weight: 0.8f }
+		{ item: "dynamic_pumpkin_carving:carver", weight: 1.2f }
+		{ item: "minecraft:golden_apple", weight: 1.0f }
+	]
+	title: "Trick-or-Treat Goodie Bag"
+}

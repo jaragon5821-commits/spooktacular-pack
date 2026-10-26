@@ -1,0 +1,168 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "before_you_start"
+	group: ""
+	id: "333FC6504EA87DFE"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["&6Welcome to SpookyCraft!&r Over the next two weeks leading up to Halloween, our goal is to survive together as a community. We will build Hallowstown around the old cinema, brew seasonal drinks, solve dimension mysteries, and defeat ancient horrors lurking in the fog. Open this quest book often—it is your survival manual."]
+			id: "41F51D2C2E955CFA"
+			rewards: [
+				{
+					id: "3673DF1F528C9076"
+					item: "minecraft:pumpkin_pie"
+					type: "item"
+				}
+				{
+					id: "6AB936EF5C4CD540"
+					item: "minecraft:torch"
+					type: "item"
+				}
+			]
+			subtitle: "Please read all before starting!"
+			tasks: [{
+				id: "6DC7619B91119839"
+				title: "I am ready to begin"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["41F51D2C2E955CFA"]
+			description: ["&cDo not venture into the night alone!&r SpookyCraft is balanced around cooperative survival. Open your inventory and click the &eMy Team&r icon in the top-left corner (or type &b/ftbteams party create&r). Being in a shared party automatically synchronizes quest completions, shares waypoint markers, and links safehaven chunk claims."]
+			id: "65187AC4C479B9EA"
+			rewards: [{
+				id: "312BA5DF8082E3B7"
+				item: {
+					Count: 1
+					id: "minecraft:white_banner"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4F690341F12ABDA8"
+				title: "Party Created or Joined"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["65187AC4C479B9EA"]
+			description: ["Proximity audio with acoustic cave reverberation is active. Press &bV&r to open the settings menu: select your microphone, test your voice, and adjust your &6Voice Activation Threshold&r so background static doesn't trigger your mic. Make sure game sound is loud enough to hear footfalls in the dark."]
+			id: "56E7DFE6DD907422"
+			rewards: [{
+				id: "77FDB33D17220F33"
+				item: "supplementaries:candy"
+				type: "item"
+			}]
+			subtitle: "Calibrate Simple Voice Chat"
+			tasks: [{
+				id: "1049BDC211A3D862"
+				title: "Microphone Calibrated"
+				type: "checkmark"
+			}]
+			title: "Proximity Voice Setup"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["56E7DFE6DD907422"]
+			description: [
+				"Take thirty seconds to review your controls to ensure you know your primary hotkeys:&f "
+				"• &bV&r - Voice Chat Settings "
+				"• &bB&r - Emotecraft Dance Wheel "
+				"• &bM&r - JourneyMap Fullscreen Map "
+				"• &bMouse Thumb Button&r  - FTB Ultimine Veinminer"
+				"• &bC&r - Cosmetic Armor Wardrobe"
+				"• &bR&r - Walkie Talkie / Carriage Harness"
+				"• &bU&r - Corpse Death History`"
+			]
+			id: "271386B9E5F1CB59"
+			rewards: [{
+				id: "3D976E0BAB89E1E7"
+				item: "minecraft:recovery_compass"
+				type: "item"
+			}]
+			subtitle: "Check Your Primary Controls"
+			tasks: [{
+				id: "2F2E64547E10C603"
+				title: "Controls Checked"
+				type: "checkmark"
+			}]
+			title: "Keybinds and Essential Hotkeys"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["271386B9E5F1CB59"]
+			description: ["&4Warning:&r This modpack features psychological stalkers, sudden audio stingers, and meta-horror elements. &cThe Obsessed&r and &cThe Pale Watcher&r may stalk your routes from the treeline, while &cDreamshift&r wall tears can pull you into liminal dimensions. Stick close to lanterns and document sightings with your camera for the Grand Archive!"]
+			id: "427C490FD1BA48D5"
+			rewards: [
+				{
+					id: "1C051D5611C0459F"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:long_night_vision"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "05BD63F713BD6B6D"
+					type: "xp"
+					xp: 250
+				}
+			]
+			subtitle: "Psychological and Meta-Horror Disclosure"
+			tasks: [{
+				id: "521B7CF836A8C720"
+				title: "I Understand"
+				type: "checkmark"
+			}]
+			title: "Content Warning: The Horrors of the Night"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["427C490FD1BA48D5"]
+			description: ["&6Three cardinal rules for a fun event:&r &e1. NEVER break Lootr chests:&r Dungeon chests have gold/blue brackets and give unique loot to every player. Breaking them destroys loot for everyone! &e2. Protect your life pool:&r You have a limited life count. When a friend falls, revive them within 60 seconds to protect the team's lives. &e3. Respect the dark:&r Stick together around torches and lanterns."]
+			id: "343223623106FBD6"
+			rewards: [
+				{
+					id: "26704F495CC30452"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:healing"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1C3261580597B8FA"
+					type: "xp"
+					xp: 500
+				}
+			]
+			subtitle: "Survival Etiquette and Life Stakes"
+			tasks: [{
+				id: "3E8879224B5A17DB"
+				title: "I Swear to Uphold the Rules"
+				type: "checkmark"
+			}]
+			title: "The Golden Rules of Hallowstown"
+			x: 0.0d
+			y: -5.0d
+		}
+	]
+	title: "Before you Begin!"
+}

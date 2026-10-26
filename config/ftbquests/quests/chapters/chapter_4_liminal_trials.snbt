@@ -1,0 +1,1945 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_4_liminal_trials"
+	group: ""
+	id: "13ADD03A5B3BBF6F"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+		description: [
+			"&byou may find passages to a better, calmer place&r"
+			""
+			"&bor somewhere unknown yet familiar to this world&r"
+			""
+			"&byou may return in time, please be patient&r"
+			""
+			"&byou enter the same way you came&r"
+			""
+			"&bnot all is as it seems&r"
+			""
+			"&4be careful.&r"
+		]
+		dependencies: ["343223623106FBD6"]
+		icon: "minecraft:oak_door"
+		id: "31DEFF7A83AD87ED"
+		rewards: [
+			{
+				id: "09C1C0B3624A55FE"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:long_night_vision"
+					}
+				}
+				type: "item"
+			}
+			{
+				id: "313117FF388B48AF"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:long_swiftness"
+					}
+				}
+				type: "item"
+			}
+			{
+				id: "6F2AF26B4B8B9180"
+				type: "xp"
+				xp: 500
+			}
+		]
+		size: 3.0d
+		subtitle: "Survival Manual for the Liminal"
+		tasks: [{
+			id: "23B87D1A404200D5"
+			title: "Protocol Memorized"
+			type: "checkmark"
+		}]
+		title: "Q-DM01: Escape Protocol: Dreamshift"
+		x: -7.5d
+		y: -1.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bThe autumn fog carries more than damp cold.&r"
+				"&bSometimes the trees stand a little too straight.&r"
+				"&bSometimes you will find torches burning without fuel, or shrines of dirt where none was built.&r"
+				""
+				"&cShould you glimpse a figure standing motionless at render distance:&r"
+				"  • &eDo not pursue.&r It does not wish to be caught."
+				"  • &eObserve it directly and capture its silhouette on Exposure film for the Grand Archive.&r"
+			]
+			icon: "minecraft:soul_campfire"
+			id: "35B42884D26E705E"
+			rewards: [
+				{
+					id: "512B8B49D5D90DD3"
+					item: "minecraft:spyglass"
+					type: "item"
+				}
+				{
+					id: "224626DBE3454A03"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "2B5C96638BCA8B49"
+					type: "xp"
+					xp: 750
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: Entity Zero"
+			tasks: [
+				{
+					icon: "minecraft:soul_campfire"
+					id: "6BB6AD2E608CC810"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: The Shape in the Treeline"
+					to_observe: "watching:herobrine"
+					type: "observation"
+				}
+				{
+					id: "6348DA9362DBE8DC"
+					title: "Photograph for the Grand Archive: The Shape in the Treeline"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM02: The Shape in the Treeline (From The Fog)"
+			x: -15.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bStone that breathes when the torches flicker.&r"
+				"&bThey wait in forgotten tombs and dark clearings, hands shielding weeping faces.&r"
+				""
+				"&cShould you hear scraping stone when your back is turned:&r"
+				"  • &eDo not blink.&r Blink and you are gone."
+				"  • &eKeep line-of-sight fixed on the carved visage while retreating.&r"
+				"  • &eObserve and photograph its frozen form for the Grand Archive without looking away.&r"
+			]
+			icon: "minecraft:chiseled_stone_bricks"
+			id: "2E3F3F60862CD839"
+			rewards: [
+				{
+					count: 2
+					id: "457A804689859253"
+					item: "minecraft:lantern"
+					type: "item"
+				}
+				{
+					id: "43F951A2E8F39568"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:long_night_vision"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1204B6AAB2E83F80"
+					type: "xp"
+					xp: 750
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: The Unblinking"
+			tasks: [
+				{
+					icon: "minecraft:chiseled_stone_bricks"
+					id: "575871748E41BFBB"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: Weeping Angel"
+					to_observe: "weeping_angels:weeping_angel"
+					type: "observation"
+				}
+				{
+					id: "408EB2AC2CA185D7"
+					title: "Photograph for the Grand Archive: Weeping Angel"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM03: The Frozen Statues (Weeping Angels)"
+			x: -12.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bFar below the bedrock where the condensation drips hollow.&r"
+				"&bYou will hear footsteps matching your stride... then pausing when you halt.&r"
+				""
+				"&cShould the music stop and heavy breathing echo in the dark:&r"
+				"  • &eLook up.&r It clings to the ceiling before it drops."
+				"  • &eObserve the creature and snap your camera flash in the dark shaft before retreating.&r"
+			]
+			icon: "minecraft:pointed_dripstone"
+			id: "7BDB00B7966C3DBA"
+			rewards: [
+				{
+					count: 16
+					id: "1B5E45C6D93709BF"
+					item: "minecraft:spectral_arrow"
+					type: "item"
+				}
+				{
+					id: "2BB3F3113AD1A0D5"
+					item: "exposure:black_and_white_film"
+					type: "item"
+				}
+				{
+					id: "4A024F9A32D84440"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: Subterranean Screamer"
+			tasks: [
+				{
+					icon: "minecraft:pointed_dripstone"
+					id: "2C286F5CEA742517"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: The Cave Dweller"
+					to_observe: "cave_dweller:cave_dweller"
+					type: "observation"
+				}
+				{
+					id: "229C9D37AD704267"
+					title: "Photograph for the Grand Archive: The Cave Dweller"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM04: The Subterranean Echo (Cave Dweller)"
+			x: -10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bStatic fills your ears when all else is dead silent.&r"
+				"&bA scorched silhouette against the horizon, radiating molten torment.&r"
+				""
+				"&cShould your vision blur and a high-pitched drone take hold:&r"
+				"  • &eDo not hold its direct gaze for long.&r It feeds on paralysis."
+				"  • &eObserve and snap the anomaly quickly for the Grand Archive, then seek an enclosed shelter.&r"
+			]
+			icon: "minecraft:redstone_lamp"
+			id: "7DCF05B91CB25FF5"
+			rewards: [
+				{
+					id: "3FC792CE2859AB9B"
+					item: "comforts:sleeping_bag_orange"
+					type: "item"
+				}
+				{
+					id: "512492A2D9597B41"
+					item: "exposure:black_and_white_film"
+					type: "item"
+				}
+				{
+					id: "1DA25D3D3C722B77"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: The Writhing Signal"
+			tasks: [
+				{
+					icon: "minecraft:redstone_lamp"
+					id: "5AC6E67F0D214280"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: The Boiled One"
+					to_observe: "boiled_reimagined:the_boiled_one"
+					type: "observation"
+				}
+				{
+					id: "59E55C93D46D5550"
+					title: "Photograph for the Grand Archive: The Boiled One"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM05: The Crimson Frequency (The Boiled One)"
+			x: -7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bYou see a companion walking along the far ridge, waving across the valley.&r"
+				"&bYou check your map... but their player pin is miles away in town.&r"
+				""
+				"&cShould you see someone you recognize standing alone in the wild:&r"
+				"  • &eDo not call out over the radio.&r"
+				"  • &eObserve them through a telescopic lens and photograph them for the Grand Archive before they vanish.&r"
+			]
+			icon: "minecraft:armor_stand"
+			id: "4919455AFF785152"
+			rewards: [
+				{
+					id: "2E90A715D8B03DBA"
+					item: "exposure:glass_photograph_frame"
+					type: "item"
+				}
+				{
+					id: "43A58DE5581509CF"
+					item: "minecraft:compass"
+					type: "item"
+				}
+				{
+					id: "603DEC73203BD88A"
+					type: "xp"
+					xp: 750
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: The False Companion"
+			tasks: [
+				{
+					icon: "minecraft:armor_stand"
+					id: "1FF77236558461DE"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: Distant Friend False Companion"
+					to_observe: "distantfriends:friend"
+					type: "observation"
+				}
+				{
+					id: "721CD177A4EB73A9"
+					title: "Photograph for the Grand Archive: Distant Friend False Companion"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM06: The Face in the Meadow (Distant Friends)"
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bYou feel eyes pressed against your neck in the dense spruce woods.&r"
+				"&bYou spin around, but there is only an old cedar trunk.&r"
+				"&bIt stays glued to your blind spot, ducking behind whatever tree you face.&r"
+				""
+				"&cShould twigs snap behind your boots in daylight:&r"
+				"  • &eBack up slowly toward an open clearing.&r"
+				"  • &eObserve and catch its silhouette on film for the Grand Archive before it ducks behind bark.&r"
+			]
+			icon: "batsgalore:spooky_oak_sapling"
+			id: "208EC6467118663D"
+			rewards: [
+				{
+					id: "744F0D35D9F3DFF5"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "561E1B2A353BDEEB"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "5018DEC1E43FA82F"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: The Forest Mimic"
+			tasks: [
+				{
+					icon: "batsgalore:spooky_oak_sapling"
+					id: "3560E4BB76AB761F"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: The Hidebehind"
+					to_observe: "whisperwoods:hidebehind"
+					type: "observation"
+				}
+				{
+					id: "514BD49E25B6D937"
+					title: "Photograph for the Grand Archive: The Hidebehind"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM07: The Shadow Behind the Cedar (Whisperwoods: Hidebehind)"
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bA horned demon cloven-hoofed and bound with iron chains.&r"
+				"&bIt emerges through freezing blizzards to punish those who linger in the dark.&r"
+				""
+				"&cShould a guttural growl vibrate from pitch-black oak thickets:&r"
+				"  • &eDo not sprint blindly.&r Sudden flight triggers an immediate pounce."
+				"  • &eObserve the stalker and take the Grand Archive photo while backing toward open torchlight.&r"
+			]
+			icon: "minecraft:spider_eye"
+			id: "2883C44FA45D4C5B"
+			rewards: [
+				{
+					id: "72EDD3F1291403BF"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "5F48AEE05C4CB5A8"
+					item: "minecraft:lantern"
+					type: "item"
+				}
+				{
+					id: "25CFBD51EA103BC9"
+					type: "xp"
+					xp: 750
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: The Alpine Horned Beast"
+			tasks: [
+				{
+					icon: "minecraft:spider_eye"
+					id: "4764ECC12E8C0B17"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: Krampus"
+					to_observe: "krampus_vx:krampus"
+					type: "observation"
+				}
+				{
+					id: "13853D4CE499E1A2"
+					title: "Photograph for the Grand Archive: Krampus"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM08: The Horned Shadow of the Blizzard (Krampus)"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bPale blue flames dancing lazily between dead cypress trunks.&r"
+				"&bThey bob like a traveler's torch, beckoning you off the cobblestone road.&r"
+				""
+				"&cShould you see floating lights in the swamp fog at twilight:&r"
+				"  • &eNever leave the stone road.&r"
+				"  • &eObserve and photograph them from the road barricade for the Grand Archive.&r"
+			]
+			icon: "minecraft:soul_lantern"
+			id: "1D5A90B1FEE36CC5"
+			rewards: [
+				{
+					id: "3FC7DED5FFBE76B3"
+					item: "exposure:photograph_frame"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "12F94A5A3F0804A4"
+					item: "minecraft:soul_torch"
+					type: "item"
+				}
+				{
+					id: "60D2D6D480ACB209"
+					type: "xp"
+					xp: 750
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: Pale Dancing Embers"
+			tasks: [
+				{
+					icon: "minecraft:soul_lantern"
+					id: "20222C4518AFCDA1"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: Will-o'-the-Wisp"
+					to_observe: "whisperwoods:wisp"
+					type: "observation"
+				}
+				{
+					id: "5F485D843733585E"
+					title: "Photograph for the Grand Archive: Will-o'-the-Wisp"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM09: The Lanterns of the Quagmire (Whisperwoods: Will-o'-the-Wisp)"
+			x: -15.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bIt only manifests when you believe you are safe beneath a roof.&r"
+				"&bA silhouette that stands at the foot of your bedroll just as your eyes close.&r"
+				""
+				"&cShould sleep fail to claim you and the room turn freezing cold:&r"
+				"  • &eObserve the nocturnal terror and capture the shadow on film for the Grand Archive.&r"
+			]
+			icon: "comforts:sleeping_bag_white"
+			id: "38D5ED1A10C51170"
+			rewards: [
+				{
+					id: "36CEA81052BD51D9"
+					item: "exposure:black_and_white_film"
+					type: "item"
+				}
+				{
+					id: "146113C76BB562D2"
+					item: "comforts:hammock_white"
+					type: "item"
+				}
+				{
+					id: "61A8E86AE3CC101D"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: Somnambulist Terror"
+			tasks: [
+				{
+					icon: "comforts:sleeping_bag_white"
+					id: "1E4504FB4F583971"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: Midnight Nightmare"
+					to_observe: "minecraft:phantom"
+					type: "observation"
+				}
+				{
+					id: "115AAF2B3F0710D2"
+					title: "Photograph for the Grand Archive: Midnight Nightmare"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM10: The Midnight Sleeplessness (Midnight Nightmares)"
+			x: -12.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bNo clicking footsteps. No rustling autumn leaves.&r"
+				"&bAn uncannily human visage frozen into mottled green lichen.&r"
+				""
+				"&cShould the hair on your arms stand up without a breeze:&r"
+				"  • &eTurn around slowly with your shutter ready.&r"
+				"  • &eObserve and snap the Grand Archive photograph before raising your shield.&r"
+			]
+			icon: "minecraft:creeper_head"
+			id: "1972376B65A76BD3"
+			rewards: [
+				{
+					id: "27A58EA8B31BC883"
+					item: "exposure_expanded:telescopic_lens"
+					type: "item"
+				}
+				{
+					id: "3AFB7B92EC178287"
+					item: "minecraft:shield"
+					type: "item"
+				}
+				{
+					id: "203BCCCCF644D1A2"
+					type: "xp"
+					xp: 750
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: The Silent Stalker"
+			tasks: [
+				{
+					icon: "minecraft:creeper_head"
+					id: "1BA9B25E5642F038"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: Creepy Creeper"
+					to_observe: "minecraft:creeper"
+					type: "observation"
+				}
+				{
+					id: "4F09E2A52EC7E12B"
+					title: "Photograph for the Grand Archive: Creepy Creeper"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM11: The Sibilant Shroud (Creepers)"
+			x: -10.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bLurking along the perimeter walls of Hallowstown Cemetery.&r"
+				"&bSinuous, skeletal limbs digging fresh mounds beneath weeping willow roots.&r"
+				""
+				"&cShould you patrol the cemetery grounds at the witching hour:&r"
+				"  • &eClimb the chapel rafters or belfry to gain elevation.&r"
+				"  • &eObserve and photograph them for the Grand Archive while they scavenge among the tombstones.&r"
+			]
+			icon: "graveyard:skull_pile"
+			id: "625ED42E9362E1A8"
+			rewards: [
+				{
+					id: "3628C21DE4B40345"
+					item: "exposure:glass_photograph_frame"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "315063C67E814BC5"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "1E41009DE7A9E77D"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: The Barrow Scavenger"
+			tasks: [
+				{
+					icon: "graveyard:skull_pile"
+					id: "68776CE9AA96B630"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: Graveyard Ghoul"
+					to_observe: "graveyard:ghoul"
+					type: "observation"
+				}
+				{
+					id: "47D7732F774974D9"
+					title: "Photograph for the Grand Archive: Graveyard Ghoul"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM12: The Scavenger of the Ossuary (The Graveyard: Ghoul)"
+			x: -7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bBeyond the veil where the stars are neither warm nor distant.&r"
+				"&bMassive cyclopean lenses drifting across fractured black void spires.&r"
+				""
+				"&cShould the End sky warp into pulsating violet concentric rings:&r"
+				"  • &eObserve the entity and frame the celestial anomaly in your camera and Grand Archive.&r"
+			]
+			icon: "minecraft:end_crystal"
+			id: "2329A9B64D540784"
+			rewards: [
+				{
+					id: "15EE3A0D0823345B"
+					item: "exposure:glass_photograph_frame"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1FFA3648766123DC"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					id: "29E94ED254D93CCB"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: The Cosmic Gaze"
+			tasks: [
+				{
+					icon: "minecraft:end_crystal"
+					id: "679D960E875929B9"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: Eldritch Aberration"
+					to_observe: "eldritch_end:aberration"
+					type: "observation"
+				}
+				{
+					id: "504B220488885F24"
+					title: "Photograph for the Grand Archive: Eldritch Aberration"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM13: The Aberrant Sky (Eldritch End: Aberration)"
+			x: -5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bThey only open in true light level zero.&r"
+				"&bTwo luminous white dots staring motionless from a cave alcove or hollow trunk.&r"
+				""
+				"&cShould glowing eyes lock onto you from pitch darkness:&r"
+				"  • &eObserve the eyes, trigger your camera flash for the Grand Archive, and throw a torch immediately.&r"
+			]
+			icon: "minecraft:ender_eye"
+			id: "5B0EFDE2534A19A2"
+			rewards: [
+				{
+					id: "69D6B51EB55396AF"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "1E7BA957AAE4DA55"
+					item: "minecraft:torch"
+					type: "item"
+				}
+				{
+					id: "347781D69B35AF2E"
+					type: "xp"
+					xp: 750
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: The Unblinking Sockets"
+			tasks: [
+				{
+					icon: "minecraft:ender_eye"
+					id: "146689A30FC4C872"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: Eyes in the Darkness"
+					to_observe: "eyesinthedarkness:eyes"
+					type: "observation"
+				}
+				{
+					id: "662CBE3F822662EF"
+					title: "Photograph for the Grand Archive: Eyes in the Darkness"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM14: The Twin Embers in the Pitch (Eyes in the Darkness)"
+			x: -2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bYou only see it out of the corner of your eye inside enclosed rooms.&r"
+				"&bTucked into the ninety-degree seam where two walls meet the ceiling.&r"
+				""
+				"&cShould your peripheral vision register a distortion in the rafters:&r"
+				"  • &eObserve the corner silhouette carefully and snap the blind spot for the Grand Archive.&r"
+			]
+			icon: "minecraft:iron_bars"
+			id: "74D4C738C4CDE4CB"
+			rewards: [
+				{
+					id: "642163C24B8BBE9A"
+					item: "exposure:black_and_white_film"
+					type: "item"
+				}
+				{
+					id: "2EAC45E3DDCDDEE3"
+					item: "magic_vibe_decorations:clear_quartz_crystal"
+					type: "item"
+				}
+				{
+					id: "7D6FC09B275C2B7F"
+					type: "xp"
+					xp: 750
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: The Blind Spot"
+			tasks: [
+				{
+					icon: "minecraft:iron_bars"
+					id: "60428F94391DAB86"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: The Corner Entity"
+					to_observe: "corner_entity:corner_entity"
+					type: "observation"
+				}
+				{
+					id: "3CC7441604B3778B"
+					title: "Photograph for the Grand Archive: The Corner Entity"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM15: The Silhouette in the Angle (Corner Entity)"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bTwisted roots that drag themselves through the fallen leaves.&r"
+				"&bA wooden, contorted abomination that mimics dead branches until you draw near.&r"
+				""
+				"&cShould root systems begin to creak and shift in the autumn brush:&r"
+				"  • &eClimb atop high stone boulders or fence lines.&r"
+				"  • &eObserve and photograph the gnarled mass for the Grand Archive before it burrows.&r"
+			]
+			icon: "minecraft:dead_bush"
+			id: "541F10BD16BDB76D"
+			rewards: [
+				{
+					id: "64BCC3A8242A6C64"
+					item: "exposure:glass_photograph_frame"
+					type: "item"
+				}
+				{
+					id: "37DC4D95EB71E31C"
+					item: "kaleidoscope_cookery:flower_tea"
+					type: "item"
+				}
+				{
+					id: "6029DFBAECE1488C"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: The Gnarled Stalker"
+			tasks: [
+				{
+					icon: "minecraft:dead_bush"
+					id: "6BBA2D82A85C32CD"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: The Wilted"
+					to_observe: "rootoffear:wilted"
+					type: "observation"
+				}
+				{
+					id: "24EE21BE3EADA683"
+					title: "Photograph for the Grand Archive: The Wilted"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM16: The Wilted Timber (The Root of Fear: The Wilted)"
+			x: -15.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bWhen reality itself begins to tear at the seams.&r"
+				"&bShadows lengthen unnaturally; disembodied footsteps echo over your shoulder.&r"
+				""
+				"&cShould your camera viewfinder display static and audio frequencies distort:&r"
+				"  • &eRemain anchored near an active town Waystone or Beacon.&r"
+				"  • &eObserve the entity and snap a photograph to log the breach in the Grand Archive.&r"
+			]
+			icon: "minecraft:crying_obsidian"
+			id: "7391942A21B5FAC1"
+			rewards: [
+				{
+					id: "596F0B192DD4DA2D"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "4834C7CEB69B6225"
+					item: "waystones:warp_stone"
+					type: "item"
+				}
+				{
+					id: "1EAA9A3A52A1A5ED"
+					type: "xp"
+					xp: 1250
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: The Unraveling Presence"
+			tasks: [
+				{
+					icon: "minecraft:crying_obsidian"
+					id: "5F7450D582D6018F"
+					title: "Survive or Investigate the Whispering Distortion"
+					type: "checkmark"
+				}
+				{
+					id: "71E73D206A0CAC23"
+					title: "Photograph for the Grand Archive: Apollyon Anomaly"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM17: The Whispering Distortion (Apollyon)"
+			x: -12.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bIt nests exclusively within ore-dense deepslate seams.&r"
+				"&bA lumbering, flesh-and-stone monstrosity that awakes when picks strike rock.&r"
+				""
+				"&cShould the stone walls groan and heavy breathing rumble through the cavern:&r"
+				"  • &eClimb into narrow 1x2 escape corridors, observe the beast, and snap the Grand Archive photo.&r"
+			]
+			icon: "minecraft:deepslate_iron_ore"
+			id: "5DFCE3DFE6FE4AA6"
+			rewards: [
+				{
+					id: "75290C9C22D8A432"
+					item: "exposure:glass_photograph_frame"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "769B5CA17AE2DEDD"
+					item: "minecraft:spectral_arrow"
+					type: "item"
+				}
+				{
+					id: "4377CBA49D6295A6"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: The Subterranean Predator"
+			tasks: [
+				{
+					icon: "minecraft:deepslate_iron_ore"
+					id: "227AC10A16C05AF4"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: Tunnel Gore"
+					to_observe: "skarrier_mobs:tunnel_gore"
+					type: "observation"
+				}
+				{
+					id: "1B6D69B7A281288A"
+					title: "Photograph for the Grand Archive: Tunnel Gore"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM18: The Greed of the Deeps (Skarrier Mobs: Tunnel Gore)"
+			x: -10.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bIt conceals itself along dark ravine ledges and unlit cliff edges.&r"
+				"&bUnnaturally elongated arms that lash out across three paces to pull you into the drop.&r"
+				""
+				"&cShould a sudden grasp seize your boots or armor from the dark:&r"
+				"  • &eObserve the creature and frame your shot along the chasm lip for the Grand Archive.&r"
+			]
+			icon: "minecraft:chain"
+			id: "580FD7E4D57172BE"
+			rewards: [
+				{
+					id: "26AFB81BA2CFC678"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "3F1AAABEB6B1B80A"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:long_swiftness"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "105434B67E0E9065"
+					type: "xp"
+					xp: 750
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: The Dragging Shadow"
+			tasks: [
+				{
+					icon: "minecraft:chain"
+					id: "3F7FA853B0662759"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: The Dragger"
+					to_observe: "skarrier_mobs:dragger"
+					type: "observation"
+				}
+				{
+					id: "4286913523B2E3BA"
+					title: "Photograph for the Grand Archive: The Dragger"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM19: The Reach in the Shadows (Skarrier Mobs: The Dragger)"
+			x: -7.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bHeavy, rhythmic metallic clanking that reverberates through stone floors.&r"
+				"&bA hulking, armor-clad brute whose downward strikes crack surrounding bedrock.&r"
+				""
+				"&cShould tremors shake the ground beneath your feet:&r"
+				"  • &eKeep high ground on carved stone columns to avoid its floor shockwaves.&r"
+				"  • &eObserve and capture its iron bulk on film for the Grand Archive.&r"
+			]
+			icon: "minecraft:anvil"
+			id: "13332EB90937C6A7"
+			rewards: [
+				{
+					id: "26AF8ABD4FAD27BA"
+					item: "exposure:black_and_white_film"
+					type: "item"
+				}
+				{
+					id: "653962F66E77327F"
+					item: "minecraft:iron_block"
+					type: "item"
+				}
+				{
+					id: "5D0C1144952889EB"
+					type: "xp"
+					xp: 1250
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: The Living Iron"
+			tasks: [
+				{
+					icon: "minecraft:anvil"
+					id: "7286DFCB4E25BADA"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: The Wrought"
+					to_observe: "skarrier_mobs:wrought"
+					type: "observation"
+				}
+				{
+					id: "7281BF9018088D1F"
+					title: "Photograph for the Grand Archive: The Wrought"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM20: The Iron Colossus (Skarrier Mobs: The Wrought)"
+			x: -5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bThe acoustic silence of the woods is a deceptive canvas.&r"
+				"&bShallow, ragged breathing directly against the nape of your neck.&r"
+				""
+				"&cShould you hear disembodied whispers in zero light:&r"
+				"  • &eTurn on your handheld walkie-talkie to drown out false frequencies.&r"
+				"  • &eObserve the dark cavern fauna and photograph the anomaly for the Grand Archive.&r"
+			]
+			icon: "minecraft:sculk_sensor"
+			id: "12D55F474EF32C9F"
+			rewards: [
+				{
+					id: "2224265673A59ACD"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "1F00C5C3E461CCF3"
+					item: "ifreq:walkie_talkie"
+					type: "item"
+				}
+				{
+					id: "6D2BE79C5480844C"
+					type: "xp"
+					xp: 750
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: Auditory Hallucination"
+			tasks: [
+				{
+					icon: "minecraft:sculk_sensor"
+					id: "2A33810457364A43"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: Phantom Audio Anomaly"
+					to_observe: "minecraft:bat"
+					type: "observation"
+				}
+				{
+					id: "2A2AFF27FE78F9CC"
+					title: "Photograph for the Grand Archive: Phantom Audio Anomaly"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM21: The Phantom Resonance"
+			x: -2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bNever rest outside fortified town walls without a warded perimeter.&r"
+				"&bYou awaken in pitch blackness at 3:00 AM unable to move your limbs.&r"
+				""
+				"&cShould an uninvited presence disturb your nocturnal slumber:&r"
+				"  • &eObserve the nightmare shade and ignite a camera flash to log it in the Grand Archive.&r"
+			]
+			icon: "minecraft:red_bed"
+			id: "2A17B22B0F75A76F"
+			rewards: [
+				{
+					id: "645A22266A643A00"
+					item: "comforts:hammock_white"
+					type: "item"
+				}
+				{
+					id: "10720D6A50568C62"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:long_night_vision"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6892DF8CE7BB1489"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: Somnambular Intrusion"
+			tasks: [
+				{
+					icon: "minecraft:red_bed"
+					id: "1DD96AC0379CEBF3"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: Waking Nightmare"
+					to_observe: "graveyard:nightmare"
+					type: "observation"
+				}
+				{
+					id: "3DAD06315C19D3B9"
+					title: "Photograph for the Grand Archive: Waking Nightmare"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM22: The Waking Nightmare (DarkSleep)"
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bYou never hear it approach. You only feel the sudden weight of its gaze.&r"
+				"&bA tall, dark silhouette perched motionless on distant hills or treetop ridges.&r"
+				""
+				"&cShould you feel the chilling sensation that you are being surveyed from afar:&r"
+				"  • &eDo not sprint toward it.&r"
+				"  • &eObserve it from afar and snap its silhouette with a zoom lens for the Grand Archive.&r"
+			]
+			icon: "minecraft:spyglass"
+			id: "542A9AC043C322BB"
+			rewards: [
+				{
+					id: "1328626E97A9B726"
+					item: "exposure:glass_photograph_frame"
+					type: "item"
+				}
+				{
+					id: "7CAABC36C82A152E"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "6C2700BEDA14B116"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: The Unseen Observer"
+			tasks: [
+				{
+					icon: "minecraft:spyglass"
+					id: "2970A6F47672E2D4"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: The One Who Watches"
+					to_observe: "the_one_who_watches:the_one_who_watches"
+					type: "observation"
+				}
+				{
+					id: "1CD04B01E1F38596"
+					title: "Photograph for the Grand Archive: The One Who Watches"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM23: The Vigil on the Ridge (The One Who Watches)"
+			x: -15.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bA gaunt, chalk-white figure stalking through twilight forest edges.&r"
+				"&bIt stands rigidly between dark oak trunks, its pale skin contrasting the autumn gloom.&r"
+				""
+				"&cShould a pale white shape catch your eye in the forest:&r"
+				"  • &eMaintain a steady perimeter distance and never turn your back completely.&r"
+				"  • &eObserve and capture its distinct pale visage on film to log it in the Grand Archive.&r"
+			]
+			icon: "minecraft:phantom_membrane"
+			id: "766E582D63661E0C"
+			rewards: [
+				{
+					id: "3300EF3F7A1EC63C"
+					item: "exposure:black_and_white_film"
+					type: "item"
+				}
+				{
+					id: "6AE3013344E72463"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:long_night_vision"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "57507332597EE576"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: The White Lurker"
+			tasks: [
+				{
+					icon: "minecraft:phantom_membrane"
+					id: "42164F6E85AF4980"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: The Pale Watcher"
+					to_observe: "palewatcher:pale_watcher"
+					type: "observation"
+				}
+				{
+					id: "21EC28C01DF065BA"
+					title: "Photograph for the Grand Archive: The Pale Watcher"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM24: The Pale Gaze (The Pale Watcher)"
+			x: -12.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bIn the dead of night, you hear three distinct, rhythmic raps on your cottage door.&r"
+				"&bOpen it immediately, and the porch is empty... yet footsteps circle the cabin walls.&r"
+				""
+				"&cShould something knock on your door or window after midnight:&r"
+				"  • &eNever unlatch the front door.&r"
+				"  • &ePeer through an upper shutter window to observe and photograph the stalker for the Grand Archive.&r"
+			]
+			icon: "minecraft:oak_door"
+			id: "612A8E9C131969E4"
+			rewards: [
+				{
+					id: "7183E8C193792B23"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "5C2AD8573E09E2FE"
+					item: "minecraft:iron_door"
+					type: "item"
+				}
+				{
+					id: "4E704F0C550292E8"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: The Midnight Knocker"
+			tasks: [
+				{
+					icon: "minecraft:oak_door"
+					id: "490C2139763B3FA4"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: The Knocker"
+					to_observe: "the_knocker:knocker"
+					type: "observation"
+				}
+				{
+					id: "60055A14FCB5FB26"
+					title: "Photograph for the Grand Archive: The Knocker"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM25: The Rapping at the Door (The Knocker)"
+			x: -10.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bA psychological stalker that chooses a single player to fixate upon.&r"
+				"&bEach dusk it appears slightly closer, learning your routines and pathways.&r"
+				""
+				"&cShould you realize an entity is following you specifically:&r"
+				"  • &eStay within earshot of your party members.&r"
+				"  • &eObserve and document its approach on film for the Grand Archive before its fixation peaks.&r"
+			]
+			icon: "minecraft:glass_bottle"
+			id: "2B3145491F4BE199"
+			rewards: [
+				{
+					id: "2B7BA0F5575E5B47"
+					item: "exposure:black_and_white_film"
+					type: "item"
+				}
+				{
+					id: "27D3AD028923EAD1"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:long_swiftness"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6CE4797833A9BC96"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: The Fixated Shadow"
+			tasks: [
+				{
+					icon: "minecraft:glass_bottle"
+					id: "3AE333537A06BB5D"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: The Obsessed"
+					to_observe: "the_obsessed:the_obsessed"
+					type: "observation"
+				}
+				{
+					id: "2D86C1C264B42F5E"
+					title: "Photograph for the Grand Archive: The Obsessed"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM26: The Unrelenting Stare (The Obsessed)"
+			x: -7.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bAn ancient woodland predator of local folklore lurking in dense autumn timber.&r"
+				"&bIts crooked silhouette moves silently between pine trunks under the crescent moon.&r"
+				""
+				"&cShould you spot antlers or gleaming eyes in the deep timber:&r"
+				"  • &eKeep to elevated rocks or horseback.&r"
+				"  • &eObserve the beast and snap a clear photograph for the Grand Archive and the town archive.&r"
+			]
+			icon: "minecraft:bone"
+			id: "68A84E1CE1EED7BB"
+			rewards: [
+				{
+					id: "200AFCDC2D46FD54"
+					item: "exposure:glass_photograph_frame"
+					type: "item"
+				}
+				{
+					id: "7B7AC51EDAD0C122"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "5525B63B1DE282C0"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: The Nocturnal Folklore Beast"
+			tasks: [
+				{
+					icon: "minecraft:bone"
+					id: "20638052CE708057"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: The Woodland Cryptid"
+					to_observe: "cryptid_vx:cryptid"
+					type: "observation"
+				}
+				{
+					id: "4544B50EC57B5FE3"
+					title: "Photograph for the Grand Archive: The Woodland Cryptid"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM27: The Woods Demon (The Cryptid)"
+			x: -5.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bManifests when a traveler lingers in total darkness for too long.&r"
+				"&bA predatory phantom born directly from clinical dread of the pitch black.&r"
+				""
+				"&cShould the darkness around you begin to coalesce into a physical form:&r"
+				"  • &eObserve the phantom, trigger your camera flash for the Grand Archive, and strike a torch at once.&r"
+			]
+			icon: "minecraft:coal_block"
+			id: "5C91F834DD68AACA"
+			rewards: [
+				{
+					id: "254BC9C250416123"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:long_night_vision"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "5D3A7F7B84E10512"
+					item: "minecraft:torch"
+					type: "item"
+				}
+				{
+					id: "11674A59E24F304A"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: Darkness Born Dread"
+			tasks: [
+				{
+					icon: "minecraft:coal_block"
+					id: "3E8EF91975EA0C4A"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: Nyctophobia Phantom"
+					to_observe: "nyctophobia:phantom"
+					type: "observation"
+				}
+				{
+					id: "3B8EB4A155A852FB"
+					title: "Photograph for the Grand Archive: Nyctophobia Phantom"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM28: The Phantom of Nyctophobia (Nyctophobia)"
+			x: -2.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bNot every dungeon chest holds instanced treasure.&r"
+				"&bLook closely at the latch—if the wood subtly rises and falls with breath, step back.&r"
+				""
+				"&cShould you suspect a chest in a ruin or cavern is a disguised predator:&r"
+				"  • &eDo not reach for the lid.&r"
+				"  • &eObserve the mimic and snap a photograph from a safe distance for the Grand Archive.&r"
+			]
+			icon: "minecraft:trapped_chest"
+			id: "27CAEF6917488775"
+			rewards: [
+				{
+					id: "4B3FB48ECFE908C4"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "62B668015B19F967"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "73DFB833D9E37D25"
+					type: "xp"
+					xp: 750
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: The Spectral Harvester"
+			tasks: [
+				{
+					icon: "minecraft:trapped_chest"
+					id: "1C17408EA35717DD"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: The Reaper"
+					to_observe: "graveyard:reaper"
+					type: "observation"
+				}
+				{
+					id: "3A62881F3ADEF150"
+					title: "Photograph for the Grand Archive: The Reaper"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM29: The Cloaked Harvester (The Graveyard: Reaper)"
+			x: 0.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bA malevolent reflection born from forbidden spellcraft and eclipsed moonlight.&r"
+				"&bIt wears a twisted echo of a traveler's form and channels dark eldritch magic.&r"
+				""
+				"&cShould your own shadow detach from the stone floor:&r"
+				"  • &eKeep your distance and ready your wards.&r"
+				"  • &eObserve the Dark Doppelganger and capture its image on film for the Grand Archive.&r"
+			]
+			icon: "irons_spellbooks:scroll_pouch"
+			id: "7667DA2C00FDF5CC"
+			rewards: [
+				{
+					id: "6F3EF56383B47F8E"
+					item: "exposure:glass_photograph_frame"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "2624B1E346377258"
+					item: "irons_spellbooks:arcane_essence"
+					type: "item"
+				}
+				{
+					id: "25C32C7749E19E95"
+					type: "xp"
+					xp: 1250
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: The Arcane Usurper"
+			tasks: [
+				{
+					icon: "irons_spellbooks:scroll_pouch"
+					id: "2A64EA3A5991B46A"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: Dark Doppelganger"
+					to_observe: "darkdoppelganger:dark_doppelganger"
+					type: "observation"
+				}
+				{
+					id: "4A24C790C87F1D36"
+					title: "Photograph for the Grand Archive: Dark Doppelganger"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM30: The Shadow Mirror (Dark Doppelganger)"
+			x: -12.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bDeep within the Forlorn Hollows, hooded subterranean creatures march in circles around sacrificial altars.&r"
+				""
+				"&cShould you hear rhythmic chanting echoing through guano-covered caverns:&r"
+				"  • &eExtinguish bright torches and watch from an elevated ledge.&r"
+				"  • &eObserve the Underzealot procession and photograph them for the Grand Archive.&r"
+			]
+			icon: "alexscaves:spelunkery_table"
+			id: "5EE7B8E82118F970"
+			rewards: [
+				{
+					id: "7913AA9442537B24"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "481E4298EA0A4735"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "47F47E5F3AC28DED"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: The Subterranean Zealot"
+			tasks: [
+				{
+					icon: "alexscaves:spelunkery_table"
+					id: "20E92B130B09404B"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: Forlorn Hollows Underzealot"
+					to_observe: "alexscaves:underzealot"
+					type: "observation"
+				}
+				{
+					id: "2F222316BEE4B799"
+					title: "Photograph for the Grand Archive: Forlorn Hollows Underzealot"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM31: The Caveling Cultist (Forlorn Hollows: Underzealot)"
+			x: -10.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bPale, moth-like horrors that perch high on the stalactites of the Forlorn Hollows, hijacking the vision of anyone they lock eyes with.&r"
+				""
+				"&cShould your camera perspective suddenly warp toward the cavern ceiling:&r"
+				"  • &eBreak line of sight behind a stone pillar.&r"
+				"  • &eObserve the Watcher and snap its luminous eyes on film for the Grand Archive.&r"
+			]
+			icon: "minecraft:ender_eye"
+			id: "352A2D9B767C9531"
+			rewards: [
+				{
+					id: "27339A6AA3399485"
+					item: "exposure:black_and_white_film"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4A697F21A47B073C"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "1814AC2FC27CCAAC"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: The Moth-Winged Sentinel"
+			tasks: [
+				{
+					icon: "minecraft:ender_eye"
+					id: "1833A6B9DFFCFE0F"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: Forlorn Hollows Watcher"
+					to_observe: "alexscaves:watcher"
+					type: "observation"
+				}
+				{
+					id: "3A3A806C82C7F3FE"
+					title: "Photograph for the Grand Archive: Forlorn Hollows Watcher"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM32: The Subterranean Gaze (Forlorn Hollows: Watcher)"
+			x: -7.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&bLumbering, decay-ridden hulks that prowl the bioluminescent fungal forests of The Undergarden.&r"
+				""
+				"&cShould heavy footsteps shake thedeeprock soil beneath the bedrock:&r"
+				"  • &eMaintain high ground atop mushroom caps.&r"
+				"  • &eObserve the Rotbeast and document its decayed silhouette in the Grand Archive.&r"
+			]
+			icon: "undergarden:catalyst"
+			id: "44F35FB0CA4ED74D"
+			rewards: [
+				{
+					id: "2411B3D181F0D362"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4EAAF03DE7E8FAF8"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "530CE83217E2DE57"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 1.5d
+			subtitle: "Anomalous Sighting: The Fungal Brute"
+			tasks: [
+				{
+					icon: "undergarden:catalyst"
+					id: "2A62CD5963DE67FA"
+					observe_type: 5
+					timer: 0L
+					title: "Observe: Undergarden Rotbeast"
+					to_observe: "undergarden:rotbeast"
+					type: "observation"
+				}
+				{
+					id: "185B86BC1E857069"
+					title: "Photograph for the Grand Archive: Undergarden Rotbeast"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DM33: The Subterranean Rot (The Undergarden: Rotbeast)"
+			x: -5.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: [
+				"&6[HOST RESTRICTED MILESTONE]&r"
+				"Unlocked when the community documents at least &e8 unique cryptids (25%)&r in their Grand Archives and on the Grand Archive photo wall in Hallowstown."
+				""
+				"Restricted with the Host Key so Josh can claim and distribute the Town Reward Cache to all participants!"
+			]
+			icon: "exposure:photograph_frame"
+			id: "28CEEE6FFD02E9DB"
+			rewards: [
+				{
+					count: 16
+					id: "2663196B925EBA79"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "455DF4242DB4B7C4"
+					item: "kaleidoscope_cookery:flower_tea"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "53B88F3CFAFB1E85"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1A78CD12EDB58062"
+					item: "supplementaries:candy"
+					type: "item"
+				}
+				{
+					id: "3E7C15C99E413311"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			size: 2.5d
+			subtitle: "Town Safari Reward Cache I"
+			tasks: [{
+				id: "5C4853868E19CED2"
+				item: "alexscaves:tremorzilla_egg"
+				type: "item"
+			}]
+			title: "[HOST RESTRICTED] Safari Milestone I: 25% Town Archive (8 / 32 Logged)"
+			x: -13.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["28CEEE6FFD02E9DB"]
+			description: [
+				"&6[HOST RESTRICTED MILESTONE]&r"
+				"Unlocked when the town gallery houses prints of &e16 distinct horrors (50%)&r."
+				""
+				"Josh claims this milestone to fund the halfway tavern celebration and distribute rare hats and diamonds to the town!"
+			]
+			icon: "exposure:glass_photograph_frame"
+			id: "73B414F7A1BE1B13"
+			rewards: [
+				{
+					count: 8
+					id: "790475D18500F514"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "19C57C9C1C1C6E22"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "42BD7FF85BCF6B87"
+					item: "simplehats:hatbag_rare"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4B4DCA7979B3B180"
+					item: "exposure:glass_photograph_frame"
+					type: "item"
+				}
+				{
+					id: "7370FF8416430070"
+					type: "xp"
+					xp: 3000
+				}
+			]
+			size: 2.5d
+			subtitle: "Town Safari Reward Cache II"
+			tasks: [{
+				id: "1239D2681422ACDA"
+				item: "alexscaves:tremorzilla_egg"
+				type: "item"
+			}]
+			title: "[HOST RESTRICTED] Safari Milestone II: 50% Town Archive (16 / 32 Logged)"
+			x: -9.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["73B414F7A1BE1B13"]
+			description: [
+				"&6[HOST RESTRICTED MILESTONE]&r"
+				"Unlocked when &e24 of the 32 terrors (75%)&r are cataloged on film and pinned on the Grand Archive wall."
+				""
+				"Josh unlocks this cache to distribute epic hats, waystones, and diamonds across Hallowstown!"
+			]
+			icon: "exposure:camera"
+			id: "4FEAAFF97758D6DC"
+			rewards: [
+				{
+					count: 16
+					id: "73756FBFD60E5DA9"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "45869655986042F8"
+					item: "simplehats:hatbag_epic"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "3BCB16DEA1ED5270"
+					item: "waystones:waystone"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "38C1BCE18E556003"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "287A896C751FCD67"
+					type: "xp"
+					xp: 5000
+				}
+			]
+			size: 2.5d
+			subtitle: "Town Safari Reward Cache III"
+			tasks: [{
+				id: "190BDB224E6BB036"
+				item: "alexscaves:tremorzilla_egg"
+				type: "item"
+			}]
+			title: "[HOST RESTRICTED] Safari Milestone III: 75% Town Archive (24 / 32 Logged)"
+			x: -5.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4FEAAFF97758D6DC"]
+			description: [
+				"&6[HOST RESTRICTED GRAND FINALE]&r"
+				"All &e32 anomalous entities (100%)&r have been observed, photographed, pinned up and permanently enshrined on the Grand Archive walls!"
+				""
+				"Josh unlocks the Master Vault to distribute coronation crowns, Netherite, and a town Beacon!"
+			]
+			icon: "morerelics:crown_of_the_legend"
+			id: "372822684BB4047B"
+			rewards: [
+				{
+					count: 4
+					id: "1A1AD05A23A6AB34"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "4BECF9F652E09943"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "11A3C125252A2AB1"
+					item: "simplehats:bigcrown"
+					type: "item"
+				}
+				{
+					id: "5D4717A9918DD895"
+					item: "minecraft:beacon"
+					type: "item"
+				}
+				{
+					id: "4D16AAAC14604921"
+					type: "xp"
+					xp: 10000
+				}
+			]
+			size: 3.0d
+			subtitle: "Grand Finale Safari Vault"
+			tasks: [{
+				id: "372F6E9522AC5DA3"
+				item: "alexscaves:tremorzilla_egg"
+				type: "item"
+			}]
+			title: "[HOST RESTRICTED] Safari Finale: 100% Masters of the Macabre (All 32 Logged)"
+			x: -1.5d
+			y: -6.0d
+		}
+	]
+	title: "CHAPTER 4: ACROSS THE VEIL (Dimension Trials)"
+}

@@ -1,0 +1,27 @@
+{
+	icon: "kaleidoscope_cookery:teapot"
+	id: "5A1B2C3D4E5F6004"
+	loot_size: 2
+	order_index: 3
+	rewards: [
+		{ count: 2, item: "kaleidoscope_cookery:flower_tea", weight: 2.4f }
+		{ count: 2, item: "kaleidoscope_cookery:butter_tea", weight: 2.0f }
+		{ count: 2, item: "kaleidoscope_cookery:barley_tea", weight: 2.0f }
+		{ item: "kaleidoscope_cookery:clay_pot_milk_tea", weight: 1.4f }
+		{ item: "ls_spooky_foods:phantom_ghast_drink", weight: 1.4f }
+		{ item: "ls_spooky_foods:skeleton_bone_broth", weight: 1.2f }
+		{ count: 3, item: "kaleidoscope_cookery:meat_pie", weight: 2.0f }
+		{ count: 3, item: "kaleidoscope_cookery:tea_egg", weight: 1.8f }
+		{ count: 4, item: "hauntedharvest:cornbread", weight: 2.2f }
+		{ count: 2, item: "hauntedharvest:corn_on_the_cob", weight: 2.0f }
+		{ count: 2, item: "kaleidoscope_cookery:scramble_egg_with_tomatoes", weight: 2.2f }
+		{ count: 3, item: "autumnity:pumpkin_bread", weight: 2.2f }
+		{ count: 2, item: "autumnity:syrup_bottle", weight: 1.8f }
+		{ count: 2, item: "alexscaves:caramel_apple", weight: 2.0f }
+		{ count: 2, item: "kaleidoscope_cookery:mystery_tea", weight: 1.6f }
+		{ count: 2, item: "alexscaves:hot_chocolate_bottle", weight: 1.8f }
+		{ count: 2, item: "hauntedharvest:succotash", weight: 1.8f }
+		{ count: 2, item: "hauntedharvest:popcorn", weight: 1.8f }
+	]
+	title: "Hallowstown Culinary Basket"
+}

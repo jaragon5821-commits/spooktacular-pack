@@ -1,0 +1,431 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_7_workshop_guides"
+	group: ""
+	id: "F41419D20D8AEDA0"
+	icon: "pipez:item_pipe"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["&6Pipez&r moves items, fluids and energy between blocks. Pipes connect to each other and to any chest, furnace or machine they touch.", "", "Craft a handful of &eItem Pipes&r and run a line from a source chest to a destination chest. Craft a &ePipe Wrench&r too; you need it next."]
+			id: "CCC786391D0CC456"
+			rewards: [
+				{
+					id: "5F99F0DD37FF0CF3"
+					item: "pipez:wrench"
+					type: "item"
+				}
+				{
+					id: "FBEB637E7F101C70"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			subtitle: "Your First Item Pipe"
+			tasks: [{
+				id: "34F4C5A39E93D364"
+				item: "pipez:item_pipe"
+				type: "item"
+			}]
+			title: "Q-WS01: Pipez: Laying the Line"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["CCC786391D0CC456"]
+			description: ["A brand-new pipe will &cnot&r move anything. You have to tell it where to pull from:", "", "&e1.&r Hold the Pipe Wrench and &esneak + right-click&r the end of the pipe that touches your &osource&r chest. A colored square appears on that end: it is now extracting.", "&e2.&r Items flow out of that chest into every other inventory on the line.", "&e3.&r Sneak + right-click a connection with the wrench to disconnect it (or reconnect it) when a pipe grabs a block you didn't want."]
+			icon: "pipez:wrench"
+			id: "AC43ABAC3A456CC0"
+			rewards: [
+				{
+					id: "7F0C6420F445EB5B"
+					item: "pipez:basic_upgrade"
+					type: "item"
+				}
+				{
+					id: "C547CCCF210B9C5C"
+					type: "xp"
+					xp: 400
+				}
+			]
+			subtitle: "Pipes Do Nothing Until They Extract"
+			tasks: [{
+				id: "68BAB23F633A3D59"
+				title: "Pipe Set to Extract"
+				type: "checkmark"
+			}]
+			title: "Q-WS02: Pipez: Opening the Valve"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["AC43ABAC3A456CC0"]
+			description: ["&eRight-click&r (not sneaking) the extracting end of a pipe to open its menu. Drop an upgrade into the slot:", "", "&6Basic&r: faster, plus &eredstone modes&r (on/off with a lever).", "&6Improved&r: adds &edistribution&r: Nearest First, Furthest First, Round Robin or Random.", "&6Advanced&r and up: adds &efilters&r. Whitelist or blacklist items, or type &e#tags&r (like #forge:ores).", "", "Want iron in one chest and food in another? Use the &eFilter Destination Tool&r: click the chest a filter should send to. &6Fluid&r and &6Energy&r pipes work the same way; the &6Universal Pipe&r carries everything."]
+			icon: "pipez:advanced_upgrade"
+			id: "D2773BEE220BDDEB"
+			rewards: [
+				{
+					id: "C4C99DA5E71CBEBC"
+					item: "pipez:improved_upgrade"
+					type: "item"
+				}
+				{
+					id: "37BB83834ED28747"
+					item: "pipez:filter_destination_tool"
+					type: "item"
+				}
+				{
+					id: "8657A2E2C133DBED"
+					type: "xp"
+					xp: 600
+				}
+			]
+			subtitle: "Speed, Redstone, Distribution and Filters"
+			tasks: [{
+				id: "6E91DD6F6451BB9A"
+				title: "Upgrade Installed in a Pipe"
+				type: "checkmark"
+			}]
+			title: "Q-WS03: Pipez: Upgrades and Sorting"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: ["&6Forgematica&r (Litematica for Forge) shows a see-through &oghost&r of a build right in the world, so you can copy it block by block. It only runs on your own game.", "", "&eM&r opens the main menu. &eM + C&r opens the settings.", "", "&6Getting blueprints:&r schematic files end in &e.litematic&r. Put them in your Prism instance's &eminecraft/schematics&r folder (Prism: right-click the instance, &eFolder&r).", "&6Saving your own:&r hold a &eStick&r (the Forgematica tool). Hold &eCtrl and scroll&r to switch to &eArea Selection&r mode, &eleft-click&r one corner and &eright-click&r the opposite corner, then press &eCtrl + Alt + S&r to save it.", "", "Swap .litematic files with friends to share town plans!"]
+			icon: "minecraft:map"
+			id: "678B09C87C6DCA51"
+			rewards: [
+				{
+					count: 32
+					id: "48EB04DC5294581A"
+					item: "minecraft:scaffolding"
+					type: "item"
+				}
+				{
+					id: "569A698711EC10C7"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			subtitle: "Ghost Blueprints for Big Builds"
+			tasks: [{
+				id: "DCF095DACBE88A55"
+				title: "Opened the Forgematica Menu (M)"
+				type: "checkmark"
+			}]
+			title: "Q-WS04: Forgematica: The Blueprint Table"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["678B09C87C6DCA51"]
+			description: ["&e1.&r Press &eM&r, choose &eLoad Schematics&r, pick your file and click &eLoad Schematic&r. Leave &eCreate placement&r ticked: the ghost appears where you stand.", "&e2.&r Line it up. Press &eM + P&r (Schematic Placements) and click &eConfigure&r (or press &eNumpad -&r) to type exact X / Y / Z, &erotate&r and &emirror&r it.", "&e3.&r For small nudges, hold the Stick in &eSchematic Placement&r mode (Ctrl + scroll) and use &eAlt + scroll&r to slide it the way you are looking.", "", "&eM + G&r hides or shows the ghost. &eM + R&r turns all Forgematica rendering on or off."]
+			icon: "minecraft:spyglass"
+			id: "16EFDAC28ABD75DA"
+			rewards: [
+				{
+					id: "5F879F2EC07E612C"
+					type: "xp"
+					xp: 400
+				}
+			]
+			subtitle: "Loading and Placing a Blueprint"
+			tasks: [{
+				id: "6C4210BD25F9136A"
+				title: "Blueprint Placed in the World"
+				type: "checkmark"
+			}]
+			title: "Q-WS05: Forgematica: Raising the Ghost"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["16EFDAC28ABD75DA"]
+			description: ["Big builds go fastest if you frame them first: corners, floor and outline, then fill in.", "", "&ePage Up / Page Down&r steps the ghost through one layer at a time. &eM + Page Up&r changes the layer mode (all layers, a single layer, everything below...). Work one layer at a time so the ghost doesn't hide what you're doing.", "&eM + L&r opens the &eMaterial List&r: every block you need and how many you're short. It can stay on screen while you gather.", "&eM + V&r opens the &eSchematic Verifier&r: it highlights missing, extra and wrong blocks so nothing is left out."]
+			icon: "minecraft:scaffolding"
+			id: "D508421D0238C1A9"
+			rewards: [
+				{
+					count: 32
+					id: "4EA0C37352431964"
+					item: "minecraft:scaffolding"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "DA2A9CBF9598F3D3"
+					item: "minecraft:lantern"
+					type: "item"
+				}
+				{
+					id: "E7A2688CB75DA3F6"
+					type: "xp"
+					xp: 500
+				}
+			]
+			subtitle: "Layer by Layer, Nothing Missed"
+			tasks: [{
+				id: "ECDF0CB1EB193E1A"
+				title: "Checked the Material List (M + L)"
+				type: "checkmark"
+			}]
+			title: "Q-WS06: Forgematica: Building the Framework"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["D508421D0238C1A9"]
+			description: ["&6Easy Place mode&r makes every right-click land exactly where the blueprint wants a block, already facing the right way (stairs, logs, doors...).", "", "&6Turn it on:&r &eM + C&r → &eGeneric&r → set &eeasyPlaceMode&r to true.", "&6Make a toggle key:&r &eM + C&r → &eHotkeys&r → &eeasyPlaceToggle&r has no key yet. Bind one you don't use, so you can flip it on and off quickly.", "", "With it on, hold the right block and &eright-click the ghost block&r. Turn it &coff&r again for normal building, or clicks will snap to the blueprint."]
+			icon: "minecraft:lever"
+			id: "94AD64F5668A70D1"
+			rewards: [
+				{
+					id: "F0D64D6B7A546BD5"
+					type: "xp"
+					xp: 500
+				}
+			]
+			subtitle: "Click the Ghost, Get the Right Block"
+			tasks: [{
+				id: "77B19A5E5E56B83C"
+				title: "Easy Place Mode Set Up"
+				type: "checkmark"
+			}]
+			title: "Q-WS07: Forgematica: Easy Place Toggle"
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["94AD64F5668A70D1"]
+			description: ["The &6Printer&r add-on places blocks from &eyour inventory&r into the ghost automatically as you walk around it.", "", "&eHold V&r to print only while the key is held.", "&eCaps Lock&r toggles &eprinting mode&r on and off for hands-free building.", "Range and speed: &eM + C&r → &eGeneric&r → printingRange / printingInterval.", "", "It only places blocks you carry, so check the Material List first. Turn printing mode &coff&r when you're done so it doesn't keep placing blocks while you walk past."]
+			icon: "minecraft:dispenser"
+			id: "548C0B9E5ACB6473"
+			rewards: [
+				{
+					count: 64
+					id: "32B3C111568A71A7"
+					item: "minecraft:scaffolding"
+					type: "item"
+				}
+				{
+					id: "8C84CAD2271CF9D7"
+					type: "xp"
+					xp: 750
+				}
+			]
+			subtitle: "Let the Blueprint Build Itself"
+			tasks: [{
+				id: "905E2AE7345EEE45"
+				title: "Printed Part of a Build"
+				type: "checkmark"
+			}]
+			title: "Q-WS08: Forgematica Printer: The Auto-Builder"
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			description: ["&6Kaleidoscope Cookery&r is the pack's cooking mod. Woks, stockpots and steamers all need a lit heat source under them.", "", "Craft a &eStove&r (a campfire surrounded by 8 cobblestone), place it and light it with &eFlint and Steel&r. Put your cookware on top."]
+			id: "3132DB5B5770DA53"
+			rewards: [
+				{
+					id: "395338AA27DB3AE7"
+					item: "minecraft:flint_and_steel"
+					type: "item"
+				}
+				{
+					id: "B0B552DF79DD9FBB"
+					item: "kaleidoscope_cookery:iron_kitchen_knife"
+					type: "item"
+				}
+				{
+					id: "C134FA403D607B9B"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			subtitle: "Every Kitchen Starts With Heat"
+			tasks: [{
+				id: "D81F2E560F8E5484"
+				item: "kaleidoscope_cookery:stove"
+				type: "item"
+			}]
+			title: "Q-WS09: Kaleidoscope: Lighting the Stove"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3132DB5B5770DA53"]
+			description: ["&e1.&r Put a &eWok&r on your lit stove.", "&e2.&r Add &eOil&r. Get oil by defeating pigs, piglins or hoglins with a &eKitchen Knife&r, or by grinding seeds in a &eMillstone&r (a harnessed animal turns it).", "&e3.&r Add the ingredients, then &eright-click with a Kitchen Shovel&r to stir-fry until it's done.", "&e4.&r Serve it into a &eBowl&r. Wrong ingredients or waiting too long burns it!", "", "Try it: &e3 eggs + 3 tomatoes&r, stir 3 times = &6Scramble Egg with Tomatoes&r. (Tomato seeds: see the Straw Hat tip next.)"]
+			icon: "kaleidoscope_cookery:pot"
+			id: "9BE5A20AA59DCC67"
+			rewards: [
+				{
+					count: 8
+					id: "B04482F16CD68F8C"
+					item: "kaleidoscope_cookery:oil"
+					type: "item"
+				}
+				{
+					id: "1CB07D1A64A14934"
+					type: "xp"
+					xp: 600
+				}
+			]
+			subtitle: "Stir-Fry 101"
+			tasks: [{
+				id: "4F491D0D650C7CBF"
+				item: "kaleidoscope_cookery:scramble_egg_with_tomatoes"
+				type: "item"
+			}]
+			title: "Q-WS10: Kaleidoscope: Oil and the Wok"
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3132DB5B5770DA53"]
+			description: ["&e1.&r Put a &eStockpot&r on a lit stove.", "&e2.&r Add a &esoup base&r first (a Water Bucket for most soups).", "&e3.&r Add the ingredients, then cover it with a &eStockpot Lid&r and wait.", "&e4.&r Take the lid off and serve into a &eBowl&r.", "", "Opening the lid early pauses cooking, and wrong steps give you &osuspicious stew&r. Check JEI (press &eU&r on a soup) for exact recipes."]
+			icon: "kaleidoscope_cookery:stockpot"
+			id: "FF455A9845634580"
+			rewards: [
+				{
+					id: "A0E4BAEEFA743474"
+					item: "kaleidoscope_cookery:stockpot_lid"
+					type: "item"
+				}
+				{
+					id: "8190C6C6AB9D960D"
+					type: "xp"
+					xp: 600
+				}
+			]
+			subtitle: "Soups and Stews"
+			tasks: [{
+				id: "D5A9D610D71FCA52"
+				title: "Cooked a Stockpot Soup"
+				type: "checkmark"
+			}]
+			title: "Q-WS11: Kaleidoscope: The Stockpot"
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["9BE5A20AA59DCC67"]
+			description: ["&6Chopping Board:&r place meat or fish on it and hit it with a &eKitchen Knife&r to cut it into ingredients.", "&6Straw Hat:&r wear it while breaking grass to find &etomato, chili, lettuce and rice&r seeds. Rice grows in flooded farmland.", "&6Steamer:&r stack up to &e8&r on one heat source, then &esneak + right-click&r to start steaming.", "&6Blank Recipe (4 paper):&r right-click a wok or stockpot full of ingredients to record them. Next time, right-click with the recipe to add everything from your inventory in one go."]
+			icon: "kaleidoscope_cookery:chopping_board"
+			id: "FDC655617F84525E"
+			rewards: [
+				{
+					id: "11A06CD139394102"
+					item: "kaleidoscope_cookery:straw_hat"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "AC4BDC6973DE4932"
+					item: "kaleidoscope_cookery:recipe_item"
+					type: "item"
+				}
+				{
+					id: "6414A3B820AA2C55"
+					type: "xp"
+					xp: 500
+				}
+			]
+			subtitle: "Boards, Hats, Steamers and Recipe Cards"
+			tasks: [{
+				id: "F2A95867477EB2D6"
+				item: "kaleidoscope_cookery:chopping_board"
+				type: "item"
+			}]
+			title: "Q-WS12: Kaleidoscope: Chef's Shortcuts"
+			x: 9.0d
+			y: 6.0d
+		}
+		{
+			description: ["&6Spice of Life: Carrot Edition&r rewards a varied diet. Every time you eat enough &enew&r foods you hit a milestone and gain &cextra hearts&r for good.", "", "Craft a &eFood Book&r to see what you've tasted, what you haven't, and how far the next heart is. Kaleidoscope dishes count, so cook a lot!"]
+			id: "B110CA4B57741C54"
+			rewards: [
+				{
+					count: 4
+					id: "462691C4B8238311"
+					item: "minecraft:golden_carrot"
+					type: "item"
+				}
+				{
+					id: "9ADE5743D300F786"
+					type: "xp"
+					xp: 400
+				}
+			]
+			size: 1.5d
+			subtitle: "New Foods Mean More Hearts"
+			tasks: [{
+				id: "19DC7C4CA5621010"
+				item: "solcarrot:food_book"
+				type: "item"
+			}]
+			title: "Q-WS13: Spice of Life: A Taste for Variety"
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			description: ["Craft a &eGlider&r (wooden up to netherite) and hold it in your &emain hand&r.", "", "Jump off something high and &eright-click in the air&r to start gliding. You fall slowly and keep moving forward. Right-click again to let go; landing or hitting water stops you too.", "", "Great for leaving a mountain base or crossing a valley without building a bridge."]
+			icon: "toglide:wooden_glider"
+			id: "AE36BE56E2A76364"
+			rewards: [
+				{
+					count: 8
+					id: "B9FD15A95B0951AE"
+					item: "minecraft:feather"
+					type: "item"
+				}
+				{
+					id: "F82EE7211862E7AC"
+					type: "xp"
+					xp: 400
+				}
+			]
+			subtitle: "Hang Gliders"
+			tasks: [{
+				id: "B5C01A1997E32816"
+				title: "Glided From a High Place"
+				type: "checkmark"
+			}]
+			title: "Q-WS14: To Glide: Riding the Night Wind"
+			x: 3.0d
+			y: 9.0d
+		}
+		{
+			description: ["Place a &6Small Ship&r (start with a Cog) on water and &eright-click&r to board.", "", "Ships have their own keys under &eOptions → Controls → Small Ships&r: &eToggle Sail&r, &eHigher / Lower Sail&r for speed, and &eOpen Ship Inventory&r for cargo. War galleys carry &eShip Cannons&r that fire Cannon Balls.", "", "Bring friends: ships carry several passengers."]
+			icon: "smallships:oak_cog"
+			id: "5F57FA60F3626BAB"
+			rewards: [
+				{
+					id: "40A04001FFCC79E9"
+					item: "minecraft:compass"
+					type: "item"
+				}
+				{
+					id: "B74EBFE84B5A4C1C"
+					type: "xp"
+					xp: 400
+				}
+			]
+			subtitle: "Cogs, Galleys and Cannons"
+			tasks: [{
+				id: "762DAF56B7C18965"
+				title: "Sailed a Ship"
+				type: "checkmark"
+			}]
+			title: "Q-WS15: Small Ships: Setting Sail"
+			x: 6.0d
+			y: 9.0d
+		}
+	]
+	title: "🧰 CHAPTER 7: WORKSHOP GUIDES"
+}

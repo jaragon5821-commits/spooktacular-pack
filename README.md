@@ -17,3 +17,9 @@ says where to download a mod from (CurseForge or Modrinth) and its checksum.
 4. Players get it the next time they press Play; the server on its next restart.
 
 `.gitattributes` keeps Git from changing line endings, because packwiz checks exact hashes.
+
+## Quests
+
+`config/ftbquests/quests/` (all quest chapters and reward tables) is part of the pack too, so the
+server and every player get the same quest book. Change quests here, not in game: a quest edited
+in game on the server is overwritten the next time the pack updates it.

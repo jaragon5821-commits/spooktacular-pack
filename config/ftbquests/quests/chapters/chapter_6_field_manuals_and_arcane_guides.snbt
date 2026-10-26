@@ -1,0 +1,863 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_6_field_manuals_and_arcane_guides"
+	group: ""
+	id: "3C85BBF7C74DD02D"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Craft a Camera and load Black and White Film. Hold Right-Click to aim through the viewfinder and Left-Click to snap photos of monsters."]
+			id: "2EEED06E21ACBE5A"
+			rewards: [
+				{
+					id: "4C4BEE982BF76427"
+					item: "exposure_expanded:telescopic_lens"
+					type: "item"
+				}
+				{
+					id: "7C15ACF111AC5481"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 2.0d
+			subtitle: "Aiming and Taking Photos"
+			tasks: [{
+				id: "04C8C4FD8B84F9A7"
+				item: "exposure:camera"
+				type: "item"
+			}]
+			title: "Q-GD01: Exposure: The Analog Shutter"
+			x: -22.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["2EEED06E21ACBE5A"]
+			description: ["Craft a Developing Basin, fill with Water, add Redstone/Glowstone developing chemicals, and immerse your film roll to create negatives."]
+			id: "4D866E746F71A0CA"
+			rewards: [
+				{
+					id: "38D3BEBD86EFDC1C"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "16EFD33B1DD92C4F"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			subtitle: "Developing Negatives"
+			tasks: [{
+				id: "5E237F77BD4C43BE"
+				item: "exposure:black_and_white_film"
+				type: "item"
+			}]
+			title: "Q-GD02: Exposure: The Darkroom Bath"
+			x: -22.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["4D866E746F71A0CA"]
+			description: ["Press your developed negatives onto photographic paper in a Light Box to produce physical photos you can sign, inspect, and frame on walls."]
+			icon: "exposure:lightroom"
+			id: "6C597A979787E452"
+			rewards: [
+				{
+					id: "49A8D01622CBC5EC"
+					item: "exposure:photograph_frame"
+					type: "item"
+				}
+				{
+					id: "6DB299A48A7D7808"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			subtitle: "Framed Photographs"
+			tasks: [{
+				id: "1B583EFB3910A555"
+				title: "Photo Printed"
+				type: "checkmark"
+			}]
+			title: "Q-GD03: Exposure: Print to Paper"
+			x: -22.0d
+			y: -8.0d
+		}
+		{
+			description: ["Upgrade wooden chests directly in-world by right-clicking them with Tier Upgrades (Wood → Iron → Gold). Middle-click any slot to lock memory."]
+			dependencies: ["1247FBDBC38C8165"]
+			id: "3E9364FC6613F319"
+			rewards: [
+				{
+					id: "231ED0AF9479FA0D"
+					item: "sophisticatedbackpacks:magnet_upgrade"
+					type: "item"
+				}
+				{
+					id: "4865A86A6D3A0AE7"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 2.0d
+			subtitle: "Chests That Never Spill"
+			tasks: [{
+				id: "59963F2EA04C6945"
+				item: "sophisticatedstorage:basic_to_iron_tier_upgrade"
+				type: "item"
+			}]
+			title: "Q-GD05: Sophisticated Storage: In-Place Upgrades"
+			x: -13.0d
+			y: -13.0d
+		}
+		{
+			description: ["Craft a Walkie Talkie, hold it, and press 'R' to tune into a shared frequency. Hold your talk key to speak across the entire map."]
+			dependencies: ["1F2F90194FBE76D9"]
+			id: "6119316870D1BB24"
+			rewards: [
+				{
+					id: "3287F7ED7673B11D"
+					item: "ifreq:walkie_talkie"
+					type: "item"
+				}
+				{
+					id: "34D110AA50B03B08"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 2.0d
+			subtitle: "Walkie-Talkie Channels"
+			tasks: [{
+				id: "60311441B4B3A8AB"
+				item: "ifreq:walkie_talkie"
+				type: "item"
+			}]
+			title: "Q-GD06: Immersive Frequencies: The Long-Range Radio"
+			x: -9.0d
+			y: -13.0d
+		}
+		{
+			description: ["Craft a Pet Bed and click your tamed dog, cat, or companion to bind them so they respawn safely back home upon death. Craft Collar Tags for passive charms."]
+			dependencies: ["647A70B9336B12EA"]
+			id: "1AABA72CBF2FE55C"
+			rewards: [
+				{
+					id: "333DA1AAFA23AE6E"
+					item: "domesticationinnovation:pet_bed_white"
+					type: "item"
+				}
+				{
+					id: "04C7C3790BE5AAE9"
+					item: "domesticationinnovation:collar_tag"
+					type: "item"
+				}
+				{
+					id: "2EBD599C4C2CF92C"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 2.0d
+			subtitle: "Banishing Pet Permadeath"
+			tasks: [{
+				id: "23DAB2BB5C4578BB"
+				item: "domesticationinnovation:pet_bed_white"
+				type: "item"
+			}]
+			title: "Q-GD07: Domestication Innovation: Immortal Pet Beds"
+			x: -5.0d
+			y: -13.0d
+		}
+		{
+			description: ["Equip a Relic and perform activities (running, mining, fighting) to earn Relic XP. Open the inspection screen to allocate points across passive skill trees."]
+			icon: "relics:relic_experience_bottle"
+			id: "5FE6006CE6DCEA52"
+			rewards: [
+				{
+					id: "1F9B6EDB996A2A43"
+					item: "relics:relic_experience_bottle"
+					type: "item"
+				}
+				{
+					id: "46BEE71EFBC2FF37"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 2.0d
+			subtitle: "RPG Leveling and Skill Trees"
+			tasks: [{
+				id: "5E6A20EE7AD8B2A5"
+				title: "Relic Inspected"
+				type: "checkmark"
+			}]
+			title: "Q-GD08: Relics: Awakening Ancient Artifacts"
+			x: -1.0d
+			y: -13.0d
+		}
+		{
+			description: ["Craft a Stagecoach or Cart, press 'R' near a tamed horse while holding a harness to hitch it, and board multiple friends with mounted cargo."]
+			dependencies: ["791F2CBFAA03B951"]
+			id: "4B59123704588A97"
+			rewards: [
+				{
+					id: "55BC4C72D3971007"
+					item: "stagecoach:oak_stagecoach"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "463447922119EA1E"
+					item: "minecraft:hay_block"
+					type: "item"
+				}
+				{
+					id: "125C8B9D29F41A95"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 2.0d
+			subtitle: "Group Road Trips"
+			tasks: [{
+				id: "52C0E52664043041"
+				item: "astikorcartsredux:wheel"
+				type: "item"
+			}]
+			title: "Q-GD09: The Autumn Caravan: Horse-Drawn Travel"
+			x: -17.0d
+			y: -11.0d
+		}
+		{
+			description: ["Craft an instrument from Immersive Melodies (a Lute is a good start) and play a spooky tune for the town. Perfect for the Cemetery Games stage!"]
+			dependencies: ["647A70B9336B12EA"]
+			id: "5EE7D8C56DFE4075"
+			rewards: [
+				{
+					id: "2A6FB09A7D002DFF"
+					item: "minecraft:music_disc_11"
+					type: "item"
+				}
+				{
+					id: "1CC30A3CAC4991FC"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 2.0d
+			subtitle: "In-Game Soundtracks"
+			tasks: [{
+				id: "0F3051DB1ADD4C05"
+				item: "immersive_melodies:lute"
+				type: "item"
+			}]
+			title: "Q-GD10: Immersive Melodies: Play the Town a Tune"
+			x: -13.0d
+			y: -9.5d
+		}
+		{
+			description: ["Use Sleeping Bags to sleep without resetting your safehaven spawn point; string a Hammock between two posts to sleep through the daytime."]
+			dependencies: ["647A70B9336B12EA"]
+			id: "442100FE6EC08A2D"
+			rewards: [
+				{
+					id: "4E41E8A9B83375B6"
+					item: "comforts:hammock_white"
+					type: "item"
+				}
+				{
+					id: "2CCDD693DD5EB8D1"
+					item: "comforts:rope_and_nail"
+					type: "item"
+				}
+				{
+					id: "069EB94A449C8363"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 2.0d
+			subtitle: "Safe Exploration Sleeping"
+			tasks: [{
+				id: "783364F9F8E9A4BE"
+				item: "comforts:sleeping_bag_white"
+				type: "item"
+			}]
+			title: "Q-GD11: Comforts: Day-Sleeping Hammocks and Bedrolls"
+			x: -9.0d
+			y: -9.5d
+		}
+		{
+			description: ["Open the cosmetic wardrobe (hanger icon in inventory or 'C') to equip witch hats and Halloween costumes over full Netherite armor without losing defense stats."]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			dependencies: ["13A9A4B1DDE38A73"]
+			id: "04EAAC18B3AE37F4"
+			rewards: [
+				{
+					id: "09E29FA3ED839550"
+					item: {
+						Count: 1
+						id: "simplehats:zigzagwitchhat"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "12B034E8088890DA"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 2.0d
+			subtitle: "Fashion Without Sacrificing Defense"
+			tasks: [{
+				id: "450E2E34A2AAAB97"
+				title: "Wardrobe Opened"
+				type: "checkmark"
+			}]
+			title: "Q-GD12: Tactical Costumes (Cosmetic Armor)"
+			x: -5.0d
+			y: -9.5d
+		}
+		{
+			description: ["&6JourneyMap&r is your map. Press &eJ&r for the full-screen map; the minimap stays in the corner.", "", "Press &eB&r to drop a &ewaypoint&r where you stand. Name it, pick a color, and it shows on your map and in the world so you can always find your way back.", "Mark your base, &6Hallowstown&r (around X 100, Z -250) and every dungeon you clear. Manage them from the &eWaypoints&r button on the full map.", "", "&7(Land claims come back when Open Parties and Claims is added to the pack.)&r"]
+			hide_until_deps_complete: false
+			dependencies: ["647A70B9336B12EA"]
+			id: "56E64ED59AC14F13"
+			rewards: [{
+				id: "7227B88DE53F8199"
+				type: "xp"
+				xp: 100
+			}]
+			size: 2.0d
+			subtitle: "Marking Home and Hallowstown"
+			tasks: [{
+				id: "30A3092F7E987F4A"
+				title: "Waypoint Set"
+				type: "checkmark"
+			}]
+			title: "Q-GD13: Charting the Territory (JourneyMap Waypoints)"
+			x: -1.0d
+			y: -9.5d
+		}
+		{
+			description: ["&6Better Combat&r gives every weapon its own swing animation and combo. Keep attacking to chain the combo, and watch which way each swing sweeps.", "", "&6Spartan Weaponry&r adds daggers, longswords, katanas, rapiers, greatswords, scythes, halberds, spears, battle hammers, throwing knives, javelins and more, in every material.", "", "&eOne-handed&r weapons can be dual-wielded: put a second one in your off hand. &eTwo-handed&r weapons (greatswords, scythes, halberds) hit wide but leave no room for a shield. Hover a weapon to see its traits."]
+			icon: "minecraft:iron_sword"
+			id: "13A9A4B1DDE38A73"
+			rewards: [
+				{
+					id: "5E0A7A8612DBC6F7"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "6D0DAC28E027192C"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 2.0d
+			subtitle: "Action-RPG Fluid Melee Stances"
+			tasks: [{
+				id: "4DB9C43901191247"
+				title: "Craft or Test a Spartan Weaponry Weapon"
+				type: "checkmark"
+			}]
+			title: "Q-GD14: Weapon Mastery: Combat Combos and Dual-Wielding"
+			x: -17.0d
+			y: -6.0d
+		}
+		{
+			description: ["Craft specialized Chipped workbenches (Mason's Table, Botanist's Workbench, Carpenter's Table, Glassblower) to transform ordinary stone, wood, lanterns, and glass into thousands of gothic variants."]
+			icon: "chipped:kitty_faced_carved_pumpkin"
+			id: "647A70B9336B12EA"
+			rewards: [
+				{
+					count: 2
+					id: "4399775970170AA2"
+					item: "chipped:kitty_faced_carved_pumpkin"
+					type: "item"
+				}
+				{
+					id: "6302B006FD40C469"
+					type: "xp"
+					xp: 750
+				}
+			]
+			size: 2.0d
+			subtitle: "11,000 Architectural Variations"
+			tasks: [{
+				id: "69FAC1C514D1A563"
+				title: "Craft 1x Chipped Workbench"
+				type: "checkmark"
+			}]
+			title: "Q-GD15: Gothic Masonry: The Chisel and The Carver's Bench"
+			x: -13.0d
+			y: -6.0d
+		}
+		{
+			description: ["With Carry On, hold Shift + Right-Click with both hands empty to physically pick up full storage chests, furnaces, barrels, and small animals—moving them across your house without breaking them!"]
+			icon: "minecraft:chest"
+			id: "1247FBDBC38C8165"
+			rewards: [
+				{
+					id: "1551F465F19A9B05"
+					item: "comforts:sleeping_bag_white"
+					type: "item"
+				}
+				{
+					id: "1884AB8CA2F46F7E"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 2.0d
+			subtitle: "Heavy Lifting Without Spilling"
+			tasks: [{
+				id: "4ABBAF5A3F7760CB"
+				title: "Shift + Right-Click Relocation Tested"
+				type: "checkmark"
+			}]
+			title: "Q-GD16: Hands-On Relocation: The Art of Carrying"
+			x: -9.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3E9364FC6613F319"]
+			description: ["Upgrade vanilla cobblestone furnaces directly in-place using Iron Furnaces tier upgrades (Cobble -> Iron -> Gold -> Diamond -> Netherite) for dramatically faster smelting and fuel efficiency."]
+			icon: "ironfurnaces:gold_furnace"
+			id: "2761E4996A3CC2AB"
+			rewards: [
+				{
+					id: "223227F06CF9A6F9"
+					item: "ironfurnaces:upgrade_gold"
+					type: "item"
+				}
+				{
+					id: "3AF14C8404C25E03"
+					type: "xp"
+					xp: 750
+				}
+			]
+			size: 2.0d
+			subtitle: "Tiered In-World Smelting"
+			tasks: [{
+				id: "73FADAFE12A8037B"
+				title: "Craft 1x Iron Furnace or Upgrade"
+				type: "checkmark"
+			}]
+			title: "Q-GD17: Rapid Metallurgy: In-Place Smelter Upgrades"
+			x: -5.0d
+			y: -6.0d
+		}
+		{
+			description: ["Use Spelunkery's Depth Gauge and Magnetic Compass to track exact Y-levels and mineral veins underground while illuminating deep dark chasms."]
+			icon: "minecraft:recovery_compass"
+			id: "65FD478636F61D4C"
+			rewards: [
+				{
+					count: 32
+					id: "50D6F5436E065B52"
+					item: "minecraft:torch"
+					type: "item"
+				}
+				{
+					id: "57A5C6653F191251"
+					type: "xp"
+					xp: 750
+				}
+			]
+			size: 2.0d
+			subtitle: "Navigating Subterranean Crevices"
+			tasks: [{
+				id: "1B9542261144F492"
+				title: "Craft 1x Depth Gauge or Magnetic Compass"
+				type: "checkmark"
+			}]
+			title: "Q-GD18: Spelunkery: Depth Sounding and Cavern Hazards"
+			x: -1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["13A9A4B1DDE38A73"]
+			description: ["Every naturally generated dungeon chest is powered by Lootr—giving each player on the server their own independent instanced loot! NEVER break a Lootr chest, so every friend can claim their share."]
+			icon: "sophisticatedstorage:gold_chest"
+			id: "4FDF1FB7EF9000D0"
+			rewards: [
+				{
+					id: "3043809CA57A407A"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "7266ED12AC5BCF82"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 2.0d
+			subtitle: "Shared Dungeons, Separate Chests"
+			tasks: [{
+				id: "4ADA37185F04E846"
+				title: "Lootr Instanced System Acknowledged"
+				type: "checkmark"
+			}]
+			title: "Q-GD19: The Instanced Bounty: Lootr Etiquette"
+			x: -17.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1F2F90194FBE76D9"]
+			description: ["Activate Waystones discovered in villages or crafted in town, and carry a rechargeable Warp Stone or Warp Scroll on your hotbar for emergency extraction back to Hallowstown."]
+			icon: "waystones:waystone"
+			id: "791F2CBFAA03B951"
+			rewards: [
+				{
+					id: "31CEE8D6EAEC4E63"
+					item: "waystones:waystone"
+					type: "item"
+				}
+				{
+					id: "423714A899AF861E"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 2.0d
+			subtitle: "Instant Cross-Country Transit"
+			tasks: [{
+				id: "672280DC650A15AA"
+				item: "waystones:warp_stone"
+				type: "item"
+			}]
+			title: "Q-GD20: Networked Leylines: Waystones and Warp Scrolls"
+			x: -13.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3E9364FC6613F319"]
+			description: ["Supplementaries adds canvas Sacks for early portable storage, Quivers for cycling arrow types in combat, and Notice Boards for posting town decrees and maps."]
+			icon: "sophisticatedbackpacks:backpack"
+			id: "2F02A18E17F88575"
+			rewards: [
+				{
+					count: 32
+					id: "2DA14298DE10D8E1"
+					item: "minecraft:arrow"
+					type: "item"
+				}
+				{
+					id: "2B9F4B3735B74CF5"
+					type: "xp"
+					xp: 750
+				}
+			]
+			size: 2.0d
+			subtitle: "Everyday Utility and Community Boards"
+			tasks: [{
+				id: "6D4418B121B1B4EF"
+				title: "Craft 1x Sack or Quiver (Supplementaries)"
+				type: "checkmark"
+			}]
+			title: "Q-GD21: Town Storage: Sacks, Quivers and Notice Boards"
+			x: -9.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["15865A577D8AC309"]
+			description: ["Harvest sap from orange and red Autumnity maple trees using glass bottles, boiling it down into sweet Maple Syrup and autumn pancakes."]
+			icon: "autumnity:syrup_bottle"
+			id: "5AAF775012A2D1B7"
+			rewards: [
+				{
+					count: 2
+					id: "4D04FC7D9DD224A9"
+					item: "kaleidoscope_cookery:flower_tea"
+					type: "item"
+				}
+				{
+					id: "10E13438660E2838"
+					type: "xp"
+					xp: 750
+				}
+			]
+			size: 2.0d
+			subtitle: "Autumn Tree Tapping and Syrups"
+			tasks: [{
+				id: "125A7A055C5CC6E7"
+				title: "Collect Sap and Craft 1x Maple Syrup Bottle"
+				type: "checkmark"
+			}]
+			title: "Q-GD22: The Maple Harvest: Tapping Autumn Sap"
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["647A70B9336B12EA"]
+			description: ["Cook hearty autumn stews and plated feasts on a Kaleidoscope Cookery Stove with a Wok and Stockpot to keep the party well fed during dungeon raids."]
+			icon: "kaleidoscope_cookery:stockpot"
+			id: "15865A577D8AC309"
+			rewards: [
+				{
+					count: 4
+					id: "695FF39FC9059F23"
+					item: "minecraft:pumpkin_pie"
+					type: "item"
+				}
+				{
+					id: "2E0D770950A71700"
+					type: "xp"
+					xp: 750
+				}
+			]
+			size: 2.0d
+			subtitle: "Comfort Meals and Stacking Buffs"
+			tasks: [{
+				id: "3336D21AF4D55426"
+				title: "Craft 1x Stove, 1x Wok and 1x Stockpot"
+				type: "checkmark"
+			}]
+			title: "Q-GD23: The Culinary Hearth: Woks and Stockpots"
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4FDF1FB7EF9000D0"]
+			description: ["When a teammate drops to 0 HP, PlayerRevive gives your party a 60-second window to sprint to their side and hold Right-Click to get them back on their feet before they bleed out!"]
+			icon: "minecraft:totem_of_undying"
+			id: "111E251F300296CE"
+			rewards: [
+				{
+					id: "18862BA004AB3642"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "26A73C71BF65BAC7"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 2.0d
+			subtitle: "60-Second Teammate Resuscitation"
+			tasks: [{
+				id: "703F62E94879CF14"
+				title: "60-Second Revive Window Understood"
+				type: "checkmark"
+			}]
+			title: "Q-GD24: The Golden Window: Downed Player Revives"
+			x: -13.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["65FD478636F61D4C"]
+			description: ["Hold the Grave/Tilde key (`) while mining ore veins, chopping trees, or harvesting crops to excavate connected blocks simultaneously with FTB Ultimine."]
+			icon: "minecraft:iron_pickaxe"
+			id: "257995C1DB820087"
+			rewards: [
+				{
+					id: "12B38D5226B79C42"
+					item: "minecraft:iron_pickaxe"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "6A9A55782419E50D"
+					item: "minecraft:torch"
+					type: "item"
+				}
+				{
+					id: "120C50FBD4F8635F"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 2.0d
+			subtitle: "Single-Swing Ore and Timber Clearing"
+			tasks: [{
+				id: "2C08CDA7BDF35B87"
+				title: "Ultimine Keybind Configured"
+				type: "checkmark"
+			}]
+			title: "Q-GD25: Vein Excavation: FTB Ultimine"
+			x: -9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5FE6006CE6DCEA52"]
+			description: ["Easy Magic overhauls vanilla Enchanting Tables: items stay rendered floating above the altar, and you can reroll enchantment choices for a small Lapis Lazuli and XP cost."]
+			icon: "minecraft:enchanting_table"
+			id: "1E2966A225872BE4"
+			rewards: [
+				{
+					count: 16
+					id: "178FE7AFAEE02714"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "11EC7F2454A14E8E"
+					item: "minecraft:bookshelf"
+					type: "item"
+				}
+				{
+					id: "1048B1A66A666658"
+					type: "xp"
+					xp: 750
+				}
+			]
+			size: 2.0d
+			subtitle: "Rerolling Arcane Tables"
+			tasks: [{
+				id: "1E58BF8CBA5716ED"
+				item: "minecraft:enchanting_table"
+				type: "item"
+			}]
+			title: "Q-GD26: Enchantment Manipulation: Easy Magic"
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["65FD478636F61D4C"]
+			description: ["Craft a Nature's Compass to locate specific autumn/spooky biomes or an Explorer's Compass to track down modded structures and dungeons across the world."]
+			icon: "minecraft:compass"
+			id: "1F2F90194FBE76D9"
+			rewards: [
+				{
+					count: 2
+					id: "594A03B47527B756"
+					item: "minecraft:compass"
+					type: "item"
+				}
+				{
+					id: "1E2658393DBEBD07"
+					type: "xp"
+					xp: 750
+				}
+			]
+			size: 2.0d
+			subtitle: "Pinpointing Biomes and Dungeons"
+			tasks: [{
+				id: "71B394EE14E0C081"
+				title: "Craft 1x Nature's Compass or Explorer's Compass"
+				type: "checkmark"
+			}]
+			title: "Q-GD27: Cartographic Tracking: Nature's and Explorer's Compass"
+			x: -1.0d
+			y: 1.0d
+		}		{
+			description: ["Not sure what just stalked past your camp? Here is how to identify it:", "", "&6Jade&r: look at any mob or block and its name, health and mod appear at the top of your screen.", "&6JEI&r: hover any item and press &eR&r for its recipe or &eU&r for its uses. On a mob drop, &eU&r opens &eJust Enough Resources&r, showing which mob drops it and where ores spawn.", "&6JEED&r: hover a potion effect in JEI to read what it does.", "", "Photograph every cryptid with your Exposure camera and pin the prints on the &6Grand Archive&r wall in Hallowstown."]
+			icon: "minecraft:spyglass"
+			id: "4BE6A6EAD19C7A20"
+			rewards: [
+				{
+					id: "6708E9CF30540061"
+					item: "minecraft:spyglass"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "3E921A775C9A4D12"
+					item: "minecraft:paper"
+					type: "item"
+				}
+				{
+					id: "70FAEDCDA9378D27"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 2.0d
+			subtitle: "Identifying the Paranormal"
+			tasks: [{
+				id: "393D1A0E0FC9DB95"
+				title: "Looked Up a Mob Drop With U"
+				type: "checkmark"
+			}]
+			title: "Q-GD28: Know Your Monsters (Jade and JEI)"
+			x: -22.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["15865A577D8AC309"]
+			description: ["Craft Terracotta Botany Pots (or Hopper Botany Pots) to grow pumpkins, mushrooms, saplings, and witch herbs indoors! Hopper variants automatically deposit harvested crops into a chest or barrel below."]
+			icon: "botanypots:terracotta_hopper_botany_pot"
+			id: "52052861B8D9B71C"
+			rewards: [
+				{
+					count: 2
+					id: "2A145FE55A128B41"
+					item: "botanypots:terracotta_hopper_botany_pot"
+					type: "item"
+				}
+				{
+					id: "16C0C972C3E5DFD4"
+					type: "xp"
+					xp: 250
+				}
+			]
+			subtitle: "Automated Indoor Crop and Herb Cultivation"
+			tasks: [{
+				id: "468F42F800C3DAF8"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "botanypots:botany_pots"
+					}
+				}
+				title: "Craft Any Botany Pot"
+				type: "item"
+			}]
+			title: "Q-GD29: Automated Botany: Indoor Cultivation"
+			x: -17.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Enhanced Celestials introduces mystical lunar cycles that dramatically alter nocturnal danger!"
+				""
+				"Watch the night sky for the Blood Moon (monsters spawn in dense hordes and cannot sleep away the night), the Harvest Moon (crops grow at hyper-speed), and four custom Halloween lunar events: Witching Moon, Jack-o'-Lantern Supermoon, Phantom Eclipse, and Crimson Harvest Moon."
+			]
+			icon: "minecraft:clock"
+			id: "7EADEDD1F109D8E8"
+			rewards: [
+				{
+					id: "3E920AC3346F19A2"
+					item: "minecraft:clock"
+					type: "item"
+				}
+				{
+					id: "5133642B5911FA64"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 2.0d
+			subtitle: "Blood Moons, Harvest Moons, and Halloween Supermoons"
+			tasks: [{
+				id: "274537C0EDC74968"
+				title: "Witness Your First Lunar Event in the Night Sky"
+				type: "checkmark"
+			}]
+			title: "Q-GD30: Omen of the Moons: Enhanced Celestials 2"
+			x: -9.0d
+			y: 4.5d
+		}
+
+	]
+	title: "🛠 CHAPTER 6: FIELD MANUALS"
+}

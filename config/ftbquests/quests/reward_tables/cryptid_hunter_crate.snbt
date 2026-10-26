@@ -1,0 +1,27 @@
+{
+	icon: "exposure:camera"
+	id: "5A1B2C3D4E5F6003"
+	loot_size: 2
+	order_index: 2
+	rewards: [
+		{ count: 2, item: "exposure:color_film", weight: 2.4f }
+		{ count: 2, item: "exposure:black_and_white_film", weight: 2.4f }
+		{ count: 3, item: "exposure:photograph_frame", weight: 2.0f }
+		{ count: 8, item: "spelunkery:orange_glowstick", weight: 2.2f }
+		{ count: 8, item: "spelunkery:purple_glowstick", weight: 2.2f }
+		{ count: 4, item: "spelunkery:mineomite", weight: 1.8f }
+		{ item: "spelunkery:parachute", weight: 1.0f }
+		{ count: 2, item: "waystones:warp_scroll", weight: 1.8f }
+		{ count: 2, item: "waystones:return_scroll", weight: 2.0f }
+		{ count: 3, item: "relics:relic_experience_bottle", weight: 2.0f }
+		{ item: "irons_spellbooks:arcane_essence", weight: 1.2f }
+		{ count: 3, item: "graveyard:dark_iron_ingot", weight: 1.8f }
+		{ item: "graveyard:vial_of_blood", weight: 1.2f }
+		{ item: "meetyourfight:haunted_bell", weight: 0.6f }
+		{ item: "meetyourfight:fossil_bait", weight: 0.6f }
+		{ item: "meetyourfight:devils_ante", weight: 0.6f }
+		{ item: "bountiful:decree", weight: 1.0f }
+		{ count: 2, item: "enigmaticlegacy:recall_potion", weight: 1.4f }
+	]
+	title: "Cryptid Hunter Supply Crate"
+}

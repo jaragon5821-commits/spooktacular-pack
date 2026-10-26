@@ -1,0 +1,29 @@
+{
+	icon: "irons_spellbooks:gold_spell_book"
+	id: "5A1B2C3D4E5F6002"
+	loot_size: 2
+	order_index: 1
+	rewards: [
+		{ count: 6, item: "irons_spellbooks:arcane_essence", weight: 2.6f }
+		{ count: 3, item: "irons_spellbooks:cinder_essence", weight: 1.8f }
+		{ count: 3, item: "irons_spellbooks:common_ink", weight: 2.2f }
+		{ count: 2, item: "irons_spellbooks:uncommon_ink", weight: 1.8f }
+		{ item: "irons_spellbooks:rare_ink", weight: 1.2f }
+		{ item: "irons_spellbooks:epic_ink", weight: 0.6f }
+		{ item: "irons_spellbooks:legendary_ink", weight: 0.2f }
+		{ item: "irons_spellbooks:blood_rune", weight: 1.2f }
+		{ item: "irons_spellbooks:fire_rune", weight: 1.2f }
+		{ item: "irons_spellbooks:nature_rune", weight: 1.2f }
+		{ item: "irons_spellbooks:evocation_rune", weight: 1.2f }
+		{ item: "irons_spellbooks:ender_rune", weight: 1.0f }
+		{ item: "irons_spellbooks:upgrade_orb", weight: 0.5f }
+		{ item: "irons_spellbooks:eldritch_manuscript", weight: 0.5f }
+		{ count: 2, item: "hexerei:dried_sage_bundle", weight: 2.0f }
+		{ count: 3, item: "hexerei:moon_dust", weight: 1.8f }
+		{ count: 2, item: "hexerei:blood_bottle", weight: 1.8f }
+		{ count: 2, item: "hexerei:infused_fabric", weight: 1.6f }
+		{ count: 2, item: "alexscaves:occult_gem", weight: 1.6f }
+		{ item: "alexscaves:pure_darkness", weight: 0.6f }
+	]
+	title: "Occult Caster Cache"
+}

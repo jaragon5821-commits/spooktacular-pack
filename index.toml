@@ -1714,3 +1714,59 @@ metafile = true
 file = "mods/yungs-extras.pw.toml"
 hash = "aedb648ee15bdb7bb3af23cfa4ad565c0fe531f62e89406566bec90659be9a42"
 metafile = true
+
+[[files]]
+file = "config/ftbquests/quests/chapter_groups.snbt"
+hash = "739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/before_you_start.snbt"
+hash = "d78fa6a3f0a1ffc8272e55a098fa2ff714dab43bd32013469850f4c9baeb60cc"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/chapter_1_hallowstown.snbt"
+hash = "686c95831a75beb453ed41df7ca1741cac36c74504b35b0166cd08d9292a9ef6"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/chapter_2_events_and_minigames.snbt"
+hash = "ca52752fef59eaff3108502b220afa5926e66ba6b6646722df7c58c64ee7b193"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/chapter_3_life_and_occult_rites.snbt"
+hash = "ea0a2c6c1632733af85756a2da0b4284e18c8d24146d010e69402e1fd0566fc8"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/chapter_4_liminal_trials.snbt"
+hash = "348640290d28cb4eff79333da7363bfe9132e4a8810afa874f52530111766fec"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/chapter_5_boss_showdowns.snbt"
+hash = "4e492c8ecdf6d225ed71c94b489247778b868aa7a50e4eb258fd89322578d4e4"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/chapter_6_field_manuals_and_arcane_guides.snbt"
+hash = "13a442310ecd7be1db532c1df4d63cfcca4fa1005df0e65444245ccbb80f1be2"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/chapter_7_workshop_guides.snbt"
+hash = "2ac6a40c32c3bf8938910957695e143d84cf6cfe772c1b43a02f5c346ab3bce2"
+
+[[files]]
+file = "config/ftbquests/quests/data.snbt"
+hash = "ed7875116d2c86b1e8c58e9a714c1566043be46ff1c927f8ab31b2a806c50acc"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/cryptid_hunter_crate.snbt"
+hash = "cd9611e43a0d60447eb5db0044ad874418a86af0b59c84da0f1fe965eb968fc6"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/hallowstown_culinary_basket.snbt"
+hash = "04d6eef982255deddc76775eac0efac3557828e3ae6aba9df891af0a20a3e662"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/occult_caster_cache.snbt"
+hash = "d9979e6f6aa5ec7789e8e8d3254611cfc7b312ee0940264a8ab4cd3c1b30fee1"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/trick_or_treat_bag.snbt"
+hash = "70c9614483161f11d3d38fd0849ece423e40ec3a3a979b60f73ad66bc82b9597"

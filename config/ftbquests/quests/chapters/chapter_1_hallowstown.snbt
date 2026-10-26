@@ -1,0 +1,974 @@
+{
+	autofocus_id: "27991E4AB94352BF"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_1_hallowstown"
+	group: ""
+	icon: "minecraft:jack_o_lantern"
+	id: "6D97C02F4AFBCAE7"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["484CC116C514D530"]
+			description: ["The old cinema stands as the heart of our community. Visit the central WebDisplays theatre building to register your arrival and scout the grounds."]
+			icon: "exposure:camera"
+			id: "27991E4AB94352BF"
+			rewards: [
+				{
+					id: "67083E7D6FFA3E1C"
+					item: "exposure:camera"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "54BD289F6657FB33"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "59DDC557775ED1E9"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			subtitle: "The Center of Town"
+			tasks: [{
+				id: "733F624561E13F51"
+				title: "Found the Old Theatre"
+				type: "checkmark"
+			}]
+			title: "Q-HT01: The Old Town Theatre"
+			x: -1.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["27991E4AB94352BF"]
+			description: ["Build your own cozy, autumn-decorated cottage in Hallowstown with a bed, lighting, and storage. Furnish it with Chipped, Handcrafted, and ManyIdeas Halloween blocks."]
+			icon: "minecraft:red_bed"
+			id: "1F65D7F0DC9B54A8"
+			rewards: [
+				{
+					id: "70CFC499AD986348"
+					item: {
+						Count: 1
+						id: "sophisticatedbackpacks:backpack"
+						tag: {
+							inventorySlots: 27
+							upgradeSlots: 1
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "42940ADEB76FAC18"
+					item: "comforts:sleeping_bag_orange"
+					type: "item"
+				}
+				{
+					id: "5B839A41AB0CE5B0"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			subtitle: "Player Cottages"
+			tasks: [{
+				id: "5C92B5DBF6009A65"
+				title: "My House is Complete"
+				type: "checkmark"
+			}]
+			title: "Q-HT02: Hearth and Home"
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1F65D7F0DC9B54A8"]
+			description: ["A town without a tavern has no soul. Craft teacups and teapots from Kaleidoscope Cookery to set up the communal Halloween Tea House and Bar."]
+			icon: "kaleidoscope_cookery:teapot"
+			id: "777B0848E5B19526"
+			rewards: [
+				{
+					id: "4973D2E992BF4075"
+					item: "ironfurnaces:upgrade_gold"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "48CC622F0EA4F41A"
+					item: "kaleidoscope_cookery:flower_tea"
+					type: "item"
+				}
+				{
+					id: "08F79BDF69FEC7B9"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			subtitle: "Brewing for the Community"
+			tasks: [
+				{
+					consume_items: false
+					count: 6L
+					id: "49FCB0C389CF7985"
+					item: { Count: 6, id: "kaleidoscope_cookery:empty_cup" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "0B6BDC4EF7748403"
+					item: "kaleidoscope_cookery:teapot"
+					type: "item"
+				}
+				{
+					id: "66495946F56FE11A"
+					title: "Build the Tavern"
+					type: "checkmark"
+				}
+			]
+			title: "Q-HT03: Raising the Tavern"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1F65D7F0DC9B54A8"]
+			description: ["Every proper Halloween town has a quiet, solemn graveyard. Lay out a stone burial ground, place decorative tombstones, and illuminate the crypt entrance with soul lanterns."]
+			icon: "spookify:tomb_stone"
+			id: "6DE25B0EBB8675EC"
+			rewards: [
+				{
+					id: "48545B15676123F6"
+					item: "waystones:mossy_waystone"
+					type: "item"
+				}
+				{
+					id: "5E86CAE534B17065"
+					item: {
+						Count: 1
+						id: "minecraft:totem_of_undying"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "6B1C852CB836388C"
+					type: "xp"
+					xp: 2000
+				}
+			]
+			subtitle: "The Hallowstown Cemetery"
+			tasks: [{
+				id: "1E9A1FAADE51730A"
+				title: "Build the Graveyard"
+				type: "checkmark"
+			}]
+			title: "Q-HT04: Solemn Grounds"
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"777B0848E5B19526"
+				"6DE25B0EBB8675EC"
+			]
+			description: ["Before our sanctuary is complete, ancient folklore demands a ring of warded embers. Harvest pumpkins, use shears to sculpt 30+ unique facial expressions, and line the entire town perimeter in an unbroken circle of Jack-o'-Lanterns to ward off phantoms and wandering spirits."]
+			icon: "minecraft:jack_o_lantern"
+			id: "28C3841D89C1FD27"
+			rewards: [
+				{
+					id: "348B6FB5B5B4EC62"
+					item: {
+						Count: 1
+						id: "artifacts:flame_pendant"
+						tag: {
+							abilities: {
+								fire: {
+									points: 0
+									stats: {
+										chance: 0.23839d
+										time: 2.05665d
+									}
+								}
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3FEECFBF4A155EFE"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			subtitle: "Circle of Carved Flames"
+			tasks: [
+				{
+					id: "1297805E2C492EA1"
+					item: "dynamic_pumpkin_carving:carver"
+					type: "item"
+				}
+				{
+					count: 30L
+					id: "00BE02841F254912"
+					item: { Count: 16, id: "minecraft:pumpkin" }
+					type: "item"
+				}
+				{
+					id: "5FDEF2F071043D0D"
+					title: "Build the Gourdian Wall"
+					type: "checkmark"
+				}
+			]
+			title: "Q-HT05: The Gourdian Ward"
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["28C3841D89C1FD27"]
+			description: ["Gather at the main entrance to construct a colossal town Scarecrow. Secretly conceal a Glowstone Heart within its wooden ribcage to permanently suppress hostile mob spawns across the entire settlement."]
+			icon: "manyideas_halloween:scarecrow"
+			id: "2AE8B83641AEC2A5"
+			rewards: [
+				{
+					id: "2F2CC429BA5DD8A4"
+					item: {
+						Count: 1
+						id: "artifacts:crystal_heart"
+						tag: {
+							abilities: {
+								heart: {
+									points: 0
+									stats: {
+										amount: 2.81089d
+									}
+								}
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4970426298AADE0A"
+					type: "xp"
+					xp: 2500
+				}
+			]
+			size: 2.0d
+			subtitle: "The Colossal Scarecrow and The Secret Core"
+			tasks: [{
+				id: "541642AD21CA46D8"
+				title: "Scarecrow Assembled"
+				type: "checkmark"
+			}]
+			title: "Q-HT06: The Silent Protector"
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2AE8B83641AEC2A5"]
+			description: ["Hallowstown needs residents before we can trick-or-treat! Venture into the wild, use Easy Villagers (Sneak + Right-Click with empty hands) to pick up at least 3 outside villagers, bring them back, and build them furnished autumn apartments in town."]
+			icon: "easy_villagers:villager"
+			id: "1A30465CB768468F"
+			rewards: [
+				{
+					id: "56A88F11F67C1E5F"
+					item: "easy_villagers:auto_trader"
+					type: "item"
+				}
+				{
+					id: "324258CACE999FE6"
+					item: "minecraft:bell"
+					type: "item"
+				}
+				{
+					id: "745E50C3339745FA"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			subtitle: "Villager \"Kidnapping\" and Town Lodging"
+			tasks: [{
+				id: "4147DCFF903447B3"
+				title: "3+ Villagers Resettled in Town Lodging"
+				type: "checkmark"
+			}]
+			title: "Q-HT07: The Relocation Initiative"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["28C3841D89C1FD27"]
+			description: ["Every self-respecting gothic village needs an apothecary. Construct a stone alchemy shop with a connected glass greenhouse. Equip it with a heated Hexerei Mixing Cauldron, drying racks for Mandrake and Belladonna, potion shelves, and mystical decor from Magic Vibe Decorations. This will serve as our communal hub for brewing healing salves, teas, and monster repellents."]
+			icon: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:mundane"
+				}
+			}
+			id: "3A4F757F49C95BE7"
+			rewards: [
+				{
+					id: "0EBA08DEEF2C2223"
+					item: "magic_vibe_decorations:lapis_crystal_star_ball"
+					type: "item"
+				}
+				{
+					id: "1D60BF875803FE38"
+					item: "magic_vibe_decorations:clear_quartz_crystal"
+					type: "item"
+				}
+				{
+					id: "1EB7B268CD114555"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			subtitle: "Town Alchemy and Herbalism"
+			tasks: [{
+				id: "34A6DD6501CEE2E0"
+				title: "Apothecary Built"
+				type: "checkmark"
+			}]
+			title: "Q-HT09: The Witch's Apothecary and Greenhouse"
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3A4F757F49C95BE7"]
+			description: ["Establish Hallowstown's shared agricultural grounds just outside the main square. Plant sprawling pumpkin patches, tall rows of corn (*Haunted Harvest*), and apple trees, and build a rustic tea and cider shed with a Kaleidoscope Cookery Millstone and Teapots to keep the tavern stocked all October."]
+			icon: "batsgalore:spooky_oak_sapling"
+			id: "01769DC4E6CC537B"
+			rewards: [
+				{
+					count: 4
+					id: "0BB58C08985C9349"
+					item: "kaleidoscope_cookery:flower_tea"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "3ED69788AEAE955E"
+					item: "hauntedharvest:corn"
+					type: "item"
+				}
+				{
+					id: "6E0AD0CC9AD65BEE"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 1.0d
+			subtitle: "Agricultural Harvest Grounds"
+			tasks: [
+				{
+					id: "3D6A85B68C42A6A3"
+					title: "Built the Orchard"
+					type: "checkmark"
+				}
+				{
+					id: "4C21F56F963A849B"
+					title: "Built the Mill"
+					type: "checkmark"
+				}
+			]
+			title: "Q-HT10: The Autumn Orchard and Pumpkin Mill"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2AE8B83641AEC2A5"]
+			description: ["Erect a tall gothic stone clocktower overlooking the town square and foggy forest canopies. Mount a town bell (*Supplementaries*) and clock mechanism at the top. When Blood Moons rise or stalkers approach the perimeter, the lookout can ring the bell to summon all players back to the safehaven."]
+			icon: "minecraft:bell"
+			id: "2D4FCF3F34B9E999"
+			rewards: [
+				{
+					id: "59D93806A1AABFF2"
+					item: "minecraft:bell"
+					type: "item"
+				}
+				{
+					id: "2D1EDCBF8A682B9A"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			subtitle: "Lookout and Blood Moon Alarm"
+			tasks: [
+				{
+					id: "0CC63D8EF55E2757"
+					title: "The Clocktower is Built"
+					type: "checkmark"
+				}
+				{
+					id: "566AECB57B88729E"
+					title: "The Alarm is Built"
+					type: "checkmark"
+				}
+			]
+			title: "Q-HT11: The Midnight Spire (The Town Clocktower)"
+			x: -4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6DE25B0EBB8675EC"]
+			description: ["Beneath our peaceful surface cemetery lies something darker. Dig a vaulted stone crypt beneath the graveyard with archways, sarcophagi, and iron bars. This secure subterranean chamber will house our Blood Magic altar and Eidolon sacrificial brazier, allowing players to conduct dark rites and revival rituals away from the living."]
+			icon: "graveyard:skull_pile"
+			id: "4D306F719E5C18BD"
+			rewards: [
+				{
+					id: "697B170D00D435B2"
+					item: "hexerei:mixing_cauldron"
+					type: "item"
+				}
+				{
+					id: "445FAC21BAB2EBCA"
+					item: "hexerei:sage_burning_plate"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3CCF2AC486F69CF6"
+					item: "graveyard:corruption"
+					type: "item"
+				}
+				{
+					id: "6BBAC90F9166AFCE"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			subtitle: "Underground Altar Chamber"
+			tasks: [
+				{
+					id: "7600BEECF904BE26"
+					title: "Built the Crypt"
+					type: "checkmark"
+				}
+				{
+					id: "057A3C62DE597798"
+					title: "Dig up some Catacombs"
+					type: "checkmark"
+				}
+			]
+			title: "Q-HT12: The Catacombs and Occult Crypt"
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["28C3841D89C1FD27"]
+			description: ["Build a festive town haberdashery and tailor shop. Furnish it with armor stands, mannequins, costume mirrors, and display shelving where friends can recycle hat scraps (*Simple Hats*), display rare monster masks, and plan their outfits for the concert and Halloween night party."]
+			icon: "simplehats:tophat"
+			id: "67E934B9C20A525C"
+			rewards: [
+				{
+					id: "3EF7EC90785391DC"
+					item: "simplehats:hatbag_rare"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "02750CCE35A31B9A"
+					item: "minecraft:armor_stand"
+					type: "item"
+				}
+				{
+					id: "66ACFA1257FF9F50"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			subtitle: "Costume and Tailor Shop"
+			tasks: [{
+				id: "7CD512BDF15F0FA3"
+				title: "Built the Boutique"
+				type: "checkmark"
+			}]
+			title: "Q-HT13: The Masquerade Boutique"
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["777B0848E5B19526"]
+			description: ["Traveling across Tectonic's mountains on foot takes forever. Construct a rustic carriage house and town stable. Equip it with feeding stalls, hay bales, and warded Pet Beds from Domestication Innovation so your horses never suffer permadeath. Craft a Stagecoach or Cart harness to hitch teams of horses for group road trips."]
+			icon: "astikorcartsredux:oak_animal_cart"
+			id: "1EB1C674C441E3B4"
+			rewards: [
+				{
+					id: "421B04F8EE7D57F6"
+					item: "astikorcartsredux:oak_supply_cart"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "29A58CA0169034D4"
+					item: "domesticationinnovation:pet_bed_white"
+					type: "item"
+				}
+				{
+					id: "40ED7E880C6C76C3"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			subtitle: "Horse Transport and Caravans"
+			tasks: [
+				{
+					id: "17BF12083E078DB5"
+					title: "Stable Built"
+					type: "checkmark"
+				}
+				{
+					id: "189A7A22E619D05F"
+					title: "Carriage House Built"
+					type: "checkmark"
+				}
+			]
+			title: "Q-HT14: The Carriage House and Stables"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["67E934B9C20A525C"]
+			description: ["Connect Hallowstown to the waterways! Build a wooden harbor pier along the river using Macaw's boardwalks, rope railings, and hanging lanterns. Construct a drydock and assemble a multi-sail vessel (Brigg, Galley, or Drakkar from Small Ships) with mounted cannons to launch naval expeditions into misty oceans."]
+			icon: "smallships:oak_cog"
+			id: "2989916809E113BC"
+			rewards: [
+				{
+					id: "3005DC5ACA9E2413"
+					item: "smallships:oak_cog"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "10C29568DE1ABBEE"
+					item: "mcwbridges:cobblestone_bridge_pier"
+					type: "item"
+				}
+				{
+					id: "13F403B3BAFB4CC6"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			subtitle: "Maritime Docks and Shipyard"
+			tasks: [
+				{
+					id: "0F09FBA3C2B3577E"
+					title: "Boathouse Built"
+					type: "checkmark"
+				}
+				{
+					id: "6161925924021651"
+					title: "Docks Built"
+					type: "checkmark"
+				}
+			]
+			title: "Q-HT15: The Misty Wharf and Boathouse"
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2AE8B83641AEC2A5"]
+			description: ["Erect a grand Victorian library furnished with gothic carved bookshelves from Chipped. Place lecterns to display all mod guidebooks (Book of Shadows, Ars Ecclesia, Sanguine Guide). Dedicate one wing to the \"Cryptid Gallery Wall\" using item frames to pin physical developed photographs of monsters, and place a central Town Sharestone for fast travel."]
+			icon: "minecraft:book"
+			id: "54BFAB7B97A92B74"
+			rewards: [
+				{
+					count: 2
+					id: "10617944B9E93F23"
+					item: "exposure:glass_photograph_frame"
+					type: "item"
+				}
+				{
+					id: "5F2CC30C369DBEDE"
+					item: "waystones:waystone"
+					type: "item"
+				}
+				{
+					id: "29CEBC164E4FCAE7"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			subtitle: "Town Library and Cryptid Wall"
+			tasks: [
+				{
+					id: "318CB401E7D3BD37"
+					title: "Archive Built"
+					type: "checkmark"
+				}
+				{
+					id: "05853024579513DA"
+					title: "Photo Gallery Built"
+					type: "checkmark"
+				}
+			]
+			title: "Q-HT16: The Grand Archive and Photo Gallery"
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2D4FCF3F34B9E999"]
+			description: ["Our kidnapped villagers need protection! Build a reinforced stone garrison and watchtower at the town gate. Mount a Bountiful Bounty Board where players can take on monster-hunting contracts for gold and rare loot. Post at least two armed Guard Villagers with crossbows or iron swords, and set up an emergency radio base station."]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "697633670703D2DE"
+			rewards: [
+				{
+					id: "5363351B270434B1"
+					item: "bountiful:bountyboard"
+					type: "item"
+				}
+				{
+					id: "54AC19B87E1C29DC"
+					item: "guardvillagers:guard_spawn_egg"
+					type: "item"
+				}
+				{
+					id: "03B7375B306A720B"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			subtitle: "Defense HQ and Monster Contracts"
+			tasks: [
+				{
+					id: "236734910EE889DC"
+					title: "Guard Barrack Built"
+					type: "checkmark"
+				}
+				{
+					id: "420B10072DC1F005"
+					title: "Bounty Board Built"
+					type: "checkmark"
+				}
+			]
+			x: -7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1F65D7F0DC9B54A8"]
+			description: ["A shared town generates thousands of building blocks, monster drops, and autumn crops. Build a dedicated communal storehouse with color-coded Sophisticated Storage barrels, tiered chest upgrades with controller hubs, and high-speed Iron Furnaces so the entire team can deposit and process materials without chest clutter."]
+			icon: "minecraft:chest"
+			id: "786F5C213B0EC984"
+			rewards: [
+				{
+					id: "2AEDC6D59CFF3A89"
+					item: {
+						Count: 1
+						id: "sophisticatedstorage:gold_chest"
+						tag: {
+							woodType: "oak"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7F0A9B3DE87850DD"
+					item: "ironfurnaces:gold_furnace"
+					type: "item"
+				}
+				{
+					id: "4A8AA50BE5052DAE"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			subtitle: "Communal Warehouse and Smeltery"
+			tasks: [
+				{
+					id: "26F248D01A6F0831"
+					title: "Vault Built"
+					type: "checkmark"
+				}
+				{
+					id: "0A81B55A276F4BE7"
+					title: "Sorting Station Built"
+					type: "checkmark"
+				}
+				{
+					id: "2346E8F9D6650E8D"
+					title: "Smeltery Built"
+					type: "checkmark"
+				}
+			]
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			description: [
+				"I do not want to block off any quests for people to complete, but to be clear: "
+				""
+				"&4THIS SECTION IS ONLY REQUIRING CHECKMARKS TO PROCEED AS THERE IS NO WAY FOR ME TO UNLOCK THEM AS WE GO.&r"
+				""
+				"I am trusting everyone to only complete quests as we finish them in this chapter, so please confirm with me before you complete these quests."
+				""
+				"There will be punishment if you are found to be skipping ahead on the questline to get extra rewards. Trust me, I will know."
+				""
+				"Thank you!"
+			]
+			dependencies: ["343223623106FBD6"]
+			id: "484CC116C514D530"
+			rewards: [{
+				id: "26149F8B388EACEF"
+				item: "minecraft:apple"
+				type: "item"
+			}]
+			size: 4.0d
+			subtitle: "PLEASE READ BEFORE STARTING"
+			tasks: [{
+				id: "13B8684FC480D9D0"
+				title: "I will be a good boy/girl :)"
+				type: "checkmark"
+			}]
+			title: "WARNING BEFORE PROCEEDING"
+			x: -6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"4D306F719E5C18BD"
+				"54BFAB7B97A92B74"
+			]
+			description: ["As our magical power peaks, a simple crypt is no longer sufficient. Construct a towering gothic dark-stone cathedral overlooking Hallowstown. Incorporate flying buttresses, vaulted stone arches using Chipped and Macaw's Roofs, rose stained-glass windows (*Connected Glass*), and a grand choir loft. This sacred sanctum will house our Tier 4+ Blood Altar, max-tier Eidolon brazier, and a consecrated beacon to bathe the town in protective radiant light."]
+			icon: {
+				Count: 1
+				id: "spartanweaponry:netherite_longsword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7D5B360460D954CC"
+			rewards: [
+				{
+					id: "5256639D85284B17"
+					item: "minecraft:beacon"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "54AE5706745B28B5"
+					item: "minecraft:netherite_scrap"
+					type: "item"
+				}
+				{
+					id: "44FA1709215D732A"
+					type: "xp"
+					xp: 5000
+				}
+			]
+			size: 2.0d
+			subtitle: "The Ultimate Occult Monument"
+			tasks: [{
+				id: "33621517D426BAEF"
+				title: "Construct the Grand Cathedral"
+				type: "checkmark"
+			}]
+			x: -10.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2AE8B83641AEC2A5"]
+			description: ["Taming the Nether requires more than a lone portal. Establish a fortified bastion colony suspended over a lava lake or carved into the blackstone cliffs of Bygone Nether. Build thick crying obsidian ramparts, a secure blast-proof portal room (*NetherPortalFix*), an underground nether wart greenhouse, and a Hoglin banquet hall linked by a private Town Sharestone."]
+			icon: "minecraft:nether_bricks"
+			id: "215475FD7349BF6C"
+			rewards: [
+				{
+					id: "7B9DC0FCC3DB9139"
+					item: "waystones:blackstone_waystone"
+					type: "item"
+				}
+				{
+					id: "58B7310C83069242"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					id: "5370E74540FEE66D"
+					type: "xp"
+					xp: 3500
+				}
+			]
+			size: 2.0d
+			subtitle: "Fortified Foothold in the Underworld"
+			tasks: [{
+				id: "5293FCDDB3813DC2"
+				title: "Built the Nether Outpost"
+				type: "checkmark"
+			}]
+			title: "Q-EG02: The Infernal Citadel (Nether Outpost)"
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"7D5B360460D954CC"
+				"215475FD7349BF6C"
+			]
+			description: ["Above the procedural alien islands of Nullscape and the cosmic horrors of Eldritch End, build a gravity-defying astronomical observatory. Use purpur, primordial crystal, and glowing aberrant lanterns to construct observation domes, voidward shielding, and elevated flight decks designed for Elytra launches across the void."]
+			icon: "minecraft:end_crystal"
+			id: "2E0926D2A4D3578B"
+			rewards: [
+				{
+					id: "606F222914B647D0"
+					item: {
+						Count: 1
+						id: "minecraft:elytra"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 64
+					id: "25D5B0F54125A7AA"
+					item: {
+						Count: 1
+						id: "minecraft:firework_rocket"
+						tag: {
+							Fireworks: {
+								Flight: 3b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "52F8C8B63620DDEF"
+					type: "xp"
+					xp: 5000
+				}
+			]
+			size: 3.0d
+			subtitle: "Spire Above the Cosmic Abyss"
+			tasks: [{
+				id: "28AE6415F9AB2F6D"
+				title: "Constructed the Void Observatory"
+				type: "checkmark"
+			}]
+			title: "Q-EG03: The Void Observatory (End Dimension Spire)"
+			x: -4.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["2E0926D2A4D3578B"]
+			description: ["A grand monumental hall dedicated to honoring our journey. Build a marble and dark-iron museum to house our greatest achievements: display the severed skull of The Corrupted Lich, mount The Bellringer's haunted bell, hang our expedition banners, and create a gallery wall featuring our best framed *Exposure* photographs of friends, bosses, and haunted encounters throughout the event."]
+			icon: {
+				Count: 1
+				id: "morerelics:crown_of_the_legend"
+				tag: {
+					abilities: {
+						never_die: {
+							points: 0
+							stats: {
+								potency: 0.12893d
+							}
+						}
+						pig_king: {
+							points: 0
+							stats: {
+								perch: 0.28069d
+							}
+						}
+					}
+				}
+			}
+			id: "446221678ECCE096"
+			rewards: [
+				{
+					id: "4860CFB770478DE0"
+					item: {
+						Count: 1
+						id: "morerelics:crown_of_the_legend"
+						tag: {
+							abilities: {
+								never_die: {
+									points: 0
+									stats: {
+										potency: 0.12893d
+									}
+								}
+								pig_king: {
+									points: 0
+									stats: {
+										perch: 0.28069d
+									}
+								}
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2D6BB5B2E297855A"
+					item: "simplehats:bigcrown"
+					type: "item"
+				}
+				{
+					id: "24A0DC3982FE560B"
+					item: "simplehats:flowercrown"
+					type: "item"
+				}
+				{
+					id: "2CAE5D72F24696C0"
+					type: "xp"
+					xp: 10000
+				}
+			]
+			size: 4.0d
+			subtitle: "Memorial of the Spooktacular Survivors"
+			tasks: [{
+				id: "6761434BA7867918"
+				title: "Construct the Masoleum"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["28C3841D89C1FD27"]
+			description: [
+				"Construct a grand stone fountain at the heart of the town square to serve as Hallowstown's festive centerpiece."
+				""
+				"The winning carved pumpkin from the &6Great Pumpkin Carving Showdown&r will be enshrined atop this fountain for the duration of the Halloween event!"
+			]
+			icon: "minecraft:water_bucket"
+			id: "6375AFD72F57A55D"
+			rewards: [
+				{
+					id: "4082BD773C9EA649"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "71D0D66A18AF7CA7"
+					item: "minecraft:jack_o_lantern"
+					type: "item"
+				}
+				{
+					id: "6A65A6DD24CE1D6F"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			subtitle: "Display Pedestal for Carved Jack-o'-Lanterns"
+			tasks: [{
+				id: "7B47D00756A1340C"
+				title: "Construct the Town Square Fountain"
+				type: "checkmark"
+			}]
+			title: "Q-HT19: The Town Square Fountain"
+			x: 0.0d
+			y: 0.5d
+		}
+	]
+	title: "🎃 CHAPTER 1: THE BUILDING OF HALLOWSTOWN"
+}
