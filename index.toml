@@ -1774,3 +1774,119 @@ metafile = true
 [[files]]
 file = "config/betterdays-common.toml"
 hash = "0e8f17fb2dde4d64a4382bb90ca7bc5bbade22064524ffd4321a58c4e5ca343e"
+
+[[files]]
+file = "config/worldedit/schematics/hallowstown_cemetery.schem"
+hash = "156518d9d716d28dea3f5bd8740e29710ce5e0939c0a353e4838962e41c1b02f"
+
+[[files]]
+file = "config/worldedit/schematics/hallowstown_cemetery_modded.schem"
+hash = "800f5208579957fade9bba25e5f9651a3294c382cf5c79f5ad6f42fdd6aaeb9b"
+
+[[files]]
+file = "config/worldedit/schematics/hallowstown_pantry.schem"
+hash = "72e1c4221bcf0b71305a84e27808c44c5bb2b07b0a693c7ec254398ab6530af8"
+
+[[files]]
+file = "config/worldedit/schematics/hallowstown_pantry_modded.schem"
+hash = "42ca0eac594639ba6cc86a81b666b3832b3957db86ab64c38900a7f975393411"
+
+[[files]]
+file = "config/worldedit/schematics/hallowstown_tavern.schem"
+hash = "bd99f28fdef75f22a17f702d6b3f20e064b66bfceef60f2e5e959e76742b78a5"
+
+[[files]]
+file = "config/worldedit/schematics/hallowstown_tavern_modded.schem"
+hash = "37282d6f58f0d14154962144018e43bd699ba12421129ed3fb60a4e417730456"
+
+[[files]]
+file = "config/worldedit/schematics/house_A_pumpkin_cottage.schem"
+hash = "2cbf92120eea5b9ecacd51dd4c59c399ef1a744b4ab20e3132583fd26ba24f69"
+
+[[files]]
+file = "config/worldedit/schematics/house_A_pumpkin_cottage_modded.schem"
+hash = "f43d305b3ef0f8f1bbdb61d2ccd680111b332d5002aaf4fa9d6859a4dbaab949"
+
+[[files]]
+file = "config/worldedit/schematics/house_B_twin_lantern_duplex.schem"
+hash = "e6d7b53315acc27f90f0d82f46b3de07a4d972e8d092c8207bedbc66028b594b"
+
+[[files]]
+file = "config/worldedit/schematics/house_B_twin_lantern_duplex_modded.schem"
+hash = "2c27d17713fa78beb6dbd79afe25a5bc57a49b08234d958e91ffb6a85e4dada9"
+
+[[files]]
+file = "config/worldedit/schematics/house_C_hollow_row_apartments.schem"
+hash = "4ef6aa062ae96e641de3a2bdee26add41e115ceabf269814cdf59da049599782"
+
+[[files]]
+file = "config/worldedit/schematics/house_C_hollow_row_apartments_modded.schem"
+hash = "4f4a79cda143b70028f21bf4bf7a9b48a17de607b31b0eaa760cedfd761c2e56"
+
+[[files]]
+file = "config/worldedit/schematics/house_D_harvest_moon_family_hall.schem"
+hash = "e3ad5c79332bb30f9e1d56277b62e5cb9ca45231bd5da5850a620120caa35c3b"
+
+[[files]]
+file = "config/worldedit/schematics/house_D_harvest_moon_family_hall_modded.schem"
+hash = "3302fa85d2081bb6936bb7e8b466e50a53f9f62d620dbf2a7397ee6fd77ff915"
+
+[[files]]
+file = "config/worldedit/schematics/spooktacular_cinema.schem"
+hash = "af516ed2229f2afbb9e431f57ebe2b140e6aa58d6429e78186cbd7f5ec14d270"
+
+[[files]]
+file = "schematics/Hallowstown/Vanilla/hallowstown_cemetery.litematic"
+hash = "e59d8b7331a034dde0775f69b1837c3ae01e119d7a317953e45d84d69fc4c0e4"
+
+[[files]]
+file = "schematics/Hallowstown/Vanilla/hallowstown_pantry.litematic"
+hash = "370b9fe8123a5f5a6e7bb22bb4e6550efe8f5ebaf16408af6b4bba5763709a2e"
+
+[[files]]
+file = "schematics/Hallowstown/Vanilla/hallowstown_tavern.litematic"
+hash = "f47b16d9a0c57651c3104f25eeceedd53ff5331879b7d8c3acb004a63af85b3f"
+
+[[files]]
+file = "schematics/Hallowstown/Vanilla/house_A_pumpkin_cottage.litematic"
+hash = "a1d4ec4b5e7e587d375598c874ccb7caeda7d9a4d440da33706f5e0123bedc3e"
+
+[[files]]
+file = "schematics/Hallowstown/Vanilla/house_B_twin_lantern_duplex.litematic"
+hash = "7fd1cd7ba6c002d196cff0730ed55543fe099f3e650e0e71ffb29bba3964be6d"
+
+[[files]]
+file = "schematics/Hallowstown/Vanilla/house_C_hollow_row_apartments.litematic"
+hash = "bd368520be35dcef2e347e427511cbb8e76908e1fac7280188d13868e956687d"
+
+[[files]]
+file = "schematics/Hallowstown/Vanilla/house_D_harvest_moon_family_hall.litematic"
+hash = "1abb33ec94128d9890fef64038e1137a6c431c886579839bb244f14d9d6ff646"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_cemetery_modded.litematic"
+hash = "21b05185e68dca7934e8fee478beea27fd54799663231922f7e2e70841ec5557"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_pantry_modded.litematic"
+hash = "a5d6543505064d051e409a49b97f66521b8b600d325d4149ac20b8d7bb214c77"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_tavern_modded.litematic"
+hash = "2c6ed8f051a9d5dc50beec0eb891541f0b3c3466e4d292aa1c3bcfa08838a3c5"
+
+[[files]]
+file = "schematics/Hallowstown/house_A_pumpkin_cottage_modded.litematic"
+hash = "7c010263f6a84b37b99a9ab85b891027a466cf9610487ea63e7917a3885b4022"
+
+[[files]]
+file = "schematics/Hallowstown/house_B_twin_lantern_duplex_modded.litematic"
+hash = "4239fe085e8ce78a0a9aa73e587fde4f833ed7730ac55bfe7e7ef9d582bb81c8"
+
+[[files]]
+file = "schematics/Hallowstown/house_C_hollow_row_apartments_modded.litematic"
+hash = "b4afdfd3f61f15158fdefa2f4cdf1abcb0c89d117d0a377381a3769f75958e1f"
+
+[[files]]
+file = "schematics/Hallowstown/house_D_harvest_moon_family_hall_modded.litematic"
+hash = "94cc729e11b4c954928194d1141c8fb2afd483c4f5a0524acc92e205aaf3ed96"

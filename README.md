@@ -23,3 +23,15 @@ says where to download a mod from (CurseForge or Modrinth) and its checksum.
 `config/ftbquests/quests/` (all quest chapters and reward tables) is part of the pack too, so the
 server and every player get the same quest book. Change quests here, not in game: a quest edited
 in game on the server is overwritten the next time the pack updates it.
+
+## Schematics
+
+- `schematics/Hallowstown/` are Forgematica (.litematic) blueprints: the `_modded` versions use the
+  pack's blocks, `Vanilla/` uses only vanilla blocks. They appear in Forgematica's Load Schematics menu.
+- `config/worldedit/schematics/` are the same builds as WorldEdit `.schem` files (plus the cinema),
+  for `//schem load <name>` on the server.
+
+## Notes for later
+
+- Ember's Ancient Remnants (structures only, no blocks) is on the server but not in the pack.
+  Decided 2026-10-26 to leave it out for now; revisit later.
