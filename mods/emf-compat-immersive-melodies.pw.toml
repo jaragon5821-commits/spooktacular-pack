@@ -1,13 +1,13 @@
 name = "EMF Compat: Immersive Melodies"
-filename = "emf_compat_immersive_melodies_forge_1.20.1_1.2.0.jar"
+filename = "emf_compat_immersive_melodies_forge_1.20.1_1.2.1.jar"
 side = "client"
 
 [download]
+url = "https://cdn.modrinth.com/data/XLUpeCri/versions/UgCRz5SY/emf_compat_immersive_melodies_forge_1.20.1_1.2.1.jar"
 hash-format = "sha1"
-hash = "3e3e77687d88b2ae2e8ac35fceb37e35bb83007b"
-mode = "metadata:curseforge"
+hash = "2b1927411acd505b27877bdfb86776069a43d473"
 
 [update]
-[update.curseforge]
-file-id = 9103471
-project-id = 1605177
+[update.modrinth]
+mod-id = "XLUpeCri"
+version = "UgCRz5SY"

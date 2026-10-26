@@ -1,13 +1,13 @@
 name = "Auto Place Light (Auto Torch+)"
-filename = "autoplacelight-forge-1.1-1.20.1.jar"
+filename = "autoplacelight-forge-1.2-1.20.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "e82e4581687ad3be7b326423fb541eb53fee1342"
+hash = "298f1c38ab9875618dd6a65a4f80d8cff1b40161"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 9084536
+file-id = 9311865
 project-id = 1637208

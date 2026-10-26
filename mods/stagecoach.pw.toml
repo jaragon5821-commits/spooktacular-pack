@@ -1,13 +1,13 @@
 name = "Feelix's Stagecoach"
-filename = "Stagecoach-forge-1.20.1-1.1.0.jar"
+filename = "Stagecoach-forge-1.20.1-1.2.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "1708571ba176864b97625d86fe04bdc7a1e2f2e1"
+hash = "7bc288f697fc7cb26511e4413c43600ebc47a566"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 9131804
+file-id = 9234364
 project-id = 1711971

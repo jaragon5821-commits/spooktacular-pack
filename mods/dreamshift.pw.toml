@@ -1,13 +1,13 @@
 name = "Dreamshift"
-filename = "dreamshift-0.1.4.3.1-forge.jar"
+filename = "dreamshift-0.2.1-forge.jar"
 side = "both"
 
 [download]
+url = "https://cdn.modrinth.com/data/sdQwPACz/versions/tfr9qfGY/dreamshift-0.2.1-forge.jar"
 hash-format = "sha1"
-hash = "c142c83b3a6ac5e2b10dd2f0fa84ea3270c29f75"
-mode = "metadata:curseforge"
+hash = "78d1352049da95be7d4474ad3fc04acf5a22a9df"
 
 [update]
-[update.curseforge]
-file-id = 8750240
-project-id = 1535361
+[update.modrinth]
+mod-id = "sdQwPACz"
+version = "tfr9qfGY"

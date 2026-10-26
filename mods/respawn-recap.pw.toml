@@ -1,13 +1,13 @@
 name = "Respawn Recap"
-filename = "respawnrecap-forge-1.2.0-1.20.1.jar"
+filename = "respawnrecap-forge-1.2.1-1.20.1.jar"
 side = "client"
 
 [download]
+url = "https://cdn.modrinth.com/data/rgcja1LM/versions/yFz41G1c/respawnrecap-forge-1.2.1-1.20.1.jar"
 hash-format = "sha1"
-hash = "02e1adea97182f43d7094f50e59d2b6be613dcf0"
-mode = "metadata:curseforge"
+hash = "4f101f4adb106177f923db78d046e9a9da72cabb"
 
 [update]
-[update.curseforge]
-file-id = 8935651
-project-id = 1651841
+[update.modrinth]
+mod-id = "rgcja1LM"
+version = "yFz41G1c"

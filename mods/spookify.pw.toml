@@ -1,13 +1,13 @@
 name = "Spookify Halloween"
-filename = "spookify-1.2b-forge-1.20.1.jar"
+filename = "spookify-1.3b-forge-1.20.1.jar"
 side = "both"
 
 [download]
+url = "https://cdn.modrinth.com/data/gtTyzZ9r/versions/VZEUgO2e/spookify-1.3b-forge-1.20.1.jar"
 hash-format = "sha1"
-hash = "def7ff9d66f7b0302c544b967f8bb40eb361f98b"
-mode = "metadata:curseforge"
+hash = "58c6dca754df0e6049be176dfcf91b76072ea0aa"
 
 [update]
-[update.curseforge]
-file-id = 9101510
-project-id = 1365826
+[update.modrinth]
+mod-id = "gtTyzZ9r"
+version = "VZEUgO2e"

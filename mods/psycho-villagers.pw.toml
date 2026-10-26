@@ -1,13 +1,13 @@
 name = "Psycho Villagers"
-filename = "psycho_villagers-0.5.7-3.jar"
+filename = "psycho_villagers-0.5.8.jar"
 side = "both"
 
 [download]
+url = "https://cdn.modrinth.com/data/I8Z0O4IF/versions/y9HRH1yI/psycho_villagers-0.5.8.jar"
 hash-format = "sha1"
-hash = "1ecea4ccd0d4c1b1a22ade6de4403c15fbf102a0"
-mode = "metadata:curseforge"
+hash = "0c6c4c6ee2c54b44659f9727188a42cba3c4ade1"
 
 [update]
-[update.curseforge]
-file-id = 9149102
-project-id = 1359884
+[update.modrinth]
+mod-id = "I8Z0O4IF"
+version = "y9HRH1yI"

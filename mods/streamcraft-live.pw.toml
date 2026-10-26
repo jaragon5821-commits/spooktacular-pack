@@ -1,13 +1,13 @@
 name = "StreamCraft Live"
-filename = "streamcraft-pc-0.29.3+mc1.20.1-forge.jar"
+filename = "streamcraft-pc-0.31.0+mc1.20.1-forge.jar"
 side = "both"
 
 [download]
+url = "https://cdn.modrinth.com/data/UUUunIAe/versions/U0EiylEN/streamcraft-pc-0.31.0%2Bmc1.20.1-forge.jar"
 hash-format = "sha1"
-hash = "8ac756750f7b78e83bd5cca65c8b5ee225df3786"
-mode = "metadata:curseforge"
+hash = "da9bce162f46c16e3e35475b4f0c9ccded14f998"
 
 [update]
-[update.curseforge]
-file-id = 9142350
-project-id = 1451729
+[update.modrinth]
+mod-id = "UUUunIAe"
+version = "U0EiylEN"

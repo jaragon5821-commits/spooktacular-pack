@@ -1,13 +1,13 @@
 name = "Collective"
-filename = "collective-1.20.1-8.52.jar"
+filename = "collective-1.20.1-8.66.jar"
 side = "both"
 
 [download]
+url = "https://cdn.modrinth.com/data/e0M1UDsY/versions/zYDhEAD2/collective-1.20.1-8.66.jar"
 hash-format = "sha1"
-hash = "880d55f9756618dd379f013187c6b03acfc94329"
-mode = "metadata:curseforge"
+hash = "37937f7047e32190c015a8b6dfe3b6a579e36953"
 
 [update]
-[update.curseforge]
-file-id = 9172456
-project-id = 342584
+[update.modrinth]
+mod-id = "e0M1UDsY"
+version = "zYDhEAD2"

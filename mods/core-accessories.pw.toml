@@ -1,13 +1,13 @@
 name = "Core Accessories - Iron's Spells Addon"
-filename = "CoreAccessories-1.5.4.jar"
+filename = "CoreAccessories-1.5.5.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "6142783cb570fb4ad7a97f7aca348cabb3133721"
+hash = "df2b2e2005efa25ef0ac543295c1eb37fc3ed98e"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 9119231
+file-id = 9193383
 project-id = 1725774
