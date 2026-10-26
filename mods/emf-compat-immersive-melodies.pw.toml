@@ -1,0 +1,13 @@
+name = "EMF Compat: Immersive Melodies"
+filename = "emf_compat_immersive_melodies_forge_1.20.1_1.2.0.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "3e3e77687d88b2ae2e8ac35fceb37e35bb83007b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9103471
+project-id = 1605177

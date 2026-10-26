@@ -1,0 +1,13 @@
+name = "Pumpkin Witch House"
+filename = "pumpkin_witch_house-1.0.0-forge-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "aad85494aff2a16335020da29233f4e580d2c9cf"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7119143
+project-id = 1366660

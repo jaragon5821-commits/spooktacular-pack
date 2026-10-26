@@ -1,0 +1,13 @@
+name = "Fragmentum 🧩 Forge"
+filename = "fragmentum-5.3.0+1.20.1-forge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a793c810c4eb15bef41ef5b467365f66c6b015d9"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9150740
+project-id = 1123970

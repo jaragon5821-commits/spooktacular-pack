@@ -1,0 +1,13 @@
+name = "Krampus"
+filename = "krampus_vx-1.0.0-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "caf1915aabbdcc76747c8edcb4efc2a28dd6e36e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7396656
+project-id = 1415864

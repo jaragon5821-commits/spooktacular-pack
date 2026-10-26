@@ -1,0 +1,13 @@
+name = "Forgematica Improvements"
+filename = "forgematicaimprovements-1.20.1-1.0.0.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "e082713c93cbc6d9a2776ae89822f175940faff2"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8795016
+project-id = 1679423

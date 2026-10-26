@@ -1,0 +1,13 @@
+name = "Iron's Spells 'n - Possession"
+filename = "possession_addon-1.5.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "860069a50b2b5a1160de3b3918ed175c1842bff6"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8671606
+project-id = 1647844

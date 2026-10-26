@@ -1,0 +1,13 @@
+name = "The Knocker"
+filename = "the_knocker-1.5.2-forge-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a4689f41093be3a5c86b5731c1bcde98f4d25aed"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8252116
+project-id = 1001299

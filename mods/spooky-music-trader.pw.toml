@@ -1,0 +1,13 @@
+name = "L's Spooky Music Trader"
+filename = "ls_spooky_music-1.0.2-forge-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1f3cbca59df4b3d5fcecab904ac91c616a335871"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7041725
+project-id = 1090235

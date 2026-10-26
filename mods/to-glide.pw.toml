@@ -1,0 +1,13 @@
+name = "To Glide"
+filename = "toglide-forge-1.20.1-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/upJLQ8H6/versions/FPxPVxVk/toglide-forge-1.20.1-1.0.0.jar"
+hash-format = "sha512"
+hash = "4ccab17b848dfed4347f90c448ea60a1eeeaa83e277eb0b211874630f3c86a1a0894f13a751c8c41094846fd34306983bf8dc61ebb5fa57d9064c6ddc1a4828a"
+
+[update]
+[update.modrinth]
+mod-id = "upJLQ8H6"
+version = "FPxPVxVk"

@@ -1,0 +1,13 @@
+name = "Respawn Recap"
+filename = "respawnrecap-forge-1.2.0-1.20.1.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "02e1adea97182f43d7094f50e59d2b6be613dcf0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8935651
+project-id = 1651841

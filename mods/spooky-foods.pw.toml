@@ -1,0 +1,13 @@
+name = "Spooky Foods"
+filename = "ls_spooky_foods-1.0.3-forge-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3766a7dec34fa4b140bcbcae3dd0c45a86d7663a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6125205
+project-id = 1182513

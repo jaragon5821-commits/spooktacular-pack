@@ -1,0 +1,13 @@
+name = "Autumn Foliage"
+filename = "autumnfoliage-1.0.2-forge-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "01bc0b374239c965f9891b2d8d30dbdfb7a24de9"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9019478
+project-id = 1717868

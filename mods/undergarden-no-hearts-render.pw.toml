@@ -1,0 +1,13 @@
+name = "Undergarden No Hearts Render"
+filename = "undergarden_no_hearts_render-0.1-1.20.1.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "b24edfc30d167f36f0b201ff8583559cdbfcd150"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6174982
+project-id = 1196925

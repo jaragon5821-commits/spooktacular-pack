@@ -1,0 +1,13 @@
+name = "Pipez Optimizer"
+filename = "pipez_optimizer-1.0.10-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "74f35734e0ddf0708dabdecbdd544610711beb7b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9254685
+project-id = 1643017

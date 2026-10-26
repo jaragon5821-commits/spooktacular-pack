@@ -1,0 +1,13 @@
+name = "Bountiful Villager"
+filename = "bountiful_npc-forge-1.20.1-1.0.6.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "cc29dfa79e5fedb609afa65e1f1e01f316e9103b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8628830
+project-id = 1373610

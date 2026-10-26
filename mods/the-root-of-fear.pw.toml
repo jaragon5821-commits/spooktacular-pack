@@ -1,0 +1,13 @@
+name = "The Root of Fear"
+filename = "rootoffear-1.20.1-1.0.10.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c9f7bf5d7a5aa5e80e5732eb8806d5b9d5623e2c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5893696
+project-id = 1131981

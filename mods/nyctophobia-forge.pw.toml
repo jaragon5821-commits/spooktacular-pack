@@ -1,0 +1,13 @@
+name = "Nyctophobia (Forge)"
+filename = "nyctophobia-forge-mc1.20.1-2.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9a6763ca044bb13856be862bf0af80c3d66989c4"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8709071
+project-id = 584868

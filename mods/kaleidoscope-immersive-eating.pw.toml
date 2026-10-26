@@ -1,0 +1,13 @@
+name = "Kaleidoscope: Immersive Eating"
+filename = "kaleidoscope_immersiveEating-forge1.20.1-1.5.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2a1ded620d782bd2e850694a72b35cd959206e9a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9312072
+project-id = 1659858

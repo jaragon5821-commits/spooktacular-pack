@@ -1,0 +1,13 @@
+name = "Halloween falling leaves"
+filename = "Halloween_falling_leaves1_20_1-1.0.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/X1kBmukN/versions/5WGg1OwM/Halloween_falling_leaves1_20_1-1.0.jar"
+hash-format = "sha1"
+hash = "f2de5450bf30131166f10f924b7a416c637cbcae"
+
+[update]
+[update.modrinth]
+mod-id = "X1kBmukN"
+version = "5WGg1OwM"

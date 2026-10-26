@@ -1,0 +1,13 @@
+name = "Magic Vibe Decorations"
+filename = "magic_vibe_decorations-4.0.0-forge-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d6e4c7e8c510569ae4777d81d65b7810a0fe3105"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9171725
+project-id = 900435

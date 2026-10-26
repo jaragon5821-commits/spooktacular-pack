@@ -1,0 +1,13 @@
+name = "EMF Compat: WATUT"
+filename = "emf_compat_watut_1.20.1_1.0.0.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "019787c26dac572d91a342843e36d437a73ff99d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8539980
+project-id = 1629292

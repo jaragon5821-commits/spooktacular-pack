@@ -1,0 +1,13 @@
+name = "Spooky Doors"
+filename = "spookydoors-forge-1.20.1-20.1.13.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b1b2c0e0f18267995ed1af5442abe3c8610e1f51"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8969749
+project-id = 1128353

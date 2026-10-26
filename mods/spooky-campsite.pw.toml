@@ -1,0 +1,13 @@
+name = "Spooky Campsite"
+filename = "spooky_campsite-1.0.2-forge-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0a5f422d88d53032ccc6228aa8f1f058155c9168"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6467403
+project-id = 1196112

@@ -1,0 +1,13 @@
+name = "The One Who Watches"
+filename = "TheOneWhoWatches-V1.4.4-1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/guhQmZQI/versions/fPlpUQxU/TheOneWhoWatches-V1.4.4-1.20.1.jar"
+hash-format = "sha1"
+hash = "02529521620a87824a447b7377c36c0a1905c70a"
+
+[update]
+[update.modrinth]
+mod-id = "guhQmZQI"
+version = "fPlpUQxU"

@@ -1,0 +1,13 @@
+name = "Spooky Witch Pot"
+filename = "spooky_witch_pot-1.0.0-forge-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "74808169be4382ac1c0b620f67269130412e96f5"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7542282
+project-id = 1447570

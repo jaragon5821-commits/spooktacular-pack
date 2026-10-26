@@ -1,0 +1,13 @@
+name = "The Cryptid"
+filename = "cryptid_vx-1.0.0-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a9e4b8ea92794627f20f68c6d7c20f376877a083"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6745641
+project-id = 1302557

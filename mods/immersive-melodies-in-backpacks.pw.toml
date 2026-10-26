@@ -1,0 +1,13 @@
+name = "Immersive Melodies in Backpacks"
+filename = "bpmelodies-forge-1.20.1-1.0.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5e128a67439cef2bb7a6694660fb1ba3e4d27da3"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8565340
+project-id = 1550169

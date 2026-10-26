@@ -1,0 +1,13 @@
+name = "RenderScale"
+filename = "renderscale-1.4.0-alpha.6-forge+1.20.1.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "b7afd96fe8e398f22ab3943d142c9363dc6098a2"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8923280
+project-id = 1172416

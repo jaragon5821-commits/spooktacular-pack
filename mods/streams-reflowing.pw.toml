@@ -1,0 +1,13 @@
+name = "Streams Reflowing"
+filename = "StreamsReflowing-1.20.1-forge-2.14.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0b36195cb78f2b32b4c5ab6fc91d17ce97be015f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9060292
+project-id = 1581408

@@ -1,0 +1,13 @@
+name = "Enhanced Celestials 2: Shader Support"
+filename = "Enhanced-Celestials-2-Shaders-Forge-1.20.1-1.0.0.4.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "c08b56a63caabdc68cb740401ec219d74fad6db4"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8798084
+project-id = 1621851

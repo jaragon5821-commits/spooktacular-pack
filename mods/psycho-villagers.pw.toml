@@ -1,0 +1,13 @@
+name = "Psycho Villagers"
+filename = "psycho_villagers-0.5.7-3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1ecea4ccd0d4c1b1a22ade6de4403c15fbf102a0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9149102
+project-id = 1359884

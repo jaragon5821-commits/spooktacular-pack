@@ -1,0 +1,13 @@
+name = "Overweight Animals"
+filename = "OverweightAnimals-1.20.1-V-1.0.3.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/uRTUfqVe/versions/vycmNuto/OverweightAnimals-1.20.1-V-1.0.3.jar"
+hash-format = "sha1"
+hash = "bf8035852c5901ae7d37a422867491ebd12fc034"
+
+[update]
+[update.modrinth]
+mod-id = "uRTUfqVe"
+version = "vycmNuto"

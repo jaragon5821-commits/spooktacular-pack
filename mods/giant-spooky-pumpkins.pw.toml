@@ -1,0 +1,13 @@
+name = "Giant Spooky Pumpkins"
+filename = "giant_spooky_pumpkins-1.0.0-forge-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "df100684b3616c7393b48fbb01c03c46513dc253"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7089015
+project-id = 1362170

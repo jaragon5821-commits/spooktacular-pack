@@ -1,0 +1,13 @@
+name = "DarkInventory - RPG Keep Inventory On"
+filename = "darkinventory-forge-1.20.1-1.0.6.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6115aa6c4a93bc0f1f49c9cf188d1e3da78bd3f0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5039747
+project-id = 811840

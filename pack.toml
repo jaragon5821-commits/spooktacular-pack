@@ -1,0 +1,13 @@
+name = "Josh's Halloween Spooktacular 2026"
+author = "Josh"
+version = "2026.10.26-1"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "4fd3fc61c36da0b7be2a493d2e1fe23518677aae32b33d2e4a50cac0d5af402f"
+
+[versions]
+forge = "47.4.26"
+minecraft = "1.20.1"

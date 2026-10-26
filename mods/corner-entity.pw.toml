@@ -1,0 +1,13 @@
+name = "Corner Horror Entity"
+filename = "corner-entity-forge-1.0.0-forge-1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/OgLaprYY/versions/jIaW7vfR/corner-entity-forge-1.0.0-forge-1.20.1.jar"
+hash-format = "sha1"
+hash = "bf8e5b0baf90bfb89b25390700debe90cba68f33"
+
+[update]
+[update.modrinth]
+mod-id = "OgLaprYY"
+version = "jIaW7vfR"
