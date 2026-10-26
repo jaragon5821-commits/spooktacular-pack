@@ -361,11 +361,6 @@ hash = "f26bfefef72716eb571088da71e068edbde2776b669abffe1d5c2bad90cdbd4f"
 metafile = true
 
 [[files]]
-file = "mods/darksleep.pw.toml"
-hash = "9750aa3c708c66f794ee0b22aa0f58e81583d4b5ece862a87cf672da3ad43df7"
-metafile = true
-
-[[files]]
 file = "mods/data-anchor.pw.toml"
 hash = "481e252f80a15ee45ad5feb27047a20d3eaeee077dbf56fd684e682cc02975d8"
 metafile = true
@@ -1737,7 +1732,7 @@ hash = "ea0a2c6c1632733af85756a2da0b4284e18c8d24146d010e69402e1fd0566fc8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_4_liminal_trials.snbt"
-hash = "4aba4b5ef6b25962b2d0311b93daf9fd13ab596106c55df0071a2f6cf9550741"
+hash = "9e3a3af7782cf3cd0b2302207b624808e8680f7dd83cf02d1aaef252fb64a2d2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_5_boss_showdowns.snbt"
@@ -1770,3 +1765,12 @@ hash = "d9979e6f6aa5ec7789e8e8d3254611cfc7b312ee0940264a8ab4cd3c1b30fee1"
 [[files]]
 file = "config/ftbquests/quests/reward_tables/trick_or_treat_bag.snbt"
 hash = "70c9614483161f11d3d38fd0849ece423e40ec3a3a979b60f73ad66bc82b9597"
+
+[[files]]
+file = "mods/better-days.pw.toml"
+hash = "c5ec516699e8ac387be43bf151f77465e381e809692c6c1c451a00d86a663eca"
+metafile = true
+
+[[files]]
+file = "config/betterdays-common.toml"
+hash = "a46677a35ad9e817139df1dcfaaa4f02a9b1882cb81866975209162dcd8b95f4"

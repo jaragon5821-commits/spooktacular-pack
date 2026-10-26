@@ -1,0 +1,24 @@
+# Better Days - Josh's Halloween Spooktacular 2026 (set 2026-10-26)
+# 30 real minutes of day and 30 of night (vanilla is about 10 + 10).
+# Day = ticks 23500 -> 12500 (13000 ticks), night = 12500 -> 23500 (11000 ticks).
+# 30 min = 36000 ticks, so daySpeed = 13000/36000 and nightSpeed = 11000/36000.
+# Sleeping: once 66% of the players in the Overworld are in bed, the night passes at
+# vanilla sleep speed (about 5 seconds). Fewer than 66% asleep = time runs normally.
+# Missing settings are filled in with Better Days' defaults when the game starts.
+
+[time]
+	speedMethod = "RATIO"
+	daySpeed = 0.3611
+	nightSpeed = 0.3056
+	dayStart = 23500.0
+	nightStart = 12500.0
+
+[sleep]
+	enableSleepFeature = true
+	ratioPlayersForSleep = 0.66
+	sleepSpeedMin = 110.0
+	sleepSpeedMax = 110.0
+	sleepSpeedAll = -1.0
+	allowDaySleep = false
+	clearWeatherOnWake = true
+	displayBedClock = true
