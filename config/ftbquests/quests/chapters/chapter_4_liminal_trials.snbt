@@ -8,61 +8,61 @@
 	quest_links: [ ]
 	quests: [
 		{
-		description: [
-			"&byou may find passages to a better, calmer place&r"
-			""
-			"&bor somewhere unknown yet familiar to this world&r"
-			""
-			"&byou may return in time, please be patient&r"
-			""
-			"&byou enter the same way you came&r"
-			""
-			"&bnot all is as it seems&r"
-			""
-			"&4be careful.&r"
-		]
-		dependencies: ["343223623106FBD6"]
-		icon: "minecraft:oak_door"
-		id: "31DEFF7A83AD87ED"
-		rewards: [
-			{
-				id: "09C1C0B3624A55FE"
-				item: {
-					Count: 1
-					id: "minecraft:potion"
-					tag: {
-						Potion: "minecraft:long_night_vision"
+			dependencies: ["343223623106FBD6"]
+			description: [
+				"&byou may find passages to a better, calmer place&r"
+				""
+				"&bor somewhere unknown yet familiar to this world&r"
+				""
+				"&byou may return in time, please be patient&r"
+				""
+				"&byou enter the same way you came&r"
+				""
+				"&bnot all is as it seems&r"
+				""
+				"&4be careful.&r"
+			]
+			icon: "minecraft:oak_door"
+			id: "31DEFF7A83AD87ED"
+			rewards: [
+				{
+					id: "09C1C0B3624A55FE"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:long_night_vision"
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}
-			{
-				id: "313117FF388B48AF"
-				item: {
-					Count: 1
-					id: "minecraft:potion"
-					tag: {
-						Potion: "minecraft:long_swiftness"
+				{
+					id: "313117FF388B48AF"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:long_swiftness"
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}
-			{
-				id: "6F2AF26B4B8B9180"
-				type: "xp"
-				xp: 500
-			}
-		]
-		size: 3.0d
-		subtitle: "Survival Manual for the Liminal"
-		tasks: [{
-			id: "23B87D1A404200D5"
-			title: "Protocol Memorized"
-			type: "checkmark"
-		}]
-		title: "Q-DM01: Escape Protocol: Dreamshift"
-		x: -7.5d
-		y: -1.5d
+				{
+					id: "6F2AF26B4B8B9180"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 3.0d
+			subtitle: "Survival Manual for the Liminal"
+			tasks: [{
+				id: "23B87D1A404200D5"
+				title: "Protocol Memorized"
+				type: "checkmark"
+			}]
+			title: "Q-DM01: Escape Protocol: Dreamshift"
+			x: -7.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
@@ -555,7 +555,13 @@
 				}
 				{
 					id: "3AFB7B92EC178287"
-					item: "minecraft:shield"
+					item: {
+						Count: 1
+						id: "minecraft:shield"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
@@ -839,54 +845,6 @@
 			]
 			title: "Q-DM16: The Wilted Timber (The Root of Fear: The Wilted)"
 			x: -15.0d
-			y: 7.0d
-		}
-		{
-			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bWhen reality itself begins to tear at the seams.&r"
-				"&bShadows lengthen unnaturally; disembodied footsteps echo over your shoulder.&r"
-				""
-				"&cShould your camera viewfinder display static and audio frequencies distort:&r"
-				"  • &eRemain anchored near an active town Waystone or Beacon.&r"
-				"  • &eObserve the entity and snap a photograph to log the breach in the Grand Archive.&r"
-			]
-			icon: "minecraft:crying_obsidian"
-			id: "7391942A21B5FAC1"
-			rewards: [
-				{
-					id: "596F0B192DD4DA2D"
-					item: "exposure:color_film"
-					type: "item"
-				}
-				{
-					id: "4834C7CEB69B6225"
-					item: "waystones:warp_stone"
-					type: "item"
-				}
-				{
-					id: "1EAA9A3A52A1A5ED"
-					type: "xp"
-					xp: 1250
-				}
-			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: The Unraveling Presence"
-			tasks: [
-				{
-					icon: "minecraft:crying_obsidian"
-					id: "5F7450D582D6018F"
-					title: "Survive or Investigate the Whispering Distortion"
-					type: "checkmark"
-				}
-				{
-					id: "71E73D206A0CAC23"
-					title: "Photograph for the Grand Archive: Apollyon Anomaly"
-					type: "checkmark"
-				}
-			]
-			title: "Q-DM17: The Whispering Distortion (Apollyon)"
-			x: -12.5d
 			y: 7.0d
 		}
 		{
