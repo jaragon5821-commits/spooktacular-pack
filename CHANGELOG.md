@@ -4,6 +4,17 @@ Versions are `YYYY.MM.DD-N`: the date of the release and its number that day. Ev
 is pushed to the pack gets a new version, an entry here, and (after Chop approves the wording)
 a post in #modpack-updates. "Players" is what gets posted; "Behind the scenes" is for reference.
 
+## 2026.10.27-2
+
+Players
+- The "Keybinds and Essential Hotkeys" quest now lists the real default keys: J for the map,
+  M for Forgematica, hold ` for vein mining, R for the walkie-talkie and carriage harness, and
+  the wardrobe button in your inventory for Cosmetic Armor. It also explains how to spot and fix
+  key conflicts.
+
+Behind the scenes
+- Quest text edit in Before You Start (quest 271386B9E5F1CB59). Defaults checked in the mod jars.
+
 ## 2026.10.27-1 (first tracked release)
 
 Players

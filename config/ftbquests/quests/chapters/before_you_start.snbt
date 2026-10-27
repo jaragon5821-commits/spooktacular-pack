@@ -78,9 +78,12 @@
 				"• &bV&r - Voice Chat Settings "
 				"• &bB&r - Emotecraft Dance Wheel "
 				"• &bJ&r - JourneyMap Fullscreen Map "
-				"• &bMouse Thumb Button&r  - FTB Ultimine Veinminer"
-				"• &bC&r - Cosmetic Armor Wardrobe"
+				"• &bM&r - Forgematica Menu (blueprints) "
+				"• &bHold `&r - FTB Ultimine Veinminer (many players rebind it to a mouse thumb button)"
 				"• &bR&r - Walkie Talkie / Carriage Harness"
+				"• &bWardrobe button in your inventory&r - Cosmetic Armor"
+				""
+				"Several mods share keys (the walkie-talkie and carriage harness both use R). In Options > Controls > Key Binds, anything shown in red has a conflict: rebind one of them."
 			]
 			id: "271386B9E5F1CB59"
 			rewards: [{
