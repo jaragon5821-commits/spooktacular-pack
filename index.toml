@@ -606,11 +606,6 @@ hash = "9c6c4d612dd6fa8344f0e85affb0ddae860b63cc752c4063e53feec528ab4beb"
 metafile = true
 
 [[files]]
-file = "mods/forgematicaprinter.pw.toml"
-hash = "fe0c33b3d40e91c139b1be5a604d8babd685a5296f30db92cc089c073ae908ec"
-metafile = true
-
-[[files]]
 file = "mods/fragmentum.pw.toml"
 hash = "bcf875bbae0682a0e4730de872239a8081b32d8db20c2a366b240ff725b1a05e"
 metafile = true
