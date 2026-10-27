@@ -8,7 +8,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["&6Welcome to SpookyCraft!&r Over the next two weeks leading up to Halloween, our goal is to survive together as a community. We will build Hallowstown around the old cinema, brew seasonal drinks, solve dimension mysteries, and defeat ancient horrors lurking in the fog. Open this quest book often—it is your survival manual."]
+			description: ["&6Welcome to Chop's Spooktacular!&r Over the weeks leading up to Halloween, our goal is to survive together as a community. We will build Hallowstown around the old theatre, brew seasonal drinks, solve dimension mysteries, and defeat ancient horrors lurking in the fog. Open this quest book often: it is your survival manual."]
 			id: "41F51D2C2E955CFA"
 			rewards: [
 				{
@@ -33,7 +33,7 @@
 		}
 		{
 			dependencies: ["41F51D2C2E955CFA"]
-			description: ["&cDo not venture into the night alone!&r SpookyCraft is balanced around cooperative survival. Open your inventory and click the &eMy Team&r icon in the top-left corner (or type &b/ftbteams party create&r). Being in a shared party automatically synchronizes quest completions, shares waypoint markers, and links safehaven chunk claims."]
+			description: ["&cDo not venture into the night alone!&r Chop's Spooktacular is balanced around cooperative survival. Open your inventory and click the &eMy Team&r icon in the top-left corner (or type &b/ftbteams party create&r). Being in a shared party automatically shares quest completions with your teammates."]
 			id: "65187AC4C479B9EA"
 			rewards: [{
 				id: "312BA5DF8082E3B7"
@@ -77,11 +77,10 @@
 				"Take thirty seconds to review your controls to ensure you know your primary hotkeys:&f "
 				"• &bV&r - Voice Chat Settings "
 				"• &bB&r - Emotecraft Dance Wheel "
-				"• &bM&r - JourneyMap Fullscreen Map "
+				"• &bJ&r - JourneyMap Fullscreen Map "
 				"• &bMouse Thumb Button&r  - FTB Ultimine Veinminer"
 				"• &bC&r - Cosmetic Armor Wardrobe"
 				"• &bR&r - Walkie Talkie / Carriage Harness"
-				"• &bU&r - Corpse Death History`"
 			]
 			id: "271386B9E5F1CB59"
 			rewards: [{
@@ -133,7 +132,7 @@
 		}
 		{
 			dependencies: ["427C490FD1BA48D5"]
-			description: ["&6Three cardinal rules for a fun event:&r &e1. NEVER break Lootr chests:&r Dungeon chests have gold/blue brackets and give unique loot to every player. Breaking them destroys loot for everyone! &e2. Protect your life pool:&r You have a limited life count. When a friend falls, revive them within 60 seconds to protect the team's lives. &e3. Respect the dark:&r Stick together around torches and lanterns."]
+			description: ["&6Three cardinal rules for a fun event:&r &e1. NEVER break Lootr chests:&r Dungeon chests have gold/blue brackets and give unique loot to every player. Breaking them destroys loot for everyone! &e2. Never leave a friend down:&r When a player is downed, a teammate has 60 seconds to revive them before they die. &e3. Respect the dark:&r Stick together around torches and lanterns."]
 			id: "343223623106FBD6"
 			rewards: [
 				{

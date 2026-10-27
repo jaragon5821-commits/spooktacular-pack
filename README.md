@@ -1,4 +1,4 @@
-# Josh's Halloween Spooktacular 2026 (pack)
+# Chop's Spooktacular (pack)
 
 Private friends-only Forge 1.20.1 modpack (Forge 47.4.26), delivered with
 [packwiz](https://packwiz.infra.link/). Nothing here is a mod file: each `mods/*.pw.toml` only

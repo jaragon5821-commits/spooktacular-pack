@@ -1711,15 +1711,15 @@ hash = "739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/before_you_start.snbt"
-hash = "d78fa6a3f0a1ffc8272e55a098fa2ff714dab43bd32013469850f4c9baeb60cc"
+hash = "1158777d122f4811f76d789f6bdf8e51bd9349f12c82842f35785ade4b6b1ca2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_1_hallowstown.snbt"
-hash = "686c95831a75beb453ed41df7ca1741cac36c74504b35b0166cd08d9292a9ef6"
+hash = "33f8d728a172834ed60da7c540cff97c9a0d5c8cdd78ff01df75ef6a8c854017"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_2_events_and_minigames.snbt"
-hash = "ca52752fef59eaff3108502b220afa5926e66ba6b6646722df7c58c64ee7b193"
+hash = "7f2613e49ec5f60ed44cb4d2867b83152591f60ae65d58f5bb3234e50bddb915"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_3_life_and_occult_rites.snbt"

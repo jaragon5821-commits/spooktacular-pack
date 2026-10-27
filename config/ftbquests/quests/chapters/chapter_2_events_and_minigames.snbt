@@ -89,7 +89,7 @@
 		}
 		{
 			dependencies: ["3C642BFAA4239EC3"]
-			description: ["Take your seats in the cinema and watch an entire film together on the WebDisplays screen. The challenge: survive the entire movie without leaving your seat or dying to whatever lurks outside."]
+			description: ["Take your seats in the theatre and watch an entire film together on the big screen (shared with StreamCraft Live). The challenge: survive the entire movie without leaving your seat or dying to whatever lurks outside."]
 			icon: "ftbquests:screen_1"
 			id: "1418874FAF983E22"
 			rewards: [
@@ -110,7 +110,7 @@
 				}
 			]
 			size: 3.0d
-			subtitle: "Survive a Full Cinema Screening"
+			subtitle: "Survive a Full Theatre Screening"
 			tasks: [{
 				id: "70457D4819160D0F"
 				title: "Screening Survived"

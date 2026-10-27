@@ -11,7 +11,7 @@
 	quests: [
 		{
 			dependencies: ["484CC116C514D530"]
-			description: ["The old cinema stands as the heart of our community. Visit the central WebDisplays theatre building to register your arrival and scout the grounds."]
+			description: ["The old theatre stands as the heart of our community. Visit the central theatre building to register your arrival and scout the grounds."]
 			icon: "exposure:camera"
 			id: "27991E4AB94352BF"
 			rewards: [
@@ -298,7 +298,7 @@
 		}
 		{
 			dependencies: ["28C3841D89C1FD27"]
-			description: ["Every self-respecting gothic village needs an apothecary. Construct a stone alchemy shop with a connected glass greenhouse. Equip it with a heated Hexerei Mixing Cauldron, drying racks for Mandrake and Belladonna, potion shelves, and mystical decor from Magic Vibe Decorations. This will serve as our communal hub for brewing healing salves, teas, and monster repellents."]
+			description: ["Every self-respecting gothic village needs an apothecary. Construct a stone alchemy shop with an attached glass greenhouse. Equip it with a heated Hexerei Mixing Cauldron, drying racks for Mandrake and Belladonna, potion shelves, and mystical decor from Magic Vibe Decorations. This will serve as our communal hub for brewing healing salves, teas, and monster repellents."]
 			icon: {
 				Count: 1
 				id: "minecraft:potion"
@@ -412,7 +412,7 @@
 		}
 		{
 			dependencies: ["6DE25B0EBB8675EC"]
-			description: ["Beneath our peaceful surface cemetery lies something darker. Dig a vaulted stone crypt beneath the graveyard with archways, sarcophagi, and iron bars. This secure subterranean chamber will house our Blood Magic altar and Eidolon sacrificial brazier, allowing players to conduct dark rites and revival rituals away from the living."]
+			description: ["Beneath our peaceful surface cemetery lies something darker. Dig a vaulted stone crypt beneath the graveyard with archways, sarcophagi, and iron bars. This secure subterranean chamber is where the town keeps its occult work: Hexerei cauldrons, blood alchemy and spellcasting, away from the living."]
 			icon: "graveyard:skull_pile"
 			id: "4D306F719E5C18BD"
 			rewards: [
@@ -570,7 +570,7 @@
 		}
 		{
 			dependencies: ["2AE8B83641AEC2A5"]
-			description: ["Erect a grand Victorian library furnished with gothic carved bookshelves from Chipped. Place lecterns to display all mod guidebooks (Book of Shadows, Ars Ecclesia, Sanguine Guide). Dedicate one wing to the \"Cryptid Gallery Wall\" using item frames to pin physical developed photographs of monsters, and place a central Town Sharestone for fast travel."]
+			description: ["Erect a grand Victorian library furnished with gothic carved bookshelves from Chipped. Place lecterns to display the town's guidebooks, such as Hexerei's Book of Shadows. Dedicate one wing to the \"Cryptid Gallery Wall\" using item frames to pin physical developed photographs of monsters, and place a central Town Sharestone for fast travel."]
 			icon: "minecraft:book"
 			id: "54BFAB7B97A92B74"
 			rewards: [
@@ -736,7 +736,7 @@
 				"4D306F719E5C18BD"
 				"54BFAB7B97A92B74"
 			]
-			description: ["As our magical power peaks, a simple crypt is no longer sufficient. Construct a towering gothic dark-stone cathedral overlooking Hallowstown. Incorporate flying buttresses, vaulted stone arches using Chipped and Macaw's Roofs, rose stained-glass windows (*Connected Glass*), and a grand choir loft. This sacred sanctum will house our Tier 4+ Blood Altar, max-tier Eidolon brazier, and a consecrated beacon to bathe the town in protective radiant light."]
+			description: ["As our magical power peaks, a simple crypt is no longer sufficient. Construct a towering gothic dark-stone cathedral overlooking Hallowstown. Incorporate flying buttresses, vaulted stone arches using Chipped and Macaw's Roofs, rose stained-glass windows, and a grand choir loft. This sacred sanctum will house the town's finest occult and spellcasting workshops and a consecrated beacon to bathe the town in protective radiant light."]
 			icon: {
 				Count: 1
 				id: "spartanweaponry:netherite_longsword"
@@ -926,7 +926,7 @@
 			subtitle: "Memorial of the Spooktacular Survivors"
 			tasks: [{
 				id: "6761434BA7867918"
-				title: "Construct the Masoleum"
+				title: "Construct the Mausoleum"
 				type: "checkmark"
 			}]
 			x: -4.0d
