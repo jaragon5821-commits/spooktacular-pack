@@ -1880,7 +1880,7 @@ hash = "94cc729e11b4c954928194d1141c8fb2afd483c4f5a0524acc92e205aaf3ed96"
 
 [[files]]
 file = "config/bcc-common.toml"
-hash = "413644bab99e65414f34897a83c0badd01a857b5dd570e9233ed108e4b5e984b"
+hash = "c650f387d0d5b02695be04b80be78f76a652405376b648148c48aa6de6577f14"
 
 [[files]]
 file = "config/carryon-common.toml"
@@ -2034,10 +2034,6 @@ file = "mods/no-telemetry.pw.toml"
 hash = "b080b65356ae4536aea081b3feca5fc8095e422fc547261f938991d302c08af5"
 metafile = true
 
-[[files]]
-file = "mods/open-parties-and-claims.pw.toml"
-hash = "1944f567b891f78bac743eeb442fa1d0e78d0548ad47493bcef064fde4e7d727"
-metafile = true
 
 [[files]]
 file = "mods/paper-doll.pw.toml"
@@ -2097,4 +2093,9 @@ metafile = true
 [[files]]
 file = "mods/yapifix.pw.toml"
 hash = "b1dd072e24241836e745cebd8f55b05a07e1fbc9ea4a4faa078b2b5bbac46343"
+metafile = true
+
+[[files]]
+file = "mods/ftb-chunks-forge.pw.toml"
+hash = "ddb85e793d329347836462663a8cc6f2ae73f8ba1ba8d6c3a4da417305de62c4"
 metafile = true
