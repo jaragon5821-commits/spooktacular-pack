@@ -1,0 +1,13 @@
+name = "Sodium/Embeddium Leaf Culling"
+filename = "seleafculling-forge-4.0.2+1.20.1.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/xtym7fz7/versions/pUadMJcZ/seleafculling-forge-4.0.2%2B1.20.1.jar"
+hash-format = "sha1"
+hash = "1af633f4893b169a475980d5dff5a78322d964a1"
+
+[update]
+[update.modrinth]
+mod-id = "xtym7fz7"
+version = "pUadMJcZ"

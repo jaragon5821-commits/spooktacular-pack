@@ -1,0 +1,13 @@
+name = "YapiFix"
+filename = "yapifix-2.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/2nBUMQxI/versions/uK55euiR/yapifix-2.0.1.jar"
+hash-format = "sha1"
+hash = "037a5141879dbce7cf1f73b7e2a53f012bde0fed"
+
+[update]
+[update.modrinth]
+mod-id = "2nBUMQxI"
+version = "uK55euiR"

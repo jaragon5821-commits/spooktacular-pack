@@ -1,0 +1,13 @@
+name = "Paper Doll"
+filename = "PaperDoll-v8.0.0-1.20.1-Forge.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/hD0W2Wde/versions/FNImhMZh/PaperDoll-v8.0.0-1.20.1-Forge.jar"
+hash-format = "sha1"
+hash = "6fc76c8d7969a203e15fe7c6df69a8038955121d"
+
+[update]
+[update.modrinth]
+mod-id = "hD0W2Wde"
+version = "FNImhMZh"

@@ -1,0 +1,13 @@
+name = "Crafting Tweaks"
+filename = "craftingtweaks-forge-1.20.1-18.2.9.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/DMu0oBKf/versions/KOqT9kSZ/craftingtweaks-forge-1.20.1-18.2.9.jar"
+hash-format = "sha1"
+hash = "0e49f431b105050fbf1b6a0e83de6e9cddccad3a"
+
+[update]
+[update.modrinth]
+mod-id = "DMu0oBKf"
+version = "KOqT9kSZ"

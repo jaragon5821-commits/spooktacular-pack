@@ -1,0 +1,13 @@
+name = "Sophisticated Sorter"
+filename = "SophisticatedSorter-forge-1.20.1-1.1.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/2LPywrDb/versions/WvyNJlR3/SophisticatedSorter-forge-1.20.1-1.1.1.jar"
+hash-format = "sha1"
+hash = "b4d4caae7a79ad13f10ad1948e48b17fabae90a4"
+
+[update]
+[update.modrinth]
+mod-id = "2LPywrDb"
+version = "WvyNJlR3"

@@ -1,0 +1,13 @@
+name = "Radium Re-Reforged"
+filename = "radium-re-reforged-mc1.20.1-0.14.4+git.53d76d5.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "966b876041cbcb8e4fcbdf977de10792736b5397"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9295998
+project-id = 1649038

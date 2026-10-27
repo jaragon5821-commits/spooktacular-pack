@@ -1,0 +1,13 @@
+name = "Durability Notifier"
+filename = "DurabilityNotifier-forge-1.20.1-1.6.4.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/yGpT1GvE/versions/kd6aiPce/DurabilityNotifier-forge-1.20.1-1.6.4.jar"
+hash-format = "sha1"
+hash = "ba0334f711344b1f0eeb363f8a164a053cc1bc4a"
+
+[update]
+[update.modrinth]
+mod-id = "yGpT1GvE"
+version = "kd6aiPce"

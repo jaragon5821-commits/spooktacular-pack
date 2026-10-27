@@ -175,10 +175,6 @@ file = "mods/caelus.pw.toml"
 hash = "da069e723737ae49203f7572eb774be0fd21f5f083ce7a7ee1bed25916befca8"
 metafile = true
 
-[[files]]
-file = "mods/canary.pw.toml"
-hash = "e5df83a3dd1686106741d1d61da5869aed0537c2931a40234e1b3bd2d09e1971"
-metafile = true
 
 [[files]]
 file = "mods/carry-on-extend.pw.toml"
@@ -1245,10 +1241,6 @@ file = "mods/reliquified-artifacts.pw.toml"
 hash = "8cb6145cf9efd3c8dbe80ae791f033312063200ea0cb45b7aa112de04163c093"
 metafile = true
 
-[[files]]
-file = "mods/renderscale.pw.toml"
-hash = "25f0e3d25b232fe344567cdbe93f1c795dc879e0cde848ebf2f84b60d4232a37"
-metafile = true
 
 [[files]]
 file = "mods/resourceful-config.pw.toml"
@@ -1885,3 +1877,224 @@ hash = "b4afdfd3f61f15158fdefa2f4cdf1abcb0c89d117d0a377381a3769f75958e1f"
 [[files]]
 file = "schematics/Hallowstown/house_D_harvest_moon_family_hall_modded.litematic"
 hash = "94cc729e11b4c954928194d1141c8fb2afd483c4f5a0524acc92e205aaf3ed96"
+
+[[files]]
+file = "config/bcc-common.toml"
+hash = "413644bab99e65414f34897a83c0badd01a857b5dd570e9233ed108e4b5e984b"
+
+[[files]]
+file = "config/carryon-common.toml"
+hash = "46b848ec3694ca152f2d8195ae2b770a9fb038421a59046ac43cfd12155f740a"
+
+[[files]]
+file = "config/modernfix-mixins.properties"
+hash = "4b965d4d7758a36dcb888d5233c1b124ab6e4377556140e74a212717926a7923"
+
+[[files]]
+file = "config/structureessentials.json"
+hash = "b903919fb31b700e652d7d03fdbf6cf3ad7757097ae4298fe1413bc33dfd4d3f"
+
+[[files]]
+file = "mods/advancement-plaques.pw.toml"
+hash = "99c133b256051ff18ab958384ddec7f20f424a8fadb6d8087687dbb2972b6094"
+metafile = true
+
+[[files]]
+file = "mods/alternate-current.pw.toml"
+hash = "e794a0240ad915c2c8e43a04e6dfded947bf11f3895533dce2e6114cb250f373"
+metafile = true
+
+[[files]]
+file = "mods/async-locator.pw.toml"
+hash = "9ef63cde38139c9c3bd549bf00ac9ee66f0dd7ee4c55afa3a0539ee1f4a89b9a"
+metafile = true
+
+[[files]]
+file = "mods/bad-wither-no-cookie.pw.toml"
+hash = "933c86e510ff6257d52647e31dc07cda8c8955bc616c9c158dd65b74d2e45e98"
+metafile = true
+
+[[files]]
+file = "mods/better-advancements.pw.toml"
+hash = "81870149f48022da53fa2fcc3780d6c164c1acdf1a77593aa02cbed12eace448"
+metafile = true
+
+[[files]]
+file = "mods/better-chunk-loading.pw.toml"
+hash = "1664f00f0ad7ffeb4293b71a5b8a56d0f31234354b2d657f5f8f56172815c018"
+metafile = true
+
+[[files]]
+file = "mods/better-ping-display.pw.toml"
+hash = "a4e32d17399cc10153982c2cbb701e14bc0903d18f4f11ce808fbd9b381bb36e"
+metafile = true
+
+[[files]]
+file = "mods/betterf3.pw.toml"
+hash = "ca52b58cf0540bcec5d8b0318cddb371683b6f3f87ad9b925ff600ddd330f461"
+metafile = true
+
+[[files]]
+file = "mods/bons-and-furious.pw.toml"
+hash = "0d85cdb52dd07c4d65d8f12595b6056b8ca70f2bf51d1abe224cd7c25aad78aa"
+metafile = true
+
+[[files]]
+file = "mods/catalogue.pw.toml"
+hash = "a7ba514a40fce692ccd896b49727ff1db3975aa284a2adf3c04f9dd7b6fdc82f"
+metafile = true
+
+[[files]]
+file = "mods/chunk-sending.pw.toml"
+hash = "72d896cd0797fb1dfea89735895ad16092a67e9b83b7779ae3a164c07ad92bc5"
+metafile = true
+
+[[files]]
+file = "mods/configured.pw.toml"
+hash = "8165f9f7f66ffe4fa7b92ef8f8564cd10f93ec2cf07d6931c442cf91333a1ca3"
+metafile = true
+
+[[files]]
+file = "mods/crafting-tweaks.pw.toml"
+hash = "705b7dfb1e351fc3f44968845edda33500950cbe1353d066fdebb5f17896c70d"
+metafile = true
+
+[[files]]
+file = "mods/double-doors.pw.toml"
+hash = "71d3ea195d00248d430e1d7f3a77a1e54f1bc52df47d575bb001d81a553198d6"
+metafile = true
+
+[[files]]
+file = "mods/durability-notifier.pw.toml"
+hash = "2c01e9cb56a1de9b99e975573c653969e6fae5b78bc8a01f3d33d9fffb6804d6"
+metafile = true
+
+[[files]]
+file = "mods/durability-tooltip.pw.toml"
+hash = "e245d1d0a4277c97691c1099526b578535c0da794c4a75cd9e3f0d9a46308896"
+metafile = true
+
+[[files]]
+file = "mods/enchantment-descriptions.pw.toml"
+hash = "44356a258cddc6db59bd3ced70b822286f1263079a390298485b1601f5e713c3"
+metafile = true
+
+[[files]]
+file = "mods/fast-ip-ping.pw.toml"
+hash = "a842efe5241b0e0b89c3933b4c41570fe162aa66cef051007b048283ace2377e"
+metafile = true
+
+[[files]]
+file = "mods/get-it-together-drops.pw.toml"
+hash = "7bef7acb5b13ec858c5554a8c3d1fde694fa934a58b22e2aa5770989218ca064"
+metafile = true
+
+[[files]]
+file = "mods/inventory-totem.pw.toml"
+hash = "4d3933721bd386cf73e299e254273aae221c85f826899067c90c33e89f149b13"
+metafile = true
+
+[[files]]
+file = "mods/item-borders.pw.toml"
+hash = "fd247d46bc81fa10cafbc13b414b44b9467bdd4f4f066b214b2378ed81ce9d6f"
+metafile = true
+
+[[files]]
+file = "mods/jade-addons.pw.toml"
+hash = "9d04cc7e6c6e62cd9a9746c0c1ac1912087eda0efed4d507168df1caf201e21c"
+metafile = true
+
+[[files]]
+file = "mods/just-enough-professions.pw.toml"
+hash = "d1a7cd27f2da4e99db5e85ae66118481d777aab2870edbb093af12d70d872840"
+metafile = true
+
+[[files]]
+file = "mods/krypton-reno.pw.toml"
+hash = "30e3db2d02fee546bcb63a38037ae4235cfd3ffb0296760c92282a1821156ef3"
+metafile = true
+
+[[files]]
+file = "mods/leave-my-bars-alone.pw.toml"
+hash = "f3d5d2453b2bb4965d9531be60ea4488d0da57592c988637d0247c5cead988ea"
+metafile = true
+
+[[files]]
+file = "mods/memory-settings.pw.toml"
+hash = "92e4ac64e8646a2fdd0cfcdf448199ea9381ad74b96ffe284466c811072a23d9"
+metafile = true
+
+[[files]]
+file = "mods/no-chat-reports.pw.toml"
+hash = "519f01d812902114e1886283b7e1e848f17fdf67bea3c5aecb3349174ac92e20"
+metafile = true
+
+[[files]]
+file = "mods/no-telemetry.pw.toml"
+hash = "b080b65356ae4536aea081b3feca5fc8095e422fc547261f938991d302c08af5"
+metafile = true
+
+[[files]]
+file = "mods/open-parties-and-claims.pw.toml"
+hash = "1944f567b891f78bac743eeb442fa1d0e78d0548ad47493bcef064fde4e7d727"
+metafile = true
+
+[[files]]
+file = "mods/paper-doll.pw.toml"
+hash = "e59c4a73f2e8b1ec601b6e9aa0425bf483fb56523626831dcd891f9dd5cb8bff"
+metafile = true
+
+[[files]]
+file = "mods/pick-up-notifier.pw.toml"
+hash = "3e801878ddaf67fddccf599fe9c1e23e3df39f633e90d68c76a49905d55c2925"
+metafile = true
+
+[[files]]
+file = "mods/quick-pack.pw.toml"
+hash = "0167117c7e4a111dfb6178913a78d10ecda30cf612d2a00ba013e727f9c9d890"
+metafile = true
+
+[[files]]
+file = "mods/radium-re-reforged.pw.toml"
+hash = "ae0052e396367fcc0d6d5e7adb39dc9acb5988a81c2f4cf4ff552efda1cefab4"
+metafile = true
+
+[[files]]
+file = "mods/renderscale.pw.toml"
+hash = "e949a6cfd96bd5aef3a5a15a6c14484ab9caff0bfed260fed9debde6731675d8"
+metafile = true
+
+[[files]]
+file = "mods/se-leafculling.pw.toml"
+hash = "b863bcbb10cadae50dc77aeb28588c4b413a79bddab4fae255ac62736bc5e4e4"
+metafile = true
+
+[[files]]
+file = "mods/smooth-chunk-save.pw.toml"
+hash = "99cd49d8f1f9d86934879ebb0a835cad25d0b68ef69bf985a16c735a7615b563"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-sorter.pw.toml"
+hash = "d66943fec84720a41909364b1b4f4d18c896f45646ebd850b6b0fd1be5c3e6f6"
+metafile = true
+
+[[files]]
+file = "mods/stack-refill.pw.toml"
+hash = "0d3c3dc1cb465b6f50ef1d45437accaac1eec938c30742865fc17a9632feaf28"
+metafile = true
+
+[[files]]
+file = "mods/supermartijn642s-config-lib.pw.toml"
+hash = "fb0ec93bfbee412229b63a9154abc992ee7e274a84fe569e077f250e6c77abbd"
+metafile = true
+
+[[files]]
+file = "mods/toast-control.pw.toml"
+hash = "80aa6229fe5da7e041ddd13f192da2d488b5530c3484050b91e334f1c47a17ad"
+metafile = true
+
+[[files]]
+file = "mods/yapifix.pw.toml"
+hash = "b1dd072e24241836e745cebd8f55b05a07e1fbc9ea4a4faa078b2b5bbac46343"
+metafile = true
