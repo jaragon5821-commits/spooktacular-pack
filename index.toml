@@ -1887,6 +1887,10 @@ file = "config/carryon-common.toml"
 hash = "46b848ec3694ca152f2d8195ae2b770a9fb038421a59046ac43cfd12155f740a"
 
 [[files]]
+file = "config/dreamshift.json"
+hash = "6c63d7db1da6de1f967b097b55d90eea8856a4409266a8fac12723d3e0fe0961"
+
+[[files]]
 file = "config/modernfix-mixins.properties"
 hash = "4b965d4d7758a36dcb888d5233c1b124ab6e4377556140e74a212717926a7923"
 
@@ -1942,11 +1946,6 @@ metafile = true
 [[files]]
 file = "mods/catalogue.pw.toml"
 hash = "a7ba514a40fce692ccd896b49727ff1db3975aa284a2adf3c04f9dd7b6fdc82f"
-metafile = true
-
-[[files]]
-file = "mods/chunk-sending.pw.toml"
-hash = "72d896cd0797fb1dfea89735895ad16092a67e9b83b7779ae3a164c07ad92bc5"
 metafile = true
 
 [[files]]
