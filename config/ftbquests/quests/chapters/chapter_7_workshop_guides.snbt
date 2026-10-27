@@ -94,7 +94,7 @@
 			y: 0.0d
 		}
 		{
-			description: ["&6Forgematica&r (Litematica for Forge) shows a see-through &oghost&r of a build right in the world, so you can copy it block by block. It only runs on your own game.", "", "&eM&r opens the main menu. &eM + C&r opens the settings.", "", "&6Getting blueprints:&r schematic files end in &e.litematic&r. Put them in your Prism instance's &eminecraft/schematics&r folder (Prism: right-click the instance, &eFolder&r).", "&6Saving your own:&r hold a &eStick&r (the Forgematica tool). Hold &eCtrl and scroll&r to switch to &eArea Selection&r mode, &eleft-click&r one corner and &eright-click&r the opposite corner, then press &eCtrl + Alt + S&r to save it.", "", "Swap .litematic files with friends to share town plans!"]
+			description: ["&6Forgematica&r (Litematica for Forge) shows a see-through &oghost&r of a build right in the world, so you can copy it block by block. It only runs on your own game.", "", "&eM&r opens the main menu. &eM + C&r opens the settings.", "", "&6Getting blueprints:&r schematic files end in &e.litematic&r. Put them in your Prism instance's &eminecraft/schematics&r folder (Prism: right-click the instance, &eFolder&r).", "&6Saving your own:&r hold a &eStick&r (the Forgematica tool). Hold &eCtrl and scroll&r to switch to &eArea Selection&r mode, &eleft-click&r one corner and &eright-click&r the opposite corner, then press &eCtrl + Alt + S&r to save it.", "", "The pack already includes the &eHallowstown&r blueprints (house, tavern, pantry, cemetery) in &eschematics/Hallowstown&r.", "Swap .litematic files with friends to share town plans!"]
 			icon: "minecraft:map"
 			id: "678B09C87C6DCA51"
 			rewards: [
@@ -201,8 +201,8 @@
 		}
 		{
 			dependencies: ["94AD64F5668A70D1"]
-			description: ["The &6Printer&r add-on places blocks from &eyour inventory&r into the ghost automatically as you walk around it.", "", "&eHold V&r to print only while the key is held.", "&eCaps Lock&r toggles &eprinting mode&r on and off for hands-free building.", "Range and speed: &eM + C&r → &eGeneric&r → printingRange / printingInterval.", "", "It only places blocks you carry, so check the Material List first. Turn printing mode &coff&r when you're done so it doesn't keep placing blocks while you walk past."]
-			icon: "minecraft:dispenser"
+			description: ["Put &6Easy Place&r to work on a real blueprint: the pack ships ready-made &eHallowstown&r builds.", "", "&eM&r → &eLoad Schematics&r → &eHallowstown&r. The &e_modded&r builds use the pack's blocks; the &eVanilla&r folder uses plain blocks. Start small with the &ePumpkin Cottage&r.", "&eM + L&r opens the &6Material List&r: it shows every block the build needs and how many you already carry.", "With Easy Place on, hold the right block and &eright-click the ghost&r. Each block lands already facing the right way. Hold right-click and sweep across the ghost to place several in a row.", "&ePage Up / Page Down&r shows one layer at a time, so you can build bottom up.", "", "Finished? &eM + V&r opens the &6Verifier&r, which highlights any missing or wrong blocks."]
+			icon: "minecraft:spyglass"
 			id: "548C0B9E5ACB6473"
 			rewards: [
 				{
@@ -217,13 +217,13 @@
 					xp: 750
 				}
 			]
-			subtitle: "Let the Blueprint Build Itself"
+			subtitle: "From Ghost to Real House"
 			tasks: [{
 				id: "905E2AE7345EEE45"
-				title: "Printed Part of a Build"
+				title: "Built a Hallowstown Blueprint With Easy Place"
 				type: "checkmark"
 			}]
-			title: "Q-WS08: Forgematica Printer: The Auto-Builder"
+			title: "Q-WS08: Forgematica: Build a Hallowstown Blueprint"
 			x: 12.0d
 			y: 3.0d
 		}
