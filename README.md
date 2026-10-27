@@ -13,8 +13,9 @@ says where to download a mod from (CurseForge or Modrinth) and its checksum.
 
 1. Edit or add a `mods/<name>.pw.toml`.
 2. Recalculate `index.toml` and `pack.toml` (ask Claude, or run `packwiz refresh`).
-3. Bump `version` in `pack.toml`, commit and push.
-4. Players get it the next time they press Play; the server on its next restart.
+3. Bump `version` in `pack.toml` (format `YYYY.MM.DD-N`) and add an entry to `CHANGELOG.md`.
+4. Commit and push. Players get it the next time they press Play; the server on its next restart.
+5. Draft the player notes in #update-drafts; post to #modpack-updates once Chop approves.
 
 `.gitattributes` keeps Git from changing line endings, because packwiz checks exact hashes.
 
