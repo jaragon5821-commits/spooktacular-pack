@@ -632,6 +632,11 @@ hash = "95b3a27eadc2854462de996ddce5ff2468771e13ac97c46ed96d41a6edaa056e"
 metafile = true
 
 [[files]]
+file = "mods/ftb-xmod-compat.pw.toml"
+hash = "39e65bf3c47517cdb2f9b4b49c6632dd56db797744faaf8b1a3726b1b95aacb4"
+metafile = true
+
+[[files]]
 file = "mods/fzzy-config.pw.toml"
 hash = "a8ef024a2cbf9641d81eee63a2cf40e3d5d0bffb5f094ff7935257bfa91ba34b"
 metafile = true
@@ -1880,7 +1885,7 @@ hash = "94cc729e11b4c954928194d1141c8fb2afd483c4f5a0524acc92e205aaf3ed96"
 
 [[files]]
 file = "config/bcc-common.toml"
-hash = "f2ca572351061bbbf43adf9939ef1be43a3170756b80d96de7e526ffff39d1bf"
+hash = "6984ae2af7360b79cf2cefaed57af7270d4824e9cb610d9da86b0e0e6b5d6bdd"
 
 [[files]]
 file = "config/carryon-common.toml"
