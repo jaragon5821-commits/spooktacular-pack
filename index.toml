@@ -1890,7 +1890,7 @@ hash = "94cc729e11b4c954928194d1141c8fb2afd483c4f5a0524acc92e205aaf3ed96"
 
 [[files]]
 file = "config/bcc-common.toml"
-hash = "79a9dbb7dceef06e4d3edfd214ebf5ca84b154f23505a3802cbf6524677e3785"
+hash = "69f49283e4ddbbe64b5c73341f08fd19362e0adc4cb07c84554726adcf675bd1"
 
 [[files]]
 file = "config/carryon-common.toml"

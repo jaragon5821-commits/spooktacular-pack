@@ -1,12 +1,12 @@
-name = "Chop's Spooktacular (TEST)"
+name = "Chop's Spooktacular"
 author = "Josh"
-version = "2026.10.28-test7"
+version = "2026.10.28-2"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "4bc3d8b56d2abb9a75503e781049825d7f3347d8c8a3906a76e36fe5b075425c"
+hash = "33215514a5259e0744849357b65d47d7be21dbf82dec66b92e6b938d39b80f03"
 
 [versions]
 forge = "47.4.26"

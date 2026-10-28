@@ -4,7 +4,7 @@ Versions are `YYYY.MM.DD-N`: the date of the release and its number that day. Ev
 is pushed to the pack gets a new version, an entry here, and (after Chop approves the wording)
 a post in #modpack-updates. "Players" is what gets posted; "Behind the scenes" is for reference.
 
-## 2026.10.28-2 (draft, testing as 2026.10.28-test7)
+## 2026.10.28-2
 
 Players
 - The Forgematica Printer is back: load a schematic in Forgematica and it places the blocks for
