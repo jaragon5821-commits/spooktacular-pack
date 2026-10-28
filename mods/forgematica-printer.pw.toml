@@ -1,0 +1,8 @@
+name = "Forgematica Printer"
+filename = "ForgematicaPrinter-0.1.0-mc1.20.1-java17fix.jar"
+side = "client"
+
+[download]
+url = "https://raw.githubusercontent.com/jaragon5821-commits/spooktacular-pack/13c88840e76b8ecc4d2b3a2ef3bfcdb08370f0ea/patched-jars/ForgematicaPrinter-0.1.0-mc1.20.1-java17fix.jar"
+hash-format = "sha512"
+hash = "cc8aac46a93e8d7ea25bbde0f5430a177d7e886ae170b0b781482b31a09ebda9ca39dd4199254a64425aef82f070e137f101a1c6c1e6422cd10990c69206bca8"

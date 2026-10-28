@@ -4,6 +4,22 @@ Versions are `YYYY.MM.DD-N`: the date of the release and its number that day. Ev
 is pushed to the pack gets a new version, an entry here, and (after Chop approves the wording)
 a post in #modpack-updates. "Players" is what gets posted; "Behind the scenes" is for reference.
 
+## 2026.10.28-2 (draft, testing as 2026.10.28-test7)
+
+Players
+- The Forgematica Printer is back: load a schematic in Forgematica and it places the blocks for
+  you as you walk by. The crash it used to cause while printing is fixed.
+- Known issue: the printer can still place directional blocks (stairs, chairs, doors, trapdoors,
+  logs and similar) facing the wrong way. Place those and interactive blocks by hand first, then
+  let the printer do the rest. If it ever crashes, turn it off and send Josh the crash report.
+
+Behind the scenes
+- Forgematica Printer 0.1.0 (client only) is the last release and called a Java 21-only method
+  (`List.getFirst()`), so it crashed on the pack's Java 17 whenever it placed a block next to an
+  interactive block. The pack ships a copy with that one call patched to `List.get(0)`; source,
+  upstream links and the patch are in `patched-jars/`. Wrong-facing blocks are upstream issue #5
+  (the printer doesn't turn the player before placing), not fixed.
+
 ## 2026.10.28-1 (major update)
 
 Players
