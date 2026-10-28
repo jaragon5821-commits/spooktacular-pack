@@ -1880,7 +1880,7 @@ hash = "94cc729e11b4c954928194d1141c8fb2afd483c4f5a0524acc92e205aaf3ed96"
 
 [[files]]
 file = "config/bcc-common.toml"
-hash = "c650f387d0d5b02695be04b80be78f76a652405376b648148c48aa6de6577f14"
+hash = "f2ca572351061bbbf43adf9939ef1be43a3170756b80d96de7e526ffff39d1bf"
 
 [[files]]
 file = "config/carryon-common.toml"
@@ -1889,6 +1889,10 @@ hash = "46b848ec3694ca152f2d8195ae2b770a9fb038421a59046ac43cfd12155f740a"
 [[files]]
 file = "config/dreamshift.json"
 hash = "6c63d7db1da6de1f967b097b55d90eea8856a4409266a8fac12723d3e0fe0961"
+
+[[files]]
+file = "config/immersive_portals.json"
+hash = "64d61d11dd15b270197e47048e37f6be5ae00c01be425104ca6550eed7ea5fe6"
 
 [[files]]
 file = "config/modernfix-mixins.properties"
@@ -1924,11 +1928,6 @@ hash = "81870149f48022da53fa2fcc3780d6c164c1acdf1a77593aa02cbed12eace448"
 metafile = true
 
 [[files]]
-file = "mods/better-chunk-loading.pw.toml"
-hash = "1664f00f0ad7ffeb4293b71a5b8a56d0f31234354b2d657f5f8f56172815c018"
-metafile = true
-
-[[files]]
 file = "mods/better-ping-display.pw.toml"
 hash = "a4e32d17399cc10153982c2cbb701e14bc0903d18f4f11ce808fbd9b381bb36e"
 metafile = true
@@ -1936,11 +1935,6 @@ metafile = true
 [[files]]
 file = "mods/betterf3.pw.toml"
 hash = "ca52b58cf0540bcec5d8b0318cddb371683b6f3f87ad9b925ff600ddd330f461"
-metafile = true
-
-[[files]]
-file = "mods/bons-and-furious.pw.toml"
-hash = "0d85cdb52dd07c4d65d8f12595b6056b8ca70f2bf51d1abe224cd7c25aad78aa"
 metafile = true
 
 [[files]]
@@ -2009,11 +2003,6 @@ hash = "d1a7cd27f2da4e99db5e85ae66118481d777aab2870edbb093af12d70d872840"
 metafile = true
 
 [[files]]
-file = "mods/krypton-reno.pw.toml"
-hash = "30e3db2d02fee546bcb63a38037ae4235cfd3ffb0296760c92282a1821156ef3"
-metafile = true
-
-[[files]]
 file = "mods/leave-my-bars-alone.pw.toml"
 hash = "f3d5d2453b2bb4965d9531be60ea4488d0da57592c988637d0247c5cead988ea"
 metafile = true
@@ -2062,11 +2051,6 @@ metafile = true
 [[files]]
 file = "mods/se-leafculling.pw.toml"
 hash = "b863bcbb10cadae50dc77aeb28588c4b413a79bddab4fae255ac62736bc5e4e4"
-metafile = true
-
-[[files]]
-file = "mods/smooth-chunk-save.pw.toml"
-hash = "99cd49d8f1f9d86934879ebb0a835cad25d0b68ef69bf985a16c735a7615b563"
 metafile = true
 
 [[files]]
