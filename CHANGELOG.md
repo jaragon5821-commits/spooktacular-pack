@@ -4,6 +4,35 @@ Versions are `YYYY.MM.DD-N`: the date of the release and its number that day. Ev
 is pushed to the pack gets a new version, an entry here, and (after Chop approves the wording)
 a post in #modpack-updates. "Players" is what gets posted; "Behind the scenes" is for reference.
 
+## 2026.10.28-1 (major update)
+
+Players
+- Dream tears are back: cracks in walls show the dreamspace behind them. Walk in quickly; they
+  close after about 30 seconds. If you ever get stuck inside blocks, the server lifts you out.
+- FTB Chunks: open the map, go to Claimed Chunks, click to claim your base. Shift-click a claimed
+  chunk to keep it loaded while you're away.
+- Quality of life: Better Advancements and Advancement Plaques, Jade Addons, BetterF3,
+  durability warnings and tooltips, item borders, pick-up notifications, stack refill, crafting
+  tweaks, double doors, totems work from anywhere in your inventory, enchantment descriptions,
+  Just Enough Professions, ping in the player list, Sophisticated Sorter, a paper doll.
+- Performance: Radium replaces Canary, faster leaf rendering, RenderScale 2.0, fewer portal views
+  drawn at once near dream tears.
+- Quests: "Craft Any Botany Pot" now completes.
+
+Behind the scenes
+- Tested on the test branch as 2026.10.27-test1 to 2026.10.28-test6 (spark run, in-game checks,
+  dedicated-server rehearsal). Results in Major Update Test Results\Run 3.
+- Added 36 mods (full list in the Run 3 release notes draft), removed Canary, Chunk Sending,
+  the four optional slow mods and leftover Canary/Open Parties and Claims files.
+- New configs: Dreamshift (tears use Immersive Portals; same values as the server),
+  Immersive Portals client (portal layers 2, no internet check), Carry On blacklist,
+  Better Compatibility Checker version, ModernFix mixins, Structure Essentials.
+- Quest fix: chapter 6 task 468F42F800C3DAF8 filters on botanypots:all_botany_pots.
+- Server-only (already live): Dreamshift IP tears on, spooktacular_unbury.js, ServerCore
+  horror-mob list and lag safety net, spike-hunt spark profile, backup before the update.
+- Known issues, to look at later: tears are invisible-looking slits with shaders from far away;
+  Spooklementary sky in dreamspaces and lit Nether portals with shaders not yet checked.
+
 ## 2026.10.27-2
 
 Players
