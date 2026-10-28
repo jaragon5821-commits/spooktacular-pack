@@ -1732,7 +1732,7 @@ hash = "4e492c8ecdf6d225ed71c94b489247778b868aa7a50e4eb258fd89322578d4e4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_6_field_manuals_and_arcane_guides.snbt"
-hash = "13a442310ecd7be1db532c1df4d63cfcca4fa1005df0e65444245ccbb80f1be2"
+hash = "d3e0625a7252ec12c7f325fdb453c37b913814a47eae1916c81376fad3dc965f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_7_workshop_guides.snbt"
@@ -1885,7 +1885,7 @@ hash = "94cc729e11b4c954928194d1141c8fb2afd483c4f5a0524acc92e205aaf3ed96"
 
 [[files]]
 file = "config/bcc-common.toml"
-hash = "6984ae2af7360b79cf2cefaed57af7270d4824e9cb610d9da86b0e0e6b5d6bdd"
+hash = "15c0f1f799e882adf2328751fc88f2ab88805b6863cddf345bd53fdf55aace7b"
 
 [[files]]
 file = "config/carryon-common.toml"

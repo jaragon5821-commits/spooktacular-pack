@@ -816,7 +816,7 @@
 					Count: 1
 					id: "itemfilters:tag"
 					tag: {
-						value: "botanypots:botany_pots"
+						value: "botanypots:all_botany_pots"
 					}
 				}
 				title: "Craft Any Botany Pot"
