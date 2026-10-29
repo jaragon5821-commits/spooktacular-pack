@@ -38,7 +38,7 @@ hash = "1ffb6b0d4562882e331018ef4f47c6dfdb08814745fead712a738856a3945321"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_4_liminal_trials.snbt"
-hash = "c8972c057b269564d779cc015a43d7ba2fdb3840edf79bafa977b31bb457ab5d"
+hash = "8caffda59e57a9a5bfd5aa731f1bd12df0dc23d91884cbcf4b120cb2d32047d4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_5_boss_showdowns.snbt"
@@ -94,7 +94,7 @@ hash = "b903919fb31b700e652d7d03fdbf6cf3ad7757097ae4298fe1413bc33dfd4d3f"
 
 [[files]]
 file = "config/torchmaster.toml"
-hash = "f1741b6a76e73465125b4375f1304181592063e8a6bedaf91f06467668c31696"
+hash = "8cc53a84a4fbc305dd7236edc25dd1b09d4451fe289c5a0fba655f86a6a20c5e"
 
 [[files]]
 file = "config/worldedit/schematics/hallowstown_cemetery.schem"
@@ -398,7 +398,7 @@ hash = "2af9c2a15ebfcb60c65c32b0650e05d1a497ff2003d28492a76d84441d4f5808"
 
 [[files]]
 file = "kubejs/data/spooktacular/tags/entity_types/archive/corner_entity_corner_entity.json"
-hash = "e09e510d4c2c518716211c8415cab31940527c0da467214bb0334219890d39e3"
+hash = "f4dddae44f361e881d20dab41f068e8b387a892d5e36471717a1fbb33a97f9c2"
 
 [[files]]
 file = "kubejs/data/spooktacular/tags/entity_types/archive/cryptid_vx_cryptid.json"
@@ -505,12 +505,20 @@ file = "kubejs/data/spooktacular/tags/entity_types/archive/whisperwoods_wisp.jso
 hash = "4397c6ff59b2aabf82af483c278b159756ecdf7499f6a176d3d4fcd442408ec3"
 
 [[files]]
+file = "kubejs/data/spooktacular/tags/worldgen/biome/nyctophobia.json"
+hash = "0f32ecd68b8e88c7731ffb7303832c467e98c03b33249adc0ecaea414cab9daa"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/worldgen/structure/from_the_fog.json"
+hash = "cc867fbd635a93764b85624d2e98508a4c111799beb08daa4258baf90a493932"
+
+[[files]]
 file = "kubejs/server_scripts/spooktacular_quests_charters.js"
 hash = "c5a1c1f7c5718e0731d5124af31360fbeadb722875355645101f521a98808566"
 
 [[files]]
 file = "kubejs/server_scripts/spooktacular_quests_data.js"
-hash = "36644147bb573a7f75a874cfb4d7b7f9ded229e56e184e6ce0f022cf192779c9"
+hash = "93085eecec0561cc49dc4f8755141b6afe827338e2cecbd160b1bdfc53ad8406"
 
 [[files]]
 file = "kubejs/server_scripts/spooktacular_quests_fanfare.js"

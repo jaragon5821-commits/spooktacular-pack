@@ -4,6 +4,10 @@
     {
       "id": "corner_entity:corner_entity",
       "required": false
+    },
+    {
+      "id": "corner_entity:devcounter_entity",
+      "required": false
     }
   ]
 }

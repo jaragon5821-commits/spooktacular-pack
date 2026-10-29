@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "nyctophobia:haunted_forest",
+      "required": false
+    },
+    {
+      "id": "nyctophobia:eroded_haunted_forest",
+      "required": false
+    },
+    {
+      "id": "nyctophobia:deep_dark_forest",
+      "required": false
+    },
+    {
+      "id": "nyctophobia:haunted_lakes",
+      "required": false
+    }
+  ]
+}

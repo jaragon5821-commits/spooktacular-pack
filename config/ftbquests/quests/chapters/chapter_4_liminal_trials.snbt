@@ -56,7 +56,7 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["A lone figure that stands at the limit of sight among the trees, white eyes fixed on you. It never charges. It vanishes if you close the distance or look away too long. The Archive's advice is to keep your distance, never chase it, and take your photo while it still stands in view."]
+			description: ["Find one of the things it leaves behind: a sand or mossy pyramid, a torch tunnel, a redstone torch trail or a grove with no leaves.", "", "It never lets a camera see it. The Archive records it by what it builds: odd pyramids, tunnels lit by torches nobody placed, trees stripped bare overnight."]
 			icon: "minecraft:soul_campfire"
 			id: "35B42884D26E705E"
 			invisible: true
@@ -82,11 +82,10 @@
 			tags: ["entity_found"]
 			tasks: [
 				{
-					advancement: "spooktacular:archive/watching_herobrine"
-					criterion: ""
 					id: "6348DA9362DBE8DC"
-					title: "Photograph it"
-					type: "advancement"
+					structure: "#spooktacular:from_the_fog"
+					title: "Find a sign of it"
+					type: "structure"
 				}
 			]
 			title: "Entity Found: From The Fog"
@@ -524,9 +523,8 @@
 					xp: 500
 				}
 			]
-			size: 1.0d
+			size: 1.5d
 			subtitle: "Archived"
-			tags: ["entity_found"]
 			tasks: [
 				{
 					advancement: "spooktacular:archive/eldritch_end_aberration"
@@ -538,7 +536,7 @@
 			]
 			title: "Entity Found: Aberration"
 			x: -5.0d
-			y: 5.75d
+			y: 4.5d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
@@ -1075,7 +1073,7 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["A phantom born from the fear of the dark. It appears when you linger in unlit places. Light drives it away, so take the photograph first and then light a torch."]
+			description: ["Enter a Haunted Forest, a Deep Dark Forest or the Haunted Lakes.", "", "Nyctophobia is not a creature you can photograph. It is the forest itself: light dies early under those trees, and the dark feels like it is leaning closer."]
 			icon: "minecraft:coal_block"
 			id: "5C91F834DD68AACA"
 			invisible: true
@@ -1108,11 +1106,10 @@
 			tags: ["entity_found"]
 			tasks: [
 				{
-					advancement: "spooktacular:archive/nyctophobia_phantom"
-					criterion: ""
+					biome: "#spooktacular:nyctophobia"
 					id: "3B8EB4A155A852FB"
-					title: "Photograph it"
-					type: "advancement"
+					title: "Enter a haunted forest"
+					type: "biome"
 				}
 			]
 			title: "Entity Found: Nyctophobia"
@@ -1318,8 +1315,8 @@
 			y: 13.25d
 		}
 		{
-			dependencies: ["35B42884D26E705E", "2E3F3F60862CD839", "7BDB00B7966C3DBA", "7DCF05B91CB25FF5", "4919455AFF785152", "208EC6467118663D", "2883C44FA45D4C5B", "1D5A90B1FEE36CC5", "38D5ED1A10C51170", "1972376B65A76BD3", "625ED42E9362E1A8", "2329A9B64D540784", "5B0EFDE2534A19A2", "74D4C738C4CDE4CB", "541F10BD16BDB76D", "5DFCE3DFE6FE4AA6", "580FD7E4D57172BE", "13332EB90937C6A7", "12D55F474EF32C9F", "2A17B22B0F75A76F", "542A9AC043C322BB", "766E582D63661E0C", "612A8E9C131969E4", "2B3145491F4BE199", "68A84E1CE1EED7BB", "5C91F834DD68AACA", "27CAEF6917488775", "7667DA2C00FDF5CC", "5EE7B8E82118F970", "352A2D9B767C9531", "44F35FB0CA4ED74D"]
-			description: ["Unlocks automatically once 8 of the 31 creatures are Archived. Nothing to hand in.", "", "The Archive counts every Entity Found quest, from any team member's photos."]
+			dependencies: ["35B42884D26E705E", "2E3F3F60862CD839", "7BDB00B7966C3DBA", "7DCF05B91CB25FF5", "4919455AFF785152", "208EC6467118663D", "2883C44FA45D4C5B", "1D5A90B1FEE36CC5", "38D5ED1A10C51170", "1972376B65A76BD3", "625ED42E9362E1A8", "5B0EFDE2534A19A2", "74D4C738C4CDE4CB", "541F10BD16BDB76D", "5DFCE3DFE6FE4AA6", "580FD7E4D57172BE", "13332EB90937C6A7", "12D55F474EF32C9F", "2A17B22B0F75A76F", "542A9AC043C322BB", "766E582D63661E0C", "612A8E9C131969E4", "2B3145491F4BE199", "68A84E1CE1EED7BB", "5C91F834DD68AACA", "27CAEF6917488775", "7667DA2C00FDF5CC", "5EE7B8E82118F970", "352A2D9B767C9531", "44F35FB0CA4ED74D"]
+			description: ["Unlocks automatically once 8 of the 30 creatures are Archived. Nothing to hand in.", "", "The Archive counts every Entity Found quest, from any team member's photos."]
 			hide_dependency_lines: true
 			icon: "exposure:photograph_frame"
 			id: "28CEEE6FFD02E9DB"
@@ -1357,13 +1354,13 @@
 			]
 			size: 2.5d
 			subtitle: "Safari Cache I"
-			title: "Safari Milestone I: 8 of 31 Archived"
+			title: "Safari Milestone I: 8 of 30 Archived"
 			x: -13.5d
 			y: -6.0d
 		}
 		{
-			dependencies: ["35B42884D26E705E", "2E3F3F60862CD839", "7BDB00B7966C3DBA", "7DCF05B91CB25FF5", "4919455AFF785152", "208EC6467118663D", "2883C44FA45D4C5B", "1D5A90B1FEE36CC5", "38D5ED1A10C51170", "1972376B65A76BD3", "625ED42E9362E1A8", "2329A9B64D540784", "5B0EFDE2534A19A2", "74D4C738C4CDE4CB", "541F10BD16BDB76D", "5DFCE3DFE6FE4AA6", "580FD7E4D57172BE", "13332EB90937C6A7", "12D55F474EF32C9F", "2A17B22B0F75A76F", "542A9AC043C322BB", "766E582D63661E0C", "612A8E9C131969E4", "2B3145491F4BE199", "68A84E1CE1EED7BB", "5C91F834DD68AACA", "27CAEF6917488775", "7667DA2C00FDF5CC", "5EE7B8E82118F970", "352A2D9B767C9531", "44F35FB0CA4ED74D"]
-			description: ["Unlocks automatically once 16 of the 31 creatures are Archived. Nothing to hand in.", "", "The Archive counts every Entity Found quest, from any team member's photos."]
+			dependencies: ["35B42884D26E705E", "2E3F3F60862CD839", "7BDB00B7966C3DBA", "7DCF05B91CB25FF5", "4919455AFF785152", "208EC6467118663D", "2883C44FA45D4C5B", "1D5A90B1FEE36CC5", "38D5ED1A10C51170", "1972376B65A76BD3", "625ED42E9362E1A8", "5B0EFDE2534A19A2", "74D4C738C4CDE4CB", "541F10BD16BDB76D", "5DFCE3DFE6FE4AA6", "580FD7E4D57172BE", "13332EB90937C6A7", "12D55F474EF32C9F", "2A17B22B0F75A76F", "542A9AC043C322BB", "766E582D63661E0C", "612A8E9C131969E4", "2B3145491F4BE199", "68A84E1CE1EED7BB", "5C91F834DD68AACA", "27CAEF6917488775", "7667DA2C00FDF5CC", "5EE7B8E82118F970", "352A2D9B767C9531", "44F35FB0CA4ED74D"]
+			description: ["Unlocks automatically once 16 of the 30 creatures are Archived. Nothing to hand in.", "", "The Archive counts every Entity Found quest, from any team member's photos."]
 			hide_dependency_lines: true
 			icon: "exposure:glass_photograph_frame"
 			id: "73B414F7A1BE1B13"
@@ -1401,13 +1398,13 @@
 			]
 			size: 2.5d
 			subtitle: "Safari Cache II"
-			title: "Safari Milestone II: 16 of 31 Archived"
+			title: "Safari Milestone II: 16 of 30 Archived"
 			x: -9.5d
 			y: -6.0d
 		}
 		{
-			dependencies: ["35B42884D26E705E", "2E3F3F60862CD839", "7BDB00B7966C3DBA", "7DCF05B91CB25FF5", "4919455AFF785152", "208EC6467118663D", "2883C44FA45D4C5B", "1D5A90B1FEE36CC5", "38D5ED1A10C51170", "1972376B65A76BD3", "625ED42E9362E1A8", "2329A9B64D540784", "5B0EFDE2534A19A2", "74D4C738C4CDE4CB", "541F10BD16BDB76D", "5DFCE3DFE6FE4AA6", "580FD7E4D57172BE", "13332EB90937C6A7", "12D55F474EF32C9F", "2A17B22B0F75A76F", "542A9AC043C322BB", "766E582D63661E0C", "612A8E9C131969E4", "2B3145491F4BE199", "68A84E1CE1EED7BB", "5C91F834DD68AACA", "27CAEF6917488775", "7667DA2C00FDF5CC", "5EE7B8E82118F970", "352A2D9B767C9531", "44F35FB0CA4ED74D"]
-			description: ["Unlocks automatically once 24 of the 31 creatures are Archived. Nothing to hand in.", "", "The Archive counts every Entity Found quest, from any team member's photos."]
+			dependencies: ["35B42884D26E705E", "2E3F3F60862CD839", "7BDB00B7966C3DBA", "7DCF05B91CB25FF5", "4919455AFF785152", "208EC6467118663D", "2883C44FA45D4C5B", "1D5A90B1FEE36CC5", "38D5ED1A10C51170", "1972376B65A76BD3", "625ED42E9362E1A8", "5B0EFDE2534A19A2", "74D4C738C4CDE4CB", "541F10BD16BDB76D", "5DFCE3DFE6FE4AA6", "580FD7E4D57172BE", "13332EB90937C6A7", "12D55F474EF32C9F", "2A17B22B0F75A76F", "542A9AC043C322BB", "766E582D63661E0C", "612A8E9C131969E4", "2B3145491F4BE199", "68A84E1CE1EED7BB", "5C91F834DD68AACA", "27CAEF6917488775", "7667DA2C00FDF5CC", "5EE7B8E82118F970", "352A2D9B767C9531", "44F35FB0CA4ED74D"]
+			description: ["Unlocks automatically once 24 of the 30 creatures are Archived. Nothing to hand in.", "", "The Archive counts every Entity Found quest, from any team member's photos."]
 			hide_dependency_lines: true
 			icon: "exposure:camera"
 			id: "4FEAAFF97758D6DC"
@@ -1445,17 +1442,17 @@
 			]
 			size: 2.5d
 			subtitle: "Safari Cache III"
-			title: "Safari Milestone III: 24 of 31 Archived"
+			title: "Safari Milestone III: 24 of 30 Archived"
 			x: -5.5d
 			y: -6.0d
 		}
 		{
-			dependencies: ["35B42884D26E705E", "2E3F3F60862CD839", "7BDB00B7966C3DBA", "7DCF05B91CB25FF5", "4919455AFF785152", "208EC6467118663D", "2883C44FA45D4C5B", "1D5A90B1FEE36CC5", "38D5ED1A10C51170", "1972376B65A76BD3", "625ED42E9362E1A8", "2329A9B64D540784", "5B0EFDE2534A19A2", "74D4C738C4CDE4CB", "541F10BD16BDB76D", "5DFCE3DFE6FE4AA6", "580FD7E4D57172BE", "13332EB90937C6A7", "12D55F474EF32C9F", "2A17B22B0F75A76F", "542A9AC043C322BB", "766E582D63661E0C", "612A8E9C131969E4", "2B3145491F4BE199", "68A84E1CE1EED7BB", "5C91F834DD68AACA", "27CAEF6917488775", "7667DA2C00FDF5CC", "5EE7B8E82118F970", "352A2D9B767C9531", "44F35FB0CA4ED74D"]
-			description: ["Unlocks automatically once all 31 creatures are Archived. Nothing to hand in.", "", "Every horror in the Grand Archive has been photographed and filed. The town owes you a feast."]
+			dependencies: ["35B42884D26E705E", "2E3F3F60862CD839", "7BDB00B7966C3DBA", "7DCF05B91CB25FF5", "4919455AFF785152", "208EC6467118663D", "2883C44FA45D4C5B", "1D5A90B1FEE36CC5", "38D5ED1A10C51170", "1972376B65A76BD3", "625ED42E9362E1A8", "5B0EFDE2534A19A2", "74D4C738C4CDE4CB", "541F10BD16BDB76D", "5DFCE3DFE6FE4AA6", "580FD7E4D57172BE", "13332EB90937C6A7", "12D55F474EF32C9F", "2A17B22B0F75A76F", "542A9AC043C322BB", "766E582D63661E0C", "612A8E9C131969E4", "2B3145491F4BE199", "68A84E1CE1EED7BB", "5C91F834DD68AACA", "27CAEF6917488775", "7667DA2C00FDF5CC", "5EE7B8E82118F970", "352A2D9B767C9531", "44F35FB0CA4ED74D"]
+			description: ["Unlocks automatically once all 30 creatures are Archived. Nothing to hand in.", "", "Every horror in the Grand Archive has been photographed and filed. The town owes you a feast."]
 			hide_dependency_lines: true
 			icon: "morerelics:crown_of_the_legend"
 			id: "372822684BB4047B"
-			min_required_dependencies: 31
+			min_required_dependencies: 30
 			rewards: [
 				{
 					count: 4
@@ -1488,24 +1485,23 @@
 			]
 			size: 3.0d
 			subtitle: "Safari Vault"
-			title: "Safari Finale: All 31 Archived"
+			title: "Safari Finale: All 30 Archived"
 			x: -1.5d
 			y: -6.0d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["Hunters say a still figure stands at the far edge of the forest, watching, then is gone when you walk toward it. Look in woodland at dusk and in fog."]
-			icon: "exposure:camera"
+			description: ["Hunters find things in the woods that nobody built: small pyramids, torch-lit tunnels, trees with every leaf gone. Something is out there, watching from the fog."]
+			icon: "minecraft:map"
 			id: "5277F26FACE05DA9"
 			size: 1.0d
 			subtitle: "Unconfirmed sighting"
 			tasks: [
 				{
-					advancement: "spooktacular:archive/watching_herobrine"
-					criterion: ""
 					id: "1C737F61F19516D8"
-					title: "Photograph it"
-					type: "advancement"
+					structure: "#spooktacular:from_the_fog"
+					title: "Find a sign of it"
+					type: "structure"
 				}
 			]
 			title: "Rumor: A Stranger at the Edge of the Fog"
@@ -1710,26 +1706,6 @@
 			]
 			title: "Rumor: Something Digs in the Graveyard"
 			x: -7.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["A great eye is said to drift above the outer End islands. Go to the End and look at the sky."]
-			icon: "exposure:camera"
-			id: "18B3B0E50C3ECC92"
-			size: 1.0d
-			subtitle: "Unconfirmed sighting"
-			tasks: [
-				{
-					advancement: "spooktacular:archive/eldritch_end_aberration"
-					criterion: ""
-					id: "1DA54E0AB62B905A"
-					title: "Photograph it"
-					type: "advancement"
-				}
-			]
-			title: "Rumor: A Lens in the Void Sky"
-			x: -5.0d
 			y: 4.5d
 		}
 		{
@@ -1994,18 +1970,17 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["Those who stand too long in total darkness say the dark begins to move. Stand in a pitch black spot and wait."]
-			icon: "exposure:camera"
+			description: ["Travelers speak of forests where the light gives out too soon and the dark seems to breathe. Find one and step inside."]
+			icon: "minecraft:book"
 			id: "3561AE7C4B730AC7"
 			size: 1.0d
 			subtitle: "Unconfirmed sighting"
 			tasks: [
 				{
-					advancement: "spooktacular:archive/nyctophobia_phantom"
-					criterion: ""
+					biome: "#spooktacular:nyctophobia"
 					id: "188E0570BB62B393"
-					title: "Photograph it"
-					type: "advancement"
+					title: "Enter a haunted forest"
+					type: "biome"
 				}
 			]
 			title: "Rumor: The Dark Takes Shape"

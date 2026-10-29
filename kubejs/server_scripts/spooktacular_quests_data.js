@@ -28,24 +28,62 @@ global.SPOOK_QUEST_DATA = {
  },
  "locations": {},
  "fanfare": {
-  "777B0848E5B19526": "tavern",
-  "6DE25B0EBB8675EC": "cemetery",
-  "28C3841D89C1FD27": "ward_arch",
-  "2AE8B83641AEC2A5": "scarecrow",
-  "3A4F757F49C95BE7": "apothecary",
-  "01769DC4E6CC537B": "orchard_mill",
-  "2D4FCF3F34B9E999": "spire",
-  "4D306F719E5C18BD": "catacombs",
-  "67E934B9C20A525C": "boutique",
-  "1EB1C674C441E3B4": "stables",
-  "2989916809E113BC": "wharf",
-  "54BFAB7B97A92B74": "archive",
-  "697633670703D2DE": "garrison",
-  "786F5C213B0EC984": "smeltery",
-  "7D5B360460D954CC": "cathedral",
-  "215475FD7349BF6C": "citadel",
-  "2E0926D2A4D3578B": "observatory",
-  "446221678ECCE096": "hall_of_heroes"
+  "777B0848E5B19526": [
+   "tavern"
+  ],
+  "6DE25B0EBB8675EC": [
+   "cemetery"
+  ],
+  "28C3841D89C1FD27": [
+   "ward_arch"
+  ],
+  "2AE8B83641AEC2A5": [
+   "scarecrow"
+  ],
+  "3A4F757F49C95BE7": [
+   "apothecary"
+  ],
+  "01769DC4E6CC537B": [
+   "orchard_mill"
+  ],
+  "2D4FCF3F34B9E999": [
+   "spire"
+  ],
+  "4D306F719E5C18BD": [
+   "crypt",
+   "catacombs"
+  ],
+  "67E934B9C20A525C": [
+   "boutique"
+  ],
+  "1EB1C674C441E3B4": [
+   "stables"
+  ],
+  "2989916809E113BC": [
+   "wharf"
+  ],
+  "54BFAB7B97A92B74": [
+   "archive"
+  ],
+  "697633670703D2DE": [
+   "garrison"
+  ],
+  "786F5C213B0EC984": [
+   "pantry",
+   "smeltery"
+  ],
+  "7D5B360460D954CC": [
+   "cathedral"
+  ],
+  "215475FD7349BF6C": [
+   "citadel"
+  ],
+  "2E0926D2A4D3578B": [
+   "observatory"
+  ],
+  "446221678ECCE096": [
+   "hall_of_heroes"
+  ]
  },
  "archive": {
   "spooktacular:archive/watching_herobrine": [
@@ -91,10 +129,6 @@ global.SPOOK_QUEST_DATA = {
   "spooktacular:archive/graveyard_ghoul": [
    "625ED42E9362E1A8",
    "7A722E0F714B44EB"
-  ],
-  "spooktacular:archive/eldritch_end_aberration": [
-   "2329A9B64D540784",
-   "18B3B0E50C3ECC92"
   ],
   "spooktacular:archive/eyesinthedarkness_eyes": [
    "5B0EFDE2534A19A2",
@@ -188,7 +222,6 @@ global.SPOOK_QUEST_DATA = {
     "38D5ED1A10C51170",
     "1972376B65A76BD3",
     "625ED42E9362E1A8",
-    "2329A9B64D540784",
     "5B0EFDE2534A19A2",
     "74D4C738C4CDE4CB",
     "541F10BD16BDB76D",
@@ -224,7 +257,6 @@ global.SPOOK_QUEST_DATA = {
     "38D5ED1A10C51170",
     "1972376B65A76BD3",
     "625ED42E9362E1A8",
-    "2329A9B64D540784",
     "5B0EFDE2534A19A2",
     "74D4C738C4CDE4CB",
     "541F10BD16BDB76D",
@@ -260,7 +292,6 @@ global.SPOOK_QUEST_DATA = {
     "38D5ED1A10C51170",
     "1972376B65A76BD3",
     "625ED42E9362E1A8",
-    "2329A9B64D540784",
     "5B0EFDE2534A19A2",
     "74D4C738C4CDE4CB",
     "541F10BD16BDB76D",
@@ -283,7 +314,7 @@ global.SPOOK_QUEST_DATA = {
    ]
   ],
   "372822684BB4047B": [
-   31,
+   30,
    [
     "35B42884D26E705E",
     "2E3F3F60862CD839",
@@ -296,7 +327,6 @@ global.SPOOK_QUEST_DATA = {
     "38D5ED1A10C51170",
     "1972376B65A76BD3",
     "625ED42E9362E1A8",
-    "2329A9B64D540784",
     "5B0EFDE2534A19A2",
     "74D4C738C4CDE4CB",
     "541F10BD16BDB76D",
@@ -387,5 +417,37 @@ global.SPOOK_QUEST_DATA = {
     "1EDCB4140B697318"
    ]
   ]
+ },
+ "entityNames": {
+  "35B42884D26E705E": "From The Fog",
+  "2E3F3F60862CD839": "Weeping Angels",
+  "7BDB00B7966C3DBA": "Cave Dweller",
+  "7DCF05B91CB25FF5": "The Boiled One",
+  "4919455AFF785152": "Distant Friends",
+  "208EC6467118663D": "Hidebehind",
+  "2883C44FA45D4C5B": "Krampus",
+  "1D5A90B1FEE36CC5": "Will-o'-the-Wisp",
+  "38D5ED1A10C51170": "Midnight Nightmares",
+  "1972376B65A76BD3": "Creepers",
+  "625ED42E9362E1A8": "Ghoul",
+  "5B0EFDE2534A19A2": "Eyes in the Darkness",
+  "74D4C738C4CDE4CB": "Corner Entity",
+  "541F10BD16BDB76D": "The Wilted",
+  "5DFCE3DFE6FE4AA6": "Tunnel Gore",
+  "580FD7E4D57172BE": "The Dragger",
+  "13332EB90937C6A7": "The Wrought",
+  "12D55F474EF32C9F": "The Phantom Resonance",
+  "2A17B22B0F75A76F": "The Graveyard",
+  "542A9AC043C322BB": "The One Who Watches",
+  "766E582D63661E0C": "The Pale Watcher",
+  "612A8E9C131969E4": "The Knocker",
+  "2B3145491F4BE199": "The Obsessed",
+  "68A84E1CE1EED7BB": "The Cryptid",
+  "5C91F834DD68AACA": "Nyctophobia",
+  "27CAEF6917488775": "Reaper",
+  "7667DA2C00FDF5CC": "Dark Doppelganger",
+  "5EE7B8E82118F970": "Underzealot",
+  "352A2D9B767C9531": "Watcher",
+  "44F35FB0CA4ED74D": "Rotbeast"
  }
 }
