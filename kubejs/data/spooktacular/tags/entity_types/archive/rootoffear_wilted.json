@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "rootoffear:wilted",
+      "required": false
+    },
+    {
+      "id": "rootoffear:shadow_wilted",
+      "required": false
+    },
+    {
+      "id": "rootoffear:decoy_wilted",
+      "required": false
+    }
+  ]
+}

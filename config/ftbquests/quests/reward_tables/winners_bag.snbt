@@ -1,0 +1,88 @@
+{
+	icon: "ftbquests:lootcrate"
+	id: "5A1B2C3D4E5F6005"
+	loot_crate: {
+		color: 16755200
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		glow: true
+		item_name: "Winner's Bag"
+		string_id: "winners_bag"
+	}
+	loot_size: 3
+	order_index: 4
+	rewards: [
+		{
+			count: 4
+			item: "minecraft:diamond"
+			weight: 3.0f
+		}
+		{
+			count: 3
+			item: "minecraft:golden_apple"
+			weight: 2.5f
+		}
+		{
+			count: 16
+			item: "minecraft:emerald"
+			weight: 2.5f
+		}
+		{
+			count: 2
+			item: "minecraft:netherite_scrap"
+			weight: 1.5f
+		}
+		{
+			item: "minecraft:totem_of_undying"
+			weight: 1.0f
+		}
+		{
+			item: "minecraft:enchanted_golden_apple"
+			weight: 0.5f
+		}
+		{
+			item: "simplehats:hatbag_epic"
+			weight: 1.5f
+		}
+		{
+			item: "simplehats:hatbag_rare"
+			weight: 2.5f
+		}
+		{
+			count: 4
+			item: "relics:relic_experience_bottle"
+			weight: 2.0f
+		}
+		{
+			item: "waystones:warp_stone"
+			weight: 1.0f
+		}
+		{
+			item: "irons_spellbooks:rare_ink"
+			weight: 1.5f
+		}
+		{
+			item: "irons_spellbooks:epic_ink"
+			weight: 0.6f
+		}
+		{
+			item: "artifacts:crystal_heart"
+			weight: 0.4f
+		}
+		{
+			count: 16
+			item: "minecraft:experience_bottle"
+			weight: 2.0f
+		}
+		{
+			count: 16
+			item: "hauntedharvest:candy_corn"
+			weight: 2.0f
+		}
+	]
+	title: "Winner's Bag"
+	use_title: true
+}

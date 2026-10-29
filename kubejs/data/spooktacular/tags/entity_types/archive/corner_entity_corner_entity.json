@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "corner_entity:corner_entity",
+      "required": false
+    }
+  ]
+}

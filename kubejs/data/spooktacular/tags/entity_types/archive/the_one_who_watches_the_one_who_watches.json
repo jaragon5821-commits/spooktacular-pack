@@ -1,0 +1,49 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "the_one_who_watches:the_one_who_watches",
+      "required": false
+    },
+    {
+      "id": "the_one_who_watches:toww_crawling",
+      "required": false
+    },
+    {
+      "id": "the_one_who_watches:toww_delusion",
+      "required": false
+    },
+    {
+      "id": "the_one_who_watches:toww_hallucination",
+      "required": false
+    },
+    {
+      "id": "the_one_who_watches:toww_hanging",
+      "required": false
+    },
+    {
+      "id": "the_one_who_watches:toww_hunting",
+      "required": false
+    },
+    {
+      "id": "the_one_who_watches:toww_looked_at",
+      "required": false
+    },
+    {
+      "id": "the_one_who_watches:toww_running",
+      "required": false
+    },
+    {
+      "id": "the_one_who_watches:toww_stalking",
+      "required": false
+    },
+    {
+      "id": "the_one_who_watches:toww_stare",
+      "required": false
+    },
+    {
+      "id": "the_one_who_watches:toww_staring",
+      "required": false
+    }
+  ]
+}

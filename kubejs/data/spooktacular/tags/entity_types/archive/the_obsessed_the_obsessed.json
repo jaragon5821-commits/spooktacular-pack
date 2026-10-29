@@ -1,0 +1,125 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "the_obsessed:the_obsessed",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_spider_still",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_stalker",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_stalker_abduct",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_stalker_crawler",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_stalker_deposit",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_stalker_deposit_facility",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_stalker_flee",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_stalker_follow_close",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_stalker_intrude",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_stalker_jealous",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_stalker_mimic",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_stalker_sleep",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_stalker_spawn",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_stalker_sprint",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_stalker_still",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_stalker_swim",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_stalker_targeter",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_stalker_tree",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_stalker_unhappy",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_spider_ceiling",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_spider_crawler",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_spider_enraged",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_spider_flee",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_spider_jealous",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_spider_nightmare",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_spider_threatening",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_stalker_behind",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_stalker_build",
+      "required": false
+    },
+    {
+      "id": "the_obsessed:idk_sleep_paralysis",
+      "required": false
+    }
+  ]
+}

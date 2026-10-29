@@ -11,7 +11,7 @@
 	quests: [
 		{
 			dependencies: ["484CC116C514D530"]
-			description: ["The old theatre stands as the heart of our community. Visit the central theatre building to register your arrival and scout the grounds."]
+			description: ["Walk up to the Old Theatre at spawn to complete this quest.", "", "It is the oldest building in town. Nobody remembers who last turned the lights on."]
 			icon: "exposure:camera"
 			id: "27991E4AB94352BF"
 			rewards: [
@@ -29,22 +29,24 @@
 				{
 					id: "59DDC557775ED1E9"
 					type: "xp"
-					xp: 1000
+					xp: 250
 				}
 			]
-			subtitle: "The Center of Town"
-			tasks: [{
-				id: "733F624561E13F51"
-				title: "Found the Old Theatre"
-				type: "checkmark"
-			}]
+			subtitle: "The centre of town"
+			tasks: [
+				{
+					id: "733F624561E13F51"
+					title: "Visit the Old Theatre"
+					type: "checkmark"
+				}
+			]
 			title: "Q-HT01: The Old Town Theatre"
 			x: -1.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["27991E4AB94352BF"]
-			description: ["Build your own cozy, autumn-decorated cottage in Hallowstown with a bed, lighting, and storage. Furnish it with Chipped, Handcrafted, and ManyIdeas Halloween blocks."]
+			description: ["Build a cottage in Hallowstown with a bed, lighting and a chest, then click the checkmark. Josh will check it by eye.", "", "Decorate it with Chipped, Handcrafted and ManyIdeas blocks. A warm window looks good after dark."]
 			icon: "minecraft:red_bed"
 			id: "1F65D7F0DC9B54A8"
 			rewards: [
@@ -68,22 +70,24 @@
 				{
 					id: "5B839A41AB0CE5B0"
 					type: "xp"
-					xp: 1500
+					xp: 250
 				}
 			]
-			subtitle: "Player Cottages"
-			tasks: [{
-				id: "5C92B5DBF6009A65"
-				title: "My House is Complete"
-				type: "checkmark"
-			}]
+			subtitle: "Your own cottage"
+			tasks: [
+				{
+					id: "5C92B5DBF6009A65"
+					title: "My house is built"
+					type: "checkmark"
+				}
+			]
 			title: "Q-HT02: Hearth and Home"
 			x: -1.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["1F65D7F0DC9B54A8"]
-			description: ["A town without a tavern has no soul. Craft teacups and teapots from Kaleidoscope Cookery to set up the communal Halloween Tea House and Bar."]
+			description: ["Craft 6 Empty Cups and 2 Teapots (Kaleidoscope Cookery), then build the Tavern. Take the Town Charter this quest gives you, build from the Forgematica blueprint (schematics\\Hallowstown), then place the Charter on the middle of the front path facing the door. Right-click it to see progress; sneak and right-click to mark wrong spots. It completes at a 90% match.", "", "A town without a tavern has no soul."]
 			icon: "kaleidoscope_cookery:teapot"
 			id: "777B0848E5B19526"
 			rewards: [
@@ -104,13 +108,17 @@
 					xp: 1500
 				}
 			]
-			subtitle: "Brewing for the Community"
+			subtitle: "Brewing for the community"
 			tasks: [
 				{
 					consume_items: false
 					count: 6L
 					id: "49FCB0C389CF7985"
-					item: { Count: 6, id: "kaleidoscope_cookery:empty_cup" }
+					item: {
+						Count: 6
+						id: "kaleidoscope_cookery:empty_cup"
+					}
+					title: "Craft 6 Empty Cups"
 					type: "item"
 				}
 				{
@@ -118,12 +126,14 @@
 					count: 2L
 					id: "0B6BDC4EF7748403"
 					item: "kaleidoscope_cookery:teapot"
+					title: "Craft 2 Teapots"
 					type: "item"
 				}
 				{
+					icon: "spooktacular:charter_tavern"
 					id: "66495946F56FE11A"
 					title: "Build the Tavern"
-					type: "checkmark"
+					type: "custom"
 				}
 			]
 			title: "Q-HT03: Raising the Tavern"
@@ -132,7 +142,7 @@
 		}
 		{
 			dependencies: ["1F65D7F0DC9B54A8"]
-			description: ["Every proper Halloween town has a quiet, solemn graveyard. Lay out a stone burial ground, place decorative tombstones, and illuminate the crypt entrance with soul lanterns."]
+			description: ["Build the Cemetery. Take the Town Charter this quest gives you, build from the Forgematica blueprint (schematics\\Hallowstown), then place the Charter on the middle of the front path facing the door. Right-click it to see progress; sneak and right-click to mark wrong spots. It completes at a 90% match.", "", "Every proper Halloween town keeps a quiet place for its dead. Leave a soul lantern at the gate."]
 			icon: "spookify:tomb_stone"
 			id: "6DE25B0EBB8675EC"
 			rewards: [
@@ -153,25 +163,25 @@
 				{
 					id: "6B1C852CB836388C"
 					type: "xp"
-					xp: 2000
+					xp: 1500
 				}
 			]
 			subtitle: "The Hallowstown Cemetery"
-			tasks: [{
-				id: "1E9A1FAADE51730A"
-				title: "Build the Graveyard"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					icon: "spooktacular:charter_cemetery"
+					id: "1E9A1FAADE51730A"
+					title: "Build the Cemetery"
+					type: "custom"
+				}
+			]
 			title: "Q-HT04: Solemn Grounds"
 			x: -3.0d
 			y: -1.5d
 		}
 		{
-			dependencies: [
-				"777B0848E5B19526"
-				"6DE25B0EBB8675EC"
-			]
-			description: ["Before our sanctuary is complete, ancient folklore demands a ring of warded embers. Harvest pumpkins, use shears to sculpt 30+ unique facial expressions, and line the entire town perimeter in an unbroken circle of Jack-o'-Lanterns to ward off phantoms and wandering spirits."]
+			dependencies: ["777B0848E5B19526", "6DE25B0EBB8675EC"]
+			description: ["Collect 30 pumpkins and a Pumpkin Carver, then build one entrance arch of the Spirit Ward. Take the Town Charter this quest gives you, build from the Forgematica blueprint (schematics\\Hallowstown), then place the Charter on the middle of the front path facing the door. Right-click it to see progress; sneak and right-click to mark wrong spots. It completes at a 90% match.", "", "The rest of the ward wall is up to you. Line it with Jack-o'-Lanterns to keep wandering spirits out."]
 			icon: "minecraft:jack_o_lantern"
 			id: "28C3841D89C1FD27"
 			rewards: [
@@ -197,26 +207,32 @@
 				{
 					id: "3FEECFBF4A155EFE"
 					type: "xp"
-					xp: 1500
+					xp: 1000
 				}
 			]
-			subtitle: "Circle of Carved Flames"
+			subtitle: "Circle of carved flames"
 			tasks: [
 				{
 					id: "1297805E2C492EA1"
 					item: "dynamic_pumpkin_carving:carver"
+					title: "Get a Pumpkin Carver"
 					type: "item"
 				}
 				{
 					count: 30L
 					id: "00BE02841F254912"
-					item: { Count: 16, id: "minecraft:pumpkin" }
+					item: {
+						Count: 16
+						id: "minecraft:pumpkin"
+					}
+					title: "Collect 30 pumpkins"
 					type: "item"
 				}
 				{
+					icon: "spooktacular:charter_ward_arch"
 					id: "5FDEF2F071043D0D"
-					title: "Build the Gourdian Wall"
-					type: "checkmark"
+					title: "Build a Spirit Ward entrance arch"
+					type: "custom"
 				}
 			]
 			title: "Q-HT05: The Gourdian Ward"
@@ -225,7 +241,7 @@
 		}
 		{
 			dependencies: ["28C3841D89C1FD27"]
-			description: ["Gather at the main entrance to construct a colossal town Scarecrow. Secretly conceal a Glowstone Heart within its wooden ribcage to permanently suppress hostile mob spawns across the entire settlement."]
+			description: ["Build the Colossal Scarecrow in the centre of town. Take the Town Charter this quest gives you, build from the Forgematica blueprint (schematics\\Hallowstown), then place the Charter on the middle of the front path facing the door. Right-click it to see progress; sneak and right-click to mark wrong spots. It completes at a 90% match.", "", "Rumour says a Glowstone Heart in its ribcage keeps the dark away. It watches the square all night."]
 			icon: "manyideas_halloween:scarecrow"
 			id: "2AE8B83641AEC2A5"
 			rewards: [
@@ -254,19 +270,22 @@
 				}
 			]
 			size: 2.0d
-			subtitle: "The Colossal Scarecrow and The Secret Core"
-			tasks: [{
-				id: "541642AD21CA46D8"
-				title: "Scarecrow Assembled"
-				type: "checkmark"
-			}]
+			subtitle: "The Colossal Scarecrow"
+			tasks: [
+				{
+					icon: "spooktacular:charter_scarecrow"
+					id: "541642AD21CA46D8"
+					title: "Build the Colossal Scarecrow"
+					type: "custom"
+				}
+			]
 			title: "Q-HT06: The Silent Protector"
 			x: -1.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["2AE8B83641AEC2A5"]
-			description: ["Hallowstown needs residents before we can trick-or-treat! Venture into the wild, use Easy Villagers (Sneak + Right-Click with empty hands) to pick up at least 3 outside villagers, bring them back, and build them furnished autumn apartments in town."]
+			description: ["Have at least 3 villagers living in Hallowstown. They are counted around the Scarecrow.", "", "Use Easy Villagers (sneak and right-click with an empty hand) to carry villagers home, then give them beds and a roof. A town needs neighbours."]
 			icon: "easy_villagers:villager"
 			id: "1A30465CB768468F"
 			rewards: [
@@ -276,29 +295,32 @@
 					type: "item"
 				}
 				{
+					count: 8
 					id: "324258CACE999FE6"
-					item: "minecraft:bell"
+					item: "minecraft:emerald"
 					type: "item"
 				}
 				{
 					id: "745E50C3339745FA"
 					type: "xp"
-					xp: 1000
+					xp: 500
 				}
 			]
-			subtitle: "Villager \"Kidnapping\" and Town Lodging"
-			tasks: [{
-				id: "4147DCFF903447B3"
-				title: "3+ Villagers Resettled in Town Lodging"
-				type: "checkmark"
-			}]
+			subtitle: "Villagers in town"
+			tasks: [
+				{
+					id: "4147DCFF903447B3"
+					title: "3 villagers living in town"
+					type: "custom"
+				}
+			]
 			title: "Q-HT07: The Relocation Initiative"
 			x: 1.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["28C3841D89C1FD27"]
-			description: ["Every self-respecting gothic village needs an apothecary. Construct a stone alchemy shop with an attached glass greenhouse. Equip it with a heated Hexerei Mixing Cauldron, drying racks for Mandrake and Belladonna, potion shelves, and mystical decor from Magic Vibe Decorations. This will serve as our communal hub for brewing healing salves, teas, and monster repellents."]
+			description: ["Build the Apothecary with its greenhouse. Take the Town Charter this quest gives you, build from the Forgematica blueprint (schematics\\Hallowstown), then place the Charter on the middle of the front path facing the door. Right-click it to see progress; sneak and right-click to mark wrong spots. It completes at a 90% match.", "", "Shelves of jars, drying herbs and a bubbling cauldron. Nobody asks what is in the green one."]
 			icon: {
 				Count: 1
 				id: "minecraft:potion"
@@ -324,19 +346,22 @@
 					xp: 1000
 				}
 			]
-			subtitle: "Town Alchemy and Herbalism"
-			tasks: [{
-				id: "34A6DD6501CEE2E0"
-				title: "Apothecary Built"
-				type: "checkmark"
-			}]
-			title: "Q-HT09: The Witch's Apothecary and Greenhouse"
+			subtitle: "Town alchemy and herbalism"
+			tasks: [
+				{
+					icon: "spooktacular:charter_apothecary"
+					id: "34A6DD6501CEE2E0"
+					title: "Build the Apothecary"
+					type: "custom"
+				}
+			]
+			title: "Q-HT09: The Witch's Apothecary"
 			x: -3.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["3A4F757F49C95BE7"]
-			description: ["Establish Hallowstown's shared agricultural grounds just outside the main square. Plant sprawling pumpkin patches, tall rows of corn (*Haunted Harvest*), and apple trees, and build a rustic tea and cider shed with a Kaleidoscope Cookery Millstone and Teapots to keep the tavern stocked all October."]
+			description: ["Build the Mill shed and bring home 8 apples from your orchard. Take the Town Charter this quest gives you, build from the Forgematica blueprint (schematics\\Hallowstown), then place the Charter on the middle of the front path facing the door. Right-click it to see progress; sneak and right-click to mark wrong spots. It completes at a 90% match.", "", "The charter checks the mill shed only. Plant the crops and orchard however you like."]
 			icon: "batsgalore:spooky_oak_sapling"
 			id: "01769DC4E6CC537B"
 			rewards: [
@@ -359,17 +384,20 @@
 				}
 			]
 			size: 1.0d
-			subtitle: "Agricultural Harvest Grounds"
+			subtitle: "Harvest grounds"
 			tasks: [
 				{
+					icon: "spooktacular:charter_orchard_mill"
 					id: "3D6A85B68C42A6A3"
-					title: "Built the Orchard"
-					type: "checkmark"
+					title: "Build the Orchard Mill shed"
+					type: "custom"
 				}
 				{
+					count: 8L
 					id: "4C21F56F963A849B"
-					title: "Built the Mill"
-					type: "checkmark"
+					item: "minecraft:apple"
+					title: "Harvest 8 apples"
+					type: "item"
 				}
 			]
 			title: "Q-HT10: The Autumn Orchard and Pumpkin Mill"
@@ -378,41 +406,42 @@
 		}
 		{
 			dependencies: ["2AE8B83641AEC2A5"]
-			description: ["Erect a tall gothic stone clocktower overlooking the town square and foggy forest canopies. Mount a town bell (*Supplementaries*) and clock mechanism at the top. When Blood Moons rise or stalkers approach the perimeter, the lookout can ring the bell to summon all players back to the safehaven."]
+			description: ["Build the Midnight Spire clocktower. Take the Town Charter this quest gives you, build from the Forgematica blueprint (schematics\\Hallowstown), then place the Charter on the middle of the front path facing the door. Right-click it to see progress; sneak and right-click to mark wrong spots. It completes at a 90% match.", "", "From the top you can see the whole valley, and whatever is walking toward it."]
 			icon: "minecraft:bell"
 			id: "2D4FCF3F34B9E999"
 			rewards: [
 				{
 					id: "59D93806A1AABFF2"
-					item: "minecraft:bell"
+					item: "minecraft:clock"
 					type: "item"
 				}
 				{
 					id: "2D1EDCBF8A682B9A"
 					type: "xp"
-					xp: 1000
+					xp: 1500
+				}
+				{
+					id: "19FAA69C528FC835"
+					item: "minecraft:spyglass"
+					type: "item"
 				}
 			]
-			subtitle: "Lookout and Blood Moon Alarm"
+			subtitle: "The town clocktower"
 			tasks: [
 				{
+					icon: "spooktacular:charter_spire"
 					id: "0CC63D8EF55E2757"
-					title: "The Clocktower is Built"
-					type: "checkmark"
-				}
-				{
-					id: "566AECB57B88729E"
-					title: "The Alarm is Built"
-					type: "checkmark"
+					title: "Build the Midnight Spire"
+					type: "custom"
 				}
 			]
-			title: "Q-HT11: The Midnight Spire (The Town Clocktower)"
+			title: "Q-HT11: The Midnight Spire"
 			x: -4.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["6DE25B0EBB8675EC"]
-			description: ["Beneath our peaceful surface cemetery lies something darker. Dig a vaulted stone crypt beneath the graveyard with archways, sarcophagi, and iron bars. This secure subterranean chamber is where the town keeps its occult work: Hexerei cauldrons, blood alchemy and spellcasting, away from the living."]
+			description: ["Build the Crypt and the Catacombs, each with its own Charter. Take the Town Charter this quest gives you, build from the Forgematica blueprint (schematics\\Hallowstown), then place the Charter on the middle of the front path facing the door. Right-click it to see progress; sneak and right-click to mark wrong spots. It completes at a 90% match.", "", "The living are not invited down here. Keep your occult work below the graves."]
 			icon: "graveyard:skull_pile"
 			id: "4D306F719E5C18BD"
 			rewards: [
@@ -435,20 +464,22 @@
 				{
 					id: "6BBAC90F9166AFCE"
 					type: "xp"
-					xp: 1000
+					xp: 1500
 				}
 			]
-			subtitle: "Underground Altar Chamber"
+			subtitle: "Below the graveyard"
 			tasks: [
 				{
+					icon: "spooktacular:charter_crypt"
 					id: "7600BEECF904BE26"
-					title: "Built the Crypt"
-					type: "checkmark"
+					title: "Build the Crypt"
+					type: "custom"
 				}
 				{
+					icon: "spooktacular:charter_catacombs"
 					id: "057A3C62DE597798"
-					title: "Dig up some Catacombs"
-					type: "checkmark"
+					title: "Build the Catacombs"
+					type: "custom"
 				}
 			]
 			title: "Q-HT12: The Catacombs and Occult Crypt"
@@ -457,7 +488,7 @@
 		}
 		{
 			dependencies: ["28C3841D89C1FD27"]
-			description: ["Build a festive town haberdashery and tailor shop. Furnish it with armor stands, mannequins, costume mirrors, and display shelving where friends can recycle hat scraps (*Simple Hats*), display rare monster masks, and plan their outfits for the concert and Halloween night party."]
+			description: ["Build the Boutique. Take the Town Charter this quest gives you, build from the Forgematica blueprint (schematics\\Hallowstown), then place the Charter on the middle of the front path facing the door. Right-click it to see progress; sneak and right-click to mark wrong spots. It completes at a 90% match.", "", "Masks on every shelf, mirrors in every corner. Pick a costume before the Halloween party."]
 			icon: "simplehats:tophat"
 			id: "67E934B9C20A525C"
 			rewards: [
@@ -478,19 +509,22 @@
 					xp: 1000
 				}
 			]
-			subtitle: "Costume and Tailor Shop"
-			tasks: [{
-				id: "7CD512BDF15F0FA3"
-				title: "Built the Boutique"
-				type: "checkmark"
-			}]
+			subtitle: "Costume and tailor shop"
+			tasks: [
+				{
+					icon: "spooktacular:charter_boutique"
+					id: "7CD512BDF15F0FA3"
+					title: "Build the Masquerade Boutique"
+					type: "custom"
+				}
+			]
 			title: "Q-HT13: The Masquerade Boutique"
 			x: 1.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["777B0848E5B19526"]
-			description: ["Traveling across Tectonic's mountains on foot takes forever. Construct a rustic carriage house and town stable. Equip it with feeding stalls, hay bales, and warded Pet Beds from Domestication Innovation so your horses never suffer permadeath. Craft a Stagecoach or Cart harness to hitch teams of horses for group road trips."]
+			description: ["Build the Stables. Take the Town Charter this quest gives you, build from the Forgematica blueprint (schematics\\Hallowstown), then place the Charter on the middle of the front path facing the door. Right-click it to see progress; sneak and right-click to mark wrong spots. It completes at a 90% match.", "", "Hay, stalls and warm lanterns. The horses stay calm here, mostly."]
 			icon: "astikorcartsredux:oak_animal_cart"
 			id: "1EB1C674C441E3B4"
 			rewards: [
@@ -511,17 +545,13 @@
 					xp: 1500
 				}
 			]
-			subtitle: "Horse Transport and Caravans"
+			subtitle: "Horses and caravans"
 			tasks: [
 				{
+					icon: "spooktacular:charter_stables"
 					id: "17BF12083E078DB5"
-					title: "Stable Built"
-					type: "checkmark"
-				}
-				{
-					id: "189A7A22E619D05F"
-					title: "Carriage House Built"
-					type: "checkmark"
+					title: "Build the Stables"
+					type: "custom"
 				}
 			]
 			title: "Q-HT14: The Carriage House and Stables"
@@ -530,7 +560,7 @@
 		}
 		{
 			dependencies: ["67E934B9C20A525C"]
-			description: ["Connect Hallowstown to the waterways! Build a wooden harbor pier along the river using Macaw's boardwalks, rope railings, and hanging lanterns. Construct a drydock and assemble a multi-sail vessel (Brigg, Galley, or Drakkar from Small Ships) with mounted cannons to launch naval expeditions into misty oceans."]
+			description: ["Build the Wharf. Take the Town Charter this quest gives you, build from the Forgematica blueprint (schematics\\Hallowstown), then place the Charter on the middle of the front path facing the door. Right-click it to see progress; sneak and right-click to mark wrong spots. It completes at a 90% match.", "", "Rope, planks and hanging lanterns above black water. Something knocks softly under the pier."]
 			icon: "smallships:oak_cog"
 			id: "2989916809E113BC"
 			rewards: [
@@ -551,17 +581,13 @@
 					xp: 1500
 				}
 			]
-			subtitle: "Maritime Docks and Shipyard"
+			subtitle: "Docks and boats"
 			tasks: [
 				{
+					icon: "spooktacular:charter_wharf"
 					id: "0F09FBA3C2B3577E"
-					title: "Boathouse Built"
-					type: "checkmark"
-				}
-				{
-					id: "6161925924021651"
-					title: "Docks Built"
-					type: "checkmark"
+					title: "Build the Misty Wharf"
+					type: "custom"
 				}
 			]
 			title: "Q-HT15: The Misty Wharf and Boathouse"
@@ -570,7 +596,7 @@
 		}
 		{
 			dependencies: ["2AE8B83641AEC2A5"]
-			description: ["Erect a grand Victorian library furnished with gothic carved bookshelves from Chipped. Place lecterns to display the town's guidebooks, such as Hexerei's Book of Shadows. Dedicate one wing to the \"Cryptid Gallery Wall\" using item frames to pin physical developed photographs of monsters, and place a central Town Sharestone for fast travel."]
+			description: ["Build the Grand Archive and Photo Gallery, the hub for Chapter 4. Take the Town Charter this quest gives you, build from the Forgematica blueprint (schematics\\Hallowstown), then place the Charter on the middle of the front path facing the door. Right-click it to see progress; sneak and right-click to mark wrong spots. It completes at a 90% match.", "", "Shelves of old books and a wall of photographs of things that should not exist."]
 			icon: "minecraft:book"
 			id: "54BFAB7B97A92B74"
 			rewards: [
@@ -588,20 +614,16 @@
 				{
 					id: "29CEBC164E4FCAE7"
 					type: "xp"
-					xp: 1000
+					xp: 2500
 				}
 			]
-			subtitle: "Town Library and Cryptid Wall"
+			subtitle: "Library and cryptid wall"
 			tasks: [
 				{
+					icon: "spooktacular:charter_archive"
 					id: "318CB401E7D3BD37"
-					title: "Archive Built"
-					type: "checkmark"
-				}
-				{
-					id: "05853024579513DA"
-					title: "Photo Gallery Built"
-					type: "checkmark"
+					title: "Build the Grand Archive"
+					type: "custom"
 				}
 			]
 			title: "Q-HT16: The Grand Archive and Photo Gallery"
@@ -610,7 +632,7 @@
 		}
 		{
 			dependencies: ["2D4FCF3F34B9E999"]
-			description: ["Our kidnapped villagers need protection! Build a reinforced stone garrison and watchtower at the town gate. Mount a Bountiful Bounty Board where players can take on monster-hunting contracts for gold and rare loot. Post at least two armed Guard Villagers with crossbows or iron swords, and set up an emergency radio base station."]
+			description: ["Build the Garrison with its Bounty Board. Take the Town Charter this quest gives you, build from the Forgematica blueprint (schematics\\Hallowstown), then place the Charter on the middle of the front path facing the door. Right-click it to see progress; sneak and right-click to mark wrong spots. It completes at a 90% match.", "", "Guards stand watch at the gate. Contracts pile up on the board."]
 			icon: {
 				Count: 1
 				id: "minecraft:iron_sword"
@@ -636,25 +658,22 @@
 					xp: 1500
 				}
 			]
-			subtitle: "Defense HQ and Monster Contracts"
+			subtitle: "Defence and contracts"
 			tasks: [
 				{
+					icon: "spooktacular:charter_garrison"
 					id: "236734910EE889DC"
-					title: "Guard Barrack Built"
-					type: "checkmark"
-				}
-				{
-					id: "420B10072DC1F005"
-					title: "Bounty Board Built"
-					type: "checkmark"
+					title: "Build the Garrison and Bounty Board"
+					type: "custom"
 				}
 			]
+			title: "Q-HT17: The Garrison and Bounty Board"
 			x: -7.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["1F65D7F0DC9B54A8"]
-			description: ["A shared town generates thousands of building blocks, monster drops, and autumn crops. Build a dedicated communal storehouse with color-coded Sophisticated Storage barrels, tiered chest upgrades with controller hubs, and high-speed Iron Furnaces so the entire team can deposit and process materials without chest clutter."]
+			description: ["Build the Pantry (vault and sorting) and the Smeltery, each with its own Charter. Take the Town Charter this quest gives you, build from the Forgematica blueprint (schematics\\Hallowstown), then place the Charter on the middle of the front path facing the door. Right-click it to see progress; sneak and right-click to mark wrong spots. It completes at a 90% match.", "", "Barrels, chests and glowing furnaces. A tidy town is a safe one."]
 			icon: "minecraft:chest"
 			id: "786F5C213B0EC984"
 			rewards: [
@@ -680,63 +699,57 @@
 					xp: 1000
 				}
 			]
-			subtitle: "Communal Warehouse and Smeltery"
+			subtitle: "Warehouse and smeltery"
 			tasks: [
 				{
+					icon: "spooktacular:charter_pantry"
 					id: "26F248D01A6F0831"
-					title: "Vault Built"
-					type: "checkmark"
+					title: "Build the Pantry (vault and sorting)"
+					type: "custom"
 				}
 				{
-					id: "0A81B55A276F4BE7"
-					title: "Sorting Station Built"
-					type: "checkmark"
-				}
-				{
+					icon: "spooktacular:charter_smeltery"
 					id: "2346E8F9D6650E8D"
-					title: "Smeltery Built"
-					type: "checkmark"
+					title: "Build the Smeltery"
+					type: "custom"
 				}
 			]
+			title: "Q-HT18: The Town Storehouse"
 			x: 1.5d
 			y: -4.0d
 		}
 		{
-			description: [
-				"I do not want to block off any quests for people to complete, but to be clear: "
-				""
-				"&4THIS SECTION IS ONLY REQUIRING CHECKMARKS TO PROCEED AS THERE IS NO WAY FOR ME TO UNLOCK THEM AS WE GO.&r"
-				""
-				"I am trusting everyone to only complete quests as we finish them in this chapter, so please confirm with me before you complete these quests."
-				""
-				"There will be punishment if you are found to be skipping ahead on the questline to get extra rewards. Trust me, I will know."
-				""
-				"Thank you!"
-			]
 			dependencies: ["343223623106FBD6"]
+			description: ["Please do not skip ahead. Quests here cannot be locked, so we rely on trust.", "", "Only complete a quest once the whole group has finished that step, and ask Josh if you are unsure. Skipping ahead for extra rewards has consequences. Josh will know.", "", "Click the checkmark to promise."]
 			id: "484CC116C514D530"
-			rewards: [{
-				id: "26149F8B388EACEF"
-				item: "minecraft:apple"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "26149F8B388EACEF"
+					item: "minecraft:apple"
+					type: "item"
+				}
+				{
+					id: "152DFF32DD4B5C30"
+					type: "xp"
+					xp: 250
+				}
+			]
 			size: 4.0d
-			subtitle: "PLEASE READ BEFORE STARTING"
-			tasks: [{
-				id: "13B8684FC480D9D0"
-				title: "I will be a good boy/girl :)"
-				type: "checkmark"
-			}]
+			subtitle: "Please read before starting"
+			tasks: [
+				{
+					id: "13B8684FC480D9D0"
+					title: "I will not skip ahead"
+					type: "checkmark"
+				}
+			]
 			title: "WARNING BEFORE PROCEEDING"
 			x: -6.0d
 			y: -6.0d
 		}
 		{
-			dependencies: [
-				"4D306F719E5C18BD"
-				"54BFAB7B97A92B74"
-			]
-			description: ["As our magical power peaks, a simple crypt is no longer sufficient. Construct a towering gothic dark-stone cathedral overlooking Hallowstown. Incorporate flying buttresses, vaulted stone arches using Chipped and Macaw's Roofs, rose stained-glass windows, and a grand choir loft. This sacred sanctum will house the town's finest occult and spellcasting workshops and a consecrated beacon to bathe the town in protective radiant light."]
+			dependencies: ["4D306F719E5C18BD", "54BFAB7B97A92B74"]
+			description: ["Build the Grand Cathedral. Take the Town Charter this quest gives you, build from the Forgematica blueprint (schematics\\Hallowstown), then place the Charter on the middle of the front path facing the door. Right-click it to see progress; sneak and right-click to mark wrong spots. It completes at a 90% match.", "", "Dark stone, stained glass and a vaulted choir loft. Its beacon pedestal is not part of the check."]
 			icon: {
 				Count: 1
 				id: "spartanweaponry:netherite_longsword"
@@ -764,18 +777,22 @@
 				}
 			]
 			size: 2.0d
-			subtitle: "The Ultimate Occult Monument"
-			tasks: [{
-				id: "33621517D426BAEF"
-				title: "Construct the Grand Cathedral"
-				type: "checkmark"
-			}]
+			subtitle: "The ultimate occult monument"
+			tasks: [
+				{
+					icon: "spooktacular:charter_cathedral"
+					id: "33621517D426BAEF"
+					title: "Build the Grand Cathedral"
+					type: "custom"
+				}
+			]
+			title: "Q-EG01: The Grand Cathedral"
 			x: -10.5d
 			y: 6.0d
 		}
 		{
 			dependencies: ["2AE8B83641AEC2A5"]
-			description: ["Taming the Nether requires more than a lone portal. Establish a fortified bastion colony suspended over a lava lake or carved into the blackstone cliffs of Bygone Nether. Build thick crying obsidian ramparts, a secure blast-proof portal room (*NetherPortalFix*), an underground nether wart greenhouse, and a Hoglin banquet hall linked by a private Town Sharestone."]
+			description: ["Build the Infernal Citadel in the Nether. Take the Town Charter this quest gives you, build from the Forgematica blueprint (schematics\\Hallowstown), then place the Charter on the middle of the front path facing the door. Right-click it to see progress; sneak and right-click to mark wrong spots. It completes at a 90% match.", "", "Blackstone ramparts over a sea of lava. The heat never leaves your skin."]
 			icon: "minecraft:nether_bricks"
 			id: "215475FD7349BF6C"
 			rewards: [
@@ -792,26 +809,26 @@
 				{
 					id: "5370E74540FEE66D"
 					type: "xp"
-					xp: 3500
+					xp: 5000
 				}
 			]
 			size: 2.0d
-			subtitle: "Fortified Foothold in the Underworld"
-			tasks: [{
-				id: "5293FCDDB3813DC2"
-				title: "Built the Nether Outpost"
-				type: "checkmark"
-			}]
-			title: "Q-EG02: The Infernal Citadel (Nether Outpost)"
+			subtitle: "Outpost in the Nether"
+			tasks: [
+				{
+					icon: "spooktacular:charter_citadel"
+					id: "5293FCDDB3813DC2"
+					title: "Build the Infernal Citadel"
+					type: "custom"
+				}
+			]
+			title: "Q-EG02: The Infernal Citadel"
 			x: 3.0d
 			y: 6.0d
 		}
 		{
-			dependencies: [
-				"7D5B360460D954CC"
-				"215475FD7349BF6C"
-			]
-			description: ["Above the procedural alien islands of Nullscape and the cosmic horrors of Eldritch End, build a gravity-defying astronomical observatory. Use purpur, primordial crystal, and glowing aberrant lanterns to construct observation domes, voidward shielding, and elevated flight decks designed for Elytra launches across the void."]
+			dependencies: ["7D5B360460D954CC", "215475FD7349BF6C"]
+			description: ["Build the Void Observatory in the End. Take the Town Charter this quest gives you, build from the Forgematica blueprint (schematics\\Hallowstown), then place the Charter on the middle of the front path facing the door. Right-click it to see progress; sneak and right-click to mark wrong spots. It completes at a 90% match.", "", "Domes of purpur under a dark sky. Something out there looks back through the lens."]
 			icon: "minecraft:end_crystal"
 			id: "2E0926D2A4D3578B"
 			rewards: [
@@ -847,19 +864,22 @@
 				}
 			]
 			size: 3.0d
-			subtitle: "Spire Above the Cosmic Abyss"
-			tasks: [{
-				id: "28AE6415F9AB2F6D"
-				title: "Constructed the Void Observatory"
-				type: "checkmark"
-			}]
-			title: "Q-EG03: The Void Observatory (End Dimension Spire)"
+			subtitle: "Spire above the abyss"
+			tasks: [
+				{
+					icon: "spooktacular:charter_observatory"
+					id: "28AE6415F9AB2F6D"
+					title: "Build the Void Observatory"
+					type: "custom"
+				}
+			]
+			title: "Q-EG03: The Void Observatory"
 			x: -4.0d
 			y: 10.0d
 		}
 		{
 			dependencies: ["2E0926D2A4D3578B"]
-			description: ["A grand monumental hall dedicated to honoring our journey. Build a marble and dark-iron museum to house our greatest achievements: display the severed skull of The Corrupted Lich, mount The Bellringer's haunted bell, hang our expedition banners, and create a gallery wall featuring our best framed *Exposure* photographs of friends, bosses, and haunted encounters throughout the event."]
+			description: ["Build the Hall of Heroes, a trophy museum for your boss trophies. Take the Town Charter this quest gives you, build from the Forgematica blueprint (schematics\\Hallowstown), then place the Charter on the middle of the front path facing the door. Right-click it to see progress; sneak and right-click to mark wrong spots. It completes at a 90% match.", "", "Every trophy here cost someone a bad night."]
 			icon: {
 				Count: 1
 				id: "morerelics:crown_of_the_legend"
@@ -923,51 +943,104 @@
 				}
 			]
 			size: 4.0d
-			subtitle: "Memorial of the Spooktacular Survivors"
-			tasks: [{
-				id: "6761434BA7867918"
-				title: "Construct the Mausoleum"
-				type: "checkmark"
-			}]
+			subtitle: "Memorial of the survivors"
+			tasks: [
+				{
+					icon: "spooktacular:charter_hall_of_heroes"
+					id: "6761434BA7867918"
+					title: "Build the Hall of Heroes"
+					type: "custom"
+				}
+			]
+			title: "Q-EG04: Hall of Heroes"
 			x: -4.0d
 			y: 15.0d
 		}
 		{
-			dependencies: ["28C3841D89C1FD27"]
-			description: [
-				"Construct a grand stone fountain at the heart of the town square to serve as Hallowstown's festive centerpiece."
-				""
-				"The winning carved pumpkin from the &6Great Pumpkin Carving Showdown&r will be enshrined atop this fountain for the duration of the Halloween event!"
-			]
-			icon: "minecraft:water_bucket"
-			id: "6375AFD72F57A55D"
+			description: ["Craft a Trading Post.", "", "It lets you trade with every villager working nearby from a single screen."]
+			icon: "tradingpost:trading_post"
+			id: "68B0762F4A62904C"
 			rewards: [
 				{
-					id: "4082BD773C9EA649"
-					item: "minecraft:water_bucket"
+					count: 8
+					id: "5D9B85D1EBEE819A"
+					item: "minecraft:emerald"
 					type: "item"
 				}
 				{
-					count: 4
-					id: "71D0D66A18AF7CA7"
-					item: "minecraft:jack_o_lantern"
-					type: "item"
-				}
-				{
-					id: "6A65A6DD24CE1D6F"
+					id: "051ED7456312C747"
 					type: "xp"
-					xp: 1000
+					xp: 500
 				}
 			]
-			subtitle: "Display Pedestal for Carved Jack-o'-Lanterns"
-			tasks: [{
-				id: "7B47D00756A1340C"
-				title: "Construct the Town Square Fountain"
-				type: "checkmark"
-			}]
-			title: "Q-HT19: The Town Square Fountain"
-			x: 0.0d
-			y: 0.5d
+			size: 1.0d
+			subtitle: "One counter, every trader"
+			tasks: [
+				{
+					id: "19BF8561D666C7C1"
+					item: "tradingpost:trading_post"
+					title: "Craft a Trading Post"
+					type: "item"
+				}
+			]
+			title: "Q-HT20: The Trading Post"
+			x: -10.5d
+			y: 17.5d
+		}
+		{
+			description: ["Craft a Market.", "", "Trade emeralds for seeds, saplings and young animals to grow the town's farms."]
+			icon: "farmingforblockheads:market"
+			id: "10DFB4FAF067B233"
+			rewards: [
+				{
+					count: 8
+					id: "1483FB2DECA4E731"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "46B761C70549AFB6"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Farming for Blockheads"
+			tasks: [
+				{
+					id: "3F8D2F864D607673"
+					item: "farmingforblockheads:market"
+					title: "Craft a Market"
+					type: "item"
+				}
+			]
+			title: "Q-HT21: The Seed Market"
+			x: -8.5d
+			y: 17.5d
+		}
+		{
+			description: ["Open the FTB Chunks map, claim the chunks around your home, then tick the box.", "", "Claimed land belongs to your team. Others cannot break or place blocks there."]
+			icon: "minecraft:book"
+			id: "14C8D7F79EDEDB25"
+			rewards: [
+				{
+					id: "17044364EBCD0FA2"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.0d
+			subtitle: "FTB Chunks"
+			tasks: [
+				{
+					id: "35214FF4FF1FA05F"
+					title: "I claimed my land"
+					type: "checkmark"
+				}
+			]
+			title: "Q-HT22: Staking a Claim"
+			x: -6.5d
+			y: 17.5d
 		}
 	]
 	title: "🎃 CHAPTER 1: THE BUILDING OF HALLOWSTOWN"

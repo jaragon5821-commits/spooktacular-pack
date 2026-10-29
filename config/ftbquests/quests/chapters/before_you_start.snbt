@@ -8,7 +8,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["&6Welcome to Chop's Spooktacular!&r Over the weeks leading up to Halloween, our goal is to survive together as a community. We will build Hallowstown around the old theatre, brew seasonal drinks, solve dimension mysteries, and defeat ancient horrors lurking in the fog. Open this quest book often: it is your survival manual."]
+			description: ["&6Welcome to Chop's Spooktacular!&r Read this chapter, then click the checkmark to begin.", "", "Together we will build Hallowstown around the old theatre, brew seasonal drinks, solve dimension mysteries and fight horrors in the fog. Keep this quest book handy: it is your survival manual."]
 			id: "41F51D2C2E955CFA"
 			rewards: [
 				{
@@ -22,88 +22,94 @@
 					type: "item"
 				}
 			]
-			subtitle: "Please read all before starting!"
-			tasks: [{
-				id: "6DC7619B91119839"
-				title: "I am ready to begin"
-				type: "checkmark"
-			}]
+			subtitle: "Please read all before starting"
+			tasks: [
+				{
+					id: "6DC7619B91119839"
+					title: "Click to begin"
+					type: "checkmark"
+				}
+			]
+			title: "Welcome to Hallowstown"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["41F51D2C2E955CFA"]
-			description: ["&cDo not venture into the night alone!&r Chop's Spooktacular is balanced around cooperative survival. Open your inventory and click the &eMy Team&r icon in the top-left corner (or type &b/ftbteams party create&r). Being in a shared party automatically shares quest completions with your teammates."]
+			description: ["Open your inventory, click the &eMy Team&r icon in the top-left corner (or type &b/ftbteams party create&r), then create or join a party. Click the checkmark when you are in one.", "", "A shared party shares quest completions with your teammates. Do not wander into the night alone."]
 			id: "65187AC4C479B9EA"
-			rewards: [{
-				id: "312BA5DF8082E3B7"
-				item: {
-					Count: 1
-					id: "minecraft:white_banner"
-					tag: { }
+			rewards: [
+				{
+					id: "312BA5DF8082E3B7"
+					item: {
+						Count: 1
+						id: "minecraft:white_banner"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "4F690341F12ABDA8"
-				title: "Party Created or Joined"
-				type: "checkmark"
-			}]
+			]
+			subtitle: "Share progress with friends"
+			tasks: [
+				{
+					id: "4F690341F12ABDA8"
+					title: "I am in a party"
+					type: "checkmark"
+				}
+			]
+			title: "Form a Party"
 			x: 2.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["65187AC4C479B9EA"]
-			description: ["Proximity audio with acoustic cave reverberation is active. Press &bV&r to open the settings menu: select your microphone, test your voice, and adjust your &6Voice Activation Threshold&r so background static doesn't trigger your mic. Make sure game sound is loud enough to hear footfalls in the dark."]
+			description: ["Press &bV&r to open the voice chat menu. Pick your microphone, test your voice and set the &6Voice Activation Threshold&r so background noise does not trigger it. Click the checkmark when it works.", "", "Turn your game sound up too. You will want to hear footsteps in the dark."]
 			id: "56E7DFE6DD907422"
-			rewards: [{
-				id: "77FDB33D17220F33"
-				item: "supplementaries:candy"
-				type: "item"
-			}]
-			subtitle: "Calibrate Simple Voice Chat"
-			tasks: [{
-				id: "1049BDC211A3D862"
-				title: "Microphone Calibrated"
-				type: "checkmark"
-			}]
+			rewards: [
+				{
+					id: "77FDB33D17220F33"
+					item: "supplementaries:candy"
+					type: "item"
+				}
+			]
+			subtitle: "Set up Simple Voice Chat"
+			tasks: [
+				{
+					id: "1049BDC211A3D862"
+					title: "My microphone works"
+					type: "checkmark"
+				}
+			]
 			title: "Proximity Voice Setup"
 			x: 0.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["56E7DFE6DD907422"]
-			description: [
-				"Take thirty seconds to review your controls to ensure you know your primary hotkeys:&f "
-				"• &bV&r - Voice Chat Settings "
-				"• &bB&r - Emotecraft Dance Wheel "
-				"• &bJ&r - JourneyMap Fullscreen Map "
-				"• &bM&r - Forgematica Menu (blueprints) "
-				"• &bHold `&r - FTB Ultimine Veinminer (many players rebind it to a mouse thumb button)"
-				"• &bR&r - Walkie Talkie / Carriage Harness"
-				"• &bWardrobe button in your inventory&r - Cosmetic Armor"
-				""
-				"Several mods share keys (the walkie-talkie and carriage harness both use R). In Options > Controls > Key Binds, anything shown in red has a conflict: rebind one of them."
-			]
+			description: ["Open Options > Controls > Key Binds. Anything shown in red is a conflict: rebind one of the two keys. Then click the checkmark.", "", "&bV&r Voice Chat Settings", "", "&bB&r Emotecraft Dance Wheel", "", "&bJ&r JourneyMap Fullscreen Map", "", "&bM&r Forgematica Menu (blueprints)", "", "&bHold `&r FTB Ultimine (many players rebind this to a mouse button)", "", "&bR&r Walkie Talkie and Carriage Harness (they share R, so rebind one)", "", "Wardrobe button in your inventory: Cosmetic Armor"]
 			id: "271386B9E5F1CB59"
-			rewards: [{
-				id: "3D976E0BAB89E1E7"
-				item: "minecraft:recovery_compass"
-				type: "item"
-			}]
-			subtitle: "Check Your Primary Controls"
-			tasks: [{
-				id: "2F2E64547E10C603"
-				title: "Controls Checked"
-				type: "checkmark"
-			}]
-			title: "Keybinds and Essential Hotkeys"
+			rewards: [
+				{
+					id: "3D976E0BAB89E1E7"
+					item: "minecraft:recovery_compass"
+					type: "item"
+				}
+			]
+			subtitle: "Learn the hotkeys"
+			tasks: [
+				{
+					id: "2F2E64547E10C603"
+					title: "My keybinds are set"
+					type: "checkmark"
+				}
+			]
+			title: "Check Your Keybinds"
 			x: -2.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["271386B9E5F1CB59"]
-			description: ["&4Warning:&r This modpack features psychological stalkers, sudden audio stingers, and meta-horror elements. &cThe Obsessed&r and &cThe Pale Watcher&r may stalk your routes from the treeline, while &cDreamshift&r wall tears can pull you into liminal dimensions. Stick close to lanterns and document sightings with your camera for the Grand Archive!"]
+			description: ["Read this, then click the checkmark. This pack has stalkers, sudden loud sounds and meta-horror.", "", "&cThe Obsessed&r and &cThe Pale Watcher&r may follow you from the treeline. &cDreamshift&r tears in walls can pull you into strange empty places. Stay near lanterns and photograph what you see for the Grand Archive."]
 			id: "427C490FD1BA48D5"
 			rewards: [
 				{
@@ -123,19 +129,21 @@
 					xp: 250
 				}
 			]
-			subtitle: "Psychological and Meta-Horror Disclosure"
-			tasks: [{
-				id: "521B7CF836A8C720"
-				title: "I Understand"
-				type: "checkmark"
-			}]
+			subtitle: "Read before you play"
+			tasks: [
+				{
+					id: "521B7CF836A8C720"
+					title: "I have read the warning"
+					type: "checkmark"
+				}
+			]
 			title: "Content Warning: The Horrors of the Night"
 			x: 0.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["427C490FD1BA48D5"]
-			description: ["&6Three cardinal rules for a fun event:&r &e1. NEVER break Lootr chests:&r Dungeon chests have gold/blue brackets and give unique loot to every player. Breaking them destroys loot for everyone! &e2. Never leave a friend down:&r When a player is downed, a teammate has 60 seconds to revive them before they die. &e3. Respect the dark:&r Stick together around torches and lanterns."]
+			description: ["Read the three rules, then click the checkmark to promise you will keep them.", "", "&e1. Never break Lootr chests.&r They have gold or blue brackets and give loot to every player. Breaking one ruins it for everyone.", "", "&e2. Never leave a friend down.&r A downed player has 60 seconds to be revived.", "", "&e3. Respect the dark.&r Stay near torches and lanterns."]
 			id: "343223623106FBD6"
 			rewards: [
 				{
@@ -155,12 +163,14 @@
 					xp: 500
 				}
 			]
-			subtitle: "Survival Etiquette and Life Stakes"
-			tasks: [{
-				id: "3E8879224B5A17DB"
-				title: "I Swear to Uphold the Rules"
-				type: "checkmark"
-			}]
+			subtitle: "Three rules for a fun event"
+			tasks: [
+				{
+					id: "3E8879224B5A17DB"
+					title: "I will keep the rules"
+					type: "checkmark"
+				}
+			]
 			title: "The Golden Rules of Hallowstown"
 			x: 0.0d
 			y: -5.0d

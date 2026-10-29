@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "palewatcher:pale_watcher",
+      "required": false
+    }
+  ]
+}

@@ -9,19 +9,7 @@
 	quests: [
 		{
 			dependencies: ["343223623106FBD6"]
-			description: [
-				"&byou may find passages to a better, calmer place&r"
-				""
-				"&bor somewhere unknown yet familiar to this world&r"
-				""
-				"&byou may return in time, please be patient&r"
-				""
-				"&byou enter the same way you came&r"
-				""
-				"&bnot all is as it seems&r"
-				""
-				"&4be careful.&r"
-			]
+			description: ["Read the Dreamshift rules and tick the box when you have.", "", "&bYou may find passages to a calmer place, or to somewhere unknown yet familiar. You enter the same way you came.&r", "", "&bYou may return in time, so be patient. Not all is as it seems.&r", "", "&4Be careful.&r"]
 			icon: "minecraft:oak_door"
 			id: "31DEFF7A83AD87ED"
 			rewards: [
@@ -50,33 +38,28 @@
 				{
 					id: "6F2AF26B4B8B9180"
 					type: "xp"
-					xp: 500
+					xp: 250
 				}
 			]
 			size: 3.0d
-			subtitle: "Survival Manual for the Liminal"
-			tasks: [{
-				id: "23B87D1A404200D5"
-				title: "Protocol Memorized"
-				type: "checkmark"
-			}]
+			subtitle: "Read before you hunt"
+			tasks: [
+				{
+					id: "23B87D1A404200D5"
+					title: "I have read the Dreamshift rules"
+					type: "checkmark"
+				}
+			]
 			title: "Q-DM01: Escape Protocol: Dreamshift"
 			x: -7.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bThe autumn fog carries more than damp cold.&r"
-				"&bSometimes the trees stand a little too straight.&r"
-				"&bSometimes you will find torches burning without fuel, or shrines of dirt where none was built.&r"
-				""
-				"&cShould you glimpse a figure standing motionless at render distance:&r"
-				"  • &eDo not pursue.&r It does not wish to be caught."
-				"  • &eObserve it directly and capture its silhouette on Exposure film for the Grand Archive.&r"
-			]
+			description: ["A lone figure that stands at the limit of sight among the trees, white eyes fixed on you. It never charges. It vanishes if you close the distance or look away too long. The Archive's advice is to keep your distance, never chase it, and take your photo while it still stands in view."]
 			icon: "minecraft:soul_campfire"
 			id: "35B42884D26E705E"
+			invisible: true
 			rewards: [
 				{
 					id: "512B8B49D5D90DD3"
@@ -91,44 +74,31 @@
 				{
 					id: "2B5C96638BCA8B49"
 					type: "xp"
-					xp: 750
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: Entity Zero"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "minecraft:soul_campfire"
-					id: "6BB6AD2E608CC810"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: The Shape in the Treeline"
-					to_observe: "watching:herobrine"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/watching_herobrine"
+					criterion: ""
 					id: "6348DA9362DBE8DC"
-					title: "Photograph for the Grand Archive: The Shape in the Treeline"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM02: The Shape in the Treeline (From The Fog)"
+			title: "Entity Found: From The Fog"
 			x: -15.0d
-			y: 2.0d
+			y: 3.25d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bStone that breathes when the torches flicker.&r"
-				"&bThey wait in forgotten tombs and dark clearings, hands shielding weeping faces.&r"
-				""
-				"&cShould you hear scraping stone when your back is turned:&r"
-				"  • &eDo not blink.&r Blink and you are gone."
-				"  • &eKeep line-of-sight fixed on the carved visage while retreating.&r"
-				"  • &eObserve and photograph its frozen form for the Grand Archive without looking away.&r"
-			]
+			description: ["A winged stone figure that is only a statue while something is looking at it. The moment you look away or blink, it closes the gap and strikes. Never turn your back on it and never face it alone. Keep your eyes on it, back away slowly, and let a friend watch it while you take the picture."]
 			icon: "minecraft:chiseled_stone_bricks"
 			id: "2E3F3F60862CD839"
+			invisible: true
 			rewards: [
 				{
 					count: 2
@@ -150,43 +120,31 @@
 				{
 					id: "1204B6AAB2E83F80"
 					type: "xp"
-					xp: 750
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: The Unblinking"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "minecraft:chiseled_stone_bricks"
-					id: "575871748E41BFBB"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: Weeping Angel"
-					to_observe: "weeping_angels:weeping_angel"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/weeping_angels_weeping_angel"
+					criterion: ""
 					id: "408EB2AC2CA185D7"
-					title: "Photograph for the Grand Archive: Weeping Angel"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM03: The Frozen Statues (Weeping Angels)"
+			title: "Entity Found: Weeping Angels"
 			x: -12.5d
-			y: 2.0d
+			y: 3.25d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bFar below the bedrock where the condensation drips hollow.&r"
-				"&bYou will hear footsteps matching your stride... then pausing when you halt.&r"
-				""
-				"&cShould the music stop and heavy breathing echo in the dark:&r"
-				"  • &eLook up.&r It clings to the ceiling before it drops."
-				"  • &eObserve the creature and snap your camera flash in the dark shaft before retreating.&r"
-			]
+			description: ["A pale, long limbed creature that haunts the deepest caves. It imitates sounds, stalks miners from the dark and crawls across walls and ceilings. It is fast, and it hates being watched for long. Keep the light on, keep your back to a wall, and take the photo when it first shows itself."]
 			icon: "minecraft:pointed_dripstone"
 			id: "7BDB00B7966C3DBA"
+			invisible: true
 			rewards: [
 				{
 					count: 16
@@ -202,43 +160,31 @@
 				{
 					id: "4A024F9A32D84440"
 					type: "xp"
-					xp: 1000
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: Subterranean Screamer"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "minecraft:pointed_dripstone"
-					id: "2C286F5CEA742517"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: The Cave Dweller"
-					to_observe: "cave_dweller:cave_dweller"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/cave_dweller_cave_dweller"
+					criterion: ""
 					id: "229C9D37AD704267"
-					title: "Photograph for the Grand Archive: The Cave Dweller"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM04: The Subterranean Echo (Cave Dweller)"
+			title: "Entity Found: Cave Dweller"
 			x: -10.0d
-			y: 2.0d
+			y: 3.25d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bStatic fills your ears when all else is dead silent.&r"
-				"&bA scorched silhouette against the horizon, radiating molten torment.&r"
-				""
-				"&cShould your vision blur and a high-pitched drone take hold:&r"
-				"  • &eDo not hold its direct gaze for long.&r It feeds on paralysis."
-				"  • &eObserve and snap the anomaly quickly for the Grand Archive, then seek an enclosed shelter.&r"
-			]
+			description: ["A flayed, blood red humanoid that wanders the night and hunts anything that carries a light. It is strong and relentless once it notices you. The Archive's advice is to light the area, fight from range or high ground, and get the photo before it closes in."]
 			icon: "minecraft:redstone_lamp"
 			id: "7DCF05B91CB25FF5"
+			invisible: true
 			rewards: [
 				{
 					id: "3FC792CE2859AB9B"
@@ -253,43 +199,31 @@
 				{
 					id: "1DA25D3D3C722B77"
 					type: "xp"
-					xp: 1000
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: The Writhing Signal"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "minecraft:redstone_lamp"
-					id: "5AC6E67F0D214280"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: The Boiled One"
-					to_observe: "boiled_reimagined:the_boiled_one"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/boiled_reimagined_the_boiled_one"
+					criterion: ""
 					id: "59E55C93D46D5550"
-					title: "Photograph for the Grand Archive: The Boiled One"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM05: The Crimson Frequency (The Boiled One)"
+			title: "Entity Found: The Boiled One"
 			x: -7.5d
-			y: 2.0d
+			y: 3.25d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bYou see a companion walking along the far ridge, waving across the valley.&r"
-				"&bYou check your map... but their player pin is miles away in town.&r"
-				""
-				"&cShould you see someone you recognize standing alone in the wild:&r"
-				"  • &eDo not call out over the radio.&r"
-				"  • &eObserve them through a telescopic lens and photograph them for the Grand Archive before they vanish.&r"
-			]
+			description: ["A pale figure that stands far away in open country and waves like an old friend. It is not one. It keeps its distance, and it vanishes if you walk toward it. Do not call out and do not follow. Use a zoom lens, take the photo from where you stand, and go home."]
 			icon: "minecraft:armor_stand"
 			id: "4919455AFF785152"
+			invisible: true
 			rewards: [
 				{
 					id: "2E90A715D8B03DBA"
@@ -304,44 +238,31 @@
 				{
 					id: "603DEC73203BD88A"
 					type: "xp"
-					xp: 750
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: The False Companion"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "minecraft:armor_stand"
-					id: "1FF77236558461DE"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: Distant Friend False Companion"
-					to_observe: "distantfriends:friend"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/distantfriends_friend"
+					criterion: ""
 					id: "721CD177A4EB73A9"
-					title: "Photograph for the Grand Archive: Distant Friend False Companion"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM06: The Face in the Meadow (Distant Friends)"
+			title: "Entity Found: Distant Friends"
 			x: -5.0d
-			y: 2.0d
+			y: 3.25d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bYou feel eyes pressed against your neck in the dense spruce woods.&r"
-				"&bYou spin around, but there is only an old cedar trunk.&r"
-				"&bIt stays glued to your blind spot, ducking behind whatever tree you face.&r"
-				""
-				"&cShould twigs snap behind your boots in daylight:&r"
-				"  • &eBack up slowly toward an open clearing.&r"
-				"  • &eObserve and catch its silhouette on film for the Grand Archive before it ducks behind bark.&r"
-			]
+			description: ["A forest predator that stays behind trees and out of sight. It follows quietly and strikes when you look away. If you keep it in your view it stays hidden, so the picture needs patience. Keep to clearings, keep your back to a wall or a friend, and take the photo when it peeks out."]
 			icon: "batsgalore:spooky_oak_sapling"
 			id: "208EC6467118663D"
+			invisible: true
 			rewards: [
 				{
 					id: "744F0D35D9F3DFF5"
@@ -356,43 +277,31 @@
 				{
 					id: "5018DEC1E43FA82F"
 					type: "xp"
-					xp: 1000
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: The Forest Mimic"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "batsgalore:spooky_oak_sapling"
-					id: "3560E4BB76AB761F"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: The Hidebehind"
-					to_observe: "whisperwoods:hidebehind"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/whisperwoods_hidebehind"
+					criterion: ""
 					id: "514BD49E25B6D937"
-					title: "Photograph for the Grand Archive: The Hidebehind"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM07: The Shadow Behind the Cedar (Whisperwoods: Hidebehind)"
+			title: "Entity Found: Hidebehind"
 			x: -2.5d
-			y: 2.0d
+			y: 3.25d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bA horned demon cloven-hoofed and bound with iron chains.&r"
-				"&bIt emerges through freezing blizzards to punish those who linger in the dark.&r"
-				""
-				"&cShould a guttural growl vibrate from pitch-black oak thickets:&r"
-				"  • &eDo not sprint blindly.&r Sudden flight triggers an immediate pounce."
-				"  • &eObserve the stalker and take the Grand Archive photo while backing toward open torchlight.&r"
-			]
+			description: ["A tall, horned beast bound with chains that stalks snowy lands at night. It hits hard and it is quicker than it looks. Do not run blindly. Stay near light and good armor, and take the photograph as it steps out of the storm."]
 			icon: "minecraft:spider_eye"
 			id: "2883C44FA45D4C5B"
+			invisible: true
 			rewards: [
 				{
 					id: "72EDD3F1291403BF"
@@ -408,43 +317,31 @@
 				{
 					id: "25CFBD51EA103BC9"
 					type: "xp"
-					xp: 750
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: The Alpine Horned Beast"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "minecraft:spider_eye"
-					id: "4764ECC12E8C0B17"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: Krampus"
-					to_observe: "krampus_vx:krampus"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/krampus_vx_krampus"
+					criterion: ""
 					id: "13853D4CE499E1A2"
-					title: "Photograph for the Grand Archive: Krampus"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM08: The Horned Shadow of the Blizzard (Krampus)"
+			title: "Entity Found: Krampus"
 			x: 0.0d
-			y: 2.0d
+			y: 3.25d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bPale blue flames dancing lazily between dead cypress trunks.&r"
-				"&bThey bob like a traveler's torch, beckoning you off the cobblestone road.&r"
-				""
-				"&cShould you see floating lights in the swamp fog at twilight:&r"
-				"  • &eNever leave the stone road.&r"
-				"  • &eObserve and photograph them from the road barricade for the Grand Archive.&r"
-			]
+			description: ["A drifting spirit light that floats low over swamps and bogs. It leads travelers off safe ground. Stay on the road, do not follow it into the water, and take the photo from the edge of the swamp while it hovers in view."]
 			icon: "minecraft:soul_lantern"
 			id: "1D5A90B1FEE36CC5"
+			invisible: true
 			rewards: [
 				{
 					id: "3FC7DED5FFBE76B3"
@@ -460,42 +357,31 @@
 				{
 					id: "60D2D6D480ACB209"
 					type: "xp"
-					xp: 750
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: Pale Dancing Embers"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "minecraft:soul_lantern"
-					id: "20222C4518AFCDA1"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: Will-o'-the-Wisp"
-					to_observe: "whisperwoods:wisp"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/whisperwoods_wisp"
+					criterion: ""
 					id: "5F485D843733585E"
-					title: "Photograph for the Grand Archive: Will-o'-the-Wisp"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM09: The Lanterns of the Quagmire (Whisperwoods: Will-o'-the-Wisp)"
+			title: "Entity Found: Will-o'-the-Wisp"
 			x: -15.0d
-			y: 4.5d
+			y: 5.75d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bIt only manifests when you believe you are safe beneath a roof.&r"
-				"&bA silhouette that stands at the foot of your bedroll just as your eyes close.&r"
-				""
-				"&cShould sleep fail to claim you and the room turn freezing cold:&r"
-				"  • &eObserve the nocturnal terror and capture the shadow on film for the Grand Archive.&r"
-			]
+			description: ["Phantoms are the Overworld's sleep debt made flesh. They swoop from the night sky at players who have gone without rest for days. They dive in from above and are weak to a good shield and a bow. Photograph one on its approach, then sleep in a bed."]
 			icon: "comforts:sleeping_bag_white"
 			id: "38D5ED1A10C51170"
+			invisible: true
 			rewards: [
 				{
 					id: "36CEA81052BD51D9"
@@ -510,43 +396,31 @@
 				{
 					id: "61A8E86AE3CC101D"
 					type: "xp"
-					xp: 1000
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: Somnambulist Terror"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "comforts:sleeping_bag_white"
-					id: "1E4504FB4F583971"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: Midnight Nightmare"
-					to_observe: "minecraft:phantom"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/minecraft_phantom"
+					criterion: ""
 					id: "115AAF2B3F0710D2"
-					title: "Photograph for the Grand Archive: Midnight Nightmare"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM10: The Midnight Sleeplessness (Midnight Nightmares)"
+			title: "Entity Found: Midnight Nightmares"
 			x: -12.5d
-			y: 4.5d
+			y: 5.75d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bNo clicking footsteps. No rustling autumn leaves.&r"
-				"&bAn uncannily human visage frozen into mottled green lichen.&r"
-				""
-				"&cShould the hair on your arms stand up without a breeze:&r"
-				"  • &eTurn around slowly with your shutter ready.&r"
-				"  • &eObserve and snap the Grand Archive photograph before raising your shield.&r"
-			]
+			description: ["A silent green stalker that creeps up to its target and explodes. It is the most common horror outside the walls. Listen for the hiss, keep your distance, and take the photograph with a gap between you and the fuse."]
 			icon: "minecraft:creeper_head"
 			id: "1972376B65A76BD3"
+			invisible: true
 			rewards: [
 				{
 					id: "27A58EA8B31BC883"
@@ -567,43 +441,31 @@
 				{
 					id: "203BCCCCF644D1A2"
 					type: "xp"
-					xp: 750
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: The Silent Stalker"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "minecraft:creeper_head"
-					id: "1BA9B25E5642F038"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: Creepy Creeper"
-					to_observe: "minecraft:creeper"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/minecraft_creeper"
+					criterion: ""
 					id: "4F09E2A52EC7E12B"
-					title: "Photograph for the Grand Archive: Creepy Creeper"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM11: The Sibilant Shroud (Creepers)"
+			title: "Entity Found: Creepers"
 			x: -10.0d
-			y: 4.5d
+			y: 5.75d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bLurking along the perimeter walls of Hallowstown Cemetery.&r"
-				"&bSinuous, skeletal limbs digging fresh mounds beneath weeping willow roots.&r"
-				""
-				"&cShould you patrol the cemetery grounds at the witching hour:&r"
-				"  • &eClimb the chapel rafters or belfry to gain elevation.&r"
-				"  • &eObserve and photograph them for the Grand Archive while they scavenge among the tombstones.&r"
-			]
+			description: ["A hunched scavenger that digs through fresh graves and feeds on what it finds. It attacks anyone who disturbs its meal. Watch from higher ground, keep your weapon ready, and take the photo as it works among the stones."]
 			icon: "graveyard:skull_pile"
 			id: "625ED42E9362E1A8"
+			invisible: true
 			rewards: [
 				{
 					id: "3628C21DE4B40345"
@@ -619,42 +481,31 @@
 				{
 					id: "1E41009DE7A9E77D"
 					type: "xp"
-					xp: 1000
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: The Barrow Scavenger"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "graveyard:skull_pile"
-					id: "68776CE9AA96B630"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: Graveyard Ghoul"
-					to_observe: "graveyard:ghoul"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/graveyard_ghoul"
+					criterion: ""
 					id: "47D7732F774974D9"
-					title: "Photograph for the Grand Archive: Graveyard Ghoul"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM12: The Scavenger of the Ossuary (The Graveyard: Ghoul)"
+			title: "Entity Found: Ghoul"
 			x: -7.5d
-			y: 4.5d
+			y: 5.75d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bBeyond the veil where the stars are neither warm nor distant.&r"
-				"&bMassive cyclopean lenses drifting across fractured black void spires.&r"
-				""
-				"&cShould the End sky warp into pulsating violet concentric rings:&r"
-				"  • &eObserve the entity and frame the celestial anomaly in your camera and Grand Archive.&r"
-			]
+			description: ["A vast, many eyed horror that floats in the black skies of the End. It watches rather than rushes, but it is not harmless. Bring blocks, an ender pearl and nerve, and take the photograph from a safe island."]
 			icon: "minecraft:end_crystal"
 			id: "2329A9B64D540784"
+			invisible: true
 			rewards: [
 				{
 					id: "15EE3A0D0823345B"
@@ -670,42 +521,31 @@
 				{
 					id: "29E94ED254D93CCB"
 					type: "xp"
-					xp: 1500
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: The Cosmic Gaze"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "minecraft:end_crystal"
-					id: "679D960E875929B9"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: Eldritch Aberration"
-					to_observe: "eldritch_end:aberration"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/eldritch_end_aberration"
+					criterion: ""
 					id: "504B220488885F24"
-					title: "Photograph for the Grand Archive: Eldritch Aberration"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM13: The Aberrant Sky (Eldritch End: Aberration)"
+			title: "Entity Found: Aberration"
 			x: -5.0d
-			y: 4.5d
+			y: 5.75d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bThey only open in true light level zero.&r"
-				"&bTwo luminous white dots staring motionless from a cave alcove or hollow trunk.&r"
-				""
-				"&cShould glowing eyes lock onto you from pitch darkness:&r"
-				"  • &eObserve the eyes, trigger your camera flash for the Grand Archive, and throw a torch immediately.&r"
-			]
+			description: ["A pair of glowing eyes that appears only in complete darkness. It vanishes when light touches it. If you flash a torch at it, it is gone, so take the photo first. The flash of the camera helps. Keep a torch in hand for the aftermath."]
 			icon: "minecraft:ender_eye"
 			id: "5B0EFDE2534A19A2"
+			invisible: true
 			rewards: [
 				{
 					id: "69D6B51EB55396AF"
@@ -721,42 +561,31 @@
 				{
 					id: "347781D69B35AF2E"
 					type: "xp"
-					xp: 750
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: The Unblinking Sockets"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "minecraft:ender_eye"
-					id: "146689A30FC4C872"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: Eyes in the Darkness"
-					to_observe: "eyesinthedarkness:eyes"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/eyesinthedarkness_eyes"
+					criterion: ""
 					id: "662CBE3F822662EF"
-					title: "Photograph for the Grand Archive: Eyes in the Darkness"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM14: The Twin Embers in the Pitch (Eyes in the Darkness)"
+			title: "Entity Found: Eyes in the Darkness"
 			x: -2.5d
-			y: 4.5d
+			y: 5.75d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bYou only see it out of the corner of your eye inside enclosed rooms.&r"
-				"&bTucked into the ninety-degree seam where two walls meet the ceiling.&r"
-				""
-				"&cShould your peripheral vision register a distortion in the rafters:&r"
-				"  • &eObserve the corner silhouette carefully and snap the blind spot for the Grand Archive.&r"
-			]
+			description: ["A lurking shape that clings to the seam where walls meet ceiling. It appears when the room is dark and you look away. Turn the light on and keep your eyes on it. If you can frame it in your photograph, you may leave."]
 			icon: "minecraft:iron_bars"
 			id: "74D4C738C4CDE4CB"
+			invisible: true
 			rewards: [
 				{
 					id: "642163C24B8BBE9A"
@@ -771,43 +600,31 @@
 				{
 					id: "7D6FC09B275C2B7F"
 					type: "xp"
-					xp: 750
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: The Blind Spot"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "minecraft:iron_bars"
-					id: "60428F94391DAB86"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: The Corner Entity"
-					to_observe: "corner_entity:corner_entity"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/corner_entity_corner_entity"
+					criterion: ""
 					id: "3CC7441604B3778B"
-					title: "Photograph for the Grand Archive: The Corner Entity"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM15: The Silhouette in the Angle (Corner Entity)"
+			title: "Entity Found: Corner Entity"
 			x: 0.0d
-			y: 4.5d
+			y: 5.75d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bTwisted roots that drag themselves through the fallen leaves.&r"
-				"&bA wooden, contorted abomination that mimics dead branches until you draw near.&r"
-				""
-				"&cShould root systems begin to creak and shift in the autumn brush:&r"
-				"  • &eClimb atop high stone boulders or fence lines.&r"
-				"  • &eObserve and photograph the gnarled mass for the Grand Archive before it burrows.&r"
-			]
+			description: ["A twisted tree like creature that stands still among the real trees and moves when you turn away. It is slow, but it hits like a falling trunk. Fire is the old remedy. Keep distance and take the photo while it is still pretending to be a tree."]
 			icon: "minecraft:dead_bush"
 			id: "541F10BD16BDB76D"
+			invisible: true
 			rewards: [
 				{
 					id: "64BCC3A8242A6C64"
@@ -822,42 +639,31 @@
 				{
 					id: "6029DFBAECE1488C"
 					type: "xp"
-					xp: 1000
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: The Gnarled Stalker"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "minecraft:dead_bush"
-					id: "6BBA2D82A85C32CD"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: The Wilted"
-					to_observe: "rootoffear:wilted"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/rootoffear_wilted"
+					criterion: ""
 					id: "24EE21BE3EADA683"
-					title: "Photograph for the Grand Archive: The Wilted"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM16: The Wilted Timber (The Root of Fear: The Wilted)"
+			title: "Entity Found: The Wilted"
 			x: -15.0d
-			y: 7.0d
+			y: 8.25d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bIt nests exclusively within ore-dense deepslate seams.&r"
-				"&bA lumbering, flesh-and-stone monstrosity that awakes when picks strike rock.&r"
-				""
-				"&cShould the stone walls groan and heavy breathing rumble through the cavern:&r"
-				"  • &eClimb into narrow 1x2 escape corridors, observe the beast, and snap the Grand Archive photo.&r"
-			]
+			description: ["A heavy, rock hided brute that lurks in tunnels and mines. It comes at the sound of picks. Dig an escape corridor before you start, keep your armor on, and take your photograph the moment it breaks the wall."]
 			icon: "minecraft:deepslate_iron_ore"
 			id: "5DFCE3DFE6FE4AA6"
+			invisible: true
 			rewards: [
 				{
 					id: "75290C9C22D8A432"
@@ -873,42 +679,31 @@
 				{
 					id: "4377CBA49D6295A6"
 					type: "xp"
-					xp: 1000
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: The Subterranean Predator"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "minecraft:deepslate_iron_ore"
-					id: "227AC10A16C05AF4"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: Tunnel Gore"
-					to_observe: "skarrier_mobs:tunnel_gore"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/skarrier_mobs_tunnel_gore"
+					criterion: ""
 					id: "1B6D69B7A281288A"
-					title: "Photograph for the Grand Archive: Tunnel Gore"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM18: The Greed of the Deeps (Skarrier Mobs: Tunnel Gore)"
+			title: "Entity Found: Tunnel Gore"
 			x: -10.0d
-			y: 7.0d
+			y: 8.25d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bIt conceals itself along dark ravine ledges and unlit cliff edges.&r"
-				"&bUnnaturally elongated arms that lash out across three paces to pull you into the drop.&r"
-				""
-				"&cShould a sudden grasp seize your boots or armor from the dark:&r"
-				"  • &eObserve the creature and frame your shot along the chasm lip for the Grand Archive.&r"
-			]
+			description: ["A long armed ambusher that waits in the dark of ravines and drops. It grabs with a long reach and pulls its prey toward it. Stay away from edges, keep your distance, and take the photograph from level ground."]
 			icon: "minecraft:chain"
 			id: "580FD7E4D57172BE"
+			invisible: true
 			rewards: [
 				{
 					id: "26AFB81BA2CFC678"
@@ -929,43 +724,31 @@
 				{
 					id: "105434B67E0E9065"
 					type: "xp"
-					xp: 750
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: The Dragging Shadow"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "minecraft:chain"
-					id: "3F7FA853B0662759"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: The Dragger"
-					to_observe: "skarrier_mobs:dragger"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/skarrier_mobs_dragger"
+					criterion: ""
 					id: "4286913523B2E3BA"
-					title: "Photograph for the Grand Archive: The Dragger"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM19: The Reach in the Shadows (Skarrier Mobs: The Dragger)"
+			title: "Entity Found: The Dragger"
 			x: -7.5d
-			y: 7.0d
+			y: 8.25d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bHeavy, rhythmic metallic clanking that reverberates through stone floors.&r"
-				"&bA hulking, armor-clad brute whose downward strikes crack surrounding bedrock.&r"
-				""
-				"&cShould tremors shake the ground beneath your feet:&r"
-				"  • &eKeep high ground on carved stone columns to avoid its floor shockwaves.&r"
-				"  • &eObserve and capture its iron bulk on film for the Grand Archive.&r"
-			]
+			description: ["An armored giant that wanders the deep places, each step cracking stone. Its blows send shockwaves across the floor. Keep to high ground, use pillars as cover, and take the photograph from a distance."]
 			icon: "minecraft:anvil"
 			id: "13332EB90937C6A7"
+			invisible: true
 			rewards: [
 				{
 					id: "26AF8ABD4FAD27BA"
@@ -980,43 +763,31 @@
 				{
 					id: "5D0C1144952889EB"
 					type: "xp"
-					xp: 1250
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: The Living Iron"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "minecraft:anvil"
-					id: "7286DFCB4E25BADA"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: The Wrought"
-					to_observe: "skarrier_mobs:wrought"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/skarrier_mobs_wrought"
+					criterion: ""
 					id: "7281BF9018088D1F"
-					title: "Photograph for the Grand Archive: The Wrought"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM20: The Iron Colossus (Skarrier Mobs: The Wrought)"
+			title: "Entity Found: The Wrought"
 			x: -5.0d
-			y: 7.0d
+			y: 8.25d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bThe acoustic silence of the woods is a deceptive canvas.&r"
-				"&bShallow, ragged breathing directly against the nape of your neck.&r"
-				""
-				"&cShould you hear disembodied whispers in zero light:&r"
-				"  • &eTurn on your handheld walkie-talkie to drown out false frequencies.&r"
-				"  • &eObserve the dark cavern fauna and photograph the anomaly for the Grand Archive.&r"
-			]
+			description: ["A small, harmless bat that hangs in the dark and flutters at the edge of torchlight. The Archive treats it as an omen, an echo of larger things in the dark. It is easy to miss, so wait quietly in a cave and take the photograph."]
 			icon: "minecraft:sculk_sensor"
 			id: "12D55F474EF32C9F"
+			invisible: true
 			rewards: [
 				{
 					id: "2224265673A59ACD"
@@ -1031,42 +802,31 @@
 				{
 					id: "6D2BE79C5480844C"
 					type: "xp"
-					xp: 750
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: Auditory Hallucination"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "minecraft:sculk_sensor"
-					id: "2A33810457364A43"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: Phantom Audio Anomaly"
-					to_observe: "minecraft:bat"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/minecraft_bat"
+					criterion: ""
 					id: "2A2AFF27FE78F9CC"
-					title: "Photograph for the Grand Archive: Phantom Audio Anomaly"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM21: The Phantom Resonance"
+			title: "Entity Found: The Phantom Resonance"
 			x: -2.5d
-			y: 7.0d
+			y: 8.25d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bNever rest outside fortified town walls without a warded perimeter.&r"
-				"&bYou awaken in pitch blackness at 3:00 AM unable to move your limbs.&r"
-				""
-				"&cShould an uninvited presence disturb your nocturnal slumber:&r"
-				"  • &eObserve the nightmare shade and ignite a camera flash to log it in the Grand Archive.&r"
-			]
+			description: ["A shadowy horror that lingers around graveyards at night. It strikes when you are tired and alone. Stay in a group, stay in the light, and photograph it before you retreat to a safe bed."]
 			icon: "minecraft:red_bed"
 			id: "2A17B22B0F75A76F"
+			invisible: true
 			rewards: [
 				{
 					id: "645A22266A643A00"
@@ -1087,43 +847,31 @@
 				{
 					id: "6892DF8CE7BB1489"
 					type: "xp"
-					xp: 1000
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: Somnambular Intrusion"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "minecraft:red_bed"
-					id: "1DD96AC0379CEBF3"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: Waking Nightmare"
-					to_observe: "graveyard:nightmare"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/graveyard_nightmare"
+					criterion: ""
 					id: "3DAD06315C19D3B9"
-					title: "Photograph for the Grand Archive: Waking Nightmare"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM22: The Waking Nightmare (The Graveyard)"
+			title: "Entity Found: Waking Nightmare"
 			x: 0.0d
-			y: 7.0d
+			y: 8.25d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bYou never hear it approach. You only feel the sudden weight of its gaze.&r"
-				"&bA tall, dark silhouette perched motionless on distant hills or treetop ridges.&r"
-				""
-				"&cShould you feel the chilling sensation that you are being surveyed from afar:&r"
-				"  • &eDo not sprint toward it.&r"
-				"  • &eObserve it from afar and snap its silhouette with a zoom lens for the Grand Archive.&r"
-			]
+			description: ["A tall silhouette that stands on far ridges and watches without moving. It does not approach while you look at it, but it takes any chance it gets. Do not walk toward it. Use a zoom lens and take the photograph from where you stand."]
 			icon: "minecraft:spyglass"
 			id: "542A9AC043C322BB"
+			invisible: true
 			rewards: [
 				{
 					id: "1328626E97A9B726"
@@ -1138,43 +886,31 @@
 				{
 					id: "6C2700BEDA14B116"
 					type: "xp"
-					xp: 1000
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: The Unseen Observer"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "minecraft:spyglass"
-					id: "2970A6F47672E2D4"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: The One Who Watches"
-					to_observe: "the_one_who_watches:the_one_who_watches"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/the_one_who_watches_the_one_who_watches"
+					criterion: ""
 					id: "1CD04B01E1F38596"
-					title: "Photograph for the Grand Archive: The One Who Watches"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM23: The Vigil on the Ridge (The One Who Watches)"
+			title: "Entity Found: The One Who Watches"
 			x: -15.0d
-			y: 9.5d
+			y: 10.75d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bA gaunt, chalk-white figure stalking through twilight forest edges.&r"
-				"&bIt stands rigidly between dark oak trunks, its pale skin contrasting the autumn gloom.&r"
-				""
-				"&cShould a pale white shape catch your eye in the forest:&r"
-				"  • &eMaintain a steady perimeter distance and never turn your back completely.&r"
-				"  • &eObserve and capture its distinct pale visage on film to log it in the Grand Archive.&r"
-			]
+			description: ["A gaunt, white skinned figure that stands among the trees and stares. It does not move while watched. Keep your eyes on it, back away slowly, and take the photograph before it steps closer."]
 			icon: "minecraft:phantom_membrane"
 			id: "766E582D63661E0C"
+			invisible: true
 			rewards: [
 				{
 					id: "3300EF3F7A1EC63C"
@@ -1195,43 +931,31 @@
 				{
 					id: "57507332597EE576"
 					type: "xp"
-					xp: 1000
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: The White Lurker"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "minecraft:phantom_membrane"
-					id: "42164F6E85AF4980"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: The Pale Watcher"
-					to_observe: "palewatcher:pale_watcher"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/palewatcher_pale_watcher"
+					criterion: ""
 					id: "21EC28C01DF065BA"
-					title: "Photograph for the Grand Archive: The Pale Watcher"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM24: The Pale Gaze (The Pale Watcher)"
+			title: "Entity Found: The Pale Watcher"
 			x: -12.5d
-			y: 9.5d
+			y: 10.75d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bIn the dead of night, you hear three distinct, rhythmic raps on your cottage door.&r"
-				"&bOpen it immediately, and the porch is empty... yet footsteps circle the cabin walls.&r"
-				""
-				"&cShould something knock on your door or window after midnight:&r"
-				"  • &eNever unlatch the front door.&r"
-				"  • &ePeer through an upper shutter window to observe and photograph the stalker for the Grand Archive.&r"
-			]
+			description: ["A night creature that taps on doors and windows and waits for them to open. It circles the home looking for a way in. Do not open the door. Look out of an upper window and photograph it from where you are safe."]
 			icon: "minecraft:oak_door"
 			id: "612A8E9C131969E4"
+			invisible: true
 			rewards: [
 				{
 					id: "7183E8C193792B23"
@@ -1246,43 +970,31 @@
 				{
 					id: "4E704F0C550292E8"
 					type: "xp"
-					xp: 1000
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: The Midnight Knocker"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "minecraft:oak_door"
-					id: "490C2139763B3FA4"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: The Knocker"
-					to_observe: "the_knocker:knocker"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/the_knocker_knocker"
+					criterion: ""
 					id: "60055A14FCB5FB26"
-					title: "Photograph for the Grand Archive: The Knocker"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM25: The Rapping at the Door (The Knocker)"
+			title: "Entity Found: The Knocker"
 			x: -10.0d
-			y: 9.5d
+			y: 10.75d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bA psychological stalker that chooses a single player to fixate upon.&r"
-				"&bEach dusk it appears slightly closer, learning your routines and pathways.&r"
-				""
-				"&cShould you realize an entity is following you specifically:&r"
-				"  • &eStay within earshot of your party members.&r"
-				"  • &eObserve and document its approach on film for the Grand Archive before its fixation peaks.&r"
-			]
+			description: ["A stalker that fixes on one player and follows them across the land. It is patient and it gets closer each time. Stay with your party and keep it in sight. Take the photograph while you still have friends beside you."]
 			icon: "minecraft:glass_bottle"
 			id: "2B3145491F4BE199"
+			invisible: true
 			rewards: [
 				{
 					id: "2B7BA0F5575E5B47"
@@ -1303,43 +1015,31 @@
 				{
 					id: "6CE4797833A9BC96"
 					type: "xp"
-					xp: 1000
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: The Fixated Shadow"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "minecraft:glass_bottle"
-					id: "3AE333537A06BB5D"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: The Obsessed"
-					to_observe: "the_obsessed:the_obsessed"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/the_obsessed_the_obsessed"
+					criterion: ""
 					id: "2D86C1C264B42F5E"
-					title: "Photograph for the Grand Archive: The Obsessed"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM26: The Unrelenting Stare (The Obsessed)"
+			title: "Entity Found: The Obsessed"
 			x: -7.5d
-			y: 9.5d
+			y: 10.75d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bAn ancient woodland predator of local folklore lurking in dense autumn timber.&r"
-				"&bIts crooked silhouette moves silently between pine trunks under the crescent moon.&r"
-				""
-				"&cShould you spot antlers or gleaming eyes in the deep timber:&r"
-				"  • &eKeep to elevated rocks or horseback.&r"
-				"  • &eObserve the beast and snap a clear photograph for the Grand Archive and the town archive.&r"
-			]
+			description: ["A tall woodland predator out of local folklore, with antlers and gleaming eyes. It moves silently through the trees. Stay on high ground, keep your armor on, and take the photograph as it emerges."]
 			icon: "minecraft:bone"
 			id: "68A84E1CE1EED7BB"
+			invisible: true
 			rewards: [
 				{
 					id: "200AFCDC2D46FD54"
@@ -1354,42 +1054,31 @@
 				{
 					id: "5525B63B1DE282C0"
 					type: "xp"
-					xp: 1000
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: The Nocturnal Folklore Beast"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "minecraft:bone"
-					id: "20638052CE708057"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: The Woodland Cryptid"
-					to_observe: "cryptid_vx:cryptid"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/cryptid_vx_cryptid"
+					criterion: ""
 					id: "4544B50EC57B5FE3"
-					title: "Photograph for the Grand Archive: The Woodland Cryptid"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM27: The Woods Demon (The Cryptid)"
+			title: "Entity Found: The Cryptid"
 			x: -5.0d
-			y: 9.5d
+			y: 10.75d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bManifests when a traveler lingers in total darkness for too long.&r"
-				"&bA predatory phantom born directly from clinical dread of the pitch black.&r"
-				""
-				"&cShould the darkness around you begin to coalesce into a physical form:&r"
-				"  • &eObserve the phantom, trigger your camera flash for the Grand Archive, and strike a torch at once.&r"
-			]
+			description: ["A phantom born from the fear of the dark. It appears when you linger in unlit places. Light drives it away, so take the photograph first and then light a torch."]
 			icon: "minecraft:coal_block"
 			id: "5C91F834DD68AACA"
+			invisible: true
 			rewards: [
 				{
 					id: "254BC9C250416123"
@@ -1411,43 +1100,31 @@
 				{
 					id: "11674A59E24F304A"
 					type: "xp"
-					xp: 1000
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: Darkness Born Dread"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "minecraft:coal_block"
-					id: "3E8EF91975EA0C4A"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: Nyctophobia Phantom"
-					to_observe: "nyctophobia:phantom"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/nyctophobia_phantom"
+					criterion: ""
 					id: "3B8EB4A155A852FB"
-					title: "Photograph for the Grand Archive: Nyctophobia Phantom"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM28: The Phantom of Nyctophobia (Nyctophobia)"
+			title: "Entity Found: Nyctophobia"
 			x: -2.5d
-			y: 9.5d
+			y: 10.75d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bNot every dungeon chest holds instanced treasure.&r"
-				"&bLook closely at the latch—if the wood subtly rises and falls with breath, step back.&r"
-				""
-				"&cShould you suspect a chest in a ruin or cavern is a disguised predator:&r"
-				"  • &eDo not reach for the lid.&r"
-				"  • &eObserve the mimic and snap a photograph from a safe distance for the Grand Archive.&r"
-			]
+			description: ["A cloaked figure that harvests souls in graveyards and haunted places. It hits hard and cannot be outrun. Keep your distance, keep a shield up, and take the photograph from behind cover."]
 			icon: "minecraft:trapped_chest"
 			id: "27CAEF6917488775"
+			invisible: true
 			rewards: [
 				{
 					id: "4B3FB48ECFE908C4"
@@ -1462,43 +1139,31 @@
 				{
 					id: "73DFB833D9E37D25"
 					type: "xp"
-					xp: 750
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: The Spectral Harvester"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "minecraft:trapped_chest"
-					id: "1C17408EA35717DD"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: The Reaper"
-					to_observe: "graveyard:reaper"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/graveyard_reaper"
+					criterion: ""
 					id: "3A62881F3ADEF150"
-					title: "Photograph for the Grand Archive: The Reaper"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM29: The Cloaked Harvester (The Graveyard: Reaper)"
+			title: "Entity Found: Reaper"
 			x: 0.0d
-			y: 9.5d
+			y: 10.75d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bA malevolent reflection born from forbidden spellcraft and eclipsed moonlight.&r"
-				"&bIt wears a twisted echo of a traveler's form and channels dark eldritch magic.&r"
-				""
-				"&cShould your own shadow detach from the stone floor:&r"
-				"  • &eKeep your distance and ready your wards.&r"
-				"  • &eObserve the Dark Doppelganger and capture its image on film for the Grand Archive.&r"
-			]
+			description: ["A dark copy of a traveler that appears at night and casts dark spells. It fights with magic and copies what it sees. Keep your distance, bring a shield, and take the photograph before it acts."]
 			icon: "irons_spellbooks:scroll_pouch"
 			id: "7667DA2C00FDF5CC"
+			invisible: true
 			rewards: [
 				{
 					id: "6F3EF56383B47F8E"
@@ -1514,42 +1179,31 @@
 				{
 					id: "25C32C7749E19E95"
 					type: "xp"
-					xp: 1250
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: The Arcane Usurper"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "irons_spellbooks:scroll_pouch"
-					id: "2A64EA3A5991B46A"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: Dark Doppelganger"
-					to_observe: "darkdoppelganger:dark_doppelganger"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/darkdoppelganger_dark_doppelganger"
+					criterion: ""
 					id: "4A24C790C87F1D36"
-					title: "Photograph for the Grand Archive: Dark Doppelganger"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM30: The Shadow Mirror (Dark Doppelganger)"
+			title: "Entity Found: Dark Doppelganger"
 			x: -12.5d
-			y: 12.0d
+			y: 13.25d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bDeep within the Forlorn Hollows, hooded subterranean creatures march in circles around sacrificial altars.&r"
-				""
-				"&cShould you hear rhythmic chanting echoing through guano-covered caverns:&r"
-				"  • &eExtinguish bright torches and watch from an elevated ledge.&r"
-				"  • &eObserve the Underzealot procession and photograph them for the Grand Archive.&r"
-			]
+			description: ["A hooded cave dweller of the Forlorn Hollows that marches around altars and fights in groups. It is wary of bright light. Watch from a ledge, keep torches low, and take the photograph of the procession."]
 			icon: "alexscaves:spelunkery_table"
 			id: "5EE7B8E82118F970"
+			invisible: true
 			rewards: [
 				{
 					id: "7913AA9442537B24"
@@ -1564,42 +1218,31 @@
 				{
 					id: "47F47E5F3AC28DED"
 					type: "xp"
-					xp: 1000
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: The Subterranean Zealot"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "alexscaves:spelunkery_table"
-					id: "20E92B130B09404B"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: Forlorn Hollows Underzealot"
-					to_observe: "alexscaves:underzealot"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/alexscaves_underzealot"
+					criterion: ""
 					id: "2F222316BEE4B799"
-					title: "Photograph for the Grand Archive: Forlorn Hollows Underzealot"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM31: The Caveling Cultist (Forlorn Hollows: Underzealot)"
+			title: "Entity Found: Underzealot"
 			x: -10.0d
-			y: 12.0d
+			y: 13.25d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bPale, moth-like horrors that perch high on the stalactites of the Forlorn Hollows, hijacking the vision of anyone they lock eyes with.&r"
-				""
-				"&cShould your camera perspective suddenly warp toward the cavern ceiling:&r"
-				"  • &eBreak line of sight behind a stone pillar.&r"
-				"  • &eObserve the Watcher and snap its luminous eyes on film for the Grand Archive.&r"
-			]
+			description: ["A moth winged sentinel of the Forlorn Hollows that perches on stalactites. Its gaze can twist your view. Stay behind pillars, break its line of sight when needed, and take the photograph of its glowing eyes."]
 			icon: "minecraft:ender_eye"
 			id: "352A2D9B767C9531"
+			invisible: true
 			rewards: [
 				{
 					id: "27339A6AA3399485"
@@ -1615,42 +1258,31 @@
 				{
 					id: "1814AC2FC27CCAAC"
 					type: "xp"
-					xp: 1000
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: The Moth-Winged Sentinel"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "minecraft:ender_eye"
-					id: "1833A6B9DFFCFE0F"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: Forlorn Hollows Watcher"
-					to_observe: "alexscaves:watcher"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/alexscaves_watcher"
+					criterion: ""
 					id: "3A3A806C82C7F3FE"
-					title: "Photograph for the Grand Archive: Forlorn Hollows Watcher"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM32: The Subterranean Gaze (Forlorn Hollows: Watcher)"
+			title: "Entity Found: Watcher"
 			x: -7.5d
-			y: 12.0d
+			y: 13.25d
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&bLumbering, decay-ridden hulks that prowl the bioluminescent fungal forests of The Undergarden.&r"
-				""
-				"&cShould heavy footsteps shake thedeeprock soil beneath the bedrock:&r"
-				"  • &eMaintain high ground atop mushroom caps.&r"
-				"  • &eObserve the Rotbeast and document its decayed silhouette in the Grand Archive.&r"
-			]
+			description: ["A huge, decaying brute that stalks the mushroom forests of the Undergarden. It is strong but slow. Keep to higher ground, keep your distance, and take the photograph of its rotted bulk."]
 			icon: "undergarden:catalyst"
 			id: "44F35FB0CA4ED74D"
+			invisible: true
 			rewards: [
 				{
 					id: "2411B3D181F0D362"
@@ -1666,41 +1298,32 @@
 				{
 					id: "530CE83217E2DE57"
 					type: "xp"
-					xp: 1000
+					xp: 500
 				}
 			]
-			size: 1.5d
-			subtitle: "Anomalous Sighting: The Fungal Brute"
+			size: 1.0d
+			subtitle: "Archived"
+			tags: ["entity_found"]
 			tasks: [
 				{
-					icon: "undergarden:catalyst"
-					id: "2A62CD5963DE67FA"
-					observe_type: 5
-					timer: 0L
-					title: "Observe: Undergarden Rotbeast"
-					to_observe: "undergarden:rotbeast"
-					type: "observation"
-				}
-				{
+					advancement: "spooktacular:archive/undergarden_rotbeast"
+					criterion: ""
 					id: "185B86BC1E857069"
-					title: "Photograph for the Grand Archive: Undergarden Rotbeast"
-					type: "checkmark"
+					title: "Photograph it"
+					type: "advancement"
 				}
 			]
-			title: "Q-DM33: The Subterranean Rot (The Undergarden: Rotbeast)"
+			title: "Entity Found: Rotbeast"
 			x: -5.0d
-			y: 12.0d
+			y: 13.25d
 		}
 		{
-			dependencies: ["31DEFF7A83AD87ED"]
-			description: [
-				"&6[HOST RESTRICTED MILESTONE]&r"
-				"Unlocked when the community documents at least &e8 unique cryptids (25%)&r in their Grand Archives and on the Grand Archive photo wall in Hallowstown."
-				""
-				"Restricted with the Host Key so Josh can claim and distribute the Town Reward Cache to all participants!"
-			]
+			dependencies: ["35B42884D26E705E", "2E3F3F60862CD839", "7BDB00B7966C3DBA", "7DCF05B91CB25FF5", "4919455AFF785152", "208EC6467118663D", "2883C44FA45D4C5B", "1D5A90B1FEE36CC5", "38D5ED1A10C51170", "1972376B65A76BD3", "625ED42E9362E1A8", "2329A9B64D540784", "5B0EFDE2534A19A2", "74D4C738C4CDE4CB", "541F10BD16BDB76D", "5DFCE3DFE6FE4AA6", "580FD7E4D57172BE", "13332EB90937C6A7", "12D55F474EF32C9F", "2A17B22B0F75A76F", "542A9AC043C322BB", "766E582D63661E0C", "612A8E9C131969E4", "2B3145491F4BE199", "68A84E1CE1EED7BB", "5C91F834DD68AACA", "27CAEF6917488775", "7667DA2C00FDF5CC", "5EE7B8E82118F970", "352A2D9B767C9531", "44F35FB0CA4ED74D"]
+			description: ["Unlocks automatically once 8 of the 31 creatures are Archived. Nothing to hand in.", "", "The Archive counts every Entity Found quest, from any team member's photos."]
+			hide_dependency_lines: true
 			icon: "exposure:photograph_frame"
 			id: "28CEEE6FFD02E9DB"
+			min_required_dependencies: 8
 			rewards: [
 				{
 					count: 16
@@ -1733,26 +1356,18 @@
 				}
 			]
 			size: 2.5d
-			subtitle: "Town Safari Reward Cache I"
-			tasks: [{
-				id: "5C4853868E19CED2"
-				item: "alexscaves:tremorzilla_egg"
-				type: "item"
-			}]
-			title: "[HOST RESTRICTED] Safari Milestone I: 25% Town Archive (8 / 32 Logged)"
+			subtitle: "Safari Cache I"
+			title: "Safari Milestone I: 8 of 31 Archived"
 			x: -13.5d
 			y: -6.0d
 		}
 		{
-			dependencies: ["28CEEE6FFD02E9DB"]
-			description: [
-				"&6[HOST RESTRICTED MILESTONE]&r"
-				"Unlocked when the town gallery houses prints of &e16 distinct horrors (50%)&r."
-				""
-				"Josh claims this milestone to fund the halfway tavern celebration and distribute rare hats and diamonds to the town!"
-			]
+			dependencies: ["35B42884D26E705E", "2E3F3F60862CD839", "7BDB00B7966C3DBA", "7DCF05B91CB25FF5", "4919455AFF785152", "208EC6467118663D", "2883C44FA45D4C5B", "1D5A90B1FEE36CC5", "38D5ED1A10C51170", "1972376B65A76BD3", "625ED42E9362E1A8", "2329A9B64D540784", "5B0EFDE2534A19A2", "74D4C738C4CDE4CB", "541F10BD16BDB76D", "5DFCE3DFE6FE4AA6", "580FD7E4D57172BE", "13332EB90937C6A7", "12D55F474EF32C9F", "2A17B22B0F75A76F", "542A9AC043C322BB", "766E582D63661E0C", "612A8E9C131969E4", "2B3145491F4BE199", "68A84E1CE1EED7BB", "5C91F834DD68AACA", "27CAEF6917488775", "7667DA2C00FDF5CC", "5EE7B8E82118F970", "352A2D9B767C9531", "44F35FB0CA4ED74D"]
+			description: ["Unlocks automatically once 16 of the 31 creatures are Archived. Nothing to hand in.", "", "The Archive counts every Entity Found quest, from any team member's photos."]
+			hide_dependency_lines: true
 			icon: "exposure:glass_photograph_frame"
 			id: "73B414F7A1BE1B13"
+			min_required_dependencies: 16
 			rewards: [
 				{
 					count: 8
@@ -1785,26 +1400,18 @@
 				}
 			]
 			size: 2.5d
-			subtitle: "Town Safari Reward Cache II"
-			tasks: [{
-				id: "1239D2681422ACDA"
-				item: "alexscaves:tremorzilla_egg"
-				type: "item"
-			}]
-			title: "[HOST RESTRICTED] Safari Milestone II: 50% Town Archive (16 / 32 Logged)"
+			subtitle: "Safari Cache II"
+			title: "Safari Milestone II: 16 of 31 Archived"
 			x: -9.5d
 			y: -6.0d
 		}
 		{
-			dependencies: ["73B414F7A1BE1B13"]
-			description: [
-				"&6[HOST RESTRICTED MILESTONE]&r"
-				"Unlocked when &e24 of the 32 terrors (75%)&r are cataloged on film and pinned on the Grand Archive wall."
-				""
-				"Josh unlocks this cache to distribute epic hats, waystones, and diamonds across Hallowstown!"
-			]
+			dependencies: ["35B42884D26E705E", "2E3F3F60862CD839", "7BDB00B7966C3DBA", "7DCF05B91CB25FF5", "4919455AFF785152", "208EC6467118663D", "2883C44FA45D4C5B", "1D5A90B1FEE36CC5", "38D5ED1A10C51170", "1972376B65A76BD3", "625ED42E9362E1A8", "2329A9B64D540784", "5B0EFDE2534A19A2", "74D4C738C4CDE4CB", "541F10BD16BDB76D", "5DFCE3DFE6FE4AA6", "580FD7E4D57172BE", "13332EB90937C6A7", "12D55F474EF32C9F", "2A17B22B0F75A76F", "542A9AC043C322BB", "766E582D63661E0C", "612A8E9C131969E4", "2B3145491F4BE199", "68A84E1CE1EED7BB", "5C91F834DD68AACA", "27CAEF6917488775", "7667DA2C00FDF5CC", "5EE7B8E82118F970", "352A2D9B767C9531", "44F35FB0CA4ED74D"]
+			description: ["Unlocks automatically once 24 of the 31 creatures are Archived. Nothing to hand in.", "", "The Archive counts every Entity Found quest, from any team member's photos."]
+			hide_dependency_lines: true
 			icon: "exposure:camera"
 			id: "4FEAAFF97758D6DC"
+			min_required_dependencies: 24
 			rewards: [
 				{
 					count: 16
@@ -1837,26 +1444,18 @@
 				}
 			]
 			size: 2.5d
-			subtitle: "Town Safari Reward Cache III"
-			tasks: [{
-				id: "190BDB224E6BB036"
-				item: "alexscaves:tremorzilla_egg"
-				type: "item"
-			}]
-			title: "[HOST RESTRICTED] Safari Milestone III: 75% Town Archive (24 / 32 Logged)"
+			subtitle: "Safari Cache III"
+			title: "Safari Milestone III: 24 of 31 Archived"
 			x: -5.5d
 			y: -6.0d
 		}
 		{
-			dependencies: ["4FEAAFF97758D6DC"]
-			description: [
-				"&6[HOST RESTRICTED GRAND FINALE]&r"
-				"All &e32 anomalous entities (100%)&r have been observed, photographed, pinned up and permanently enshrined on the Grand Archive walls!"
-				""
-				"Josh unlocks the Master Vault to distribute coronation crowns, Netherite, and a town Beacon!"
-			]
+			dependencies: ["35B42884D26E705E", "2E3F3F60862CD839", "7BDB00B7966C3DBA", "7DCF05B91CB25FF5", "4919455AFF785152", "208EC6467118663D", "2883C44FA45D4C5B", "1D5A90B1FEE36CC5", "38D5ED1A10C51170", "1972376B65A76BD3", "625ED42E9362E1A8", "2329A9B64D540784", "5B0EFDE2534A19A2", "74D4C738C4CDE4CB", "541F10BD16BDB76D", "5DFCE3DFE6FE4AA6", "580FD7E4D57172BE", "13332EB90937C6A7", "12D55F474EF32C9F", "2A17B22B0F75A76F", "542A9AC043C322BB", "766E582D63661E0C", "612A8E9C131969E4", "2B3145491F4BE199", "68A84E1CE1EED7BB", "5C91F834DD68AACA", "27CAEF6917488775", "7667DA2C00FDF5CC", "5EE7B8E82118F970", "352A2D9B767C9531", "44F35FB0CA4ED74D"]
+			description: ["Unlocks automatically once all 31 creatures are Archived. Nothing to hand in.", "", "Every horror in the Grand Archive has been photographed and filed. The town owes you a feast."]
+			hide_dependency_lines: true
 			icon: "morerelics:crown_of_the_legend"
 			id: "372822684BB4047B"
+			min_required_dependencies: 31
 			rewards: [
 				{
 					count: 4
@@ -1888,16 +1487,631 @@
 				}
 			]
 			size: 3.0d
-			subtitle: "Grand Finale Safari Vault"
-			tasks: [{
-				id: "372F6E9522AC5DA3"
-				item: "alexscaves:tremorzilla_egg"
-				type: "item"
-			}]
-			title: "[HOST RESTRICTED] Safari Finale: 100% Masters of the Macabre (All 32 Logged)"
+			subtitle: "Safari Vault"
+			title: "Safari Finale: All 31 Archived"
 			x: -1.5d
 			y: -6.0d
 		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["Hunters say a still figure stands at the far edge of the forest, watching, then is gone when you walk toward it. Look in woodland at dusk and in fog."]
+			icon: "exposure:camera"
+			id: "5277F26FACE05DA9"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/watching_herobrine"
+					criterion: ""
+					id: "1C737F61F19516D8"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: A Stranger at the Edge of the Fog"
+			x: -15.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["A stone figure with its hands over its face was seen in a different place each time someone looked back. Search old ruins and dark corners, with a friend."]
+			icon: "exposure:camera"
+			id: "0A938A8548E66FB1"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/weeping_angels_weeping_angel"
+					criterion: ""
+					id: "6AFA6A52915F66CA"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: The Statue That Moved"
+			x: -12.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["Miners tell of footsteps that copy their own and stop when they stop. It lives in dark caves, deep underground."]
+			icon: "exposure:camera"
+			id: "12A7A5A49F534DAC"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/cave_dweller_cave_dweller"
+					criterion: ""
+					id: "6AEE448C72550B29"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: Footsteps Below the Deepslate"
+			x: -10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["Something skinless and crimson walks the Overworld after dark. Watch the treelines at night and keep your torches lit."]
+			icon: "exposure:camera"
+			id: "12F3C3837BC683D8"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/boiled_reimagined_the_boiled_one"
+					criterion: ""
+					id: "1E786F5A9C67ED96"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: The Red Thing That Walks at Night"
+			x: -7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["Someone who looks like a friend waves from a far hill, but your friends are all in town. Scan open daytime meadows and ridges."]
+			icon: "exposure:camera"
+			id: "00857921235BB778"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/distantfriends_friend"
+					criterion: ""
+					id: "1736612D8587BA46"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: A Wave From the Wrong Hill"
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["Travelers in the deep spruce and whisperwood forests feel watched, then find only a trunk behind them. Walk the thick woods with a friend."]
+			icon: "exposure:camera"
+			id: "4D1077D1371570A1"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/whisperwoods_hidebehind"
+					criterion: ""
+					id: "3C71FE0178A48E2A"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: Eyes Behind the Cedar"
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["Chains rattle somewhere in the snowy hills at night. Search cold, snowy biomes after dark."]
+			icon: "exposure:camera"
+			id: "7C942FF36AD0A661"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/krampus_vx_krampus"
+					criterion: ""
+					id: "1A2233B82508F40E"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: Chains in the Blizzard"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["Pale lights drift over the swamp at night and lead travelers off the path. Look over murky swamps and bogs after dark."]
+			icon: "exposure:camera"
+			id: "162A4B7F0BE9607F"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/whisperwoods_wisp"
+					criterion: ""
+					id: "1FB96F019D79A0EF"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: Lanterns Over the Bog"
+			x: -15.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["Players who go sleepless for several nights say winged shadows begin to circle overhead. Stay awake through the night, then look up."]
+			icon: "exposure:camera"
+			id: "14BBBBA6947795F3"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/minecraft_phantom"
+					criterion: ""
+					id: "1DC6891C319DFA85"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: Shapes in the Night Sky"
+			x: -12.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["It makes no sound until it is right behind you. Look for it in the Overworld at night and in dark caves."]
+			icon: "exposure:camera"
+			id: "1E56AEFE460FA493"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/minecraft_creeper"
+					criterion: ""
+					id: "09F163BE9BE1F5C6"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: The Quiet Green Thing"
+			x: -10.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["The caretaker hears digging among the graves after dark. Visit a graveyard at night."]
+			icon: "exposure:camera"
+			id: "7A722E0F714B44EB"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/graveyard_ghoul"
+					criterion: ""
+					id: "780A8147DE44AA78"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: Something Digs in the Graveyard"
+			x: -7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["A great eye is said to drift above the outer End islands. Go to the End and look at the sky."]
+			icon: "exposure:camera"
+			id: "18B3B0E50C3ECC92"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/eldritch_end_aberration"
+					criterion: ""
+					id: "1DA54E0AB62B905A"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: A Lens in the Void Sky"
+			x: -5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["Two pale eyes open in places with no light at all. Stand in a dark cave or room and wait."]
+			icon: "exposure:camera"
+			id: "0CCB944D0EE81639"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/eyesinthedarkness_eyes"
+					criterion: ""
+					id: "31F7EAD4FC8ECFB3"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: Two White Points in the Dark"
+			x: -2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["Residents of enclosed rooms see a shape in the corners that is gone when they turn. Check dark, closed rooms."]
+			icon: "exposure:camera"
+			id: "1063854B63E4CCA1"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/corner_entity_corner_entity"
+					criterion: ""
+					id: "497726A710D7EC46"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: Something in the Corner of the Room"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["Hunters in the woods say a dead tree followed them home. Walk the forests at night."]
+			icon: "exposure:camera"
+			id: "46CB0096F9876A60"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/rootoffear_wilted"
+					criterion: ""
+					id: "4578D4AD9BD76520"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: The Branch That Followed Me"
+			x: -15.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["Miners say the stone itself growls in the deepslate seams. Mine deep and listen."]
+			icon: "exposure:camera"
+			id: "700B26A2925FAFDB"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/skarrier_mobs_tunnel_gore"
+					criterion: ""
+					id: "5936C6DD8B3E7322"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: The Ore Seam Groaned"
+			x: -10.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["Something with long arms waits along ravine edges and drags the unwary down. Walk deep ravines and cliff ledges with care."]
+			icon: "exposure:camera"
+			id: "12232D569C093375"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/skarrier_mobs_dragger"
+					criterion: ""
+					id: "12BD8DFD8A475F60"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: A Hand Out of the Ravine"
+			x: -7.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["A rhythmic clank carries through stone floors in the deep caves. Follow the sound underground."]
+			icon: "exposure:camera"
+			id: "7DF72BE2FE8A2781"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/skarrier_mobs_wrought"
+					criterion: ""
+					id: "118E5B2F7A70BB05"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: Iron Steps in the Deep"
+			x: -5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["A faint fluttering and squeaking is heard in unlit caves. Find a dark cave and look up."]
+			icon: "exposure:camera"
+			id: "22ACC857CB2C5BBA"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/minecraft_bat"
+					criterion: ""
+					id: "66201A77187528BF"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: Wings in the Dark Cave"
+			x: -2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["People who camp near graves wake up to a shape standing over them. Spend a night in the graveyard, awake."]
+			icon: "exposure:camera"
+			id: "68C5501F315F11F4"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/graveyard_nightmare"
+					criterion: ""
+					id: "127B84EA22DF785D"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: Something Waits Where the Sleepers Lie"
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["A tall dark figure stands on distant hills, and it always faces you. Climb to a high place and scan the horizon."]
+			icon: "exposure:camera"
+			id: "6FB0D2FA2F3CEC64"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/the_one_who_watches_the_one_who_watches"
+					criterion: ""
+					id: "11A5F92030EFA4D4"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: A Shape on the Far Ridge"
+			x: -15.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["A chalk white figure stands between the dark trunks at dusk. Walk forest edges at twilight."]
+			icon: "exposure:camera"
+			id: "168551BA8696B15E"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/palewatcher_pale_watcher"
+					criterion: ""
+					id: "472B5937FBB466FA"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: A White Face Between the Trees"
+			x: -12.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["Three slow knocks sound on doors after midnight, and nobody is there. Stay in a house at night and listen."]
+			icon: "exposure:camera"
+			id: "1C07452AA8194D8C"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/the_knocker_knocker"
+					criterion: ""
+					id: "1FB4E51413935E63"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: Three Knocks After Midnight"
+			x: -10.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["A figure appears a little closer each dusk, and it always chooses one person. Walk alone after dark and look behind you."]
+			icon: "exposure:camera"
+			id: "146FB797FC3E5247"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/the_obsessed_the_obsessed"
+					criterion: ""
+					id: "1B9E1D678FF2D687"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: Someone Keeps Following Me"
+			x: -7.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["Hunters speak of a crooked, antlered beast in the pine woods at night. Search dense forests after dark."]
+			icon: "exposure:camera"
+			id: "3D9BBDB0E950C02E"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/cryptid_vx_cryptid"
+					criterion: ""
+					id: "27C13874BDA3A5DA"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: Antlers in the Deep Timber"
+			x: -5.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["Those who stand too long in total darkness say the dark begins to move. Stand in a pitch black spot and wait."]
+			icon: "exposure:camera"
+			id: "3561AE7C4B730AC7"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/nyctophobia_phantom"
+					criterion: ""
+					id: "188E0570BB62B393"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: The Dark Takes Shape"
+			x: -2.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["A hooded figure with a scythe walks the graveyards at night. Visit a graveyard after dark."]
+			icon: "exposure:camera"
+			id: "1A414FCBF40C063C"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/graveyard_reaper"
+					criterion: ""
+					id: "10BCD8E53B9A6E2A"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: The Cloaked Harvester"
+			x: 0.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["Some travelers saw their own reflection detach and walk away. Look for it at night."]
+			icon: "exposure:camera"
+			id: "13EB13BF92F53D0D"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/darkdoppelganger_dark_doppelganger"
+					criterion: ""
+					id: "17A4681876BDFE75"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: My Shadow Stood Up"
+			x: -12.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["Hooded cultists chant in the glowing caves of the Forlorn Hollows. Dig down to the Forlorn Hollows biome."]
+			icon: "exposure:camera"
+			id: "6B128FE185995890"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/alexscaves_underzealot"
+					criterion: ""
+					id: "16946811938395B3"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: Chanting Under the Guano"
+			x: -10.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["Cave explorers describe a luminous moth with eyes on the ceiling of the Forlorn Hollows. Look up in the deep dark."]
+			icon: "exposure:camera"
+			id: "1C29AE196B88D79D"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/alexscaves_watcher"
+					criterion: ""
+					id: "11347262FE75C20F"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: A Pale Moth on the Ceiling"
+			x: -7.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["31DEFF7A83AD87ED"]
+			description: ["Heavy steps shake the Undergarden's fungal forests. Cross the Undergarden portal and walk the glowing woods."]
+			icon: "exposure:camera"
+			id: "0A8BD9D6B8D727BA"
+			size: 1.0d
+			subtitle: "Unconfirmed sighting"
+			tasks: [
+				{
+					advancement: "spooktacular:archive/undergarden_rotbeast"
+					criterion: ""
+					id: "440843BC9CE9A04C"
+					title: "Photograph it"
+					type: "advancement"
+				}
+			]
+			title: "Rumor: Heavy Steps in the Fungal Dark"
+			x: -5.0d
+			y: 12.0d
+		}
 	]
-	title: "CHAPTER 4: ACROSS THE VEIL (Dimension Trials)"
+	title: "CHAPTER 4: THE GRAND ARCHIVE"
 }

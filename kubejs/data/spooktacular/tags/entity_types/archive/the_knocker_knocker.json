@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "the_knocker:knocker",
+      "required": false
+    },
+    {
+      "id": "the_knocker:knockerstalk",
+      "required": false
+    },
+    {
+      "id": "the_knocker:knockerstalklooked",
+      "required": false
+    },
+    {
+      "id": "the_knocker:knockerswim",
+      "required": false
+    }
+  ]
+}

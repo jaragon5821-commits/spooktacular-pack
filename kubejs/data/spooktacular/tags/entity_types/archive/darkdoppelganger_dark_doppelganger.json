@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "darkdoppelganger:dark_doppelganger",
+      "required": false
+    }
+  ]
+}

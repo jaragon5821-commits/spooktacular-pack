@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "exposure:camera"
+    },
+    "title": {
+      "text": "The Grand Archive",
+      "color": "gold"
+    },
+    "description": {
+      "text": "Photograph the horrors that haunt Hallowstown."
+    },
+    "background": "minecraft:textures/block/dark_oak_planks.png",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "camera": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "exposure:camera"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

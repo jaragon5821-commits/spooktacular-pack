@@ -8,11 +8,9 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"3C642BFAA4239EC3"
-				"27991E4AB94352BF"
-			]
-			description: ["Gather at the theatre! A player will perform mystery tracks on an Immersive Melodies instrument; the audience must guess the song to win the game! Dancing is welcome!"]
+			can_repeat: true
+			dependencies: ["3C642BFAA4239EC3", "27991E4AB94352BF"]
+			description: ["Win the concert and hand in your Festival Ribbon. The host gives the event winner a Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "A player plays mystery tunes on an Immersive Melodies instrument. The audience guesses the song."]
 			icon: {
 				Count: 1
 				id: "immersive_melodies:lute"
@@ -21,428 +19,360 @@
 			id: "41B68AF3296B1C37"
 			rewards: [
 				{
-					id: "42C1B368523917D6"
-					type: "xp"
-					xp: 100
-				}
-				{
-					count: 2
-					id: "3C1AB7D46183FDD6"
-					item: "minecraft:diamond"
+					id: "152E838C583F9EA2"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "winners_bag"
+						}
+					}
 					type: "item"
 				}
 			]
 			size: 3.0d
-			subtitle: "Musical Concert"
-			tasks: [{
-				id: "4047AE0D6DF4D62E"
-				title: "Concert Completed"
-				type: "checkmark"
-			}]
+			subtitle: "Musical concert"
+			tasks: [
+				{
+					consume_items: true
+					id: "4047AE0D6DF4D62E"
+					item: "spooktacular:festival_ribbon"
+					title: "Hand in a Festival Ribbon"
+					type: "item"
+				}
+			]
 			title: "Q-EV01: Guess the Song!"
 			x: -16.5d
 			y: -12.0d
 		}
 		{
-			dependencies: [
-				"3C642BFAA4239EC3"
-				"777B0848E5B19526"
-			]
-			description: ["Gather inside the Halloween Bar with at least three friends to share warm spiced cider, enjoy autumn pumpkin pies, and host a costume contest."]
+			can_repeat: true
+			dependencies: ["3C642BFAA4239EC3", "777B0848E5B19526"]
+			description: ["Win the costume contest at the Halloween Bar and hand in your Festival Ribbon. The host gives the event winner a Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Gather with friends for cider and pumpkin pie."]
 			icon: "kaleidoscope_cookery:teapot"
 			id: "49317351A131FD14"
 			rewards: [
 				{
-					count: 4
-					id: "456C5F3419E360B9"
-					item: "kaleidoscope_cookery:flower_tea"
-					type: "item"
-				}
-				{
-					count: 10
-					id: "7A5345EDA8537EDB"
-					item: "minecraft:gold_ingot"
-					type: "item"
-				}
-				{
-					id: "7568E07BD6D2638E"
-					item: "simplehats:hatbag_epic"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "2D056986E5439FDE"
-					item: "minecraft:diamond"
+					id: "2A476B5B99C37E38"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "winners_bag"
+						}
+					}
 					type: "item"
 				}
 			]
 			size: 3.0d
-			subtitle: "Party at the Halloween Bar"
-			tasks: [{
-				id: "079E98870B2351FA"
-				title: "Toast Celebrated"
-				type: "checkmark"
-			}]
+			subtitle: "Party at the Halloween bar"
+			tasks: [
+				{
+					consume_items: true
+					id: "079E98870B2351FA"
+					item: "spooktacular:festival_ribbon"
+					title: "Hand in a Festival Ribbon"
+					type: "item"
+				}
+			]
 			title: "Q-EV02: Tavern Hangout and Autumn Toast"
 			x: -21.0d
 			y: -9.0d
 		}
 		{
+			can_repeat: true
 			dependencies: ["3C642BFAA4239EC3"]
-			description: ["Take your seats in the theatre and watch an entire film together on the big screen (shared with StreamCraft Live). The challenge: survive the entire movie without leaving your seat or dying to whatever lurks outside."]
+			description: ["Survive the whole film in the theatre and hand in your Festival Ribbon. The host gives the event winner a Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Stay in your seat and keep alive while something waits outside."]
 			icon: "ftbquests:screen_1"
 			id: "1418874FAF983E22"
 			rewards: [
 				{
-					id: "32F2FEEB97C3D8F5"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "219DD47A852222DC"
-					item: "minecraft:diamond"
-					type: "item"
-				}
-				{
-					id: "357B79D16484AE72"
-					item: "simplehats:hatbag_halloween"
+					id: "149AD0ABB5487D34"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "winners_bag"
+						}
+					}
 					type: "item"
 				}
 			]
 			size: 3.0d
-			subtitle: "Survive a Full Theatre Screening"
-			tasks: [{
-				id: "70457D4819160D0F"
-				title: "Screening Survived"
-				type: "checkmark"
-			}]
+			subtitle: "Survive a full screening"
+			tasks: [
+				{
+					consume_items: true
+					id: "70457D4819160D0F"
+					item: "spooktacular:festival_ribbon"
+					title: "Hand in a Festival Ribbon"
+					type: "item"
+				}
+			]
 			title: "Q-EV03: Midnight Matinee"
 			x: -16.5d
 			y: -7.5d
 		}
 		{
-			description: [
-				"This section is intentionally blocked off as the rewards for this quest track are only for the winners of each event, not for everyone."
-				""
-				"If you wanna win, you gotta play!"
-			]
+			description: ["This chapter is locked for most players. Its rewards go only to event winners.", "", "The host holds the key. Win an event, hand in your Festival Ribbon, and the Winner's Bag is yours."]
 			icon: "chipped:kitty_faced_carved_pumpkin"
 			id: "3C642BFAA4239EC3"
+			rewards: [
+				{
+					id: "248088E654873C1E"
+					type: "xp"
+					xp: 500
+				}
+			]
 			size: 4.0d
-			subtitle: "READ BEFORE CONTINUING"
-			tasks: [{
-				id: "458BADF746546E7A"
-				item: "alexscaves:tremorzilla_egg"
-				type: "item"
-			}]
+			subtitle: "Read before continuing"
+			tasks: [
+				{
+					id: "458BADF746546E7A"
+					item: "alexscaves:tremorzilla_egg"
+					title: "Tremorzilla Egg (host only)"
+					type: "item"
+				}
+			]
 			title: "WARNING"
 			x: -22.0d
 			y: -14.0d
 		}
 		{
-			dependencies: [
-				"3C642BFAA4239EC3"
-				"6DE25B0EBB8675EC"
-			]
-			description: ["&6Welcome to the Cemetery Games!&r When the music plays from an Immersive Melodies instrument on the stage, dance around the graveyard using Emotecraft. The moment the music abruptly halts or the funeral bell tolls, scramble to sit on a tombstone. If you are left standing, you are eliminated! Survive to the final three dancers to claim your prize."]
+			can_repeat: true
+			dependencies: ["3C642BFAA4239EC3", "6DE25B0EBB8675EC"]
+			description: ["Win the tournament and hand in your Festival Ribbon. The host gives the event winner a Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Dance with Emotecraft while the music plays. When it stops, sit on a tombstone. Last three standing win."]
 			icon: "spookify:tomb_stone"
 			id: "28732D2C5F87BDFB"
 			rewards: [
 				{
-					id: "39F9F95702490392"
+					id: "70C5E2AE645C2AC7"
 					item: {
-						Count: 1
-						id: "artifacts:running_shoes"
+						Count: 1b
+						id: "ftbquests:lootcrate"
 						tag: {
-							abilities: {
-								runner: {
-									points: 0
-									stats: {
-										speed: 0.54056d
-									}
-								}
-							}
+							type: "winners_bag"
 						}
 					}
-					title: "Dancing Shoes"
-					type: "item"
-				}
-				{
-					id: "3B85A8ADEB9EC2E2"
-					item: "simplehats:hatbag_epic"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "6C859777A33CC2D0"
-					item: "minecraft:diamond"
 					type: "item"
 				}
 			]
 			size: 3.0d
-			subtitle: "Dancing with the Dead"
-			tasks: [{
-				id: "115554A56B78BFE8"
-				title: "Winner of Musical Tombstones"
-				type: "checkmark"
-			}]
-			title: "Q-EV04 - Musical Tombstones Tournament"
+			subtitle: "Dancing with the dead"
+			tasks: [
+				{
+					consume_items: true
+					id: "115554A56B78BFE8"
+					item: "spooktacular:festival_ribbon"
+					title: "Hand in a Festival Ribbon"
+					type: "item"
+				}
+			]
+			title: "Q-EV04: Musical Tombstones Tournament"
 			x: -24.0d
 			y: -9.0d
 		}
 		{
+			can_repeat: true
 			dependencies: ["3C642BFAA4239EC3"]
-			description: ["Ten uniquely carved Jack-o'-Lanterns have been hidden across Hallowstown's rooftops, church rafters, bridge undersides, and cellar corners. Use your parkour skills to explore every nook and cranny of the village. Find and retrieve three festival gourds and deposit them into the town center collection basket."]
+			description: ["Win the scavenger hunt and hand in your Festival Ribbon. The host gives the event winner a Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Ten carved Jack-o'-Lanterns are hidden around town. Find three and drop them in the collection basket."]
 			icon: "chipped:kitty_faced_carved_pumpkin"
 			id: "7D1E5AA8B6D357F7"
 			rewards: [
 				{
-					id: "3A17008A4D28B0D1"
-					item: "simplehats:hatbag_rare"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "160DAAA808F99ACB"
-					item: "minecraft:diamond"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "0AE8ACC7F4E8FA0F"
-					item: "hauntedharvest:candy_corn"
+					id: "125D96C1CB3EF8DF"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "winners_bag"
+						}
+					}
 					type: "item"
 				}
 			]
 			size: 3.0d
-			subtitle: "Parkour and Sleuthing Across Hallowstown"
-			tasks: [{
-				id: "72B30720CE02822F"
-				title: "Q-EV05: The Great Pumpkin Scavenger Hunt"
-				type: "checkmark"
-			}]
+			subtitle: "Parkour and sleuthing"
+			tasks: [
+				{
+					consume_items: true
+					id: "72B30720CE02822F"
+					item: "spooktacular:festival_ribbon"
+					title: "Hand in a Festival Ribbon"
+					type: "item"
+				}
+			]
+			title: "Q-EV05: The Great Pumpkin Scavenger Hunt"
 			x: -16.5d
 			y: -15.0d
 		}
 		{
-			dependencies: [
-				"3C642BFAA4239EC3"
-				"6C597A979787E452"
-				"33621517D426BAEF"
-			]
-			description: ["Grab your Exposure camera and venture into the dark autumn woods for a 30-minute anomaly hunt! Capture the most dramatic, terrifying, or hilarious shot of a monster, cryptid, or friend in costume. Head back to the darkroom to develop your negative, print it onto paper, and submit a signed framed photo to the town gallery wall. The town will vote on the best shot!"]
+			can_repeat: true
+			dependencies: ["3C642BFAA4239EC3", "6C597A979787E452", "54BFAB7B97A92B74"]
+			description: ["Win the photo vote and hand in your Festival Ribbon. The host gives the event winner a Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Take your Exposure camera into the woods and photograph the strangest thing you can find."]
 			icon: "exposure:stacked_photographs"
 			id: "5B42D3CC16158582"
 			rewards: [
 				{
-					count: 4
-					id: "6CD57525DE05BA65"
-					item: "exposure:photograph_frame"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "5455EF8C63A61FBB"
-					item: "exposure:photograph"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "24C7DFC71FF50C34"
-					item: "exposure:color_film"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "0115A69E2593B937"
-					item: "minecraft:diamond"
+					id: "1E47F5FDEC3D4B03"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "winners_bag"
+						}
+					}
 					type: "item"
 				}
 			]
 			size: 3.0d
-			subtitle: "Documenting the Paranormal"
-			tasks: [{
-				id: "66C0963B3268616F"
-				title: "Q-EV06: The Anomaly Hunt"
-				type: "checkmark"
-			}]
+			subtitle: "Documenting the paranormal"
+			tasks: [
+				{
+					consume_items: true
+					id: "66C0963B3268616F"
+					item: "spooktacular:festival_ribbon"
+					title: "Hand in a Festival Ribbon"
+					type: "item"
+				}
+			]
+			title: "Q-EV06: The Anomaly Hunt"
 			x: -13.5d
 			y: -13.5d
 		}
 		{
-			dependencies: [
-				"01769DC4E6CC537B"
-				"3C642BFAA4239EC3"
-			]
-			description: ["Enter Hallowstown's sprawling cornfield maze with empty pockets and no map. You have 90 seconds to navigate winding dead-ends, avoid creeping spiders (*Nyf's Spiders*), and reach the center altar to ring the victory bell before the clock strikes midnight!"]
+			can_repeat: true
+			dependencies: ["01769DC4E6CC537B", "3C642BFAA4239EC3"]
+			description: ["Reach the centre altar and ring the bell to win. Hand in your Festival Ribbon. The host gives the event winner a Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "You get 90 seconds, empty pockets and no map."]
 			icon: "hauntedharvest:corn"
 			id: "159A08CC15F40C40"
 			rewards: [
 				{
-					id: "4FDFCE62DCEF2AEC"
-					item: "hauntedharvest:corn"
-					title: "Golden Corn Trophy"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "527F776C9867FE29"
-					item: "minecraft:diamond"
-					type: "item"
-				}
-				{
-					id: "0526EA05D2CF0AE4"
+					id: "1AE5F7B2B9B5C106"
 					item: {
-						Count: 1
-						id: "minecraft:potion"
+						Count: 1b
+						id: "ftbquests:lootcrate"
 						tag: {
-							Potion: "minecraft:long_swiftness"
+							type: "winners_bag"
 						}
 					}
 					type: "item"
 				}
 			]
 			size: 3.0d
-			subtitle: "Escape the Stalks Before Midnight"
-			tasks: [{
-				id: "281B0E536C3662B7"
-				title: "Q-EV07: The Haunted Cornfield Labyrinth"
-				type: "checkmark"
-			}]
+			subtitle: "Escape the stalks"
+			tasks: [
+				{
+					consume_items: true
+					id: "281B0E536C3662B7"
+					item: "spooktacular:festival_ribbon"
+					title: "Hand in a Festival Ribbon"
+					type: "item"
+				}
+			]
+			title: "Q-EV07: The Haunted Cornfield Labyrinth"
 			x: -22.5d
 			y: -6.0d
 		}
 		{
-			dependencies: [
-				"3C642BFAA4239EC3"
-				"28C3841D89C1FD27"
-			]
-			description: ["Line up at the main town gate! Hitch your horse to a cart or stagecoach for a chaotic 3-lap derby race around the outer pumpkin perimeter road. Throwing eggs, snowballs or glowsticks at racers ahead of you is completely fair play!"]
+			can_repeat: true
+			dependencies: ["3C642BFAA4239EC3", "28C3841D89C1FD27"]
+			description: ["Win the 3-lap cart derby and hand in your Festival Ribbon. The host gives the event winner a Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Hitch a horse to a cart or stagecoach. Throwing eggs and snowballs at rivals is fair play."]
 			icon: "astikorcartsredux:oak_hand_cart"
 			id: "1B6C05A06E968BCF"
 			rewards: [
 				{
-					count: 2
-					id: "4E2ED5679F3B05B4"
-					item: "minecraft:hay_block"
-					type: "item"
-				}
-				{
-					id: "2EFB4DAE898B6804"
-					item: "astikorcartsredux:oak_supply_cart"
-					type: "item"
-				}
-				{
-					id: "3DC6D8AF15E96CDF"
+					id: "1401A211F4226A83"
 					item: {
-						Count: 1
-						id: "waystones:warp_stone"
+						Count: 1b
+						id: "ftbquests:lootcrate"
 						tag: {
-							Damage: 0
+							type: "winners_bag"
 						}
 					}
 					type: "item"
 				}
-				{
-					command: "/title /a Winner Recieved 500 XP, or equivalent of 30 levels!"
-					id: "534ABECF6E0E864E"
-					type: "command"
-				}
 			]
 			size: 3.0d
-			subtitle: "Horse-Drawn Mayhem on the Perimeter"
-			tasks: [{
-				id: "0946DDFC14E7A9E3"
-				title: "Q-EV09: The Great Pumpkin Cart Derby"
-				type: "checkmark"
-			}]
+			subtitle: "Horse-drawn mayhem"
+			tasks: [
+				{
+					consume_items: true
+					id: "0946DDFC14E7A9E3"
+					item: "spooktacular:festival_ribbon"
+					title: "Hand in a Festival Ribbon"
+					type: "item"
+				}
+			]
+			title: "Q-EV09: The Great Pumpkin Cart Derby"
 			x: -19.0d
 			y: -5.0d
 		}
 		{
-			dependencies: ["3C642BFAA4239EC3", "6375AFD72F57A55D"]
-			description: [
-				"&6Gather around the Town Square Fountain!&r Each contestant receives an uncarved pumpkin and a Carver knife with 5 minutes on the clock to chisel the most terrifying, hilarious, or intricate 3D face."
-				""
-				"The town votes on the champion, and the winning Jack-o'-Lantern is mounted permanently atop the fountain!"
-			]
+			can_repeat: true
+			dependencies: ["3C642BFAA4239EC3", "2AE8B83641AEC2A5"]
+			description: ["Win the town vote and hand in your Festival Ribbon. The host gives the event winner a Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Each contestant carves one pumpkin in 5 minutes beside the Colossal Scarecrow."]
 			icon: "dynamic_pumpkin_carving:carver"
 			id: "798DB3E31EEFF14B"
 			rewards: [
 				{
-					id: "2F46C8E1D7FCF6FD"
-					item: "artifacts:crystal_heart"
+					id: "13654B612E983B2E"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "winners_bag"
+						}
+					}
 					type: "item"
-				}
-				{
-					count: 2
-					id: "30BE8B37251AF70B"
-					item: "minecraft:diamond"
-					type: "item"
-				}
-				{
-					id: "1FBC5E677A4E8B50"
-					item: "simplehats:hatbag_epic"
-					type: "item"
-				}
-				{
-					id: "1DF922C56A279595"
-					type: "xp"
-					xp: 1500
 				}
 			]
 			size: 3.0d
-			subtitle: "The 5-Minute Sculpting Duel"
-			tasks: [{
-				id: "688B60E5D00E331E"
-				title: "Winner of the Town Pumpkin Carving Duel"
-				type: "checkmark"
-			}]
+			subtitle: "Five-minute sculpting duel"
+			tasks: [
+				{
+					consume_items: true
+					id: "688B60E5D00E331E"
+					item: "spooktacular:festival_ribbon"
+					title: "Hand in a Festival Ribbon"
+					type: "item"
+				}
+			]
 			title: "Q-EV08: The Great Pumpkin Carving Showdown"
 			x: -15.5d
 			y: -4.5d
 		}
 		{
+			can_repeat: true
 			dependencies: ["3C642BFAA4239EC3", "2D4FCF3F34B9E999"]
-			description: [
-				"&6Take your positions atop the Clocktower parapet!&r Shooters have 60 seconds per heat to snipe target blocks and hanging lanterns positioned across the rooftops."
-				""
-				"When the Midnight Spire bell tolls, bonus high-value targets are worth double points!"
-			]
+			description: ["Score highest in the archery derby and hand in your Festival Ribbon. The host gives the event winner a Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Shoot targets from the Clocktower parapet. Bonus targets are worth double when the bell tolls."]
 			icon: "minecraft:bow"
 			id: "155C8CAA98AE8122"
 			rewards: [
 				{
-					id: "613FA09EC77984F1"
-					item: "minecraft:bow"
+					id: "770A0E1408BCF528"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "winners_bag"
+						}
+					}
 					type: "item"
-				}
-				{
-					count: 64
-					id: "639C8D7677FC015F"
-					item: "minecraft:spectral_arrow"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "7F562926F3DF2AB1"
-					item: "minecraft:diamond"
-					type: "item"
-				}
-				{
-					id: "684CB580156DADB1"
-					type: "xp"
-					xp: 1500
 				}
 			]
 			size: 3.0d
-			subtitle: "Precision Marksmanship Over Town"
-			tasks: [{
-				id: "214B81D665D7D46B"
-				title: "Scored the Highest Points in the Archery Derby"
-				type: "checkmark"
-			}]
-			title: "Q-EV14: The Belfry Skeet Shoot (Pumpkin Archery Derby)"
+			subtitle: "Pumpkin archery derby"
+			tasks: [
+				{
+					consume_items: true
+					id: "214B81D665D7D46B"
+					item: "spooktacular:festival_ribbon"
+					title: "Hand in a Festival Ribbon"
+					type: "item"
+				}
+			]
+			title: "Q-EV14: The Belfry Skeet Shoot"
 			x: -13.0d
 			y: -9.5d
 		}

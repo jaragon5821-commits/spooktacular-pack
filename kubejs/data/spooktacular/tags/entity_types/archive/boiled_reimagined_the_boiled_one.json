@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "boiled_reimagined:the_boiled_one",
+      "required": false
+    },
+    {
+      "id": "boiled_reimagined:the_boiled_one_watching",
+      "required": false
+    }
+  ]
+}

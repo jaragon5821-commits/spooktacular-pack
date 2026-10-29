@@ -1,0 +1,700 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_8_dreamshift"
+	group: ""
+	icon: "minecraft:ender_eye"
+	id: "116DF0AF8669AF59"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Read this and click the checkmark. Some walls do not stay solid. If you slip through one, or use a fractured tool, you may wake somewhere that is not home.", "", "Nobody agrees on how to get back. Look for a door that should not be there, or try sleeping. Keep a bed or a light close."]
+			icon: "minecraft:book"
+			id: "156C60BEE67E3DDF"
+			rewards: [
+				{
+					count: 2
+					id: "160CEC85476915D3"
+					item: "minecraft:lantern"
+					type: "item"
+				}
+				{
+					id: "16E061178839B66B"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.0d
+			subtitle: "Slips and slippages"
+			tasks: [
+				{
+					id: "160A472EA95CCCD2"
+					title: "I have been warned"
+					type: "checkmark"
+				}
+			]
+			title: "Q-DS01: Something Wrong With the Walls"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Along the Way.", "", "A road that goes on a little longer every time you look back."]
+			icon: "minecraft:ender_eye"
+			id: "1F31DC45757584C0"
+			invisible: true
+			rewards: [
+				{
+					id: "56F3BF1D35CEFCD8"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "118FF0A214BE4EFB"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					dimension: "dreamshift:along_the_way"
+					id: "790E53B0C9CAE75E"
+					title: "Enter Along the Way"
+					type: "dimension"
+				}
+			]
+			title: "Q-DS02: Along the Way"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in And You Were Here For Me.", "", "Someone left a light on. Someone was waiting. You do not remember agreeing to this."]
+			icon: "minecraft:ender_eye"
+			id: "1FF3F8998E8ECD3F"
+			invisible: true
+			rewards: [
+				{
+					id: "61815A9F1B9EDBED"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "19331F07A92C0516"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					dimension: "dreamshift:and_you_were_here_for_me"
+					id: "168A86078B57D63D"
+					title: "Enter And You Were Here For Me"
+					type: "dimension"
+				}
+			]
+			title: "Q-DS03: And You Were Here For Me"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Deep Dreamspace.", "", "The floor is further down than it should be. The dream seems to be holding its breath."]
+			icon: "minecraft:ender_eye"
+			id: "1C06F72BBF8E6B78"
+			invisible: true
+			rewards: [
+				{
+					id: "7F4F78CC837388E1"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "1A4498C83D3B2935"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					dimension: "dreamshift:deep_dreamspace"
+					id: "1FD3A3DF7FD06F50"
+					title: "Enter Deep Dreamspace"
+					type: "dimension"
+				}
+			]
+			title: "Q-DS04: Deep Dreamspace"
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in The Dreamspace.", "", "The first place anyone wakes in. It is quiet, and it knows you are new."]
+			icon: "minecraft:ender_eye"
+			id: "3CD216ACE1406F52"
+			invisible: true
+			rewards: [
+				{
+					id: "22010B004033BFDC"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "1F4AC4D97B340237"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					dimension: "dreamshift:dreamspace"
+					id: "1841E5D5B1391497"
+					title: "Enter The Dreamspace"
+					type: "dimension"
+				}
+			]
+			title: "Q-DS05: The Dreamspace"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Dystopic Upbringing.", "", "Rows of identical rooms, all lit for a child who left long ago."]
+			icon: "minecraft:ender_eye"
+			id: "109DABA0303AD359"
+			invisible: true
+			rewards: [
+				{
+					id: "162CB1B54125EE1D"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "11E8E9662CD78D47"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					dimension: "dreamshift:dystopic_upbring"
+					id: "1FD93B800FDD3D49"
+					title: "Enter Dystopic Upbringing"
+					type: "dimension"
+				}
+			]
+			title: "Q-DS06: Dystopic Upbringing"
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Enxir.", "", "A name that fits no language. The air tastes like metal and old paper."]
+			icon: "minecraft:ender_eye"
+			id: "1A3EF266A1DCCED3"
+			invisible: true
+			rewards: [
+				{
+					id: "1906662D3A90DA4D"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "172BDC61AEE656D2"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					dimension: "dreamshift:enxir"
+					id: "128E7D634E0D33D9"
+					title: "Enter Enxir"
+					type: "dimension"
+				}
+			]
+			title: "Q-DS07: Enxir"
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Pink Lone House.", "", "Read its name backwards. The house is pink, alone and very patient."]
+			icon: "minecraft:ender_eye"
+			id: "1C12471E9B6FD288"
+			invisible: true
+			rewards: [
+				{
+					id: "4DAC3D152D221AD3"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "11CDCEEC70C2A4D8"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					dimension: "dreamshift:esuoh_enol_knip"
+					id: "7B4A55D503880501"
+					title: "Enter Pink Lone House"
+					type: "dimension"
+				}
+			]
+			title: "Q-DS08: Pink Lone House"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Floating Barn House.", "", "A farmhouse adrift in empty air. The windows are lit and nobody is milking the cows."]
+			icon: "minecraft:ender_eye"
+			id: "4C4A76298B53CA02"
+			invisible: true
+			rewards: [
+				{
+					id: "1E46806646B1D461"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "1853D9B1C4657F87"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					dimension: "dreamshift:floating_barn_house"
+					id: "6B56CBE3A881DCB2"
+					title: "Enter Floating Barn House"
+					type: "dimension"
+				}
+			]
+			title: "Q-DS09: Floating Barn House"
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in It Was Cold.", "", "You remember the cold more than anything. Something remembers you back."]
+			icon: "minecraft:ender_eye"
+			id: "50FFC04223F1F316"
+			invisible: true
+			rewards: [
+				{
+					id: "6233D39AEA28944B"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "500913EA783734E3"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					dimension: "dreamshift:it_was_cold"
+					id: "4B2B9813285C35B5"
+					title: "Enter It Was Cold"
+					type: "dimension"
+				}
+			]
+			title: "Q-DS10: It Was Cold"
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Level 7, Flooded.", "", "Water to the ankles, then the knees. Every door leads deeper."]
+			icon: "minecraft:ender_eye"
+			id: "1197FB7C2600BA8B"
+			invisible: true
+			rewards: [
+				{
+					id: "65F5B1560BFAFE67"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "1F76D003E9BE6744"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					dimension: "dreamshift:level_7_flooded"
+					id: "447C1D52F6FEBDDC"
+					title: "Enter Level 7, Flooded"
+					type: "dimension"
+				}
+			]
+			title: "Q-DS11: Level 7, Flooded"
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in The Lone Theatre.", "", "An empty house with the film still running. Someone saved you a seat."]
+			icon: "minecraft:ender_eye"
+			id: "6857AE8C87EEB915"
+			invisible: true
+			rewards: [
+				{
+					id: "17D31491A9BB3F41"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "17858581CF73CDD9"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					dimension: "dreamshift:lone_theatre"
+					id: "1482689D5B627EC7"
+					title: "Enter The Lone Theatre"
+					type: "dimension"
+				}
+			]
+			title: "Q-DS12: The Lone Theatre"
+			x: 8.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Mosaic Meters.", "", "Tiled halls that hum with measuring. Something is counting your steps."]
+			icon: "minecraft:ender_eye"
+			id: "1DE9657AE058E2B8"
+			invisible: true
+			rewards: [
+				{
+					id: "10BD4BB85BBD1883"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "5F851F188AB06FA7"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					dimension: "dreamshift:mosaic_meters"
+					id: "1F8B6F92BAE844A5"
+					title: "Enter Mosaic Meters"
+					type: "dimension"
+				}
+			]
+			title: "Q-DS13: Mosaic Meters"
+			x: 10.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Pastel Longevity.", "", "Soft colours, soft music, and no sign of anything ever ending."]
+			icon: "minecraft:ender_eye"
+			id: "1E789079468E524C"
+			invisible: true
+			rewards: [
+				{
+					id: "3CB0672C84242EA7"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "36B6C073A7774FD5"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					dimension: "dreamshift:pastel_longevity"
+					id: "1DE25A440D76A854"
+					title: "Enter Pastel Longevity"
+					type: "dimension"
+				}
+			]
+			title: "Q-DS14: Pastel Longevity"
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Skiezone Funzone.", "", "Bright signs and cheerful noise. Nobody has come to play for a very long time."]
+			icon: "minecraft:ender_eye"
+			id: "286B4AC490584120"
+			invisible: true
+			rewards: [
+				{
+					id: "1CB74D084915989E"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "1FA484E662637E07"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					dimension: "dreamshift:skiezone_funzone"
+					id: "18A4F5C589CA175C"
+					title: "Enter Skiezone Funzone"
+					type: "dimension"
+				}
+			]
+			title: "Q-DS15: Skiezone Funzone"
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Static Avenue.", "", "A street of hissing screens. Faces flicker in the snow, then turn to look."]
+			icon: "minecraft:ender_eye"
+			id: "16DF704E21FCE25A"
+			invisible: true
+			rewards: [
+				{
+					id: "4B9CFE04EE42655E"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "1F349FBD8459B80B"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					dimension: "dreamshift:static_ave"
+					id: "54053DBB43C6F1FA"
+					title: "Enter Static Avenue"
+					type: "dimension"
+				}
+			]
+			title: "Q-DS16: Static Avenue"
+			x: 4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in The Ungate.", "", "A gate with nothing on either side. It opens anyway."]
+			icon: "minecraft:ender_eye"
+			id: "1B66A96DE1DE1BC5"
+			invisible: true
+			rewards: [
+				{
+					id: "6F262CA208BBCD0D"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "45C1E5673FB9F375"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					dimension: "dreamshift:the_ungate"
+					id: "1973CC0903B1B979"
+					title: "Enter The Ungate"
+					type: "dimension"
+				}
+			]
+			title: "Q-DS17: The Ungate"
+			x: 6.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Unauthorized Church.", "", "The doors were never meant to open. The pews are already full."]
+			icon: "minecraft:ender_eye"
+			id: "173AF7B8F73D4EE5"
+			invisible: true
+			rewards: [
+				{
+					id: "1B4B58B09C48205F"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "29C8DD232A8068F0"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					dimension: "dreamshift:unauthorized_church"
+					id: "1683F7A4D1353169"
+					title: "Enter Unauthorized Church"
+					type: "dimension"
+				}
+			]
+			title: "Q-DS18: Unauthorized Church"
+			x: 8.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in What's Above Is Blue.", "", "A wide, empty sky. You should not look up too long."]
+			icon: "minecraft:ender_eye"
+			id: "1EDCB4140B697318"
+			invisible: true
+			rewards: [
+				{
+					id: "62812019EEAC31EF"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "19E1F5B91D705636"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					dimension: "dreamshift:whats_above_is_blue"
+					id: "163BDD30FBE3C22C"
+					title: "Enter What's Above Is Blue"
+					type: "dimension"
+				}
+			]
+			title: "Q-DS19: What's Above Is Blue"
+			x: 10.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["1F31DC45757584C0", "1FF3F8998E8ECD3F", "1C06F72BBF8E6B78", "3CD216ACE1406F52", "109DABA0303AD359", "1A3EF266A1DCCED3", "1C12471E9B6FD288", "4C4A76298B53CA02", "50FFC04223F1F316", "1197FB7C2600BA8B", "6857AE8C87EEB915", "1DE9657AE058E2B8", "1E789079468E524C", "286B4AC490584120", "16DF704E21FCE25A", "1B66A96DE1DE1BC5", "173AF7B8F73D4EE5", "1EDCB4140B697318"]
+			description: ["Visit any 5 dreamspaces.", "", "You are starting to know your way around."]
+			hide_dependency_lines: true
+			icon: "minecraft:nether_star"
+			id: "10D6C10E187A5A5C"
+			min_required_dependencies: 5
+			rewards: [
+				{
+					id: "15E8912B1DF047DF"
+					item: "simplehats:hatbag_rare"
+					type: "item"
+				}
+				{
+					id: "1304E0E57C430A9E"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			size: 1.0d
+			subtitle: "5 dreamspaces"
+			title: "Q-DS20: Lucid Dreamer"
+			x: 1.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["1F31DC45757584C0", "1FF3F8998E8ECD3F", "1C06F72BBF8E6B78", "3CD216ACE1406F52", "109DABA0303AD359", "1A3EF266A1DCCED3", "1C12471E9B6FD288", "4C4A76298B53CA02", "50FFC04223F1F316", "1197FB7C2600BA8B", "6857AE8C87EEB915", "1DE9657AE058E2B8", "1E789079468E524C", "286B4AC490584120", "16DF704E21FCE25A", "1B66A96DE1DE1BC5", "173AF7B8F73D4EE5", "1EDCB4140B697318"]
+			description: ["Visit any 10 dreamspaces.", "", "Your feet move on their own now."]
+			hide_dependency_lines: true
+			icon: "minecraft:nether_star"
+			id: "6C9F91C28D4F0894"
+			min_required_dependencies: 10
+			rewards: [
+				{
+					count: 8
+					id: "193B2DCA4B906B01"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "1929E7137134CAC5"
+					type: "xp"
+					xp: 3000
+				}
+			]
+			size: 1.0d
+			subtitle: "10 dreamspaces"
+			title: "Q-DS21: Sleepwalker"
+			x: 5.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["1F31DC45757584C0", "1FF3F8998E8ECD3F", "1C06F72BBF8E6B78", "3CD216ACE1406F52", "109DABA0303AD359", "1A3EF266A1DCCED3", "1C12471E9B6FD288", "4C4A76298B53CA02", "50FFC04223F1F316", "1197FB7C2600BA8B", "6857AE8C87EEB915", "1DE9657AE058E2B8", "1E789079468E524C", "286B4AC490584120", "16DF704E21FCE25A", "1B66A96DE1DE1BC5", "173AF7B8F73D4EE5", "1EDCB4140B697318"]
+			description: ["Visit all 18 dreamspaces.", "", "You can no longer say where you started."]
+			hide_dependency_lines: true
+			icon: "minecraft:nether_star"
+			id: "1B59324F8FD2ADB3"
+			min_required_dependencies: 18
+			rewards: [
+				{
+					id: "05141AAFE98BEB1E"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					id: "7CF391FA3F4D9BB5"
+					item: "simplehats:hatbag_epic"
+					type: "item"
+				}
+				{
+					id: "1FF8B6E7B6C30CD7"
+					type: "xp"
+					xp: 6000
+				}
+			]
+			size: 1.0d
+			subtitle: "18 dreamspaces"
+			title: "Q-DS22: Lost in the Dream"
+			x: 9.0d
+			y: 10.0d
+		}
+	]
+	title: "🌙 CHAPTER 8: THE DREAMSPACES"
+}

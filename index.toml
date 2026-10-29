@@ -1,6 +1,526 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/bcc-common.toml"
+hash = "fa82b4d0cc21ee656c2451cd5a535fde1064c632cf5e6b1003e84193fbfad5a3"
+
+[[files]]
+file = "config/betterdays-common.toml"
+hash = "0e8f17fb2dde4d64a4382bb90ca7bc5bbade22064524ffd4321a58c4e5ca343e"
+
+[[files]]
+file = "config/carryon-common.toml"
+hash = "46b848ec3694ca152f2d8195ae2b770a9fb038421a59046ac43cfd12155f740a"
+
+[[files]]
+file = "config/dreamshift.json"
+hash = "6c63d7db1da6de1f967b097b55d90eea8856a4409266a8fac12723d3e0fe0961"
+
+[[files]]
+file = "config/ftbquests/quests/chapter_groups.snbt"
+hash = "739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/before_you_start.snbt"
+hash = "b5c55b47bfc1817e8e495c17cded815fa5b52193b440d2766a263d19d887c150"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/chapter_1_hallowstown.snbt"
+hash = "0eecf49dd31c36d17e313b4176a62e417165af3541395a211ba5950b37521836"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/chapter_2_events_and_minigames.snbt"
+hash = "4962c17a63d5106c15e6bd1eb4353d8ba8d2ab89fad59d9d9f6dbd851b062976"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/chapter_3_life_and_occult_rites.snbt"
+hash = "1ffb6b0d4562882e331018ef4f47c6dfdb08814745fead712a738856a3945321"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/chapter_4_liminal_trials.snbt"
+hash = "c8972c057b269564d779cc015a43d7ba2fdb3840edf79bafa977b31bb457ab5d"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/chapter_5_boss_showdowns.snbt"
+hash = "34fe65b2ae22b8997ecb0d2fea471a7cf74547b77477f3ffe26c9ebbe328444b"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/chapter_6_field_manuals_and_arcane_guides.snbt"
+hash = "105fb938ba654d9d5fee8b8753176085f962ab7f54c18dc232b3c92f58a95f5b"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/chapter_7_workshop_guides.snbt"
+hash = "523ffd3f57f3839ad86ee36b9572840576a387a62665a4a8f3cefe67b22ded50"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/chapter_8_dreamshift.snbt"
+hash = "7b90a230bbeb5dfcf1fa9f2ee2626d9ae01780e61e6ee1119319a648fbe2710a"
+
+[[files]]
+file = "config/ftbquests/quests/data.snbt"
+hash = "ed7875116d2c86b1e8c58e9a714c1566043be46ff1c927f8ab31b2a806c50acc"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/cryptid_hunter_crate.snbt"
+hash = "cd9611e43a0d60447eb5db0044ad874418a86af0b59c84da0f1fe965eb968fc6"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/hallowstown_culinary_basket.snbt"
+hash = "04d6eef982255deddc76775eac0efac3557828e3ae6aba9df891af0a20a3e662"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/occult_caster_cache.snbt"
+hash = "d9979e6f6aa5ec7789e8e8d3254611cfc7b312ee0940264a8ab4cd3c1b30fee1"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/trick_or_treat_bag.snbt"
+hash = "70c9614483161f11d3d38fd0849ece423e40ec3a3a979b60f73ad66bc82b9597"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/winners_bag.snbt"
+hash = "895511642b131f6d53d78cc2ec8c70dddac5f3688fc127d272e2ef7df563d9b8"
+
+[[files]]
+file = "config/immersive_portals.json"
+hash = "64d61d11dd15b270197e47048e37f6be5ae00c01be425104ca6550eed7ea5fe6"
+
+[[files]]
+file = "config/modernfix-mixins.properties"
+hash = "4b965d4d7758a36dcb888d5233c1b124ab6e4377556140e74a212717926a7923"
+
+[[files]]
+file = "config/structureessentials.json"
+hash = "b903919fb31b700e652d7d03fdbf6cf3ad7757097ae4298fe1413bc33dfd4d3f"
+
+[[files]]
+file = "config/torchmaster.toml"
+hash = "f1741b6a76e73465125b4375f1304181592063e8a6bedaf91f06467668c31696"
+
+[[files]]
+file = "config/worldedit/schematics/hallowstown_cemetery.schem"
+hash = "156518d9d716d28dea3f5bd8740e29710ce5e0939c0a353e4838962e41c1b02f"
+
+[[files]]
+file = "config/worldedit/schematics/hallowstown_cemetery_modded.schem"
+hash = "800f5208579957fade9bba25e5f9651a3294c382cf5c79f5ad6f42fdd6aaeb9b"
+
+[[files]]
+file = "config/worldedit/schematics/hallowstown_pantry.schem"
+hash = "72e1c4221bcf0b71305a84e27808c44c5bb2b07b0a693c7ec254398ab6530af8"
+
+[[files]]
+file = "config/worldedit/schematics/hallowstown_pantry_modded.schem"
+hash = "42ca0eac594639ba6cc86a81b666b3832b3957db86ab64c38900a7f975393411"
+
+[[files]]
+file = "config/worldedit/schematics/hallowstown_tavern.schem"
+hash = "bd99f28fdef75f22a17f702d6b3f20e064b66bfceef60f2e5e959e76742b78a5"
+
+[[files]]
+file = "config/worldedit/schematics/hallowstown_tavern_modded.schem"
+hash = "37282d6f58f0d14154962144018e43bd699ba12421129ed3fb60a4e417730456"
+
+[[files]]
+file = "config/worldedit/schematics/house_A_pumpkin_cottage.schem"
+hash = "2cbf92120eea5b9ecacd51dd4c59c399ef1a744b4ab20e3132583fd26ba24f69"
+
+[[files]]
+file = "config/worldedit/schematics/house_A_pumpkin_cottage_modded.schem"
+hash = "f43d305b3ef0f8f1bbdb61d2ccd680111b332d5002aaf4fa9d6859a4dbaab949"
+
+[[files]]
+file = "config/worldedit/schematics/house_B_twin_lantern_duplex.schem"
+hash = "e6d7b53315acc27f90f0d82f46b3de07a4d972e8d092c8207bedbc66028b594b"
+
+[[files]]
+file = "config/worldedit/schematics/house_B_twin_lantern_duplex_modded.schem"
+hash = "2c27d17713fa78beb6dbd79afe25a5bc57a49b08234d958e91ffb6a85e4dada9"
+
+[[files]]
+file = "config/worldedit/schematics/house_C_hollow_row_apartments.schem"
+hash = "4ef6aa062ae96e641de3a2bdee26add41e115ceabf269814cdf59da049599782"
+
+[[files]]
+file = "config/worldedit/schematics/house_C_hollow_row_apartments_modded.schem"
+hash = "4f4a79cda143b70028f21bf4bf7a9b48a17de607b31b0eaa760cedfd761c2e56"
+
+[[files]]
+file = "config/worldedit/schematics/house_D_harvest_moon_family_hall.schem"
+hash = "e3ad5c79332bb30f9e1d56277b62e5cb9ca45231bd5da5850a620120caa35c3b"
+
+[[files]]
+file = "config/worldedit/schematics/house_D_harvest_moon_family_hall_modded.schem"
+hash = "3302fa85d2081bb6936bb7e8b466e50a53f9f62d620dbf2a7397ee6fd77ff915"
+
+[[files]]
+file = "config/worldedit/schematics/spooktacular_cinema.schem"
+hash = "af516ed2229f2afbb9e431f57ebe2b140e6aa58d6429e78186cbd7f5ec14d270"
+
+[[files]]
+file = "kubejs/assets/spooktacular/textures/block/town_charter.png"
+hash = "6567495cdd0c0773e8cb0503b58ce3ae4ad4311114ee550084138c057f7dac0b"
+
+[[files]]
+file = "kubejs/assets/spooktacular/textures/item/festival_ribbon.png"
+hash = "a13a88673643cfb50fe17ba25efed08bb37763b8f039fbf9826808b976aaa81e"
+
+[[files]]
+file = "kubejs/client_scripts/spooktacular_quest_tooltips.js"
+hash = "b3727e489f05caecca79aa56798e9cfaca90af0330f59af71bea8b54adf3cad5"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/alexscaves_underzealot.json"
+hash = "c15dd8a0f39c35bdfc9996247f3cfd3a7b58a26a6175856bd0e8227ea7b334c7"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/alexscaves_watcher.json"
+hash = "b1c28fb93fc04cb591b804b9c27eb20a8dee6810d654c06c51656168b56c340b"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/boiled_reimagined_the_boiled_one.json"
+hash = "2357ab5b559751bc5ace7a76ddb4caad7b00c5b1dc79a73595f20bd5f1c50f96"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/cave_dweller_cave_dweller.json"
+hash = "ed5a851a4e6dd0d544b6fa5015ba9b570990c69f1ac3db4bea0e7ed3ba004571"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/corner_entity_corner_entity.json"
+hash = "50f253ec10498ac7d2a1e2acd256c8e218a21db544ff45afeab7c47f20789025"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/cryptid_vx_cryptid.json"
+hash = "d15ebfd21896a326fdfd7f1d074ee49ca9a7e6cd52e499149b46efbfcd5872b1"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/darkdoppelganger_dark_doppelganger.json"
+hash = "564f57443acd58eb5980c3210c7901f0d62b993c0a434e62ed0926e8834c20e2"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/distantfriends_friend.json"
+hash = "95a9c138779bd6b9aec34572bc49c2bf0d7e7ca3a2551cae17e37ca8f3505335"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/eldritch_end_aberration.json"
+hash = "e98379a300c62007fe26a6c25a83fa7de9ff8147ae64ebd1f7dd8599aeecf286"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/eyesinthedarkness_eyes.json"
+hash = "ff8f1221b8f12653cb584371dd4af515a5112aef4ed836fcd9b387d19a776ad3"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/graveyard_ghoul.json"
+hash = "12ba837e16644cf69094e687ed91590f845b5b357ebe6a7d3fab3b1f38ef7940"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/graveyard_nightmare.json"
+hash = "d5eb8fd8e455e89f7bfae13744202776bcb7eb763bc862824d3b8f7e93c56b54"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/graveyard_reaper.json"
+hash = "0d12e7ab32b73f44708ad2958fff038db9e692003587e993fa194bbf30fe10fd"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/krampus_vx_krampus.json"
+hash = "e7b3789c333d38046b4a208be1928b9eed5079d753b6a9fc32c6675d4f5e647e"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/minecraft_bat.json"
+hash = "c60db1a83d792ee0bc170186765a86b5105ca8944c0128844c502850718b8a7e"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/minecraft_creeper.json"
+hash = "78aa24646691e1cb8b2ed2b1def70379571ffdde1438e60a2e5cfb4144cd3bc4"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/minecraft_phantom.json"
+hash = "52bd8b7576b01e87f2ede2764d3199683a27941948c1711b8929f0f56c18c54c"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/nyctophobia_phantom.json"
+hash = "e24160d94abeb0b090742aeffcd034736c64c3b545a194547c6afebfdb883ae6"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/palewatcher_pale_watcher.json"
+hash = "6d8281aa70ec9e30f3f6bebccfb54b53d26538038de0e7b81dd1fae834166447"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/root.json"
+hash = "7755d1f9aedca3a833a8cf75191ed2971363051caf04eadc4726ffd56dd3c824"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/rootoffear_wilted.json"
+hash = "6bfe095952a50c09f4c5d31088f1126e9b28f042189afafaafa461d2f98f740e"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/skarrier_mobs_dragger.json"
+hash = "cd20405b83172705bf3fffc4163e84b8ab50468a4cfcab3159bf945d2f1ce514"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/skarrier_mobs_tunnel_gore.json"
+hash = "15ebee9f56aec616274707ff73aeeb1e4115f21c40e2b1ac04ad5d4cf09d3369"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/skarrier_mobs_wrought.json"
+hash = "2c18f285fed0743c98fbd8adbef404d74745101e6de9aa7e6824f7b5af1fea61"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/the_knocker_knocker.json"
+hash = "f8f2493bb471fe3754c47e62d0ec5a3864fd58b8a7e349ed2e5f6754f363f3b6"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/the_obsessed_the_obsessed.json"
+hash = "5e70730a91aff65ccb4f07601835e1a3340bbbbbf372c09c8295cd94dc71d5e4"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/the_one_who_watches_the_one_who_watches.json"
+hash = "94780e52cca90c7bab7e096a1776c56ea416ecbcabbefadb315ff72bce765d98"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/undergarden_rotbeast.json"
+hash = "15aae1b2cc4b6eb16f7833f422a1283075dbe672b104a7bcb7314780d3005dc5"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/watching_herobrine.json"
+hash = "2e24844af27bf5942d94d013b6a380110be3501b36f423bd20ab6d92e07e54e0"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/weeping_angels_weeping_angel.json"
+hash = "d6deccec1edf3aafec87bf9606efd47ad7a36b5146494794e764d558c10d625e"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/whisperwoods_hidebehind.json"
+hash = "3a3fc8566313f63d92a5121762e8d6dac0ffbb2fb94f1707d788376ecf210a22"
+
+[[files]]
+file = "kubejs/data/spooktacular/advancements/archive/whisperwoods_wisp.json"
+hash = "a8059648c7ca56ac7fe12c212273442d834b21a22df7fa0c7ce4d963ade55510"
+
+[[files]]
+file = "kubejs/data/spooktacular/blueprints/apothecary.json"
+hash = "89a57b438ddd3b1c615043dac44b00af8633bda5ffac4e9d37cc5961bd78b535"
+
+[[files]]
+file = "kubejs/data/spooktacular/blueprints/archive.json"
+hash = "f7681c33a053363f3918187cf24700e8a622ff30eef4543940efef85a52a10ea"
+
+[[files]]
+file = "kubejs/data/spooktacular/blueprints/boutique.json"
+hash = "6e412876fe87db501cdf6666a9b06c381d1d5a85829d52a1a8bd61e4bf7cb007"
+
+[[files]]
+file = "kubejs/data/spooktacular/blueprints/catacombs.json"
+hash = "7c91ccb1fac10564e25d971530e2013e1fd88c4a1cba6a6369ca8e92fda09cb2"
+
+[[files]]
+file = "kubejs/data/spooktacular/blueprints/cathedral.json"
+hash = "e28469c03fa3f7a4e4f392ab358d776e2f360c5338feb7504e73eb2d639ec5ae"
+
+[[files]]
+file = "kubejs/data/spooktacular/blueprints/cemetery.json"
+hash = "e560f51c486fa465d39ae6873d563e5e9040d92893f426cefedff60ad14c2f7d"
+
+[[files]]
+file = "kubejs/data/spooktacular/blueprints/citadel.json"
+hash = "c4855078795cf9afe2b1ccc29532b07702790b9194b6f246a84286c49b6861d7"
+
+[[files]]
+file = "kubejs/data/spooktacular/blueprints/crypt.json"
+hash = "efd6de0cd5aafd045ebbfd56fac372fec56552403c41a1eacc9efdda284904f9"
+
+[[files]]
+file = "kubejs/data/spooktacular/blueprints/garrison.json"
+hash = "b94e8b151c964d1cc0a50d630f296b9a423c8e1e03bc4e923abb47df14be8f65"
+
+[[files]]
+file = "kubejs/data/spooktacular/blueprints/hall_of_heroes.json"
+hash = "1811342f8c35635b5941017fde3962899ec0f929de057eb31175a8db07fa67ae"
+
+[[files]]
+file = "kubejs/data/spooktacular/blueprints/observatory.json"
+hash = "377d6beb66e7555b8612603929277a2e52f9fc5dc57d53fb4b8fd7f873b53d23"
+
+[[files]]
+file = "kubejs/data/spooktacular/blueprints/orchard_mill.json"
+hash = "6edf11fd28a3e24cc4642251b5697fb094fecbaf346754dc0b506f3512615ba1"
+
+[[files]]
+file = "kubejs/data/spooktacular/blueprints/pantry.json"
+hash = "64328e19dc0e6a9c783d0035fe252bf0d12c1a351d72122d78fd7a4ecb102f9c"
+
+[[files]]
+file = "kubejs/data/spooktacular/blueprints/scarecrow.json"
+hash = "fecd51dfbefe2d2cc4b734ddbd7d2152194cbb586804a1f5ce7b8eea05ada6fc"
+
+[[files]]
+file = "kubejs/data/spooktacular/blueprints/smeltery.json"
+hash = "0ff41e5d2551b469a0bf7b77bd23d30ed5860077ad60bb23fe596735eeb600c5"
+
+[[files]]
+file = "kubejs/data/spooktacular/blueprints/spire.json"
+hash = "4727a008e47de0b12c21d372b4b19a4fac676b550fec5563e6c27a161b7c6513"
+
+[[files]]
+file = "kubejs/data/spooktacular/blueprints/stables.json"
+hash = "d496ebd604dfa9c105c00aa3a38ff7c747906a5a62b9fa77248dc19e90f4875c"
+
+[[files]]
+file = "kubejs/data/spooktacular/blueprints/tavern.json"
+hash = "0c1a2c27c4c413ae8c2873a0a07a7cbf4ffed11a56bac13455e9e90961528688"
+
+[[files]]
+file = "kubejs/data/spooktacular/blueprints/ward_arch.json"
+hash = "8f436d6f9efcded1179d01797e0bd4338a49f2d5951797bb95860f2dc5c9771d"
+
+[[files]]
+file = "kubejs/data/spooktacular/blueprints/ward_arch_11.json"
+hash = "8feaa34b2b9cccc8c4795e3117f2b19260df346421c65ec0ec91b7b75fb3af08"
+
+[[files]]
+file = "kubejs/data/spooktacular/blueprints/wharf.json"
+hash = "07260f4ff550d3ff266922d11681bdba28e604a1214c82a5a6b0747542227a83"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/alexscaves_underzealot.json"
+hash = "1215ce1922ed8050e3bc4bb5fce596640be5174bad091e684c444c7a84acf98d"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/alexscaves_watcher.json"
+hash = "3910302519c4c42799591faddb62380c1282935a9b5b3757bad2376406de0f64"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/boiled_reimagined_the_boiled_one.json"
+hash = "c58f7508817331dd4faf1c82ede010cb0be131587b9c3b461df44df442b38905"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/cave_dweller_cave_dweller.json"
+hash = "2af9c2a15ebfcb60c65c32b0650e05d1a497ff2003d28492a76d84441d4f5808"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/corner_entity_corner_entity.json"
+hash = "e09e510d4c2c518716211c8415cab31940527c0da467214bb0334219890d39e3"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/cryptid_vx_cryptid.json"
+hash = "d58bfad20c6dce7a617f850f51feeba9d77f4bc0ff5c897c3a002d2861fd5271"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/darkdoppelganger_dark_doppelganger.json"
+hash = "7c8756b9c99aa874f3da6e91cf4942114f3d41ad377fa25c217d3fe88acd03d0"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/distantfriends_friend.json"
+hash = "e723185233bd33400a3de5bf8d43050e5fcbbddf63e050644b3bb330166ba0c0"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/eldritch_end_aberration.json"
+hash = "581c8712d8df84100f66cb349884b85de209fca8b9fb641b78cfd268a7c868d4"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/eyesinthedarkness_eyes.json"
+hash = "bd7271666050e8b79a06373d774bfa4821afe257313324aea13cebf4ffe02298"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/graveyard_ghoul.json"
+hash = "4b125275bbda6011528de34b7861830e4cb02df105652390b87b9e9e63b52426"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/graveyard_nightmare.json"
+hash = "631f0f6e7089799b5df97a112d3db7b2514f8f582b0691776d169e46c92d777c"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/graveyard_reaper.json"
+hash = "67b98562abb5725c0e0b991d594cb11d8a9a51f59fd216d8da3ebe542ecb82a0"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/krampus_vx_krampus.json"
+hash = "fc11eea649ff13d7a4882353e2d5f7d9f2bc10eb55bfb29ecbfdd79a6a57e79b"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/minecraft_bat.json"
+hash = "cff41bc170ec83c02bef4c9987ed3fa0c4a8ff689100cbfe583fd3679f1322f1"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/minecraft_creeper.json"
+hash = "a5e3d5d03e654d016e1dfff60aacc00f0f37238831ea41bcdf92cad66864d774"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/minecraft_phantom.json"
+hash = "ef1d124bdd967c09f384117670768e8ddf1a8c8cff11dcae1c64e72f7206c768"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/nyctophobia_phantom.json"
+hash = "aa8da8e1dfc3e91065e8bfe8fbdd5279ff304cf81bef5022c28475b146e0709e"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/palewatcher_pale_watcher.json"
+hash = "69c00b120f956df71ab97cb1390e47c54da3d4bbc3acac8845ac4070155a49fd"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/rootoffear_wilted.json"
+hash = "654cc71ee99838345a08add794745622435f1be2f2552488f85b3619da7facc2"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/skarrier_mobs_dragger.json"
+hash = "4de23b616ac3b1c63f13ebe58deefd28785620fe6f7fb8b963c4db896e4e1f73"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/skarrier_mobs_tunnel_gore.json"
+hash = "4a62dc77e94c04985bfde587506012212787b4f5ec2aad2a78db9e11a06e81fd"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/skarrier_mobs_wrought.json"
+hash = "e0911c934ea0de34957d74b8dcdd90765418db037944ba36bf265c458b3d17b7"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/the_knocker_knocker.json"
+hash = "7c8186042a136b7dc77376ff7bef98373ffd82f1f60de71fd62c1ca8c771a96c"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/the_obsessed_the_obsessed.json"
+hash = "1bd08a4350e8878ff4dac5f3f34ffa31e335ad21c5c5bb98a68c8eb078462d93"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/the_one_who_watches_the_one_who_watches.json"
+hash = "2efd6bd54e0b0b096acef46274ecb9a5f5526db028d16e23854de8e6065eada2"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/undergarden_rotbeast.json"
+hash = "24b4f98a21a58cfcf009399cc143be6de8bcb275b217dfc1554ef5095febdf9e"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/watching_herobrine.json"
+hash = "5862821e49518647c4f9c002746f6e880dfaa5fdc8c4c4280f98b84e54819309"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/weeping_angels_weeping_angel.json"
+hash = "6a8d8fdba85cf9fd6e9a2d3b5ba0bfe1b59ada4d4657a30738475a10f5da509b"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/whisperwoods_hidebehind.json"
+hash = "51d7085e68ca0def38c9da8ddd873c556b8f1cb50cdde71c41514bcc78c32dca"
+
+[[files]]
+file = "kubejs/data/spooktacular/tags/entity_types/archive/whisperwoods_wisp.json"
+hash = "4397c6ff59b2aabf82af483c278b159756ecdf7499f6a176d3d4fcd442408ec3"
+
+[[files]]
+file = "kubejs/server_scripts/spooktacular_quests_charters.js"
+hash = "c5a1c1f7c5718e0731d5124af31360fbeadb722875355645101f521a98808566"
+
+[[files]]
+file = "kubejs/server_scripts/spooktacular_quests_data.js"
+hash = "36644147bb573a7f75a874cfb4d7b7f9ded229e56e184e6ce0f022cf192779c9"
+
+[[files]]
+file = "kubejs/server_scripts/spooktacular_quests_fanfare.js"
+hash = "d4ce6b15fb38f76900f30be48a835f0035883261b3ec958489ef3a8e7da90d18"
+
+[[files]]
+file = "kubejs/startup_scripts/spooktacular_quest_items.js"
+hash = "da0c848c7a4cdf0fbeadfe390854a2dd3bb5ade399c50e98396598acb1263cd4"
+
+[[files]]
 file = "mods/accessories.pw.toml"
 hash = "5d3f94d4280b3367a376f086018a4005866ddecbe80b6abb0849e5d995a98e9d"
 metafile = true
@@ -13,6 +533,11 @@ metafile = true
 [[files]]
 file = "mods/additional-structures.pw.toml"
 hash = "e701ccbeaed53c7724a88ff832f02e197356146ae2b7506f037b08b341d8314e"
+metafile = true
+
+[[files]]
+file = "mods/advancement-plaques.pw.toml"
+hash = "99c133b256051ff18ab958384ddec7f20f424a8fadb6d8087687dbb2972b6094"
 metafile = true
 
 [[files]]
@@ -38,6 +563,11 @@ metafile = true
 [[files]]
 file = "mods/almostunified.pw.toml"
 hash = "8e9376087852491eb52037279506fefc45e174303530630e8b8afa571b1bd697"
+metafile = true
+
+[[files]]
+file = "mods/alternate-current.pw.toml"
+hash = "e794a0240ad915c2c8e43a04e6dfded947bf11f3895533dce2e6114cb250f373"
 metafile = true
 
 [[files]]
@@ -71,6 +601,11 @@ hash = "37b5008862be83c7a123e4f5550a2ca5186a9e39d1aba4475be974199dfa68a6"
 metafile = true
 
 [[files]]
+file = "mods/async-locator.pw.toml"
+hash = "9ef63cde38139c9c3bd549bf00ac9ee66f0dd7ee4c55afa3a0539ee1f4a89b9a"
+metafile = true
+
+[[files]]
 file = "mods/athena.pw.toml"
 hash = "9638d8a308563842fd989970919a51f37ed1bcc82372bff47fc5a5c2e6de738e"
 metafile = true
@@ -96,6 +631,11 @@ hash = "7432ec1d338f5f399db3c04ff85c36403df4fe77c4fe453af9b85d7d03cfef4e"
 metafile = true
 
 [[files]]
+file = "mods/bad-wither-no-cookie.pw.toml"
+hash = "933c86e510ff6257d52647e31dc07cda8c8955bc616c9c158dd65b74d2e45e98"
+metafile = true
+
+[[files]]
 file = "mods/badoptimizations.pw.toml"
 hash = "fb46ea6fed057190d17bd20f1e5ea835e1691b629f0d505efdc2279d55090a42"
 metafile = true
@@ -106,6 +646,11 @@ hash = "cc17fd6e85be435f0141ff78ce81233e0645414f6ec5bc1db112a26a79204822"
 metafile = true
 
 [[files]]
+file = "mods/better-advancements.pw.toml"
+hash = "81870149f48022da53fa2fcc3780d6c164c1acdf1a77593aa02cbed12eace448"
+metafile = true
+
+[[files]]
 file = "mods/better-combat-by-daedelus.pw.toml"
 hash = "95e1e53b02444a363aef8e309fd75422bae1d8844ddf681ba8750f8e6d3e1942"
 metafile = true
@@ -113,6 +658,21 @@ metafile = true
 [[files]]
 file = "mods/better-compatibility-checker.pw.toml"
 hash = "a167c88b43b73530c14b77d8cfa8c3546ee665ffa317f0451a6767e46bdae0de"
+metafile = true
+
+[[files]]
+file = "mods/better-days.pw.toml"
+hash = "c5ec516699e8ac387be43bf151f77465e381e809692c6c1c451a00d86a663eca"
+metafile = true
+
+[[files]]
+file = "mods/better-ping-display.pw.toml"
+hash = "a4e32d17399cc10153982c2cbb701e14bc0903d18f4f11ce808fbd9b381bb36e"
+metafile = true
+
+[[files]]
+file = "mods/betterf3.pw.toml"
+hash = "ca52b58cf0540bcec5d8b0318cddb371683b6f3f87ad9b925ff600ddd330f461"
 metafile = true
 
 [[files]]
@@ -175,7 +735,6 @@ file = "mods/caelus.pw.toml"
 hash = "da069e723737ae49203f7572eb774be0fd21f5f083ce7a7ee1bed25916befca8"
 metafile = true
 
-
 [[files]]
 file = "mods/carry-on-extend.pw.toml"
 hash = "e9b84c2d97def330f4de6b874d9afcbe8e2127155277dde2d773a391d3d26cb6"
@@ -184,6 +743,11 @@ metafile = true
 [[files]]
 file = "mods/carry-on.pw.toml"
 hash = "ba1bdad41e3c9ec131330f048fc6f9bcb753ca3e9bfa1e41d60d6ca11afbc2e6"
+metafile = true
+
+[[files]]
+file = "mods/catalogue.pw.toml"
+hash = "a7ba514a40fce692ccd896b49727ff1db3975aa284a2adf3c04f9dd7b6fdc82f"
 metafile = true
 
 [[files]]
@@ -247,6 +811,11 @@ hash = "4c3b1a80f0095a2def3e9b811d98c7132dc62effcf24522fddcc87ea5d2131c6"
 metafile = true
 
 [[files]]
+file = "mods/configured.pw.toml"
+hash = "8165f9f7f66ffe4fa7b92ef8f8564cd10f93ec2cf07d6931c442cf91333a1ca3"
+metafile = true
+
+[[files]]
 file = "mods/connectivity.pw.toml"
 hash = "ecc19205a3523f1d410c75ab03c60e8b7089820a87ad275f36a4a220cc7b6744"
 metafile = true
@@ -294,6 +863,11 @@ metafile = true
 [[files]]
 file = "mods/crafting-on-a-stick.pw.toml"
 hash = "ea56fed05fb38c1390a59961dabc757c5c9cb7a6adba3a5e0e1203971f082fd7"
+metafile = true
+
+[[files]]
+file = "mods/crafting-tweaks.pw.toml"
+hash = "705b7dfb1e351fc3f44968845edda33500950cbe1353d066fdebb5f17896c70d"
 metafile = true
 
 [[files]]
@@ -382,6 +956,11 @@ hash = "abd13560972cb4db4dcd473da171c6cc53f1e065dbe2ca717fa8558fd9aa316d"
 metafile = true
 
 [[files]]
+file = "mods/double-doors.pw.toml"
+hash = "71d3ea195d00248d430e1d7f3a77a1e54f1bc52df47d575bb001d81a553198d6"
+metafile = true
+
+[[files]]
 file = "mods/dreamshift.pw.toml"
 hash = "a6c779c32cbeb5070e5d333d8ea34e82560533dbc25103e3dc89d74466ac055c"
 metafile = true
@@ -394,6 +973,16 @@ metafile = true
 [[files]]
 file = "mods/dungeon-and-taverns.pw.toml"
 hash = "a1a8bc2e5625917e45cdf2360dfaeff24447b261579e8220d1e4748852c30e48"
+metafile = true
+
+[[files]]
+file = "mods/durability-notifier.pw.toml"
+hash = "2c01e9cb56a1de9b99e975573c653969e6fae5b78bc8a01f3d33d9fffb6804d6"
+metafile = true
+
+[[files]]
+file = "mods/durability-tooltip.pw.toml"
+hash = "e245d1d0a4277c97691c1099526b578535c0da794c4a75cd9e3f0d9a46308896"
 metafile = true
 
 [[files]]
@@ -464,6 +1053,11 @@ metafile = true
 [[files]]
 file = "mods/emotecraft-forge.pw.toml"
 hash = "bb5b3abe0f187ccde0bbbdbad7dcbc9ff513c8ce0d8770deee7fa3fe7fa5e08c"
+metafile = true
+
+[[files]]
+file = "mods/enchantment-descriptions.pw.toml"
+hash = "44356a258cddc6db59bd3ced70b822286f1263079a390298485b1601f5e713c3"
 metafile = true
 
 [[files]]
@@ -562,6 +1156,11 @@ hash = "e6362452d4834dc0919f89ea95b7242c3a5c4d61a0ebfc425ecfc6c71dc5afd0"
 metafile = true
 
 [[files]]
+file = "mods/fast-ip-ping.pw.toml"
+hash = "a842efe5241b0e0b89c3933b4c41570fe162aa66cef051007b048283ace2377e"
+metafile = true
+
+[[files]]
 file = "mods/fast-leaf-decay.pw.toml"
 hash = "fd5aa059dd7e148e9ce801455b438425c0ad36537ce4b635edeb524900b15284"
 metafile = true
@@ -617,6 +1216,11 @@ hash = "f88eceacf4eb7696d520f90122ed04de3011491de33662ffb3d3789d06e20e0b"
 metafile = true
 
 [[files]]
+file = "mods/ftb-chunks-forge.pw.toml"
+hash = "ddb85e793d329347836462663a8cc6f2ae73f8ba1ba8d6c3a4da417305de62c4"
+metafile = true
+
+[[files]]
 file = "mods/ftb-library-forge.pw.toml"
 hash = "efa75ee4aae90dea11316b6e61aecaf9433eeb3d0821f78b4eca41acbbd73e8f"
 metafile = true
@@ -654,6 +1258,11 @@ metafile = true
 [[files]]
 file = "mods/geckolib.pw.toml"
 hash = "898fd2704dd260ae8f3dc20b4416439751f0a9e76367c4f0bbdac886b6987802"
+metafile = true
+
+[[files]]
+file = "mods/get-it-together-drops.pw.toml"
+hash = "7bef7acb5b13ec858c5554a8c3d1fde694fa934a58b22e2aa5770989218ca064"
 metafile = true
 
 [[files]]
@@ -752,6 +1361,11 @@ hash = "20b5e0a2e284973575b957f455f5cafd04d405f2b6ed58284e2e7af12b0b63bf"
 metafile = true
 
 [[files]]
+file = "mods/inventory-totem.pw.toml"
+hash = "4d3933721bd386cf73e299e254273aae221c85f826899067c90c33e89f149b13"
+metafile = true
+
+[[files]]
 file = "mods/iron-furnaces.pw.toml"
 hash = "8a29668768e271e497991b609c4783da72c80f583e554f88a8751ec1d2fcc1d5"
 metafile = true
@@ -777,6 +1391,11 @@ hash = "dfa508b546489c22a8020b08ffbf587e4d795b4e34e571608eead8db445d66cd"
 metafile = true
 
 [[files]]
+file = "mods/item-borders.pw.toml"
+hash = "fd247d46bc81fa10cafbc13b414b44b9467bdd4f4f066b214b2378ed81ce9d6f"
+metafile = true
+
+[[files]]
 file = "mods/item-descriptions.pw.toml"
 hash = "0367f5e02dca2956d0b5a47322a11de3908a37eaa579ca9de4c42562ccf86812"
 metafile = true
@@ -789,6 +1408,11 @@ metafile = true
 [[files]]
 file = "mods/item-highlighter.pw.toml"
 hash = "478ff227e20253431c06972dfd947b0e67d560547486b87a30029e6af0d8bb59"
+metafile = true
+
+[[files]]
+file = "mods/jade-addons.pw.toml"
+hash = "9d04cc7e6c6e62cd9a9746c0c1ac1912087eda0efed4d507168df1caf201e21c"
 metafile = true
 
 [[files]]
@@ -819,6 +1443,11 @@ metafile = true
 [[files]]
 file = "mods/just-enough-effect-descriptions-jeed.pw.toml"
 hash = "3f66d295d1a661bf711ee4cd3b02402bf697612254a3801e2ac19067c767cdc3"
+metafile = true
+
+[[files]]
+file = "mods/just-enough-professions.pw.toml"
+hash = "d1a7cd27f2da4e99db5e85ae66118481d777aab2870edbb093af12d70d872840"
 metafile = true
 
 [[files]]
@@ -864,6 +1493,11 @@ metafile = true
 [[files]]
 file = "mods/kubejs.pw.toml"
 hash = "ed086cdfde6ba4bb175468a76f3df3b9517aea3fe95b09bed0f1fa70f7caeb6a"
+metafile = true
+
+[[files]]
+file = "mods/leave-my-bars-alone.pw.toml"
+hash = "f3d5d2453b2bb4965d9531be60ea4488d0da57592c988637d0247c5cead988ea"
 metafile = true
 
 [[files]]
@@ -987,6 +1621,11 @@ hash = "bd52722f1417e24a4acee3bf4fc59c5bf074627f7aaaaf8fd33056c7ef170bc3"
 metafile = true
 
 [[files]]
+file = "mods/memory-settings.pw.toml"
+hash = "92e4ac64e8646a2fdd0cfcdf448199ea9381ad74b96ffe284466c811072a23d9"
+metafile = true
+
+[[files]]
 file = "mods/mezzconfig.pw.toml"
 hash = "a718ddf90993c561efcca72870dd29d23881199cc3114a556d10b68182e23275"
 metafile = true
@@ -1067,6 +1706,16 @@ hash = "2ceb363055eaf4ba923377875f452b9cb1eab6e145c50866aed7be0c47e7f6a2"
 metafile = true
 
 [[files]]
+file = "mods/no-chat-reports.pw.toml"
+hash = "519f01d812902114e1886283b7e1e848f17fdf67bea3c5aecb3349174ac92e20"
+metafile = true
+
+[[files]]
+file = "mods/no-telemetry.pw.toml"
+hash = "b080b65356ae4536aea081b3feca5fc8095e422fc547261f938991d302c08af5"
+metafile = true
+
+[[files]]
 file = "mods/noisiumed.pw.toml"
 hash = "0f29aae51e0838cc4c20b73bcb4f097834d1e76ab429175935f4c2108e347859"
 metafile = true
@@ -1122,6 +1771,11 @@ hash = "b612131b286c9c53380e37e450807454c493c2cc669156f07c051f36f3fd6cb5"
 metafile = true
 
 [[files]]
+file = "mods/paper-doll.pw.toml"
+hash = "e59c4a73f2e8b1ec601b6e9aa0425bf483fb56523626831dcd891f9dd5cb8bff"
+metafile = true
+
+[[files]]
 file = "mods/particle-core.pw.toml"
 hash = "49b45092802ea261047c7d4c4866feb99992f39e92b4e2089140408661d61830"
 metafile = true
@@ -1144,6 +1798,11 @@ metafile = true
 [[files]]
 file = "mods/philips-biome-features.pw.toml"
 hash = "a97271a16d7770d4b58397263863e39bbaae33f387985f685ca6124dc6fef02a"
+metafile = true
+
+[[files]]
+file = "mods/pick-up-notifier.pw.toml"
+hash = "3e801878ddaf67fddccf599fe9c1e23e3df39f633e90d68c76a49905d55c2925"
 metafile = true
 
 [[files]]
@@ -1222,6 +1881,11 @@ hash = "940024d6bd348d64bccb44b4af0aca29d375f4842728e8394982754edd0b68d7"
 metafile = true
 
 [[files]]
+file = "mods/quick-pack.pw.toml"
+hash = "0167117c7e4a111dfb6178913a78d10ecda30cf612d2a00ba013e727f9c9d890"
+metafile = true
+
+[[files]]
 file = "mods/rac-compat.pw.toml"
 hash = "2ede7f8e9ed0c1f77cd2c4cc777733f2687fb2af310b34ae477887d19ef791fa"
 metafile = true
@@ -1229,6 +1893,11 @@ metafile = true
 [[files]]
 file = "mods/radiant-gear.pw.toml"
 hash = "b613f3c2e55bdf5562585e98b03b1513ae26a003b32a19cd2fce076e293d7652"
+metafile = true
+
+[[files]]
+file = "mods/radium-re-reforged.pw.toml"
+hash = "ae0052e396367fcc0d6d5e7adb39dc9acb5988a81c2f4cf4ff552efda1cefab4"
 metafile = true
 
 [[files]]
@@ -1251,6 +1920,10 @@ file = "mods/reliquified-artifacts.pw.toml"
 hash = "8cb6145cf9efd3c8dbe80ae791f033312063200ea0cb45b7aa112de04163c093"
 metafile = true
 
+[[files]]
+file = "mods/renderscale.pw.toml"
+hash = "df4c91aa684ab5cbc228097bf2c7445c977fc48c3d3d2d651cdbfd9c95aa83e1"
+metafile = true
 
 [[files]]
 file = "mods/resourceful-config.pw.toml"
@@ -1290,6 +1963,11 @@ metafile = true
 [[files]]
 file = "mods/saturn.pw.toml"
 hash = "f9be8361c39f91dce80420324ac45290a990e8178b83df6bdaa8d69f2c7aa8d4"
+metafile = true
+
+[[files]]
+file = "mods/se-leafculling.pw.toml"
+hash = "b863bcbb10cadae50dc77aeb28588c4b413a79bddab4fae255ac62736bc5e4e4"
 metafile = true
 
 [[files]]
@@ -1375,6 +2053,11 @@ metafile = true
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
 hash = "dcf8727cccdb0ad8094503b13bb41da98baa41ec9f1e4d5cf9d5eeecfd558655"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-sorter.pw.toml"
+hash = "d66943fec84720a41909364b1b4f4d18c896f45646ebd850b6b0fd1be5c3e6f6"
 metafile = true
 
 [[files]]
@@ -1468,6 +2151,11 @@ hash = "c7af8f5d83a46a9fa0c4b7e5bdca5dc65bc873bcfec03f0efc634f31866b43fe"
 metafile = true
 
 [[files]]
+file = "mods/stack-refill.pw.toml"
+hash = "0d3c3dc1cb465b6f50ef1d45437accaac1eec938c30742865fc17a9632feaf28"
+metafile = true
+
+[[files]]
 file = "mods/stagecoach.pw.toml"
 hash = "96050341a8a017438d841cfff6beaebe509f80b7b331d344cf6c3e07c1593572"
 metafile = true
@@ -1500,6 +2188,11 @@ metafile = true
 [[files]]
 file = "mods/structure-layout-optimizer.pw.toml"
 hash = "4b2933a18390fe4fc0efef26556413372a96a0f5ed639c713643ed8e49649c58"
+metafile = true
+
+[[files]]
+file = "mods/supermartijn642s-config-lib.pw.toml"
+hash = "fb0ec93bfbee412229b63a9154abc992ee7e274a84fe569e077f250e6c77abbd"
 metafile = true
 
 [[files]]
@@ -1565,6 +2258,16 @@ metafile = true
 [[files]]
 file = "mods/to-glide.pw.toml"
 hash = "d33074e0cf4935349779f6ac8fdfd0d4da079cf46556ab31156e655f91d53df1"
+metafile = true
+
+[[files]]
+file = "mods/toast-control.pw.toml"
+hash = "80aa6229fe5da7e041ddd13f192da2d488b5530c3484050b91e334f1c47a17ad"
+metafile = true
+
+[[files]]
+file = "mods/torchmaster.pw.toml"
+hash = "0df4498be0fe417151c2bb6fab93981a33045be5e79da2a34c53942a057c06b0"
 metafile = true
 
 [[files]]
@@ -1648,6 +2351,11 @@ hash = "c08817fe8025a9d62c8f7abd5f56a54b90673e5ab60f39ae8fa1d70d5ace529b"
 metafile = true
 
 [[files]]
+file = "mods/yapifix.pw.toml"
+hash = "b1dd072e24241836e745cebd8f55b05a07e1fbc9ea4a4faa078b2b5bbac46343"
+metafile = true
+
+[[files]]
 file = "mods/yungs-api.pw.toml"
 hash = "9fb6a1a06b18f2ce7b0811200339d997925cb39bde220fbaea4d5c8067376c12"
 metafile = true
@@ -1708,131 +2416,6 @@ hash = "aedb648ee15bdb7bb3af23cfa4ad565c0fe531f62e89406566bec90659be9a42"
 metafile = true
 
 [[files]]
-file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/before_you_start.snbt"
-hash = "28689f4e2f124c00f532f9b1695430077330c52d633fb096070bde36967413aa"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/chapter_1_hallowstown.snbt"
-hash = "33f8d728a172834ed60da7c540cff97c9a0d5c8cdd78ff01df75ef6a8c854017"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/chapter_2_events_and_minigames.snbt"
-hash = "7f2613e49ec5f60ed44cb4d2867b83152591f60ae65d58f5bb3234e50bddb915"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/chapter_3_life_and_occult_rites.snbt"
-hash = "ea0a2c6c1632733af85756a2da0b4284e18c8d24146d010e69402e1fd0566fc8"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/chapter_4_liminal_trials.snbt"
-hash = "9e3a3af7782cf3cd0b2302207b624808e8680f7dd83cf02d1aaef252fb64a2d2"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/chapter_5_boss_showdowns.snbt"
-hash = "4e492c8ecdf6d225ed71c94b489247778b868aa7a50e4eb258fd89322578d4e4"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/chapter_6_field_manuals_and_arcane_guides.snbt"
-hash = "d3e0625a7252ec12c7f325fdb453c37b913814a47eae1916c81376fad3dc965f"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/chapter_7_workshop_guides.snbt"
-hash = "5720892258d885512a86fe420dd38b680ab04bf69d2cbc77b57560e495989c90"
-
-[[files]]
-file = "config/ftbquests/quests/data.snbt"
-hash = "ed7875116d2c86b1e8c58e9a714c1566043be46ff1c927f8ab31b2a806c50acc"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/cryptid_hunter_crate.snbt"
-hash = "cd9611e43a0d60447eb5db0044ad874418a86af0b59c84da0f1fe965eb968fc6"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/hallowstown_culinary_basket.snbt"
-hash = "04d6eef982255deddc76775eac0efac3557828e3ae6aba9df891af0a20a3e662"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/occult_caster_cache.snbt"
-hash = "d9979e6f6aa5ec7789e8e8d3254611cfc7b312ee0940264a8ab4cd3c1b30fee1"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/trick_or_treat_bag.snbt"
-hash = "70c9614483161f11d3d38fd0849ece423e40ec3a3a979b60f73ad66bc82b9597"
-
-[[files]]
-file = "mods/better-days.pw.toml"
-hash = "c5ec516699e8ac387be43bf151f77465e381e809692c6c1c451a00d86a663eca"
-metafile = true
-
-[[files]]
-file = "config/betterdays-common.toml"
-hash = "0e8f17fb2dde4d64a4382bb90ca7bc5bbade22064524ffd4321a58c4e5ca343e"
-
-[[files]]
-file = "config/worldedit/schematics/hallowstown_cemetery.schem"
-hash = "156518d9d716d28dea3f5bd8740e29710ce5e0939c0a353e4838962e41c1b02f"
-
-[[files]]
-file = "config/worldedit/schematics/hallowstown_cemetery_modded.schem"
-hash = "800f5208579957fade9bba25e5f9651a3294c382cf5c79f5ad6f42fdd6aaeb9b"
-
-[[files]]
-file = "config/worldedit/schematics/hallowstown_pantry.schem"
-hash = "72e1c4221bcf0b71305a84e27808c44c5bb2b07b0a693c7ec254398ab6530af8"
-
-[[files]]
-file = "config/worldedit/schematics/hallowstown_pantry_modded.schem"
-hash = "42ca0eac594639ba6cc86a81b666b3832b3957db86ab64c38900a7f975393411"
-
-[[files]]
-file = "config/worldedit/schematics/hallowstown_tavern.schem"
-hash = "bd99f28fdef75f22a17f702d6b3f20e064b66bfceef60f2e5e959e76742b78a5"
-
-[[files]]
-file = "config/worldedit/schematics/hallowstown_tavern_modded.schem"
-hash = "37282d6f58f0d14154962144018e43bd699ba12421129ed3fb60a4e417730456"
-
-[[files]]
-file = "config/worldedit/schematics/house_A_pumpkin_cottage.schem"
-hash = "2cbf92120eea5b9ecacd51dd4c59c399ef1a744b4ab20e3132583fd26ba24f69"
-
-[[files]]
-file = "config/worldedit/schematics/house_A_pumpkin_cottage_modded.schem"
-hash = "f43d305b3ef0f8f1bbdb61d2ccd680111b332d5002aaf4fa9d6859a4dbaab949"
-
-[[files]]
-file = "config/worldedit/schematics/house_B_twin_lantern_duplex.schem"
-hash = "e6d7b53315acc27f90f0d82f46b3de07a4d972e8d092c8207bedbc66028b594b"
-
-[[files]]
-file = "config/worldedit/schematics/house_B_twin_lantern_duplex_modded.schem"
-hash = "2c27d17713fa78beb6dbd79afe25a5bc57a49b08234d958e91ffb6a85e4dada9"
-
-[[files]]
-file = "config/worldedit/schematics/house_C_hollow_row_apartments.schem"
-hash = "4ef6aa062ae96e641de3a2bdee26add41e115ceabf269814cdf59da049599782"
-
-[[files]]
-file = "config/worldedit/schematics/house_C_hollow_row_apartments_modded.schem"
-hash = "4f4a79cda143b70028f21bf4bf7a9b48a17de607b31b0eaa760cedfd761c2e56"
-
-[[files]]
-file = "config/worldedit/schematics/house_D_harvest_moon_family_hall.schem"
-hash = "e3ad5c79332bb30f9e1d56277b62e5cb9ca45231bd5da5850a620120caa35c3b"
-
-[[files]]
-file = "config/worldedit/schematics/house_D_harvest_moon_family_hall_modded.schem"
-hash = "3302fa85d2081bb6936bb7e8b466e50a53f9f62d620dbf2a7397ee6fd77ff915"
-
-[[files]]
-file = "config/worldedit/schematics/spooktacular_cinema.schem"
-hash = "af516ed2229f2afbb9e431f57ebe2b140e6aa58d6429e78186cbd7f5ec14d270"
-
-[[files]]
 file = "schematics/Hallowstown/Vanilla/hallowstown_cemetery.litematic"
 hash = "e59d8b7331a034dde0775f69b1837c3ae01e119d7a317953e45d84d69fc4c0e4"
 
@@ -1861,16 +2444,148 @@ file = "schematics/Hallowstown/Vanilla/house_D_harvest_moon_family_hall.litemati
 hash = "1abb33ec94128d9890fef64038e1137a6c431c886579839bb244f14d9d6ff646"
 
 [[files]]
+file = "schematics/Hallowstown/hallowstown_autumn_orchard_cider_mill_modded.litematic"
+hash = "52a803fa920bc4aae72e2f518f60ca075d3f21aff6b65d8ad4dd3bf1a2a22733"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_carriage_house_stables_modded.litematic"
+hash = "1c6304d77a110763b3861b142096f6cfb3edeb116fd670201e85e3970e50982d"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_catacombs_modded.litematic"
+hash = "656a297d35aa918ea578c33fe4bf8c656a9644773f732b91cc59abd98ebba7d5"
+
+[[files]]
 file = "schematics/Hallowstown/hallowstown_cemetery_modded.litematic"
 hash = "21b05185e68dca7934e8fee478beea27fd54799663231922f7e2e70841ec5557"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_colossal_scarecrow_modded.litematic"
+hash = "e21c4922739ec0cbdd965a1da8ed6a84db57f635d9023222f21bf235e10ca4bb"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_crypt_modded.litematic"
+hash = "74ab97e352613f49e6fcf7dd3c7f9da0efd11db9d8e3ffb222809b38615c0323"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_garrison_bounty_board_modded.litematic"
+hash = "3ad7489d7f8a51057641f440fd55c91319a43c5e38e621ef176747c7c9fc064e"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_grand_archive_modded.litematic"
+hash = "1d68a39e036b10a6758b7a1f5c85e59d8751b87caba8764bcb98541dc5ead3a5"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_grand_cathedral_modded.litematic"
+hash = "61b43dfcb7ac6b7438860edcfb869137691b2411193d5cf58c0d88910957aefb"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_hall_of_heroes_modded.litematic"
+hash = "355549d83f3073991b856393ade8fd8747cda8bcb89eb64be62f5e1cc3224f96"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_harvest_cart_modded.litematic"
+hash = "578f19d1c3d0378cc479258b44d40c5a2981e2013b96f7f0382111a8d6e7d110"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_haunted_dead_tree_modded.litematic"
+hash = "ffa4c45a1b81bdb34956dc1fae7942bb5db689feaca8f11e6ac5a4b0ea991c33"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_hay_bale_photo_spot_modded.litematic"
+hash = "299d5537895f8f2882d126cec346a513e21d0a6c350f833d4718d91f46f1c6cb"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_infernal_citadel_modded.litematic"
+hash = "16e770159d0e5f76c406ed1122e5db7b3fe8a723e991039634be2f9a21597a2e"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_jack_o_lantern_arch_modded.litematic"
+hash = "8dc4a99bcfbaac0c286b38bbc43a605a61bb5bd5555e12c72012b061ea5f5cd6"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_lamp_post_set_modded.litematic"
+hash = "84120cef09b006c52a4b1d332e55a5e31d45b510d191a8de35b6adc93cad0a70"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_lonely_grave_corner_modded.litematic"
+hash = "c06c3bc892d5a319b5415899501bca194382e45446aadfb825f16720d1011d05"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_masquerade_boutique_modded.litematic"
+hash = "6bed7e139f1497c00530d819b899198d0a43f20a470cf173205590d839c5c4b7"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_midnight_spire_modded.litematic"
+hash = "86c4ce01053c46d5cfcba8cd8c7ccf79ffc6727d4fcaa84d2cbc846fe26ba4b7"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_misty_wharf_modded.litematic"
+hash = "27cf1753fd97da8b64e6d69e8e4914fd9ff035c616d55a75a4168c841cba7a9a"
 
 [[files]]
 file = "schematics/Hallowstown/hallowstown_pantry_modded.litematic"
 hash = "a5d6543505064d051e409a49b97f66521b8b600d325d4149ac20b8d7bb214c77"
 
 [[files]]
+file = "schematics/Hallowstown/hallowstown_pumpkin_market_stall_modded.litematic"
+hash = "4934ffb1fa736cbfbd3274fb03bea96662748bd8c79de4de7f757be764ca628d"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_road_corner_modded.litematic"
+hash = "a764e328b5964c9cbeff8f60aa39e62cabebdf879be98d252698aa4c66209ad0"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_road_crossing_modded.litematic"
+hash = "bb1b3d3a9f456933bb452be7256a912f0d87a8239efd37c6052460496f2991ea"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_road_lamp_post_modded.litematic"
+hash = "96e99ee00697c638b0d43115a77bc3ee55780100ef56e295af222ff374822345"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_road_straight_modded.litematic"
+hash = "0729631b6875a2718810e29bd32ff68efce94e5870a09daeba65c459fcc1e1a4"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_road_t_junction_modded.litematic"
+hash = "0d6d8be84f5b5bd4476caeee7fb2594441a3133be7d9013e6d54caa482106386"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_smeltery_annex_modded.litematic"
+hash = "8328ef5eafc5cb486d441fc031beed6927a2891f6b06271803a59f8c9680a9c8"
+
+[[files]]
 file = "schematics/Hallowstown/hallowstown_tavern_modded.litematic"
 hash = "2c6ed8f051a9d5dc50beec0eb891541f0b3c3466e4d292aa1c3bcfa08838a3c5"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_void_observatory_modded.litematic"
+hash = "bf4ece7b62eadebd575aee8815a87734ed86acf00630ce78dc494050af6df8ae"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_ward_arch_11_modded.litematic"
+hash = "bf89539a91730c3af97e2f029b68f4d756213caf0f67c081af2802ba9a4d1f61"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_ward_arch_7_modded.litematic"
+hash = "57c0fffa3b07d7329f26752c8ec4015116a1f5e204032862a9f9814969d86c85"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_ward_wall_section_modded.litematic"
+hash = "06657190339042e557b1289a7db5ae4ef1ac32441edbe331384ee137a2e98ef8"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_ward_wall_toadstool_modded.litematic"
+hash = "07e0c6e52941741627dacf2fcf43e12e89ef1acb7222567b3825c71cc3169813"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_witchs_apothecary_modded.litematic"
+hash = "d5da9c6501fa5b118b1937f90a85eb525367cea8cf2c687c3b2ff81f5d3bfa75"
+
+[[files]]
+file = "schematics/Hallowstown/hallowstown_witchs_cookout_modded.litematic"
+hash = "51b26d9f8086204462d6f12d443bef01ade8e59a5c93839e8193acf87351feb8"
 
 [[files]]
 file = "schematics/Hallowstown/house_A_pumpkin_cottage_modded.litematic"
@@ -1889,206 +2604,17 @@ file = "schematics/Hallowstown/house_D_harvest_moon_family_hall_modded.litematic
 hash = "94cc729e11b4c954928194d1141c8fb2afd483c4f5a0524acc92e205aaf3ed96"
 
 [[files]]
-file = "config/bcc-common.toml"
-hash = "fa82b4d0cc21ee656c2451cd5a535fde1064c632cf5e6b1003e84193fbfad5a3"
+file = "schematics/Hallowstown/house_e_lamplighters_row_modded.litematic"
+hash = "6dfab5621723c2f83b7cc5fe730614409367870fa04f72b1711df88650f15c12"
 
 [[files]]
-file = "config/carryon-common.toml"
-hash = "46b848ec3694ca152f2d8195ae2b770a9fb038421a59046ac43cfd12155f740a"
+file = "schematics/Hallowstown/house_f_gourd_hollow_modded.litematic"
+hash = "0330b0d94ece6cb6ee5272cec6830adb067dc78bb026e7e9607d11d456fec685"
 
 [[files]]
-file = "config/dreamshift.json"
-hash = "6c63d7db1da6de1f967b097b55d90eea8856a4409266a8fac12723d3e0fe0961"
+file = "schematics/Hallowstown/house_g_crooked_cottage_modded.litematic"
+hash = "c2fd9e97aee19fe37d9129c70257e0f2b1ae8ac7698ccd7fb9fa5976f9824a82"
 
 [[files]]
-file = "config/immersive_portals.json"
-hash = "64d61d11dd15b270197e47048e37f6be5ae00c01be425104ca6550eed7ea5fe6"
-
-[[files]]
-file = "config/modernfix-mixins.properties"
-hash = "4b965d4d7758a36dcb888d5233c1b124ab6e4377556140e74a212717926a7923"
-
-[[files]]
-file = "config/structureessentials.json"
-hash = "b903919fb31b700e652d7d03fdbf6cf3ad7757097ae4298fe1413bc33dfd4d3f"
-
-[[files]]
-file = "mods/advancement-plaques.pw.toml"
-hash = "99c133b256051ff18ab958384ddec7f20f424a8fadb6d8087687dbb2972b6094"
-metafile = true
-
-[[files]]
-file = "mods/alternate-current.pw.toml"
-hash = "e794a0240ad915c2c8e43a04e6dfded947bf11f3895533dce2e6114cb250f373"
-metafile = true
-
-[[files]]
-file = "mods/async-locator.pw.toml"
-hash = "9ef63cde38139c9c3bd549bf00ac9ee66f0dd7ee4c55afa3a0539ee1f4a89b9a"
-metafile = true
-
-[[files]]
-file = "mods/bad-wither-no-cookie.pw.toml"
-hash = "933c86e510ff6257d52647e31dc07cda8c8955bc616c9c158dd65b74d2e45e98"
-metafile = true
-
-[[files]]
-file = "mods/better-advancements.pw.toml"
-hash = "81870149f48022da53fa2fcc3780d6c164c1acdf1a77593aa02cbed12eace448"
-metafile = true
-
-[[files]]
-file = "mods/better-ping-display.pw.toml"
-hash = "a4e32d17399cc10153982c2cbb701e14bc0903d18f4f11ce808fbd9b381bb36e"
-metafile = true
-
-[[files]]
-file = "mods/betterf3.pw.toml"
-hash = "ca52b58cf0540bcec5d8b0318cddb371683b6f3f87ad9b925ff600ddd330f461"
-metafile = true
-
-[[files]]
-file = "mods/catalogue.pw.toml"
-hash = "a7ba514a40fce692ccd896b49727ff1db3975aa284a2adf3c04f9dd7b6fdc82f"
-metafile = true
-
-[[files]]
-file = "mods/configured.pw.toml"
-hash = "8165f9f7f66ffe4fa7b92ef8f8564cd10f93ec2cf07d6931c442cf91333a1ca3"
-metafile = true
-
-[[files]]
-file = "mods/crafting-tweaks.pw.toml"
-hash = "705b7dfb1e351fc3f44968845edda33500950cbe1353d066fdebb5f17896c70d"
-metafile = true
-
-[[files]]
-file = "mods/double-doors.pw.toml"
-hash = "71d3ea195d00248d430e1d7f3a77a1e54f1bc52df47d575bb001d81a553198d6"
-metafile = true
-
-[[files]]
-file = "mods/durability-notifier.pw.toml"
-hash = "2c01e9cb56a1de9b99e975573c653969e6fae5b78bc8a01f3d33d9fffb6804d6"
-metafile = true
-
-[[files]]
-file = "mods/durability-tooltip.pw.toml"
-hash = "e245d1d0a4277c97691c1099526b578535c0da794c4a75cd9e3f0d9a46308896"
-metafile = true
-
-[[files]]
-file = "mods/enchantment-descriptions.pw.toml"
-hash = "44356a258cddc6db59bd3ced70b822286f1263079a390298485b1601f5e713c3"
-metafile = true
-
-[[files]]
-file = "mods/fast-ip-ping.pw.toml"
-hash = "a842efe5241b0e0b89c3933b4c41570fe162aa66cef051007b048283ace2377e"
-metafile = true
-
-[[files]]
-file = "mods/get-it-together-drops.pw.toml"
-hash = "7bef7acb5b13ec858c5554a8c3d1fde694fa934a58b22e2aa5770989218ca064"
-metafile = true
-
-[[files]]
-file = "mods/inventory-totem.pw.toml"
-hash = "4d3933721bd386cf73e299e254273aae221c85f826899067c90c33e89f149b13"
-metafile = true
-
-[[files]]
-file = "mods/item-borders.pw.toml"
-hash = "fd247d46bc81fa10cafbc13b414b44b9467bdd4f4f066b214b2378ed81ce9d6f"
-metafile = true
-
-[[files]]
-file = "mods/jade-addons.pw.toml"
-hash = "9d04cc7e6c6e62cd9a9746c0c1ac1912087eda0efed4d507168df1caf201e21c"
-metafile = true
-
-[[files]]
-file = "mods/just-enough-professions.pw.toml"
-hash = "d1a7cd27f2da4e99db5e85ae66118481d777aab2870edbb093af12d70d872840"
-metafile = true
-
-[[files]]
-file = "mods/leave-my-bars-alone.pw.toml"
-hash = "f3d5d2453b2bb4965d9531be60ea4488d0da57592c988637d0247c5cead988ea"
-metafile = true
-
-[[files]]
-file = "mods/memory-settings.pw.toml"
-hash = "92e4ac64e8646a2fdd0cfcdf448199ea9381ad74b96ffe284466c811072a23d9"
-metafile = true
-
-[[files]]
-file = "mods/no-chat-reports.pw.toml"
-hash = "519f01d812902114e1886283b7e1e848f17fdf67bea3c5aecb3349174ac92e20"
-metafile = true
-
-[[files]]
-file = "mods/no-telemetry.pw.toml"
-hash = "b080b65356ae4536aea081b3feca5fc8095e422fc547261f938991d302c08af5"
-metafile = true
-
-
-[[files]]
-file = "mods/paper-doll.pw.toml"
-hash = "e59c4a73f2e8b1ec601b6e9aa0425bf483fb56523626831dcd891f9dd5cb8bff"
-metafile = true
-
-[[files]]
-file = "mods/pick-up-notifier.pw.toml"
-hash = "3e801878ddaf67fddccf599fe9c1e23e3df39f633e90d68c76a49905d55c2925"
-metafile = true
-
-[[files]]
-file = "mods/quick-pack.pw.toml"
-hash = "0167117c7e4a111dfb6178913a78d10ecda30cf612d2a00ba013e727f9c9d890"
-metafile = true
-
-[[files]]
-file = "mods/radium-re-reforged.pw.toml"
-hash = "ae0052e396367fcc0d6d5e7adb39dc9acb5988a81c2f4cf4ff552efda1cefab4"
-metafile = true
-
-[[files]]
-file = "mods/renderscale.pw.toml"
-hash = "df4c91aa684ab5cbc228097bf2c7445c977fc48c3d3d2d651cdbfd9c95aa83e1"
-metafile = true
-
-[[files]]
-file = "mods/se-leafculling.pw.toml"
-hash = "b863bcbb10cadae50dc77aeb28588c4b413a79bddab4fae255ac62736bc5e4e4"
-metafile = true
-
-[[files]]
-file = "mods/sophisticated-sorter.pw.toml"
-hash = "d66943fec84720a41909364b1b4f4d18c896f45646ebd850b6b0fd1be5c3e6f6"
-metafile = true
-
-[[files]]
-file = "mods/stack-refill.pw.toml"
-hash = "0d3c3dc1cb465b6f50ef1d45437accaac1eec938c30742865fc17a9632feaf28"
-metafile = true
-
-[[files]]
-file = "mods/supermartijn642s-config-lib.pw.toml"
-hash = "fb0ec93bfbee412229b63a9154abc992ee7e274a84fe569e077f250e6c77abbd"
-metafile = true
-
-[[files]]
-file = "mods/toast-control.pw.toml"
-hash = "80aa6229fe5da7e041ddd13f192da2d488b5530c3484050b91e334f1c47a17ad"
-metafile = true
-
-[[files]]
-file = "mods/yapifix.pw.toml"
-hash = "b1dd072e24241836e745cebd8f55b05a07e1fbc9ea4a4faa078b2b5bbac46343"
-metafile = true
-
-[[files]]
-file = "mods/ftb-chunks-forge.pw.toml"
-hash = "ddb85e793d329347836462663a8cc6f2ae73f8ba1ba8d6c3a4da417305de62c4"
-metafile = true
+file = "schematics/Hallowstown/house_h_harvest_barn_house_modded.litematic"
+hash = "ca6c86c9607d03a9867820f40b66a42394a531c25e9403f3bdb4035184709547"
