@@ -9,7 +9,6 @@ a post in #modpack-updates. "Players" is what gets posted; "Behind the scenes" i
 Players
 - Fixed chests, signs and other block entities floating off their spot and turning at odd
   angles when shaders are on. RenderScale is back on the version from before today's update.
-  If you still see it, set RenderScale to 100% in Video Settings and tell Josh.
 
 Behind the scenes
 - RenderScale 2.0.0-beta.1 (added in 2026.10.28-1) resizes and replaces Oculus' depth targets;
