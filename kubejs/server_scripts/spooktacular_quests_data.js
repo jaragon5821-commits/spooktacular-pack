@@ -13,7 +13,6 @@ global.SPOOK_QUEST_DATA = {
   "3D6A85B68C42A6A3": "charter:orchard_mill",
   "0CC63D8EF55E2757": "charter:spire",
   "7600BEECF904BE26": "charter:crypt",
-  "057A3C62DE597798": "charter:catacombs",
   "7CD512BDF15F0FA3": "charter:boutique",
   "17BF12083E078DB5": "charter:stables",
   "0F09FBA3C2B3577E": "charter:wharf",
@@ -50,8 +49,7 @@ global.SPOOK_QUEST_DATA = {
    "spire"
   ],
   "4D306F719E5C18BD": [
-   "crypt",
-   "catacombs"
+   "crypt"
   ],
   "67E934B9C20A525C": [
    "boutique"

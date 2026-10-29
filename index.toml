@@ -26,7 +26,7 @@ hash = "b5c55b47bfc1817e8e495c17cded815fa5b52193b440d2766a263d19d887c150"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_1_hallowstown.snbt"
-hash = "0eecf49dd31c36d17e313b4176a62e417165af3541395a211ba5950b37521836"
+hash = "f23bb9f86e1f23854d2aeb3826238724a67edfd1b0abdcdbff747bc3a1d9b553"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_2_events_and_minigames.snbt"
@@ -297,10 +297,6 @@ file = "kubejs/data/spooktacular/blueprints/boutique.json"
 hash = "6e412876fe87db501cdf6666a9b06c381d1d5a85829d52a1a8bd61e4bf7cb007"
 
 [[files]]
-file = "kubejs/data/spooktacular/blueprints/catacombs.json"
-hash = "7c91ccb1fac10564e25d971530e2013e1fd88c4a1cba6a6369ca8e92fda09cb2"
-
-[[files]]
 file = "kubejs/data/spooktacular/blueprints/cathedral.json"
 hash = "e28469c03fa3f7a4e4f392ab358d776e2f360c5338feb7504e73eb2d639ec5ae"
 
@@ -314,7 +310,7 @@ hash = "c4855078795cf9afe2b1ccc29532b07702790b9194b6f246a84286c49b6861d7"
 
 [[files]]
 file = "kubejs/data/spooktacular/blueprints/crypt.json"
-hash = "efd6de0cd5aafd045ebbfd56fac372fec56552403c41a1eacc9efdda284904f9"
+hash = "3ec04966657deeefa6291722938abf3db1ad56cfbfd0a46bdb2f0523349de2d8"
 
 [[files]]
 file = "kubejs/data/spooktacular/blueprints/garrison.json"
@@ -481,12 +477,16 @@ file = "kubejs/data/spooktacular/tags/entity_types/archive/whisperwoods_wisp.jso
 hash = "4397c6ff59b2aabf82af483c278b159756ecdf7499f6a176d3d4fcd442408ec3"
 
 [[files]]
+file = "kubejs/server_scripts/spooktacular_quests_autotest.js"
+hash = "84b98a35ab8fa22ccb7fd7eb04ad7778723ead7072e594ffbd1fe7c06beb6337"
+
+[[files]]
 file = "kubejs/server_scripts/spooktacular_quests_charters.js"
 hash = "c5a1c1f7c5718e0731d5124af31360fbeadb722875355645101f521a98808566"
 
 [[files]]
 file = "kubejs/server_scripts/spooktacular_quests_data.js"
-hash = "dc72b9832b3afb30546566f89a698337e963a6963aec970e00193a580ffc89e2"
+hash = "88c19ebbc5f213db960c27fbe6d5ca923fae8ecad3865fa96855bafb61b9e250"
 
 [[files]]
 file = "kubejs/server_scripts/spooktacular_quests_fanfare.js"
@@ -498,7 +498,7 @@ hash = "c5a77b14a690045433cb5dba1c5953db36fb49636f8e08a1aae0e9d7a6ecf238"
 
 [[files]]
 file = "kubejs/startup_scripts/spooktacular_quest_items.js"
-hash = "da0c848c7a4cdf0fbeadfe390854a2dd3bb5ade399c50e98396598acb1263cd4"
+hash = "836fe320fafb3f615d2ea710656e10cf5e5385e58cc5909c423af670d4bb9361"
 
 [[files]]
 file = "mods/accessories.pw.toml"

@@ -441,7 +441,7 @@
 		}
 		{
 			dependencies: ["6DE25B0EBB8675EC"]
-			description: ["Build the Crypt and the Catacombs, each with its own Charter. Take the Town Charter this quest gives you, build from the Forgematica blueprint (schematics\\Hallowstown), then place the Charter on the middle of the front path facing the door. Right-click it to see progress; sneak and right-click to mark wrong spots. It completes at a 90% match.", "", "The living are not invited down here. Keep your occult work below the graves."]
+			description: ["Build the Crypt and the Catacombs under the Cemetery from their Forgematica blueprints (schematics\\Hallowstown). One Town Charter checks both. Place it on the Cemetery's front path one block in front of the Cemetery's Charter (toward you), facing the gate. Right-click it to see progress; sneak and right-click to mark wrong spots. It completes at a 90% match.", "", "The living are not invited down here. Keep your occult work below the graves."]
 			icon: "graveyard:skull_pile"
 			id: "4D306F719E5C18BD"
 			rewards: [
@@ -472,13 +472,7 @@
 				{
 					icon: "spooktacular:charter_crypt"
 					id: "7600BEECF904BE26"
-					title: "Build the Crypt"
-					type: "custom"
-				}
-				{
-					icon: "spooktacular:charter_catacombs"
-					id: "057A3C62DE597798"
-					title: "Build the Catacombs"
+					title: "Build the Crypt and Catacombs"
 					type: "custom"
 				}
 			]

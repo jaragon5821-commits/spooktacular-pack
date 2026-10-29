@@ -13,7 +13,6 @@ global.SPOOK_CHARTERS = {
   "garrison": "Garrison and Bounty Board",
   "archive": "Grand Archive",
   "spire": "Midnight Spire",
-  "catacombs": "Catacombs",
   "wharf": "Misty Wharf",
   "cathedral": "Grand Cathedral",
   "hall_of_heroes": "Hall of Heroes",
@@ -22,7 +21,7 @@ global.SPOOK_CHARTERS = {
   "tavern": "Lantern & Lute Tavern",
   "pantry": "Hollow Pantry",
   "cemetery": "Hallowstown Cemetery",
-  "crypt": "Hallowstown Crypt"
+  "crypt": "Catacombs and Occult Crypt"
 }
 
 StartupEvents.registry('block', event => {
