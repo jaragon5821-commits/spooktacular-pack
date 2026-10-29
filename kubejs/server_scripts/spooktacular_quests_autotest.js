@@ -22,9 +22,13 @@ function spookTestLog(ok, what) {
   console.info('[QuestAutoTest] ' + (ok ? 'PASS ' : 'FAIL ') + what)
 }
 
-PlayerEvents.loggedIn(event => {
+// Starts once the joining player has really been ticking for 10 seconds (the client finishes loading first;
+// before that the server can stall and then race through scheduled steps).
+PlayerEvents.tick(event => {
   let server = event.server
-  if (spookTestRan || String(server.worldData.levelName) != 'Hallowstown Quest Test') return
+  if (spookTestRan || event.player.age < 200) return
+  let lvl = String(server.worldData.levelName)
+  if (lvl != 'Hallowstown Quest Test' && lvl != 'Hallowstown Review') return
   spookTestRan = true
   let p = event.player, name = p.username, q = p.data.ftbquests
   let step = (ticks, label, fn) => server.scheduleInTicks(ticks, () => {
@@ -70,12 +74,18 @@ PlayerEvents.loggedIn(event => {
   // 4. Standing near the Scarecrow, its quest should complete on its own (and the show plays).
   step(1100, 'scarecrow quest', () => {
     spookTestLog(q.isCompleted(SPOOK_TEST.ht06), 'Scarecrow quest completed from its Charter (watch for fireworks + dome)')
+    // stand back and look at the sky over the Scarecrow; replay the show a few times for screenshots
+    p.teleportTo('minecraft:overworld', -148.5, 72, 6.5, 180, -25)
+    for (let i = 0; i < 3; i++) server.scheduleInTicks(40 + i * 400, () => {
+      console.info('[QuestAutoTest] fanfare replay ' + (i + 1) + ' now')
+      spookFanfare(server, 'scarecrow', global.SPOOK_CHARTERS.scarecrow)
+    })
   })
   // 5. Archive: a creeper photo advancement should complete its Rumor and Entity Found quests.
-  step(1300, 'archive grant', () => {
+  step(2600, 'archive grant', () => {
     server.runCommandSilent('advancement grant ' + name + ' only spooktacular:archive/minecraft_creeper')
   })
-  step(1400, 'archive check', () => {
+  step(2700, 'archive check', () => {
     let pair = global.SPOOK_QUEST_DATA.archive['spooktacular:archive/minecraft_creeper']
     spookTestLog(q.isCompleted(pair[0]), 'Entity Found: Creepers completed from the photo advancement')
     spookTestLog(q.isCompleted(pair[1]), 'Rumor for Creepers completed from the photo advancement')
@@ -83,29 +93,29 @@ PlayerEvents.loggedIn(event => {
     Object.keys(global.SPOOK_QUEST_DATA.archive).slice(0, 8).forEach(adv =>
       server.runCommandSilent('advancement grant ' + name + ' only ' + adv))
   })
-  step(1600, 'milestone', () => {
+  step(2900, 'milestone', () => {
     let n = 0
     Object.keys(global.SPOOK_QUEST_DATA.archive).forEach(adv => { if (q.isCompleted(global.SPOOK_QUEST_DATA.archive[adv][0])) n++ })
     spookTestLog(n >= 8, n + ' Entity Found quests complete after 8-9 photos')
     spookTestLog(q.isCompleted(SPOOK_TEST.safari1), 'Safari Milestone I completed on its own')
   })
   // 7. Ribbon command and the Winner's Bag crate.
-  step(1700, 'ribbon', () => {
+  step(3000, 'ribbon', () => {
     server.runCommandSilent('ribbon ' + name)
     spookTestLog(p.inventory.find('spooktacular:festival_ribbon') >= 0, '/ribbon gave a Festival Ribbon')
     let LootCrate = Java.loadClass('dev.ftb.mods.ftbquests.quest.loot.LootCrate')
     spookTestLog(LootCrate.LOOT_CRATES.get('winners_bag') != null, "Winner's Bag loot crate exists")
   })
   // 8. Dreamspace: entering one should complete (and reveal) its quest. Then come back.
-  step(1800, 'dream go', () => {
+  step(3100, 'dream go', () => {
     server.runCommandSilent('execute in dreamshift:dreamspace run tp ' + name + ' 0 120 0')
   })
-  step(2000, 'dream check', () => {
+  step(3300, 'dream check', () => {
     spookTestLog(String(p.level.dimension) == 'dreamshift:dreamspace', 'teleported into dreamshift:dreamspace')
     spookTestLog(q.isCompleted(SPOOK_TEST.ds05), 'Dreamspace quest completed on arrival')
     p.teleportTo('minecraft:overworld', -148.5, 64, -26.5, 180, 0)
   })
-  step(2100, 'done', () => {
+  step(3400, 'done', () => {
     server.runCommandSilent('forceload remove all')
     console.info('[QuestAutoTest] finished')
   })
