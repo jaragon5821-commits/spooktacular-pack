@@ -7,6 +7,10 @@
 // - /ribbon <player>: hosts hand an event winner a Festival Ribbon.
 // Uses spookCharters / spookBlueprint / spookRotate from spooktacular_quests_charters.js.
 
+// Rhino gives every pass of a `for (let ...)` loop the same variable, so closures made inside one all see
+// the last value. spookTimes(n, i => ...) gives each pass its own i.
+function spookTimes(n, fn) { for (var j = 0; j < n; j++) fn(j) }
+
 const SPOOK_ORANGE = 16744448, SPOOK_PURPLE = 8388736, SPOOK_BLACK = 1973019
 
 // Where to put a building's show: the middle of its blueprint, turned the way its Charter faces.
@@ -42,111 +46,111 @@ function spookShow(server, s) {
 
 // Standard burst: a handful of orange and purple rockets launched from above the roof (out of reach of players).
 function spookFireworks(show, s, n) {
-  for (let i = 0; i < n; i++) {
+  spookTimes(n, i => {
     show.later(i * 6, () => {
       let a = Math.random() * Math.PI * 2, r = Math.random() * s.w * 0.6
       show.firework(s.x + Math.cos(a) * r, s.y + s.top + 4, s.z + Math.sin(a) * r, [i % 2 ? SPOOK_PURPLE : SPOOK_ORANGE], i % 3 == 0 ? 1 : 4)
     })
-  }
+  })
 }
 
 function spookRing(show, x, y, z, radius, particle, points) {
-  for (let i = 0; i < points; i++) {
+  spookTimes(points, i => {
     let a = i / points * Math.PI * 2
     show.p(particle, x + Math.cos(a) * radius, y, z + Math.sin(a) * radius, 0, 0, 1)
-  }
+  })
 }
 
 const SPOOK_THEMES = {
   scarecrow: (show, s) => {
-    for (let i = 0; i < 12; i++) show.later(i * 4, () => {
+    spookTimes(12, i => show.later(i * 4, () => {
       let a = i / 12 * Math.PI * 2
       show.firework(s.x + Math.cos(a) * 14, s.y + 20, s.z + Math.sin(a) * 14, [i % 2 ? SPOOK_PURPLE : SPOOK_ORANGE], i % 4 == 0 ? 1 : 0)
-    })
+    }))
     // The dome: rings climb from the edge of town (radius 48) up and over the top in about 4 seconds.
     let R = 48
-    for (let k = 0; k <= 20; k++) show.later(50 + k * 4, () => {
+    spookTimes(21, k => show.later(50 + k * 4, () => {
       let theta = k / 20 * Math.PI / 2
       let r = Math.max(1, R * Math.cos(theta)), h = R * Math.sin(theta)
       let pts = Math.max(8, Math.round(r * 1.6))
       spookRing(show, s.x, s.y + h, s.z, r, k % 2 ? 'minecraft:dust 0.55 0.1 0.8 3' : 'minecraft:dust 1 0.5 0 3', pts)
-    })
+    }))
     show.later(50, () => show.snd('minecraft:block.beacon.activate', 4, 0.6))
     show.later(130, () => show.snd('minecraft:block.beacon.power_select', 4, 0.8))
   },
   tavern: (show, s) => {
-    for (let i = 0; i < 8; i++) show.later(i * 5, () => show.p('minecraft:note', s.x, s.y + s.top + 1, s.z, 2, 1, 6))
+    spookTimes(8, i => show.later(i * 5, () => show.p('minecraft:note', s.x, s.y + s.top + 1, s.z, 2, 1, 6)))
     spookFireworks(show, s, 4)
     show.later(10, () => show.snd('minecraft:entity.villager.celebrate', 3, 1))
     show.later(25, () => show.snd('minecraft:entity.villager.yes', 3, 1.2))
   },
   cemetery: (show, s) => {
     show.p('minecraft:cloud', s.x, s.y + 0.5, s.z, s.w * 0.6, 0.01, 200)
-    for (let i = 0; i < 10; i++) show.later(i * 6, () => show.p('minecraft:soul', s.x, s.y + 1, s.z, s.w * 0.5, 0.03, 40))
+    spookTimes(10, i => show.later(i * 6, () => show.p('minecraft:soul', s.x, s.y + 1, s.z, s.w * 0.5, 0.03, 40)))
     show.later(5, () => show.snd('minecraft:block.bell.use', 4, 0.6))
   },
   crypt: (show, s) => {
-    for (let i = 0; i < 10; i++) show.later(i * 4, () => {
+    spookTimes(10, i => show.later(i * 4, () => {
       show.p('minecraft:soul_fire_flame', s.x - s.w + i * s.w / 5, s.y + 0.2, s.z, 0.3, 0.01, 10)
       show.p('minecraft:soul_fire_flame', s.x, s.y + 0.2, s.z - s.w + i * s.w / 5, 0.3, 0.01, 10)
-    })
+    }))
     show.snd('minecraft:entity.warden.ambient', 3, 0.5)
-    for (let i = 0; i < 4; i++) show.later(i * 8, () => show.snd('minecraft:entity.skeleton.ambient', 2, 0.7 + i * 0.1))
+    spookTimes(4, i => show.later(i * 8, () => show.snd('minecraft:entity.skeleton.ambient', 2, 0.7 + i * 0.1)))
   },
   apothecary: (show, s) => {
-    for (let i = 0; i < 10; i++) show.later(i * 5, () => {
+    spookTimes(10, i => show.later(i * 5, () => {
       show.p('minecraft:witch', s.x, s.y + s.top, s.z, 2, 0.1, 30)
       show.p('minecraft:dust 0.3 0.9 0.2 1.5', s.x, s.y + s.top, s.z, 2.5, 0, 20)
-    })
-    for (let i = 0; i < 3; i++) show.later(i * 12, () => show.snd('minecraft:entity.parrot.ambient', 3, 0.5))
+    }))
+    spookTimes(3, i => show.later(i * 12, () => show.snd('minecraft:entity.parrot.ambient', 3, 0.5)))
     show.snd('minecraft:block.brewing_stand.brew', 3, 0.8)
   },
   archive: (show, s) => {
     show.p('minecraft:flash', s.x, s.y + s.top / 2, s.z, 0, 0, 1)
     show.p('minecraft:end_rod', s.x, s.y + s.top / 2, s.z, 0.5, 0.6, 120)
-    for (let i = 0; i < 3; i++) show.later(i * 3, () => show.snd('minecraft:ui.button.click', 3, 1.6))
+    spookTimes(3, i => show.later(i * 3, () => show.snd('minecraft:ui.button.click', 3, 1.6)))
   },
   spire: (show, s) => {
-    for (let i = 0; i < 12; i++) show.later(i * 10, () => {
+    spookTimes(12, i => show.later(i * 10, () => {
       show.snd('minecraft:block.bell.use', 4, 0.7)
       spookRing(show, s.x, s.y + s.top, s.z, 3 + i * 2.5, 'minecraft:end_rod', 24 + i * 4)
-    })
+    }))
   },
   wharf: (show, s) => {
-    for (let i = 0; i < 8; i++) show.later(i * 4, () => {
+    spookTimes(8, i => show.later(i * 4, () => {
       show.p('minecraft:cloud', s.x, s.y + i, s.z, s.w * 0.5, 0.01, 60)
       show.p('minecraft:splash', s.x, s.y + 1, s.z, s.w * 0.5, 0.2, 80)
-    })
+    }))
     show.snd('minecraft:item.goat_horn.sound.0', 4, 0.8)
   },
   cathedral: (show, s) => {
-    for (let i = 0; i < 16; i++) show.later(i * 3, () => {
+    spookTimes(16, i => show.later(i * 3, () => {
       show.p('minecraft:end_rod', s.x - s.w * 0.6, s.y + i * 2, s.z, 0.3, 0, 8)
       show.p('minecraft:end_rod', s.x + s.w * 0.6, s.y + i * 2, s.z, 0.3, 0, 8)
       show.p('minecraft:dust 1 0.85 0.3 2', s.x, s.y + i * 2.5, s.z, 1, 0, 10)
-    })
+    }))
     ;[0.5, 0.63, 0.75].forEach(p => show.snd('minecraft:block.note_block.chime', 3, p))
     show.later(30, () => show.snd('minecraft:block.bell.use', 4, 0.8))
   },
   citadel: (show, s) => {
-    for (let i = 0; i < 12; i++) show.later(i * 4, () => {
+    spookTimes(12, i => show.later(i * 4, () => {
       show.p('minecraft:lava', s.x, s.y + 2, s.z, s.w * 0.4, 0, 20)
       show.p('minecraft:flame', s.x, s.y + 2 + i, s.z, 1, 0.05, 30)
       show.p('minecraft:crimson_spore', s.x, s.y + s.top / 2, s.z, s.w * 0.5, 0, 60)
-    })
+    }))
     show.later(20, () => show.snd('minecraft:entity.ghast.ambient', 3, 0.7))
   },
   observatory: (show, s) => {
-    for (let i = 0; i < 40; i++) show.later(i, () => {
+    spookTimes(40, i => show.later(i, () => {
       let a = i / 40 * Math.PI * 6
       show.p('minecraft:end_rod', s.x + Math.cos(a) * 5, s.y + s.top + i * 0.6, s.z + Math.sin(a) * 5, 0.1, 0, 3)
       show.p('minecraft:portal', s.x, s.y + s.top, s.z, 3, 0.5, 20)
-    })
+    }))
     show.snd('minecraft:block.amethyst_block.chime', 4, 0.5)
     show.later(30, () => show.snd('minecraft:block.end_portal.spawn', 1, 1.2))
   },
   hall_of_heroes: (show, s) => {
-    for (let i = 0; i < 10; i++) show.later(i * 4, () => show.p('minecraft:totem_of_undying', s.x, s.y + s.top, s.z, 3, 0.6, 60))
+    spookTimes(10, i => show.later(i * 4, () => show.p('minecraft:totem_of_undying', s.x, s.y + s.top, s.z, 3, 0.6, 60)))
     spookFireworks(show, s, 8)
     show.snd('minecraft:ui.toast.challenge_complete', 4, 1)
   }
