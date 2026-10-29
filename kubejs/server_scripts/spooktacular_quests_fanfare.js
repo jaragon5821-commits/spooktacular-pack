@@ -31,18 +31,31 @@ function spookShowSpot(server, key) {
   }
 }
 
+// Runs a show command. While global.spookFanfareDebug > 0 (set by the test script), the next commands are run
+// loudly and logged with their result.
+function spookRun(server, command) {
+  if (global.spookFanfareDebug > 0) {
+    global.spookFanfareDebug--
+    let r = server.runCommand(command)
+    console.info('[Fanfare] ' + r + ' <- ' + command)
+    return r
+  }
+  return server.runCommandSilent(command)
+}
+
 function spookShow(server, s) {
   let pre = 'execute in ' + s.dim + ' run '
-  let f = n => n.toFixed(2)
+  let f = n => Number(n).toFixed(2)
+  console.info('[Fanfare] show at ' + s.dim + ' ' + s.x + ' ' + s.y + ' ' + s.z + ' top ' + s.top + ' w ' + s.w)
   return {
-    p: (particle, x, y, z, spread, speed, count) => server.runCommandSilent(pre + 'particle ' + particle + ' ' + f(x) + ' ' + f(y) + ' ' + f(z) + ' ' + spread + ' ' + spread + ' ' + spread + ' ' + speed + ' ' + count + ' force'),
+    p: (particle, x, y, z, spread, speed, count) => spookRun(server, pre + 'particle ' + particle + ' ' + f(x) + ' ' + f(y) + ' ' + f(z) + ' ' + spread + ' ' + spread + ' ' + spread + ' ' + speed + ' ' + count + ' force'),
     snd: (sound, vol, pitch) => server.runCommandSilent(pre + 'playsound ' + sound + ' master @a[x=' + f(s.x) + ',y=' + f(s.y) + ',z=' + f(s.z) + ',distance=..128] ' + f(s.x) + ' ' + f(s.y) + ' ' + f(s.z) + ' ' + vol + ' ' + pitch),
     // Fireworks drawn with particles and sounds only: a spark trail climbs, then a coloured burst. No rocket
     // entities (a spawned rocket hung the server in testing, and particles can't hurt anyone).
     firework: (x, y, z, colors, type) => {
       let c = colors[0], rgb = ((c >> 16) & 255) / 255 + ' ' + ((c >> 8) & 255) / 255 + ' ' + (c & 255) / 255
       let run = (ticks, fn) => server.scheduleInTicks(ticks, () => { try { fn() } catch (e) { console.error('[Fanfare] ' + e) } })
-      let cmd = c2 => server.runCommandSilent(pre + c2)
+      let cmd = c2 => spookRun(server, pre + c2)
       cmd('playsound minecraft:entity.firework_rocket.launch master @a[x=' + f(x) + ',y=' + f(y) + ',z=' + f(z) + ',distance=..160] ' + f(x) + ' ' + f(y) + ' ' + f(z) + ' 3 1')
       spookTimes(8, j => run(j, () => cmd('particle minecraft:firework ' + f(x) + ' ' + f(y + j * 2) + ' ' + f(z) + ' 0.05 0.1 0.05 0 3 force')))
       run(10, () => {

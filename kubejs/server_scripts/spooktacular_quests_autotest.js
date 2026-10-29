@@ -79,6 +79,7 @@ PlayerEvents.tick(event => {
     server.runCommandSilent('tp ' + name + ' -148.5 75 -5.5 180 -25')
     spookTimes(3, i => server.scheduleInTicks(40 + i * 400, () => {
       console.info('[QuestAutoTest] fanfare replay ' + (i + 1) + ' now')
+      if (i == 0) global.spookFanfareDebug = 12
       if (i == 0) server.scheduleInTicks(100, () => {
         let r1 = server.runCommand('execute in minecraft:overworld run particle minecraft:end_rod -148.5 85 -34.5 1 1 1 0 300 force')
         let r2 = server.runCommand('execute as ' + name + ' at @s run particle minecraft:end_rod ^ ^1 ^6 1 1 1 0 300 force')
