@@ -478,7 +478,7 @@ hash = "4397c6ff59b2aabf82af483c278b159756ecdf7499f6a176d3d4fcd442408ec3"
 
 [[files]]
 file = "kubejs/server_scripts/spooktacular_quests_autotest.js"
-hash = "28e8cce080ea997bb07c5bb6561a157f27e35629a436fe7407e5bc77fe1d3b81"
+hash = "4091cba6f300df2266ce00ea742cbbe1091b1f5769b207a3e4e8ca1f126ad2f5"
 
 [[files]]
 file = "kubejs/server_scripts/spooktacular_quests_charters.js"
@@ -490,7 +490,7 @@ hash = "88c19ebbc5f213db960c27fbe6d5ca923fae8ecad3865fa96855bafb61b9e250"
 
 [[files]]
 file = "kubejs/server_scripts/spooktacular_quests_fanfare.js"
-hash = "38785f22db10136ed7ca7037296c1bb3e3cf48a806aa6d98811e220434f38b46"
+hash = "f395c2b607ed62c92995584a16e5ffc203677b038d9b9f2bf17bcfcf20888718"
 
 [[files]]
 file = "kubejs/server_scripts/spooktacular_quests_selftest.js"

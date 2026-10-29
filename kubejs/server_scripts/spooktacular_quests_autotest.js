@@ -75,10 +75,15 @@ PlayerEvents.tick(event => {
   step(1100, 'scarecrow quest', () => {
     spookTestLog(q.isCompleted(SPOOK_TEST.ht06), 'Scarecrow quest completed from its Charter (watch for fireworks + dome)')
     // stand back and look at the sky over the Scarecrow; replay the show a few times for screenshots
-    p.teleportTo('minecraft:overworld', -148.5, 72, 6.5, 180, -25)
+    p.abilities.mayfly = true; p.abilities.flying = true; p.onUpdateAbilities()
+    p.teleportTo('minecraft:overworld', -148.5, 90, 40.5, 180, -20)
     spookTimes(3, i => server.scheduleInTicks(40 + i * 400, () => {
       console.info('[QuestAutoTest] fanfare replay ' + (i + 1) + ' now')
       spookFanfare(server, 'scarecrow', global.SPOOK_CHARTERS.scarecrow)
+      server.scheduleInTicks(30, () => {
+        let n = event.level.getEntitiesWithin(AABB.of(-200, 40, -90, -100, 160, 20)).filter(e => String(e.type) == 'minecraft:firework_rocket').length
+        console.info('[QuestAutoTest] fanfare replay ' + (i + 1) + ': ' + n + ' firework rockets in the air')
+      })
     }))
   })
   // 5. Archive: a creeper photo advancement should complete its Rumor and Entity Found quests.

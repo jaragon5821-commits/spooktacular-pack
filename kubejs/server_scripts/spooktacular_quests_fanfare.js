@@ -72,8 +72,8 @@ const SPOOK_THEMES = {
     spookTimes(21, k => show.later(50 + k * 4, () => {
       let theta = k / 20 * Math.PI / 2
       let r = Math.max(1, R * Math.cos(theta)), h = R * Math.sin(theta)
-      let pts = Math.max(8, Math.round(r * 1.6))
-      spookRing(show, s.x, s.y + h, s.z, r, k % 2 ? 'minecraft:dust 0.55 0.1 0.8 3' : 'minecraft:dust 1 0.5 0 3', pts)
+      let pts = Math.max(12, Math.round(r * 3))
+      spookRing(show, s.x, s.y + h, s.z, r, k % 2 ? 'minecraft:dust 0.75 0.25 1 4' : 'minecraft:dust 1 0.55 0 4', pts)
     }))
     show.later(50, () => show.snd('minecraft:block.beacon.activate', 4, 0.6))
     show.later(130, () => show.snd('minecraft:block.beacon.power_select', 4, 0.8))
