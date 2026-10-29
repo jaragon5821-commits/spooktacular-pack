@@ -517,6 +517,10 @@ file = "kubejs/server_scripts/spooktacular_quests_fanfare.js"
 hash = "d4ce6b15fb38f76900f30be48a835f0035883261b3ec958489ef3a8e7da90d18"
 
 [[files]]
+file = "kubejs/server_scripts/spooktacular_quests_selftest.js"
+hash = "bb1082203d0d3aaf58be15d69a9f0b6061693ac76b8328d45915d43c6ac21e6c"
+
+[[files]]
 file = "kubejs/startup_scripts/spooktacular_quest_items.js"
 hash = "da0c848c7a4cdf0fbeadfe390854a2dd3bb5ade399c50e98396598acb1263cd4"
 
