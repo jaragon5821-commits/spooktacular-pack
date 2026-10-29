@@ -79,15 +79,7 @@ PlayerEvents.tick(event => {
     server.runCommandSilent('tp ' + name + ' -148.5 90 40.5 180 -20')
     spookTimes(3, i => server.scheduleInTicks(40 + i * 400, () => {
       console.info('[QuestAutoTest] fanfare replay ' + (i + 1) + ' now')
-      if (i == 0) {
-        let r = server.runCommand('execute in minecraft:overworld run summon firework_rocket -148 90 -20 {LifeTime:40}')
-        console.info('[QuestAutoTest] plain summon firework_rocket result: ' + r)
-      }
       spookFanfare(server, 'scarecrow', global.SPOOK_CHARTERS.scarecrow)
-      server.scheduleInTicks(30, () => {
-        let n = event.level.getEntitiesWithin(AABB.of(-200, 40, -90, -100, 160, 20)).filter(e => String(e.type) == 'minecraft:firework_rocket').length
-        console.info('[QuestAutoTest] fanfare replay ' + (i + 1) + ': ' + n + ' firework rockets in the air')
-      })
     }))
   })
   // 5. Archive: a creeper photo advancement should complete its Rumor and Entity Found quests.

@@ -37,18 +37,25 @@ function spookShow(server, s) {
   return {
     p: (particle, x, y, z, spread, speed, count) => server.runCommandSilent(pre + 'particle ' + particle + ' ' + f(x) + ' ' + f(y) + ' ' + f(z) + ' ' + spread + ' ' + spread + ' ' + spread + ' ' + speed + ' ' + count + ' force'),
     snd: (sound, vol, pitch) => server.runCommandSilent(pre + 'playsound ' + sound + ' master @a[x=' + f(s.x) + ',y=' + f(s.y) + ',z=' + f(s.z) + ',distance=..128] ' + f(s.x) + ' ' + f(s.y) + ' ' + f(s.z) + ' ' + vol + ' ' + pitch),
+    // Fireworks drawn with particles and sounds only: a spark trail climbs, then a coloured burst. No rocket
+    // entities (a spawned rocket hung the server in testing, and particles can't hurt anyone).
     firework: (x, y, z, colors, type) => {
-      // spawned through the API (a summon command gave no rocket in testing); any failure is logged once
-      try {
-        let level = server.getLevel(s.dim)
-        let e = level.createEntity('minecraft:firework_rocket')
-        e.mergeNbt('{LifeTime:' + (18 + Math.floor(Math.random() * 10)) + ',FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:1b,Explosions:[{Type:' + (type || 0) +
-          'b,Flicker:1b,Trail:1b,Colors:[I;' + colors.join(',') + '],FadeColors:[I;' + SPOOK_BLACK + ']}]}}}}')
-        e.setPosition(x, y, z)
-        e.spawn()
-      } catch (err) {
-        if (!global.spookFireworkWarned) { global.spookFireworkWarned = true; console.error('[Fanfare] firework failed: ' + err) }
-      }
+      let c = colors[0], rgb = ((c >> 16) & 255) / 255 + ' ' + ((c >> 8) & 255) / 255 + ' ' + (c & 255) / 255
+      let run = (ticks, fn) => server.scheduleInTicks(ticks, () => { try { fn() } catch (e) { console.error('[Fanfare] ' + e) } })
+      let cmd = c2 => server.runCommandSilent(pre + c2)
+      cmd('playsound minecraft:entity.firework_rocket.launch master @a[x=' + f(x) + ',y=' + f(y) + ',z=' + f(z) + ',distance=..160] ' + f(x) + ' ' + f(y) + ' ' + f(z) + ' 3 1')
+      spookTimes(8, j => run(j, () => cmd('particle minecraft:firework ' + f(x) + ' ' + f(y + j * 2) + ' ' + f(z) + ' 0.05 0.1 0.05 0 3 force')))
+      run(10, () => {
+        let top = y + 16, big = type == 1 ? 7 : 4
+        spookTimes(48, k => {
+          let u = Math.acos(1 - 2 * (k + 0.5) / 48), v = Math.PI * (1 + Math.sqrt(5)) * k
+          cmd('particle minecraft:dust ' + rgb + ' 3 ' + f(x + big * Math.sin(u) * Math.cos(v)) + ' ' + f(top + big * Math.cos(u)) + ' ' +
+            f(z + big * Math.sin(u) * Math.sin(v)) + ' 0.2 0.2 0.2 0 2 force')
+        })
+        cmd('particle minecraft:firework ' + f(x) + ' ' + f(top) + ' ' + f(z) + ' ' + big / 3 + ' ' + big / 3 + ' ' + big / 3 + ' 0.1 60 force')
+        cmd('playsound minecraft:entity.firework_rocket.' + (type == 1 ? 'large_blast' : 'blast') + ' master @a[x=' + f(x) + ',y=' + f(top) + ',z=' + f(z) + ',distance=..200] ' + f(x) + ' ' + f(top) + ' ' + f(z) + ' 4 1')
+        run(12, () => cmd('playsound minecraft:entity.firework_rocket.twinkle master @a[x=' + f(x) + ',y=' + f(top) + ',z=' + f(z) + ',distance=..200] ' + f(x) + ' ' + f(top) + ' ' + f(z) + ' 3 1'))
+      })
     },
     later: (ticks, fn) => server.scheduleInTicks(ticks, () => { try { fn() } catch (e) { console.error('[Fanfare] ' + e) } })
   }
