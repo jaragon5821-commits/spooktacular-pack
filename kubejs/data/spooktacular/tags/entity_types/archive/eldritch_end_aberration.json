@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    {
-      "id": "eldritch_end:aberration",
-      "required": false
-    }
-  ]
-}

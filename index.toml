@@ -38,7 +38,7 @@ hash = "1ffb6b0d4562882e331018ef4f47c6dfdb08814745fead712a738856a3945321"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_4_liminal_trials.snbt"
-hash = "8caffda59e57a9a5bfd5aa731f1bd12df0dc23d91884cbcf4b120cb2d32047d4"
+hash = "c62569cb7ef1cb9a6fb6769bc6930329aa5838f7c7cb3f74725f71e6d4502161"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_5_boss_showdowns.snbt"
@@ -201,10 +201,6 @@ file = "kubejs/data/spooktacular/advancements/archive/distantfriends_friend.json
 hash = "95a9c138779bd6b9aec34572bc49c2bf0d7e7ca3a2551cae17e37ca8f3505335"
 
 [[files]]
-file = "kubejs/data/spooktacular/advancements/archive/eldritch_end_aberration.json"
-hash = "e98379a300c62007fe26a6c25a83fa7de9ff8147ae64ebd1f7dd8599aeecf286"
-
-[[files]]
 file = "kubejs/data/spooktacular/advancements/archive/eyesinthedarkness_eyes.json"
 hash = "ff8f1221b8f12653cb584371dd4af515a5112aef4ed836fcd9b387d19a776ad3"
 
@@ -235,10 +231,6 @@ hash = "78aa24646691e1cb8b2ed2b1def70379571ffdde1438e60a2e5cfb4144cd3bc4"
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/minecraft_phantom.json"
 hash = "52bd8b7576b01e87f2ede2764d3199683a27941948c1711b8929f0f56c18c54c"
-
-[[files]]
-file = "kubejs/data/spooktacular/advancements/archive/nyctophobia_phantom.json"
-hash = "e24160d94abeb0b090742aeffcd034736c64c3b545a194547c6afebfdb883ae6"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/palewatcher_pale_watcher.json"
@@ -279,10 +271,6 @@ hash = "94780e52cca90c7bab7e096a1776c56ea416ecbcabbefadb315ff72bce765d98"
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/undergarden_rotbeast.json"
 hash = "15aae1b2cc4b6eb16f7833f422a1283075dbe672b104a7bcb7314780d3005dc5"
-
-[[files]]
-file = "kubejs/data/spooktacular/advancements/archive/watching_herobrine.json"
-hash = "2e24844af27bf5942d94d013b6a380110be3501b36f423bd20ab6d92e07e54e0"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/weeping_angels_weeping_angel.json"
@@ -413,10 +401,6 @@ file = "kubejs/data/spooktacular/tags/entity_types/archive/distantfriends_friend
 hash = "e723185233bd33400a3de5bf8d43050e5fcbbddf63e050644b3bb330166ba0c0"
 
 [[files]]
-file = "kubejs/data/spooktacular/tags/entity_types/archive/eldritch_end_aberration.json"
-hash = "581c8712d8df84100f66cb349884b85de209fca8b9fb641b78cfd268a7c868d4"
-
-[[files]]
 file = "kubejs/data/spooktacular/tags/entity_types/archive/eyesinthedarkness_eyes.json"
 hash = "bd7271666050e8b79a06373d774bfa4821afe257313324aea13cebf4ffe02298"
 
@@ -447,10 +431,6 @@ hash = "a5e3d5d03e654d016e1dfff60aacc00f0f37238831ea41bcdf92cad66864d774"
 [[files]]
 file = "kubejs/data/spooktacular/tags/entity_types/archive/minecraft_phantom.json"
 hash = "ef1d124bdd967c09f384117670768e8ddf1a8c8cff11dcae1c64e72f7206c768"
-
-[[files]]
-file = "kubejs/data/spooktacular/tags/entity_types/archive/nyctophobia_phantom.json"
-hash = "aa8da8e1dfc3e91065e8bfe8fbdd5279ff304cf81bef5022c28475b146e0709e"
 
 [[files]]
 file = "kubejs/data/spooktacular/tags/entity_types/archive/palewatcher_pale_watcher.json"
@@ -489,10 +469,6 @@ file = "kubejs/data/spooktacular/tags/entity_types/archive/undergarden_rotbeast.
 hash = "24b4f98a21a58cfcf009399cc143be6de8bcb275b217dfc1554ef5095febdf9e"
 
 [[files]]
-file = "kubejs/data/spooktacular/tags/entity_types/archive/watching_herobrine.json"
-hash = "5862821e49518647c4f9c002746f6e880dfaa5fdc8c4c4280f98b84e54819309"
-
-[[files]]
 file = "kubejs/data/spooktacular/tags/entity_types/archive/weeping_angels_weeping_angel.json"
 hash = "6a8d8fdba85cf9fd6e9a2d3b5ba0bfe1b59ada4d4657a30738475a10f5da509b"
 
@@ -505,20 +481,12 @@ file = "kubejs/data/spooktacular/tags/entity_types/archive/whisperwoods_wisp.jso
 hash = "4397c6ff59b2aabf82af483c278b159756ecdf7499f6a176d3d4fcd442408ec3"
 
 [[files]]
-file = "kubejs/data/spooktacular/tags/worldgen/biome/nyctophobia.json"
-hash = "0f32ecd68b8e88c7731ffb7303832c467e98c03b33249adc0ecaea414cab9daa"
-
-[[files]]
-file = "kubejs/data/spooktacular/tags/worldgen/structure/from_the_fog.json"
-hash = "cc867fbd635a93764b85624d2e98508a4c111799beb08daa4258baf90a493932"
-
-[[files]]
 file = "kubejs/server_scripts/spooktacular_quests_charters.js"
 hash = "c5a1c1f7c5718e0731d5124af31360fbeadb722875355645101f521a98808566"
 
 [[files]]
 file = "kubejs/server_scripts/spooktacular_quests_data.js"
-hash = "93085eecec0561cc49dc4f8755141b6afe827338e2cecbd160b1bdfc53ad8406"
+hash = "dc72b9832b3afb30546566f89a698337e963a6963aec970e00193a580ffc89e2"
 
 [[files]]
 file = "kubejs/server_scripts/spooktacular_quests_fanfare.js"
