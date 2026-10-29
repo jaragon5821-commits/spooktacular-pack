@@ -34,7 +34,7 @@ PlayerEvents.tick(event => {
   let step = (ticks, label, fn) => server.scheduleInTicks(ticks, () => {
     try { fn() } catch (e) { console.error('[QuestAutoTest] ERROR in ' + label + ': ' + e) }
   })
-  console.info('[QuestAutoTest] start, player ' + name)
+  console.info('[QuestAutoTest] start, player ' + name + ', spookDim: ' + spookDim(p.level))
   server.runCommandSilent('gamerule doDaylightCycle false')
   server.runCommandSilent('time set 18000')   // night, so the shows are easy to see
 
@@ -75,8 +75,8 @@ PlayerEvents.tick(event => {
   step(1100, 'scarecrow quest', () => {
     spookTestLog(q.isCompleted(SPOOK_TEST.ht06), 'Scarecrow quest completed from its Charter (watch for fireworks + dome)')
     // stand back and look at the sky over the Scarecrow; replay the show a few times for screenshots
-    server.runCommandSilent('setblock -149 89 40 minecraft:glass')
-    server.runCommandSilent('tp ' + name + ' -148.5 90 40.5 180 -20')
+    server.runCommandSilent('setblock -149 74 -6 minecraft:glass')
+    server.runCommandSilent('tp ' + name + ' -148.5 75 -5.5 180 -25')
     spookTimes(3, i => server.scheduleInTicks(40 + i * 400, () => {
       console.info('[QuestAutoTest] fanfare replay ' + (i + 1) + ' now')
       spookFanfare(server, 'scarecrow', global.SPOOK_CHARTERS.scarecrow)
@@ -112,13 +112,14 @@ PlayerEvents.tick(event => {
     server.runCommandSilent('execute in dreamshift:dreamspace run tp ' + name + ' 0 120 0')
   })
   step(3300, 'dream check', () => {
-    spookTestLog(spookDim(p.level) == 'dreamshift:dreamspace', 'teleported into dreamshift:dreamspace')
+    console.info('[QuestAutoTest] dimension raw: ' + String(p.level.dimension) + ' -> spookDim: ' + spookDim(p.level))
+    spookTestLog(spookDim(p.level) == 'dreamshift:dreamspace', 'still in dreamshift:dreamspace 10 s after the teleport')
     spookTestLog(q.isCompleted(SPOOK_TEST.ds05), 'Dreamspace quest completed on arrival')
     p.teleportTo('minecraft:overworld', -148.5, 64, -26.5, 180, 0)
   })
   step(3400, 'done', () => {
     server.runCommandSilent('forceload remove all')
-    server.runCommandSilent('setblock -149 89 40 minecraft:air')
+    server.runCommandSilent('setblock -149 74 -6 minecraft:air')
     console.info('[QuestAutoTest] finished')
   })
 })

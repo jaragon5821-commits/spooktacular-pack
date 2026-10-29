@@ -53,6 +53,7 @@ function spookShow(server, s) {
             f(z + big * Math.sin(u) * Math.sin(v)) + ' 0.2 0.2 0.2 0 2 force')
         })
         cmd('particle minecraft:firework ' + f(x) + ' ' + f(top) + ' ' + f(z) + ' ' + big / 3 + ' ' + big / 3 + ' ' + big / 3 + ' 0.1 60 force')
+        cmd('particle minecraft:end_rod ' + f(x) + ' ' + f(top) + ' ' + f(z) + ' 0 0 0 0.25 30 force')
         cmd('playsound minecraft:entity.firework_rocket.' + (type == 1 ? 'large_blast' : 'blast') + ' master @a[x=' + f(x) + ',y=' + f(top) + ',z=' + f(z) + ',distance=..200] ' + f(x) + ' ' + f(top) + ' ' + f(z) + ' 4 1')
         run(12, () => cmd('playsound minecraft:entity.firework_rocket.twinkle master @a[x=' + f(x) + ',y=' + f(top) + ',z=' + f(z) + ',distance=..200] ' + f(x) + ' ' + f(top) + ' ' + f(z) + ' 3 1'))
       })
