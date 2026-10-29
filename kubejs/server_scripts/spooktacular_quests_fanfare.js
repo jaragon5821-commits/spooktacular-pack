@@ -37,9 +37,19 @@ function spookShow(server, s) {
   return {
     p: (particle, x, y, z, spread, speed, count) => server.runCommandSilent(pre + 'particle ' + particle + ' ' + f(x) + ' ' + f(y) + ' ' + f(z) + ' ' + spread + ' ' + spread + ' ' + spread + ' ' + speed + ' ' + count + ' force'),
     snd: (sound, vol, pitch) => server.runCommandSilent(pre + 'playsound ' + sound + ' master @a[x=' + f(s.x) + ',y=' + f(s.y) + ',z=' + f(s.z) + ',distance=..128] ' + f(s.x) + ' ' + f(s.y) + ' ' + f(s.z) + ' ' + vol + ' ' + pitch),
-    firework: (x, y, z, colors, type) => server.runCommandSilent(pre + 'summon firework_rocket ' + f(x) + ' ' + f(y) + ' ' + f(z) +
-      ' {LifeTime:' + (18 + Math.floor(Math.random() * 10)) + ',FireworksItem:{id:"firework_rocket",Count:1b,tag:{Fireworks:{Explosions:[{Type:' + (type || 0) +
-      ',Flicker:1b,Trail:1b,Colors:[I;' + colors.join(',') + '],FadeColors:[I;' + SPOOK_BLACK + ']}]}}}}'),
+    firework: (x, y, z, colors, type) => {
+      // spawned through the API (a summon command gave no rocket in testing); any failure is logged once
+      try {
+        let level = server.getLevel(s.dim)
+        let e = level.createEntity('minecraft:firework_rocket')
+        e.mergeNbt('{LifeTime:' + (18 + Math.floor(Math.random() * 10)) + ',FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:1b,Explosions:[{Type:' + (type || 0) +
+          'b,Flicker:1b,Trail:1b,Colors:[I;' + colors.join(',') + '],FadeColors:[I;' + SPOOK_BLACK + ']}]}}}}')
+        e.setPosition(x, y, z)
+        e.spawn()
+      } catch (err) {
+        if (!global.spookFireworkWarned) { global.spookFireworkWarned = true; console.error('[Fanfare] firework failed: ' + err) }
+      }
+    },
     later: (ticks, fn) => server.scheduleInTicks(ticks, () => { try { fn() } catch (e) { console.error('[Fanfare] ' + e) } })
   }
 }

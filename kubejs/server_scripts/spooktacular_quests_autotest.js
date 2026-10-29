@@ -75,10 +75,14 @@ PlayerEvents.tick(event => {
   step(1100, 'scarecrow quest', () => {
     spookTestLog(q.isCompleted(SPOOK_TEST.ht06), 'Scarecrow quest completed from its Charter (watch for fireworks + dome)')
     // stand back and look at the sky over the Scarecrow; replay the show a few times for screenshots
-    p.abilities.mayfly = true; p.abilities.flying = true; p.onUpdateAbilities()
-    p.teleportTo('minecraft:overworld', -148.5, 90, 40.5, 180, -20)
+    server.runCommandSilent('setblock -149 89 40 minecraft:glass')
+    server.runCommandSilent('tp ' + name + ' -148.5 90 40.5 180 -20')
     spookTimes(3, i => server.scheduleInTicks(40 + i * 400, () => {
       console.info('[QuestAutoTest] fanfare replay ' + (i + 1) + ' now')
+      if (i == 0) {
+        let r = server.runCommand('execute in minecraft:overworld run summon firework_rocket -148 90 -20 {LifeTime:40}')
+        console.info('[QuestAutoTest] plain summon firework_rocket result: ' + r)
+      }
       spookFanfare(server, 'scarecrow', global.SPOOK_CHARTERS.scarecrow)
       server.scheduleInTicks(30, () => {
         let n = event.level.getEntitiesWithin(AABB.of(-200, 40, -90, -100, 160, 20)).filter(e => String(e.type) == 'minecraft:firework_rocket').length
@@ -116,12 +120,13 @@ PlayerEvents.tick(event => {
     server.runCommandSilent('execute in dreamshift:dreamspace run tp ' + name + ' 0 120 0')
   })
   step(3300, 'dream check', () => {
-    spookTestLog(String(p.level.dimension).indexOf('dreamshift:dreamspace') >= 0, 'teleported into dreamshift:dreamspace')
+    spookTestLog(spookDim(p.level) == 'dreamshift:dreamspace', 'teleported into dreamshift:dreamspace')
     spookTestLog(q.isCompleted(SPOOK_TEST.ds05), 'Dreamspace quest completed on arrival')
     p.teleportTo('minecraft:overworld', -148.5, 64, -26.5, 180, 0)
   })
   step(3400, 'done', () => {
     server.runCommandSilent('forceload remove all')
+    server.runCommandSilent('setblock -149 89 40 minecraft:air')
     console.info('[QuestAutoTest] finished')
   })
 })

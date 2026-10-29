@@ -44,6 +44,13 @@ function spookRotate(dx, dz, facing) {
   }
 }
 
+// Dimension id like "minecraft:overworld". (String(level.dimension) gives "ResourceKey[minecraft:dimension / ...]".)
+function spookDim(level) {
+  let s = String(level.dimension)
+  let m = s.match(/\/ ([^\]]+)\]/)
+  return m ? m[1].trim() : s
+}
+
 function spookCharterKey(blockId) {
   return blockId.startsWith('spooktacular:charter_') ? blockId.substring('spooktacular:charter_'.length) : null
 }
@@ -54,7 +61,7 @@ BlockEvents.placed(event => {
   let facing = String(event.player.horizontalFacing.serializedName)
   let tag = {}
   tag.x = event.block.x; tag.y = event.block.y; tag.z = event.block.z
-  tag.dim = String(event.level.dimension); tag.facing = facing
+  tag.dim = spookDim(event.level); tag.facing = facing
   spookCharters(event.server).put(key, tag)
   delete spookScan[key]
   event.player.tell(Text.gold('Town Charter placed for ' + global.SPOOK_CHARTERS[key] + '.').append(Text.gray(' Facing ' + facing + '. Build from the blueprint; the quest checks it while you are near.')))
@@ -102,7 +109,7 @@ function spookScanSlice(server, key) {
 
 function spookNear(player, key) {
   let c = spookCharters(player.server).getCompound(key)
-  if (!c || !c.contains('x') || String(player.level.dimension) != c.getString('dim')) return false
+  if (!c || !c.contains('x') || spookDim(player.level) != c.getString('dim')) return false
   let dx = player.x - c.getInt('x'), dz = player.z - c.getInt('z')
   return dx * dx + dz * dz < SPOOK_RANGE * SPOOK_RANGE
 }
@@ -151,7 +158,7 @@ function spookLocationTask(event, box) {
   event.checkTimer = 40
   event.maxProgress = 1
   event.check = (task, player) => {
-    if (String(player.level.dimension) != box.dim) return
+    if (spookDim(player.level) != box.dim) return
     if (player.x >= box.x1 && player.x <= box.x2 && player.y >= box.y1 && player.y <= box.y2 && player.z >= box.z1 && player.z <= box.z2) task.progress = 1
   }
 }
