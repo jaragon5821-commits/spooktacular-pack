@@ -11,6 +11,21 @@
 // the last value. spookTimes(n, i => ...) gives each pass its own i.
 function spookTimes(n, fn) { for (var j = 0; j < n; j++) fn(j) }
 
+// Trig and random numbers came out as NaN inside KubeJS here, so the shows use plain tables instead.
+// SPOOK_CIRCLE: 72 points around a circle [cos, sin]. SPOOK_SPHERE: 48 points spread over a sphere [x, y, z].
+const SPOOK_CIRCLE = [[1.0000,0.0000],[0.9962,0.0872],[0.9848,0.1736],[0.9659,0.2588],[0.9397,0.3420],[0.9063,0.4226],[0.8660,0.5000],[0.8192,0.5736],[0.7660,0.6428],[0.7071,0.7071],[0.6428,0.7660],[0.5736,0.8192],[0.5000,0.8660],[0.4226,0.9063],[0.3420,0.9397],[0.2588,0.9659],[0.1736,0.9848],[0.0872,0.9962],[0.0000,1.0000],[-0.0872,0.9962],[-0.1736,0.9848],[-0.2588,0.9659],[-0.3420,0.9397],[-0.4226,0.9063],[-0.5000,0.8660],[-0.5736,0.8192],[-0.6428,0.7660],[-0.7071,0.7071],[-0.7660,0.6428],[-0.8192,0.5736],[-0.8660,0.5000],[-0.9063,0.4226],[-0.9397,0.3420],[-0.9659,0.2588],[-0.9848,0.1736],[-0.9962,0.0872],[-1.0000,0.0000],[-0.9962,-0.0872],[-0.9848,-0.1736],[-0.9659,-0.2588],[-0.9397,-0.3420],[-0.9063,-0.4226],[-0.8660,-0.5000],[-0.8192,-0.5736],[-0.7660,-0.6428],[-0.7071,-0.7071],[-0.6428,-0.7660],[-0.5736,-0.8192],[-0.5000,-0.8660],[-0.4226,-0.9063],[-0.3420,-0.9397],[-0.2588,-0.9659],[-0.1736,-0.9848],[-0.0872,-0.9962],[-0.0000,-1.0000],[0.0872,-0.9962],[0.1736,-0.9848],[0.2588,-0.9659],[0.3420,-0.9397],[0.4226,-0.9063],[0.5000,-0.8660],[0.5736,-0.8192],[0.6428,-0.7660],[0.7071,-0.7071],[0.7660,-0.6428],[0.8192,-0.5736],[0.8660,-0.5000],[0.9063,-0.4226],[0.9397,-0.3420],[0.9659,-0.2588],[0.9848,-0.1736],[0.9962,-0.0872]]
+const SPOOK_SPHERE = [[0.203,0.979,0.000],[-0.257,0.938,-0.235],[0.039,0.896,0.443],[0.316,0.854,-0.413],[-0.574,0.812,0.102],[0.538,0.771,0.342],[-0.178,0.729,-0.661],[-0.335,0.688,0.644],[0.717,0.646,-0.262],[-0.737,0.604,-0.304],[0.350,0.562,0.749],[0.255,0.521,-0.815],[-0.759,0.479,0.440],[0.878,0.437,0.193],[-0.528,0.396,-0.751],[-0.120,0.354,0.927],[0.726,0.312,-0.612],[-0.962,0.271,-0.040],[0.690,0.229,0.687],[-0.045,0.187,-0.981],[-0.634,0.146,0.760],[0.986,0.104,-0.133],[-0.819,0.062,-0.570],[0.219,0.021,0.975],[0.497,-0.021,-0.867],[-0.951,-0.063,0.303],[0.903,-0.104,0.417],[-0.382,-0.146,-0.913],[-0.332,-0.188,0.924],[0.862,-0.229,-0.453],[-0.931,-0.271,-0.245],[0.514,-0.312,0.799],[0.158,-0.354,-0.922],[-0.726,-0.396,0.562],[0.896,-0.438,0.074],[-0.596,-0.479,-0.644],[0.004,-0.521,0.854],[0.556,-0.562,-0.612],[-0.793,-0.604,0.074],[0.608,-0.646,0.462],[-0.130,-0.688,-0.714],[-0.364,-0.729,0.579],[0.614,-0.771,-0.168],[-0.519,-0.812,-0.266],[0.181,-0.854,0.488],[0.168,-0.896,-0.412],[-0.314,-0.938,0.149],[0.194,-0.979,0.060]]
+// point on a circle, `turns` = 0..1 around it
+function spookCS(turns) {
+  let i = ((turns * 72) % 72 + 72) % 72
+  return SPOOK_CIRCLE[i - (i % 1)]
+}
+let spookSeed = 20261031
+function spookRand() {
+  spookSeed = (spookSeed * 16807) % 2147483647
+  return spookSeed / 2147483647
+}
+
 const SPOOK_ORANGE = 16744448, SPOOK_PURPLE = 8388736, SPOOK_BLACK = 1973019
 
 // Where to put a building's show: the middle of its blueprint, turned the way its Charter faces.
@@ -61,9 +76,8 @@ function spookShow(server, s) {
       run(10, () => {
         let top = y + 16, big = type == 1 ? 7 : 4
         spookTimes(48, k => {
-          let u = Math.acos(1 - 2 * (k + 0.5) / 48), v = Math.PI * (1 + Math.sqrt(5)) * k
-          cmd('particle minecraft:dust ' + rgb + ' 3 ' + f(x + big * Math.sin(u) * Math.cos(v)) + ' ' + f(top + big * Math.cos(u)) + ' ' +
-            f(z + big * Math.sin(u) * Math.sin(v)) + ' 0.2 0.2 0.2 0 2 force')
+          let d = SPOOK_SPHERE[k]
+          cmd('particle minecraft:dust ' + rgb + ' 3 ' + f(x + big * d[0]) + ' ' + f(top + big * d[1]) + ' ' + f(z + big * d[2]) + ' 0.2 0.2 0.2 0 2 force')
         })
         cmd('particle minecraft:firework ' + f(x) + ' ' + f(top) + ' ' + f(z) + ' ' + big / 3 + ' ' + big / 3 + ' ' + big / 3 + ' 0.1 60 force')
         cmd('particle minecraft:end_rod ' + f(x) + ' ' + f(top) + ' ' + f(z) + ' 0 0 0 0.25 30 force')
@@ -79,31 +93,31 @@ function spookShow(server, s) {
 function spookFireworks(show, s, n) {
   spookTimes(n, i => {
     show.later(i * 6, () => {
-      let a = Math.random() * Math.PI * 2, r = Math.random() * s.w * 0.6
-      show.firework(s.x + Math.cos(a) * r, s.y + s.top + 4, s.z + Math.sin(a) * r, [i % 2 ? SPOOK_PURPLE : SPOOK_ORANGE], i % 3 == 0 ? 1 : 4)
+      let d = spookCS(spookRand()), r = spookRand() * s.w * 0.6
+      show.firework(s.x + d[0] * r, s.y + s.top + 4, s.z + d[1] * r, [i % 2 ? SPOOK_PURPLE : SPOOK_ORANGE], i % 3 == 0 ? 1 : 4)
     })
   })
 }
 
 function spookRing(show, x, y, z, radius, particle, points) {
   spookTimes(points, i => {
-    let a = i / points * Math.PI * 2
-    show.p(particle, x + Math.cos(a) * radius, y, z + Math.sin(a) * radius, 0, 0, 1)
+    let d = spookCS(i / points)
+    show.p(particle, x + d[0] * radius, y, z + d[1] * radius, 0, 0, 1)
   })
 }
 
 const SPOOK_THEMES = {
   scarecrow: (show, s) => {
     spookTimes(12, i => show.later(i * 4, () => {
-      let a = i / 12 * Math.PI * 2
-      show.firework(s.x + Math.cos(a) * 14, s.y + 20, s.z + Math.sin(a) * 14, [i % 2 ? SPOOK_PURPLE : SPOOK_ORANGE], i % 4 == 0 ? 1 : 0)
+      let d = spookCS(i / 12)
+      show.firework(s.x + d[0] * 14, s.y + 20, s.z + d[1] * 14, [i % 2 ? SPOOK_PURPLE : SPOOK_ORANGE], i % 4 == 0 ? 1 : 0)
     }))
     // The dome: rings climb from the edge of town (radius 48) up and over the top in about 4 seconds.
     let R = 48
     spookTimes(21, k => show.later(50 + k * 4, () => {
-      let theta = k / 20 * Math.PI / 2
-      let r = Math.max(1, R * Math.cos(theta)), h = R * Math.sin(theta)
-      let pts = Math.max(12, Math.round(r * 3))
+      let d = spookCS(k / 80)          // a quarter turn over the 20 steps
+      let r = Math.max(1, R * d[0]), h = R * d[1]
+      let pts = Math.max(12, Math.floor(r * 3))
       spookRing(show, s.x, s.y + h, s.z, r, k % 2 ? 'minecraft:dust 0.75 0.25 1 4' : 'minecraft:dust 1 0.55 0 4', pts)
     }))
     show.later(50, () => show.snd('minecraft:block.beacon.activate', 4, 0.6))
@@ -173,8 +187,8 @@ const SPOOK_THEMES = {
   },
   observatory: (show, s) => {
     spookTimes(40, i => show.later(i, () => {
-      let a = i / 40 * Math.PI * 6
-      show.p('minecraft:end_rod', s.x + Math.cos(a) * 5, s.y + s.top + i * 0.6, s.z + Math.sin(a) * 5, 0.1, 0, 3)
+      let d = spookCS(i / 40 * 3)
+      show.p('minecraft:end_rod', s.x + d[0] * 5, s.y + s.top + i * 0.6, s.z + d[1] * 5, 0.1, 0, 3)
       show.p('minecraft:portal', s.x, s.y + s.top, s.z, 3, 0.5, 20)
     }))
     show.snd('minecraft:block.amethyst_block.chime', 4, 0.5)
