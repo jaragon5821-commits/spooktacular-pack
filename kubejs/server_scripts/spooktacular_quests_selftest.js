@@ -12,6 +12,9 @@ ServerEvents.loaded(event => {
     let found = []
     Registries.ENTITY_TYPE.keySet().forEach(k => { if (spaces.indexOf(String(k.namespace)) >= 0) found.push(String(k)) })
     console.info('[QuestSelfTest] entities: ' + found.sort().join(' '))
+    let all = []
+    Registries.ENTITY_TYPE.keySet().forEach(k => all.push(String(k)))
+    console.info('[QuestSelfTest] all entities (' + all.length + '): ' + all.sort().join(' '))
     let missing = []
     Object.keys(global.SPOOK_QUEST_DATA.archive).forEach(id => {
       if (!event.server.advancements.getAdvancement(new RL(id))) missing.push(id)
