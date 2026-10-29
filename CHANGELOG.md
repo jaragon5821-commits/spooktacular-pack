@@ -4,6 +4,19 @@ Versions are `YYYY.MM.DD-N`: the date of the release and its number that day. Ev
 is pushed to the pack gets a new version, an entry here, and (after Chop approves the wording)
 a post in #modpack-updates. "Players" is what gets posted; "Behind the scenes" is for reference.
 
+## 2026.10.28-3
+
+Players
+- Fixed chests, signs and other block entities floating off their spot and turning at odd
+  angles when shaders are on. RenderScale is back on the version from before today's update.
+  If you still see it, set RenderScale to 100% in Video Settings and tell Josh.
+
+Behind the scenes
+- RenderScale 2.0.0-beta.1 (added in 2026.10.28-1) resizes and replaces Oculus' depth targets;
+  with a render scale below 100% and Hysteria on, block entities drew offset and rotated away
+  from their hitboxes. Confirmed by Chop (100% fixes it). Rolled back to 1.4.0-alpha.6, which
+  ran without the problem through 2026.10.27.
+
 ## 2026.10.28-2
 
 Players

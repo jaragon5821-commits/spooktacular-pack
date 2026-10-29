@@ -1890,7 +1890,7 @@ hash = "94cc729e11b4c954928194d1141c8fb2afd483c4f5a0524acc92e205aaf3ed96"
 
 [[files]]
 file = "config/bcc-common.toml"
-hash = "69f49283e4ddbbe64b5c73341f08fd19362e0adc4cb07c84554726adcf675bd1"
+hash = "e8c5ff525ad18b5bcc73524e281739061976beb17b347b76ed6cc47d2f425ec1"
 
 [[files]]
 file = "config/carryon-common.toml"
@@ -2055,7 +2055,7 @@ metafile = true
 
 [[files]]
 file = "mods/renderscale.pw.toml"
-hash = "e949a6cfd96bd5aef3a5a15a6c14484ab9caff0bfed260fed9debde6731675d8"
+hash = "df4c91aa684ab5cbc228097bf2c7445c977fc48c3d3d2d651cdbfd9c95aa83e1"
 metafile = true
 
 [[files]]
