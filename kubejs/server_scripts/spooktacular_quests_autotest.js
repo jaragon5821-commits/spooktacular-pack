@@ -79,6 +79,12 @@ PlayerEvents.tick(event => {
     server.runCommandSilent('tp ' + name + ' -148.5 75 -5.5 180 -25')
     spookTimes(3, i => server.scheduleInTicks(40 + i * 400, () => {
       console.info('[QuestAutoTest] fanfare replay ' + (i + 1) + ' now')
+      if (i == 0) server.scheduleInTicks(100, () => {
+        let r1 = server.runCommand('execute in minecraft:overworld run particle minecraft:end_rod -148.5 85 -34.5 1 1 1 0 300 force')
+        let r2 = server.runCommand('execute as ' + name + ' at @s run particle minecraft:end_rod ^ ^1 ^6 1 1 1 0 300 force')
+        let r3 = server.runCommand('execute in minecraft:overworld run particle minecraft:dust 1 0.55 0 4 -148.5 80 -30.5 2 2 2 0 300 force')
+        console.info('[QuestAutoTest] particle test (+7 s): server-pos end_rod=' + r1 + ', in-front-of-player end_rod=' + r2 + ', dust=' + r3)
+      })
       spookFanfare(server, 'scarecrow', global.SPOOK_CHARTERS.scarecrow)
     }))
   })
@@ -111,7 +117,7 @@ PlayerEvents.tick(event => {
   step(3100, 'dream go', () => {
     server.runCommandSilent('execute in dreamshift:dreamspace run tp ' + name + ' 0 120 0')
   })
-  step(3300, 'dream check', () => {
+  step(3140, 'dream check', () => {
     console.info('[QuestAutoTest] dimension raw: ' + String(p.level.dimension) + ' -> spookDim: ' + spookDim(p.level))
     spookTestLog(spookDim(p.level) == 'dreamshift:dreamspace', 'still in dreamshift:dreamspace 10 s after the teleport')
     spookTestLog(q.isCompleted(SPOOK_TEST.ds05), 'Dreamspace quest completed on arrival')

@@ -478,7 +478,7 @@ hash = "4397c6ff59b2aabf82af483c278b159756ecdf7499f6a176d3d4fcd442408ec3"
 
 [[files]]
 file = "kubejs/server_scripts/spooktacular_quests_autotest.js"
-hash = "c6151fe05db013e70e85566f35c7df05aaf97b2eb7ddea8dacd7e8a6718895ae"
+hash = "51560825b9622b5e13b702388134eef83f4f63e579e4ed88a483a5697abd8b3d"
 
 [[files]]
 file = "kubejs/server_scripts/spooktacular_quests_charters.js"
