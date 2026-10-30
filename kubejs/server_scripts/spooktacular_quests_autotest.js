@@ -32,7 +32,7 @@ PlayerEvents.tick(event => {
   let server = event.server
   if (spookTestRan || event.player.age < 200) return
   let lvl = String(server.worldData.levelName)
-  if (lvl != 'Hallowstown Quest Test' && lvl != 'Hallowstown Review') { spookTestRan = true; return }
+  if (lvl.indexOf('Hallowstown Quest Test') != 0 && lvl.indexOf('Hallowstown Review') != 0) { spookTestRan = true; return }
   let cfg = JsonIO.read(SPOOK_TEST_CONFIG)
   spookTestRan = true
   if (!cfg || cfg.run !== true) return
