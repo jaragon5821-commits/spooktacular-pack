@@ -48,6 +48,7 @@ PlayerEvents.tick(event => {
     if (cfg.charterClick === true) {
       // right-click the Spire's Charter through the same code the real click uses (a script can't click)
       let a = SPOOK_TEST_ANCHORS.spire
+      server.runCommandSilent('forceload add ' + (a[0] - 48) + ' ' + (a[2] - 80) + ' ' + (a[0] + 48) + ' ' + (a[2] + 24))
       server.runCommandSilent('setblock ' + a[0] + ' ' + a[1] + ' ' + a[2] + ' spooktacular:charter_spire')
       spookCharters(server).put('spire', { x: a[0], y: a[1], z: a[2], dim: 'minecraft:overworld', facing: 'north' })
       delete spookScan.spire
