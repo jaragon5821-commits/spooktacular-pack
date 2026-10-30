@@ -228,8 +228,11 @@ PlayerEvents.tick(event => {
 
 // Slippage screenshots: run the configured commands as the player, near the Scarecrow.
 function spookTestSlips(server, name, cmds) {
-  (cmds || []).forEach((c, i) => server.scheduleInTicks(40 + i * 20, () => {
-    let r = server.runCommand('execute as ' + name + ' at @s run ' + c)
-    console.info('[QuestAutoTest] slip command "' + c + '" -> ' + r)
+  // cmds is a Java list from JsonIO: copy it and count by hand (its forEach gives no index)
+  let list = []
+  if (cmds) cmds.forEach(c => list.push(String(c)))
+  spookTimes(list.length, i => server.scheduleInTicks(40 + i * 20, () => {
+    let r = server.runCommand('execute as ' + name + ' at @s run ' + list[i])
+    console.info('[QuestAutoTest] slip command "' + list[i] + '" -> ' + r)
   }))
 }
