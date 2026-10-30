@@ -2560,6 +2560,10 @@ file = "schematics/Hallowstown/hallowstown_ward_wall_toadstool_modded.litematic"
 hash = "014f7d4fce3b4ad2465be3ebe9c3f1b79a8a01422b58d4d6313e829c03aa05ff"
 
 [[files]]
+file = "schematics/Hallowstown/hallowstown_waterfall_reaper_modded.litematic"
+hash = "b8e54b0fa7102e5b3337520f4a3efb2d4816fba24d818dad67ff8c863c89d092"
+
+[[files]]
 file = "schematics/Hallowstown/hallowstown_witchs_apothecary_modded.litematic"
 hash = "71216667d389e8c5372cfdff7adedac8b510073bbf04b1dc96f4b0bfb4fafb6e"
 
