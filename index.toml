@@ -286,51 +286,51 @@ hash = "a72aa676725ce6d45b078fe40d2c0cdda2c8368bce63323cd7b3c0b9f28590e5"
 
 [[files]]
 file = "kubejs/data/spooktacular/blueprints/apothecary.json"
-hash = "89a57b438ddd3b1c615043dac44b00af8633bda5ffac4e9d37cc5961bd78b535"
+hash = "2b09e17a73c8c6a0fa416ac52b43297961820307b6d21f8d5bf64b7bfc5afb14"
 
 [[files]]
 file = "kubejs/data/spooktacular/blueprints/archive.json"
-hash = "f7681c33a053363f3918187cf24700e8a622ff30eef4543940efef85a52a10ea"
+hash = "840c3695116114e7e04c63b65308a99a89bc06227a4465a27c2aa5501b134dff"
 
 [[files]]
 file = "kubejs/data/spooktacular/blueprints/boutique.json"
-hash = "6e412876fe87db501cdf6666a9b06c381d1d5a85829d52a1a8bd61e4bf7cb007"
+hash = "91b9e1e3c1ad8bc247d4c4108b5c85a78d46662d3a0e77609bbba4cb2fcd2dda"
 
 [[files]]
 file = "kubejs/data/spooktacular/blueprints/cathedral.json"
-hash = "e28469c03fa3f7a4e4f392ab358d776e2f360c5338feb7504e73eb2d639ec5ae"
+hash = "fbd757040f49821b41bcbb129606fb2186a1fbc27b8e93a977ae51c5abc2b77b"
 
 [[files]]
 file = "kubejs/data/spooktacular/blueprints/cemetery.json"
-hash = "e560f51c486fa465d39ae6873d563e5e9040d92893f426cefedff60ad14c2f7d"
+hash = "a7b602fdc52d8befffb9d550db6dbafbcf7fd51bc093ffa3de38cb6426d966aa"
 
 [[files]]
 file = "kubejs/data/spooktacular/blueprints/citadel.json"
-hash = "c4855078795cf9afe2b1ccc29532b07702790b9194b6f246a84286c49b6861d7"
+hash = "8cb9cfc62f95816e6488e05e68b858626b9e041b116fe2e18b43e5da22e40a28"
 
 [[files]]
 file = "kubejs/data/spooktacular/blueprints/crypt.json"
-hash = "3ec04966657deeefa6291722938abf3db1ad56cfbfd0a46bdb2f0523349de2d8"
+hash = "f714d4baaea8df4ae7c938c729a3809ae4295153a434fc6732c49d7d55e8e84e"
 
 [[files]]
 file = "kubejs/data/spooktacular/blueprints/garrison.json"
-hash = "b94e8b151c964d1cc0a50d630f296b9a423c8e1e03bc4e923abb47df14be8f65"
+hash = "f3c40c0b3bbabc096791e6ea65c79698d28e6b15710fb61169c2fbc963fc6669"
 
 [[files]]
 file = "kubejs/data/spooktacular/blueprints/hall_of_heroes.json"
-hash = "1811342f8c35635b5941017fde3962899ec0f929de057eb31175a8db07fa67ae"
+hash = "7955e4637340ce052117ce48f9027bd272947e73249c7e12178a6403fdcd2c23"
 
 [[files]]
 file = "kubejs/data/spooktacular/blueprints/observatory.json"
-hash = "377d6beb66e7555b8612603929277a2e52f9fc5dc57d53fb4b8fd7f873b53d23"
+hash = "008857c815c008d2112f6bf5655bf1adc3eb7acdd3613f36dd521b2694fc8bf1"
 
 [[files]]
 file = "kubejs/data/spooktacular/blueprints/orchard_mill.json"
-hash = "6edf11fd28a3e24cc4642251b5697fb094fecbaf346754dc0b506f3512615ba1"
+hash = "0861d8650c8077c1180b9e1517499ffa39793ea93476b75933dfef475ed4e85d"
 
 [[files]]
 file = "kubejs/data/spooktacular/blueprints/pantry.json"
-hash = "64328e19dc0e6a9c783d0035fe252bf0d12c1a351d72122d78fd7a4ecb102f9c"
+hash = "500ae4fbb896019cb1ef28122ffb7dc789efc08b65446874c3897ba09ac18562"
 
 [[files]]
 file = "kubejs/data/spooktacular/blueprints/scarecrow.json"
@@ -338,19 +338,19 @@ hash = "fecd51dfbefe2d2cc4b734ddbd7d2152194cbb586804a1f5ce7b8eea05ada6fc"
 
 [[files]]
 file = "kubejs/data/spooktacular/blueprints/smeltery.json"
-hash = "0ff41e5d2551b469a0bf7b77bd23d30ed5860077ad60bb23fe596735eeb600c5"
+hash = "87d2091b5b618a951f1edade4be971f4eded93b2d3f4e1a6b0eb97de1ecb9512"
 
 [[files]]
 file = "kubejs/data/spooktacular/blueprints/spire.json"
-hash = "4727a008e47de0b12c21d372b4b19a4fac676b550fec5563e6c27a161b7c6513"
+hash = "5594e8e90bb8ca3e8f77f0d31b9b076054e45f2bbc609f7d7ec78b18988d75d0"
 
 [[files]]
 file = "kubejs/data/spooktacular/blueprints/stables.json"
-hash = "d496ebd604dfa9c105c00aa3a38ff7c747906a5a62b9fa77248dc19e90f4875c"
+hash = "75b031dc56074953b4d4965776ed238c300bac7d08e1e2a4bf1466b79b3fad0f"
 
 [[files]]
 file = "kubejs/data/spooktacular/blueprints/tavern.json"
-hash = "0c1a2c27c4c413ae8c2873a0a07a7cbf4ffed11a56bac13455e9e90961528688"
+hash = "aba18bbae9f834b0845b7a89d9ee906764a5a99bf6dec360219facae32f70fa4"
 
 [[files]]
 file = "kubejs/data/spooktacular/blueprints/ward_arch.json"
@@ -362,7 +362,7 @@ hash = "8feaa34b2b9cccc8c4795e3117f2b19260df346421c65ec0ec91b7b75fb3af08"
 
 [[files]]
 file = "kubejs/data/spooktacular/blueprints/wharf.json"
-hash = "07260f4ff550d3ff266922d11681bdba28e604a1214c82a5a6b0747542227a83"
+hash = "98bc9a75a813a1f5deaf28e179383cb0c7a863645a5e6265abeb3fe8d34afbc9"
 
 [[files]]
 file = "kubejs/data/spooktacular/tags/entity_types/archive/alexscaves_underzealot.json"
@@ -2425,43 +2425,43 @@ hash = "1abb33ec94128d9890fef64038e1137a6c431c886579839bb244f14d9d6ff646"
 
 [[files]]
 file = "schematics/Hallowstown/hallowstown_autumn_orchard_cider_mill_modded.litematic"
-hash = "52a803fa920bc4aae72e2f518f60ca075d3f21aff6b65d8ad4dd3bf1a2a22733"
+hash = "c2a837a2e2ebbe0ef4d2ff597e8dc4aa9013c389457a77fb3f371f7c4f0be3ce"
 
 [[files]]
 file = "schematics/Hallowstown/hallowstown_carriage_house_stables_modded.litematic"
-hash = "1c6304d77a110763b3861b142096f6cfb3edeb116fd670201e85e3970e50982d"
+hash = "802d31d007aa471e4505c6cc58120e0950977a0f81d19536b10040e92b3d5731"
 
 [[files]]
 file = "schematics/Hallowstown/hallowstown_catacombs_modded.litematic"
-hash = "656a297d35aa918ea578c33fe4bf8c656a9644773f732b91cc59abd98ebba7d5"
+hash = "bd5a9e7ac523280c9c24e7e7b39b420de1354dd4164f562ad8c52c42efd034d1"
 
 [[files]]
 file = "schematics/Hallowstown/hallowstown_cemetery_modded.litematic"
-hash = "21b05185e68dca7934e8fee478beea27fd54799663231922f7e2e70841ec5557"
+hash = "adf3853bb348887e4203e0aae83f9a04c6169f02b1f89e7436c67d2d94b2f1bd"
 
 [[files]]
 file = "schematics/Hallowstown/hallowstown_colossal_scarecrow_modded.litematic"
-hash = "e21c4922739ec0cbdd965a1da8ed6a84db57f635d9023222f21bf235e10ca4bb"
+hash = "808c8199b0d09eb81eaf81933f0a6d60c35d87c6713dba91485d072f93b1a5d9"
 
 [[files]]
 file = "schematics/Hallowstown/hallowstown_crypt_modded.litematic"
-hash = "74ab97e352613f49e6fcf7dd3c7f9da0efd11db9d8e3ffb222809b38615c0323"
+hash = "9e3a1e054521a47c8dd035d2b07e70983fc1c9302ec1e6b4cece556d59d171e0"
 
 [[files]]
 file = "schematics/Hallowstown/hallowstown_garrison_bounty_board_modded.litematic"
-hash = "3ad7489d7f8a51057641f440fd55c91319a43c5e38e621ef176747c7c9fc064e"
+hash = "bcc8f4290e745525a8a02f4f53b5cceb7837077ec9f78050f2b8456ed1c3949b"
 
 [[files]]
 file = "schematics/Hallowstown/hallowstown_grand_archive_modded.litematic"
-hash = "1d68a39e036b10a6758b7a1f5c85e59d8751b87caba8764bcb98541dc5ead3a5"
+hash = "f928eb24b0c3070cc5edc64abcba55281d7895c5a80395993d56b924dbb371d3"
 
 [[files]]
 file = "schematics/Hallowstown/hallowstown_grand_cathedral_modded.litematic"
-hash = "61b43dfcb7ac6b7438860edcfb869137691b2411193d5cf58c0d88910957aefb"
+hash = "dad7a928bbee5cf7eca3aa404c4c63123eaaa1ba336658be9113a244ea4c5fb1"
 
 [[files]]
 file = "schematics/Hallowstown/hallowstown_hall_of_heroes_modded.litematic"
-hash = "355549d83f3073991b856393ade8fd8747cda8bcb89eb64be62f5e1cc3224f96"
+hash = "001979685ee5dcc26b370881b6a4b34a21e7577556f6d2d59b8b59a9657e8b86"
 
 [[files]]
 file = "schematics/Hallowstown/hallowstown_harvest_cart_modded.litematic"
@@ -2477,7 +2477,7 @@ hash = "299d5537895f8f2882d126cec346a513e21d0a6c350f833d4718d91f46f1c6cb"
 
 [[files]]
 file = "schematics/Hallowstown/hallowstown_infernal_citadel_modded.litematic"
-hash = "16e770159d0e5f76c406ed1122e5db7b3fe8a723e991039634be2f9a21597a2e"
+hash = "9363416dfc8ac8ca77bb19ae2245c3022b7c30d8add507a8673779a789096357"
 
 [[files]]
 file = "schematics/Hallowstown/hallowstown_jack_o_lantern_arch_modded.litematic"
@@ -2493,19 +2493,19 @@ hash = "c06c3bc892d5a319b5415899501bca194382e45446aadfb825f16720d1011d05"
 
 [[files]]
 file = "schematics/Hallowstown/hallowstown_masquerade_boutique_modded.litematic"
-hash = "6bed7e139f1497c00530d819b899198d0a43f20a470cf173205590d839c5c4b7"
+hash = "f4bb723b901f017aa006e77bcfa3aa461c6b60859d671a300637a40d40b26996"
 
 [[files]]
 file = "schematics/Hallowstown/hallowstown_midnight_spire_modded.litematic"
-hash = "86c4ce01053c46d5cfcba8cd8c7ccf79ffc6727d4fcaa84d2cbc846fe26ba4b7"
+hash = "736facdcf214767a42bc7627a615bec0c1530e45aa42a9810b4d99ccdb898dc9"
 
 [[files]]
 file = "schematics/Hallowstown/hallowstown_misty_wharf_modded.litematic"
-hash = "27cf1753fd97da8b64e6d69e8e4914fd9ff035c616d55a75a4168c841cba7a9a"
+hash = "7c58b8b5e5ed95ff985492df89a5eb65276e531ac4414c88821ba32fa619a1d0"
 
 [[files]]
 file = "schematics/Hallowstown/hallowstown_pantry_modded.litematic"
-hash = "a5d6543505064d051e409a49b97f66521b8b600d325d4149ac20b8d7bb214c77"
+hash = "77b4e32fb26f9814595abc87989da18028f463db5501a33333248f692bb38788"
 
 [[files]]
 file = "schematics/Hallowstown/hallowstown_pumpkin_market_stall_modded.litematic"
@@ -2533,35 +2533,35 @@ hash = "0d6d8be84f5b5bd4476caeee7fb2594441a3133be7d9013e6d54caa482106386"
 
 [[files]]
 file = "schematics/Hallowstown/hallowstown_smeltery_annex_modded.litematic"
-hash = "8328ef5eafc5cb486d441fc031beed6927a2891f6b06271803a59f8c9680a9c8"
+hash = "9da7606ce307f60cb0f717994baa67c030e65387ed84bc9822792dfd86328325"
 
 [[files]]
 file = "schematics/Hallowstown/hallowstown_tavern_modded.litematic"
-hash = "2c6ed8f051a9d5dc50beec0eb891541f0b3c3466e4d292aa1c3bcfa08838a3c5"
+hash = "cb18f4911a904e164d19e7fdde1f5f79b72d59a6dc90d47040bf49b0ce2e2142"
 
 [[files]]
 file = "schematics/Hallowstown/hallowstown_void_observatory_modded.litematic"
-hash = "bf4ece7b62eadebd575aee8815a87734ed86acf00630ce78dc494050af6df8ae"
+hash = "824bc859219d753656e3b74aa839ae647a9fe2ee7faf239727a908297b97c06f"
 
 [[files]]
 file = "schematics/Hallowstown/hallowstown_ward_arch_11_modded.litematic"
-hash = "bf89539a91730c3af97e2f029b68f4d756213caf0f67c081af2802ba9a4d1f61"
+hash = "56574ca3cea6033a5289d5b4a620036f4e3e9dda44f8922078b63aa3ea05e50b"
 
 [[files]]
 file = "schematics/Hallowstown/hallowstown_ward_arch_7_modded.litematic"
-hash = "57c0fffa3b07d7329f26752c8ec4015116a1f5e204032862a9f9814969d86c85"
+hash = "7f75cf7da68f36844bfaf5b9eb72078e1fc212c0e73a24a6ec55a81ce397ff21"
 
 [[files]]
 file = "schematics/Hallowstown/hallowstown_ward_wall_section_modded.litematic"
-hash = "06657190339042e557b1289a7db5ae4ef1ac32441edbe331384ee137a2e98ef8"
+hash = "fc6690172d2690cd38040d119161e6cbab126eea07f99ae18a2f8bbe2257d61f"
 
 [[files]]
 file = "schematics/Hallowstown/hallowstown_ward_wall_toadstool_modded.litematic"
-hash = "07e0c6e52941741627dacf2fcf43e12e89ef1acb7222567b3825c71cc3169813"
+hash = "014f7d4fce3b4ad2465be3ebe9c3f1b79a8a01422b58d4d6313e829c03aa05ff"
 
 [[files]]
 file = "schematics/Hallowstown/hallowstown_witchs_apothecary_modded.litematic"
-hash = "d5da9c6501fa5b118b1937f90a85eb525367cea8cf2c687c3b2ff81f5d3bfa75"
+hash = "71216667d389e8c5372cfdff7adedac8b510073bbf04b1dc96f4b0bfb4fafb6e"
 
 [[files]]
 file = "schematics/Hallowstown/hallowstown_witchs_cookout_modded.litematic"
@@ -2569,32 +2569,36 @@ hash = "51b26d9f8086204462d6f12d443bef01ade8e59a5c93839e8193acf87351feb8"
 
 [[files]]
 file = "schematics/Hallowstown/house_A_pumpkin_cottage_modded.litematic"
-hash = "7c010263f6a84b37b99a9ab85b891027a466cf9610487ea63e7917a3885b4022"
+hash = "18ec0902b58b1a64d21ca5b457c927a7b9debfc925feb2b8f81033a94e605193"
 
 [[files]]
 file = "schematics/Hallowstown/house_B_twin_lantern_duplex_modded.litematic"
-hash = "4239fe085e8ce78a0a9aa73e587fde4f833ed7730ac55bfe7e7ef9d582bb81c8"
+hash = "2e5eb425ee552b614f4f3ad30c5ef55add69b38f8a2c35bb3bdf4866a4b87336"
 
 [[files]]
 file = "schematics/Hallowstown/house_C_hollow_row_apartments_modded.litematic"
-hash = "b4afdfd3f61f15158fdefa2f4cdf1abcb0c89d117d0a377381a3769f75958e1f"
+hash = "303da5192618fd1f6623143c0f8d0c9a9d9a9bb6e07753bc6ba14e5e69c32281"
 
 [[files]]
 file = "schematics/Hallowstown/house_D_harvest_moon_family_hall_modded.litematic"
-hash = "94cc729e11b4c954928194d1141c8fb2afd483c4f5a0524acc92e205aaf3ed96"
+hash = "673f325977814a5ef3c4712c550f97297f4462ad1344e4cc3fc88d69aaf2e852"
 
 [[files]]
 file = "schematics/Hallowstown/house_e_lamplighters_row_modded.litematic"
-hash = "6dfab5621723c2f83b7cc5fe730614409367870fa04f72b1711df88650f15c12"
+hash = "250babdcc2226b89fc45744176642338b02647d2d9ea8587a62292a30d695b04"
 
 [[files]]
 file = "schematics/Hallowstown/house_f_gourd_hollow_modded.litematic"
-hash = "0330b0d94ece6cb6ee5272cec6830adb067dc78bb026e7e9607d11d456fec685"
+hash = "421c189151a6a509698e3c279b51e9c17ca6a962e9dee374820095dd02775333"
 
 [[files]]
 file = "schematics/Hallowstown/house_g_crooked_cottage_modded.litematic"
-hash = "c2fd9e97aee19fe37d9129c70257e0f2b1ae8ac7698ccd7fb9fa5976f9824a82"
+hash = "536e269d776d1a51853430e5cfdff7397f8e9cfe7e190230a465bf7a377fc40e"
 
 [[files]]
 file = "schematics/Hallowstown/house_h_harvest_barn_house_modded.litematic"
-hash = "ca6c86c9607d03a9867820f40b66a42394a531c25e9403f3bdb4035184709547"
+hash = "b7f91e9d2e79782d395283cea163755e866c1a2fbcb46dcaab9f185f4bda230b"
+
+[[files]]
+file = "schematics/Hallowstown/spooktacular_cinema_modded.litematic"
+hash = "91e3200ecf8cd89c7eebe409b9e095ea42dee05eb4f3f698e883bd25b2d693aa"
