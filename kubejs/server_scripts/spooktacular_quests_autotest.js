@@ -39,9 +39,12 @@ PlayerEvents.tick(event => {
   JsonIO.write(SPOOK_TEST_CONFIG, { run: false, note: 'switched off after a run; set run to true to test again' })
   let p = event.player, name = p.username, q = p.data.ftbquests
   if (cfg.slipOnly === true) {
-    p.teleportTo('minecraft:overworld', -148.5, 64, -20.5, 180, 0)
+    // a stone wall 2 blocks north of the player, who looks straight at it: "dreamshift slippage create"
+    // opens a slippage on the block face the player is looking at
+    server.runCommandSilent('fill -151 64 -25 -146 67 -25 minecraft:stone_bricks')
     server.runCommandSilent('time set 18000')
-    spookTestSlips(server, name, cfg.slipCommands)
+    p.teleportTo('minecraft:overworld', -148.5, 64, -22.5, 180, 0)
+    spookTestSlips(server, name, cfg.slipCommands || ['dreamshift slippage create'])
     return
   }
   let step = (ticks, label, fn) => server.scheduleInTicks(ticks, () => {
@@ -50,6 +53,7 @@ PlayerEvents.tick(event => {
   console.info('[QuestAutoTest] start, player ' + name + ', spookDim: ' + spookDim(p.level))
   server.runCommandSilent('gamerule doDaylightCycle false')
   server.runCommandSilent('time set 18000')   // night, so the shows are easy to see
+  server.runCommandSilent('difficulty normal')  // the review world is on Peaceful, which deletes test monsters at once
 
   // 1. Unlock: the Archive and the Scarecrow need their earlier quests done. No Charters placed yet.
   step(100, 'unlock', () => {
@@ -112,12 +116,13 @@ PlayerEvents.tick(event => {
     let Triggers = Java.loadClass('io.github.mortuusars.exposure.Exposure$ExposureCriteriaTriggers')
     let Frame = Java.loadClass('io.github.mortuusars.exposure.world.camera.frame.Frame')
     let ArrayList = Java.loadClass('java.util.ArrayList')
-    let creeper = p.level.getEntitiesWithin(AABB.of(p.x - 10, p.y - 3, p.z - 10, p.x + 10, p.y + 5, p.z + 10)).filter(e => e.type == 'minecraft:creeper')[0]
+    let creeper = p.level.getEntitiesWithin(AABB.of(p.x - 10, p.y - 3, p.z - 10, p.x + 10, p.y + 5, p.z + 10)).filter(e => e.tags.contains('spooktest'))[0]
     spookTestLog(!!creeper, 'test creeper is standing in front of the player')
     try {
       let EIF = Java.loadClass('io.github.mortuusars.exposure.world.camera.frame.EntitiesInFrame')
       let POV = Java.loadClass('io.github.mortuusars.exposure.util.PointOfView')
-      let seen = EIF.get(p, new POV(p.getEyePosition(), p.getLookAngle()), 70.0)
+      // EntitiesInFrame.get has an Entity and a CameraHolder version; the player is both, so name one
+      let seen = EIF['get(net.minecraft.world.entity.Entity,io.github.mortuusars.exposure.util.PointOfView,double)'](p, new POV(p.getEyePosition(), p.getLookAngle()), 70.0)
       let names = []
       seen.forEach(e => names.push(String(e.type)))
       spookTestLog(names.indexOf('minecraft:creeper') >= 0, 'camera frame check sees the creeper (' + names.join(' ') + ')')
@@ -179,8 +184,8 @@ PlayerEvents.tick(event => {
       for (var i = 0; i < all.length; i++) usage.push('/dreamshift ' + all[i])
     })
     console.info('[QuestAutoTest] dreamshift commands: ' + usage.join(' | '))
-    let r = server.runCommand('execute as ' + name + ' at @s run dreamshift slip paragraph_aisle')
-    console.info('[QuestAutoTest] dreamshift slip paragraph_aisle -> ' + r)
+    let r = server.runCommand('execute as ' + name + ' at @s run dreamshift slip dreamshift:paragraph_aisle')
+    console.info('[QuestAutoTest] dreamshift slip dreamshift:paragraph_aisle -> ' + r)
   })
   step(3300, 'slip check', () => {
     console.info('[QuestAutoTest] now in ' + spookDim(p.level))
@@ -199,13 +204,16 @@ PlayerEvents.tick(event => {
   step(3450, 'torch place', () => {
     server.runCommandSilent('setblock -140 64 -20 torchmaster:megatorch')
     ;['minecraft:zombie', 'minecraft:skeleton', 'cave_dweller:cave_dweller', 'the_knocker:knocker', 'weeping_angels:weeping_angel', 'graveyard:ghoul']
-      .forEach(t => server.runCommandSilent('summon ' + t + ' -130 64 -12 {NoAI:1b,Silent:1b,PersistenceRequired:1b,Tags:["spooktorch"]}'))
+      .forEach(t => {
+        let r = server.runCommand('summon ' + t + ' -148.5 64 -18.5 {NoAI:1b,Silent:1b,PersistenceRequired:1b,Tags:["spooktorch"]}')
+        console.info('[QuestAutoTest] summon ' + t + ' -> ' + r)
+      })
   })
-  step(3470, 'torch check', () => {
+  step(3455, 'torch check', () => {
     let H = Java.loadClass('net.xalcon.torchmaster.common.logic.entityblocking.EntityBlockingEventHandler')
-    let pos = new SpookBlockPos(-130, 64, -12)
+    let pos = new SpookBlockPos(-148, 64, -18)
     let horror = ['cave_dweller:cave_dweller', 'the_knocker:knocker', 'weeping_angels:weeping_angel', 'graveyard:ghoul']
-    p.level.getEntitiesWithin(AABB.of(-135, 60, -17, -125, 70, -7)).forEach(e => {
+    p.level.getEntitiesWithin(AABB.of(-160, 54, -30, -136, 80, -6)).forEach(e => {
       let t = String(e.type)
       if (!e.tags.contains('spooktorch')) return
       let blocked = H.shouldBlockEntity(e, pos)
