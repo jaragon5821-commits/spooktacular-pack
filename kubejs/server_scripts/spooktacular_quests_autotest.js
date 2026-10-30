@@ -128,14 +128,18 @@ PlayerEvents.tick(event => {
       spookTestLog(names.indexOf('minecraft:creeper') >= 0, 'camera frame check sees the creeper (' + names.join(' ') + ')')
     } catch (e) { console.info('[QuestAutoTest] frame check not run: ' + e) }
     let stack = Item.of('exposure:camera')
+    // a real photo always records focal length, light level and time of day; the advancement checks needs them
+    let frame = Frame.create().updateExtraData(tag => {
+      tag.putInt('focal_length', 50); tag.putInt('light_level', 15); tag.putInt('day_time', 18000)
+    }).toImmutable()
     try {
-      Triggers.FRAME_EXPOSED.trigger(p, p, stack, Frame.EMPTY, new ArrayList(), new ArrayList())
+      Triggers.FRAME_EXPOSED.trigger(p, p, stack, frame, new ArrayList(), new ArrayList())
       spookTestLog(true, 'a photo with nothing in it does not crash the camera')
     } catch (e) { spookTestLog(false, 'a photo with nothing in it crashed: ' + e) }
     try {
       let list = new ArrayList()
       list.add(creeper)
-      Triggers.FRAME_EXPOSED.trigger(p, p, stack, Frame.EMPTY, new ArrayList(), list)
+      Triggers.FRAME_EXPOSED.trigger(p, p, stack, frame, new ArrayList(), list)
       spookTestLog(true, 'a photo of the creeper does not crash the camera')
     } catch (e) { spookTestLog(false, 'a photo of the creeper crashed: ' + e) }
     server.runCommandSilent('kill @e[tag=spooktest]')
@@ -187,13 +191,21 @@ PlayerEvents.tick(event => {
     let r = server.runCommand('execute as ' + name + ' at @s run dreamshift slip dreamshift:paragraph_aisle')
     console.info('[QuestAutoTest] dreamshift slip dreamshift:paragraph_aisle -> ' + r)
   })
-  step(3300, 'slip check', () => {
-    console.info('[QuestAutoTest] now in ' + spookDim(p.level))
-    spookTestLog(spookDim(p.level).indexOf('paragraph_aisle') >= 0, 'slipped into Paragraph Aisle')
-    spookTestLog(dreamTask != null && q.isCompleted(dreamTask), 'Paragraph Aisle quest completed on arrival')
-    server.runCommandSilent('execute as ' + name + ' run dreamshift return')
-  })
-  step(3400, 'gate', () => {
+  // a dreamspace visited for the first time is installed first, so the slip can take a while: poll for 30 s
+  let slipDone = false
+  spookTimes(15, i => step(3240 + i * 40, 'slip check', () => {
+    if (slipDone) return
+    let inside = spookDim(p.level).indexOf('paragraph_aisle') >= 0
+    if (!inside && i < 14) return
+    slipDone = true
+    console.info('[QuestAutoTest] now in ' + spookDim(p.level) + ' after ' + (2 + i * 2) + ' s')
+    spookTestLog(inside, 'slipped into Paragraph Aisle')
+    server.scheduleInTicks(40, () => {
+      spookTestLog(dreamTask != null && q.isCompleted(dreamTask), 'Paragraph Aisle quest completed on arrival')
+      server.runCommandSilent('execute as ' + name + ' run dreamshift return')
+    })
+  }))
+  step(3900, 'gate', () => {
     if (spookDim(p.level) != 'minecraft:overworld') p.teleportTo('minecraft:overworld', -148.5, 64, -26.5, 180, 0)
     // every Charter was registered in step 3, but the Cathedral's earlier quests were never done
     let fan = global.SPOOK_QUEST_DATA.fanfare, cathedral = null
@@ -201,7 +213,7 @@ PlayerEvents.tick(event => {
     spookTestLog(cathedral != null && !q.isCompleted(cathedral), 'Cathedral quest stays incomplete while its earlier quests are not done')
   })
   // 10. Mega Torch: ordinary hostiles are blocked near it, the Archive's horror mobs are not.
-  step(3450, 'torch place', () => {
+  step(3950, 'torch place', () => {
     server.runCommandSilent('setblock -140 64 -20 torchmaster:megatorch')
     ;['minecraft:zombie', 'minecraft:skeleton', 'cave_dweller:cave_dweller', 'the_knocker:knocker', 'weeping_angels:weeping_angel', 'graveyard:ghoul']
       .forEach(t => {
@@ -209,7 +221,7 @@ PlayerEvents.tick(event => {
         console.info('[QuestAutoTest] summon ' + t + ' -> ' + r)
       })
   })
-  step(3455, 'torch check', () => {
+  step(3955, 'torch check', () => {
     let H = Java.loadClass('net.xalcon.torchmaster.common.logic.entityblocking.EntityBlockingEventHandler')
     let pos = new SpookBlockPos(-148, 64, -18)
     let horror = ['cave_dweller:cave_dweller', 'the_knocker:knocker', 'weeping_angels:weeping_angel', 'graveyard:ghoul']
@@ -223,7 +235,7 @@ PlayerEvents.tick(event => {
     server.runCommandSilent('kill @e[tag=spooktorch]')
     server.runCommandSilent('setblock -140 64 -20 minecraft:air')
   })
-  step(3600, 'done', () => {
+  step(4100, 'done', () => {
     server.runCommandSilent('forceload remove all')
     server.runCommandSilent('setblock -149 74 -6 minecraft:air')
     let old = []
