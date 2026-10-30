@@ -671,7 +671,7 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["05872A3402A1F5C2"]
+			dependencies: ["1E4DD3FC9CDA1098"]
 			description: ["Slay 25 Zombies. Repeatable.", "", "The Queen pays for every patrol that thins the walking dead."]
 			icon: "minecraft:iron_sword"
 			id: "10E9386FB95AACC0"
@@ -699,12 +699,12 @@
 				}
 			]
 			title: "Q-BS15: Night Watch"
-			x: -20.0d
-			y: 14.0d
+			x: -10.0d
+			y: -4.0d
 		}
 		{
 			can_repeat: true
-			dependencies: ["05872A3402A1F5C2"]
+			dependencies: ["1E4DD3FC9CDA1098"]
 			description: ["Slay 25 Skeletons. Repeatable.", "", "Rattling bones keep the watchmen awake."]
 			icon: "minecraft:iron_sword"
 			id: "1EE5C7BFE041A943"
@@ -732,12 +732,12 @@
 				}
 			]
 			title: "Q-BS16: Bone Patrol"
-			x: -16.0d
-			y: 14.0d
+			x: -8.0d
+			y: -4.0d
 		}
 		{
 			can_repeat: true
-			dependencies: ["05872A3402A1F5C2"]
+			dependencies: ["1E4DD3FC9CDA1098"]
 			description: ["Slay 20 Spiders. Repeatable.", "", "Clear the cellars and the old barns."]
 			icon: "minecraft:iron_sword"
 			id: "2326075828D3BFE7"
@@ -765,12 +765,12 @@
 				}
 			]
 			title: "Q-BS17: Web Sweep"
-			x: -12.0d
-			y: 14.0d
+			x: -6.0d
+			y: -4.0d
 		}
 		{
 			can_repeat: true
-			dependencies: ["05872A3402A1F5C2"]
+			dependencies: ["1E4DD3FC9CDA1098"]
 			description: ["Slay 10 Pillagers.", "", "Armed caravans travel the roads now. Raid them before they raid the town."]
 			icon: "minecraft:iron_sword"
 			id: "14A5618C4F141A84"
@@ -798,8 +798,8 @@
 				}
 			]
 			title: "Q-BS18: Caravan Raiders"
-			x: -24.0d
-			y: 16.5d
+			x: -4.0d
+			y: -4.0d
 		}
 	]
 	title: "⚔ CHAPTER 5: BOSS SHOWDOWNS AND MONSTER HUNTERS"

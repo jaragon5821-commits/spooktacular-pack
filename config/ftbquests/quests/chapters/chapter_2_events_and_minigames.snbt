@@ -9,8 +9,8 @@
 	quests: [
 		{
 			can_repeat: true
-			dependencies: ["3C642BFAA4239EC3", "27991E4AB94352BF"]
-			description: ["Win the concert and hand in your Festival Ribbon. The host gives the event winner a Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "A player plays mystery tunes on an Immersive Melodies instrument. The audience guesses the song."]
+			dependencies: ["27991E4AB94352BF"]
+			description: ["Win the concert and hand in your Festival Ribbon. The host gives the winner this event's Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "A player plays mystery tunes on an Immersive Melodies instrument. The audience guesses the song."]
 			icon: {
 				Count: 1
 				id: "immersive_melodies:lute"
@@ -36,8 +36,8 @@
 				{
 					consume_items: true
 					id: "4047AE0D6DF4D62E"
-					item: "spooktacular:festival_ribbon"
-					title: "Hand in a Festival Ribbon"
+					item: "spooktacular:ribbon_song"
+					title: "Hand in this event's Festival Ribbon"
 					type: "item"
 				}
 			]
@@ -47,8 +47,8 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["3C642BFAA4239EC3", "777B0848E5B19526"]
-			description: ["Win the costume contest at the Halloween Bar and hand in your Festival Ribbon. The host gives the event winner a Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Gather with friends for cider and pumpkin pie."]
+			dependencies: ["777B0848E5B19526"]
+			description: ["Win the costume contest at the Halloween Bar and hand in your Festival Ribbon. The host gives the winner this event's Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Gather with friends for cider and pumpkin pie."]
 			icon: "kaleidoscope_cookery:teapot"
 			id: "49317351A131FD14"
 			rewards: [
@@ -70,8 +70,8 @@
 				{
 					consume_items: true
 					id: "079E98870B2351FA"
-					item: "spooktacular:festival_ribbon"
-					title: "Hand in a Festival Ribbon"
+					item: "spooktacular:ribbon_costume"
+					title: "Hand in this event's Festival Ribbon"
 					type: "item"
 				}
 			]
@@ -81,8 +81,7 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["3C642BFAA4239EC3"]
-			description: ["Survive the whole film in the theatre and hand in your Festival Ribbon. The host gives the event winner a Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Stay in your seat and keep alive while something waits outside."]
+			description: ["Survive the whole film in the theatre and hand in your Festival Ribbon. The host gives the winner this event's Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Stay in your seat and keep alive while something waits outside."]
 			icon: "ftbquests:screen_1"
 			id: "1418874FAF983E22"
 			rewards: [
@@ -104,8 +103,8 @@
 				{
 					consume_items: true
 					id: "70457D4819160D0F"
-					item: "spooktacular:festival_ribbon"
-					title: "Hand in a Festival Ribbon"
+					item: "spooktacular:ribbon_matinee"
+					title: "Hand in this event's Festival Ribbon"
 					type: "item"
 				}
 			]
@@ -114,34 +113,9 @@
 			y: -7.5d
 		}
 		{
-			description: ["This chapter is locked for most players. Its rewards go only to event winners.", "", "The host holds the key. Win an event, hand in your Festival Ribbon, and the Winner's Bag is yours."]
-			icon: "chipped:kitty_faced_carved_pumpkin"
-			id: "3C642BFAA4239EC3"
-			rewards: [
-				{
-					id: "248088E654873C1E"
-					type: "xp"
-					xp: 500
-				}
-			]
-			size: 4.0d
-			subtitle: "Read before continuing"
-			tasks: [
-				{
-					id: "458BADF746546E7A"
-					item: "alexscaves:tremorzilla_egg"
-					title: "Tremorzilla Egg (host only)"
-					type: "item"
-				}
-			]
-			title: "WARNING"
-			x: -22.0d
-			y: -14.0d
-		}
-		{
 			can_repeat: true
-			dependencies: ["3C642BFAA4239EC3", "6DE25B0EBB8675EC"]
-			description: ["Win the tournament and hand in your Festival Ribbon. The host gives the event winner a Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Dance with Emotecraft while the music plays. When it stops, sit on a tombstone. Last three standing win."]
+			dependencies: ["6DE25B0EBB8675EC"]
+			description: ["Win the tournament and hand in your Festival Ribbon. The host gives the winner this event's Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Dance with Emotecraft while the music plays. When it stops, sit on a tombstone. Last three standing win."]
 			icon: "spookify:tomb_stone"
 			id: "28732D2C5F87BDFB"
 			rewards: [
@@ -163,8 +137,8 @@
 				{
 					consume_items: true
 					id: "115554A56B78BFE8"
-					item: "spooktacular:festival_ribbon"
-					title: "Hand in a Festival Ribbon"
+					item: "spooktacular:ribbon_tombstones"
+					title: "Hand in this event's Festival Ribbon"
 					type: "item"
 				}
 			]
@@ -174,8 +148,7 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["3C642BFAA4239EC3"]
-			description: ["Win the scavenger hunt and hand in your Festival Ribbon. The host gives the event winner a Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Ten carved Jack-o'-Lanterns are hidden around town. Find three and drop them in the collection basket."]
+			description: ["Win the scavenger hunt and hand in your Festival Ribbon. The host gives the winner this event's Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Ten carved Jack-o'-Lanterns are hidden around town. Find three and drop them in the collection basket."]
 			icon: "chipped:kitty_faced_carved_pumpkin"
 			id: "7D1E5AA8B6D357F7"
 			rewards: [
@@ -197,8 +170,8 @@
 				{
 					consume_items: true
 					id: "72B30720CE02822F"
-					item: "spooktacular:festival_ribbon"
-					title: "Hand in a Festival Ribbon"
+					item: "spooktacular:ribbon_scavenger"
+					title: "Hand in this event's Festival Ribbon"
 					type: "item"
 				}
 			]
@@ -208,8 +181,8 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["3C642BFAA4239EC3", "6C597A979787E452", "54BFAB7B97A92B74"]
-			description: ["Win the photo vote and hand in your Festival Ribbon. The host gives the event winner a Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Take your Exposure camera into the woods and photograph the strangest thing you can find."]
+			dependencies: ["6C597A979787E452", "54BFAB7B97A92B74"]
+			description: ["Win the photo vote and hand in your Festival Ribbon. The host gives the winner this event's Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Take your Exposure camera into the woods and photograph the strangest thing you can find."]
 			icon: "exposure:stacked_photographs"
 			id: "5B42D3CC16158582"
 			rewards: [
@@ -231,8 +204,8 @@
 				{
 					consume_items: true
 					id: "66C0963B3268616F"
-					item: "spooktacular:festival_ribbon"
-					title: "Hand in a Festival Ribbon"
+					item: "spooktacular:ribbon_anomaly"
+					title: "Hand in this event's Festival Ribbon"
 					type: "item"
 				}
 			]
@@ -242,8 +215,8 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["01769DC4E6CC537B", "3C642BFAA4239EC3"]
-			description: ["Reach the centre altar and ring the bell to win. Hand in your Festival Ribbon. The host gives the event winner a Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "You get 90 seconds, empty pockets and no map."]
+			dependencies: ["01769DC4E6CC537B"]
+			description: ["Reach the centre altar and ring the bell to win. Hand in your Festival Ribbon. The host gives the winner this event's Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "You get 90 seconds, empty pockets and no map."]
 			icon: "hauntedharvest:corn"
 			id: "159A08CC15F40C40"
 			rewards: [
@@ -265,8 +238,8 @@
 				{
 					consume_items: true
 					id: "281B0E536C3662B7"
-					item: "spooktacular:festival_ribbon"
-					title: "Hand in a Festival Ribbon"
+					item: "spooktacular:ribbon_cornfield"
+					title: "Hand in this event's Festival Ribbon"
 					type: "item"
 				}
 			]
@@ -276,8 +249,8 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["3C642BFAA4239EC3", "28C3841D89C1FD27"]
-			description: ["Win the 3-lap cart derby and hand in your Festival Ribbon. The host gives the event winner a Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Hitch a horse to a cart or stagecoach. Throwing eggs and snowballs at rivals is fair play."]
+			dependencies: ["28C3841D89C1FD27"]
+			description: ["Win the 3-lap cart derby and hand in your Festival Ribbon. The host gives the winner this event's Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Hitch a horse to a cart or stagecoach. Throwing eggs and snowballs at rivals is fair play."]
 			icon: "astikorcartsredux:oak_hand_cart"
 			id: "1B6C05A06E968BCF"
 			rewards: [
@@ -299,8 +272,8 @@
 				{
 					consume_items: true
 					id: "0946DDFC14E7A9E3"
-					item: "spooktacular:festival_ribbon"
-					title: "Hand in a Festival Ribbon"
+					item: "spooktacular:ribbon_cart_derby"
+					title: "Hand in this event's Festival Ribbon"
 					type: "item"
 				}
 			]
@@ -310,8 +283,8 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["3C642BFAA4239EC3", "2AE8B83641AEC2A5"]
-			description: ["Win the town vote and hand in your Festival Ribbon. The host gives the event winner a Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Each contestant carves one pumpkin in 5 minutes beside the Colossal Scarecrow."]
+			dependencies: ["2AE8B83641AEC2A5"]
+			description: ["Win the town vote and hand in your Festival Ribbon. The host gives the winner this event's Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Each contestant carves one pumpkin in 5 minutes beside the Colossal Scarecrow."]
 			icon: "dynamic_pumpkin_carving:carver"
 			id: "798DB3E31EEFF14B"
 			rewards: [
@@ -333,8 +306,8 @@
 				{
 					consume_items: true
 					id: "688B60E5D00E331E"
-					item: "spooktacular:festival_ribbon"
-					title: "Hand in a Festival Ribbon"
+					item: "spooktacular:ribbon_carving"
+					title: "Hand in this event's Festival Ribbon"
 					type: "item"
 				}
 			]
@@ -344,8 +317,8 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["3C642BFAA4239EC3", "2D4FCF3F34B9E999"]
-			description: ["Score highest in the archery derby and hand in your Festival Ribbon. The host gives the event winner a Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Shoot targets from the Clocktower parapet. Bonus targets are worth double when the bell tolls."]
+			dependencies: ["2D4FCF3F34B9E999"]
+			description: ["Score highest in the archery derby and hand in your Festival Ribbon. The host gives the winner this event's Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Shoot targets from the Clocktower parapet. Bonus targets are worth double when the bell tolls."]
 			icon: "minecraft:bow"
 			id: "155C8CAA98AE8122"
 			rewards: [
@@ -367,8 +340,8 @@
 				{
 					consume_items: true
 					id: "214B81D665D7D46B"
-					item: "spooktacular:festival_ribbon"
-					title: "Hand in a Festival Ribbon"
+					item: "spooktacular:ribbon_skeet"
+					title: "Hand in this event's Festival Ribbon"
 					type: "item"
 				}
 			]

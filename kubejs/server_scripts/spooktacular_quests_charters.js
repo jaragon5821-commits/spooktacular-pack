@@ -163,29 +163,54 @@ function spookLocationTask(event, box) {
   }
 }
 
+// Chapter 8: wake up in a dreamspace. Dreamshift gives every visit its own dimension,
+// "dreamshift:instances/dreamshift/<world>/<visit id>", so the plain dimension task can't match it.
+function spookDreamTask(event, world) {
+  event.checkTimer = 20
+  event.maxProgress = 1
+  event.check = (task, player) => {
+    let d = spookDim(player.level)
+    if (d == 'dreamshift:' + world || d.indexOf('dreamshift:instances/dreamshift/' + world + '/') == 0) task.progress = 1
+  }
+}
+
 Object.keys(global.SPOOK_QUEST_DATA.customTasks).forEach(taskId => {
   let kind = global.SPOOK_QUEST_DATA.customTasks[taskId]
   FTBQuestsEvents.customTask(taskId, event => {
     if (kind.startsWith('charter:')) spookCharterTask(event, kind.substring(8))
     else if (kind.startsWith('villagers_in_town:')) spookVillagerTask(event, parseInt(kind.substring(18)))
     else if (kind.startsWith('location:')) spookLocationTask(event, global.SPOOK_QUEST_DATA.locations[kind.substring(9)])
+    else if (kind.startsWith('dream:')) spookDreamTask(event, kind.substring(6))
   })
 })
 
 // Right-click a Charter: progress. Sneak + right-click: briefly mark wrong or missing blocks.
+// A right-click with no result yet runs the whole check at once, so it answers even before the quest unlocks.
 BlockEvents.rightClicked(event => {
   let key = spookCharterKey(event.block.id)
   if (!key || event.hand != 'MAIN_HAND') return
-  let s = spookScan[key]
+  event.cancel()
   let name = global.SPOOK_CHARTERS[key]
+  let c = spookCharters(event.server).getCompound(key)
+  if (!c || !c.contains('x') || c.getInt('x') != event.block.x || c.getInt('y') != event.block.y || c.getInt('z') != event.block.z) {
+    event.player.tell(Text.gray(name + ': this Charter is not the registered one. Break it and place it again.'))
+    return
+  }
+  let s = spookScan[key]
   if (!s || s.pct < 0) {
-    event.player.tell(Text.gray(name + ': still checking. Stay nearby for a few seconds.'))
-  } else if (event.player.crouching) {
+    let pct = -1, guard = 0
+    while (pct < 0 && guard++ < 200) pct = spookScanSlice(event.server, key)
+    s = spookScan[key]
+    if (pct < 0 || !s) {
+      event.player.tell(Text.gray(name + ': could not check yet. Stay nearby and try again.'))
+      return
+    }
+  }
+  if (event.player.crouching) {
     let spots = (s.lastWrong || []).slice(0, 60)
     spots.forEach(p => event.server.runCommandSilent('particle minecraft:dust 1 0.4 0 1.5 ' + (p[0] + 0.5) + ' ' + (p[1] + 0.5) + ' ' + (p[2] + 0.5) + ' 0.2 0.2 0.2 0 6 force ' + event.player.username))
     event.player.tell(Text.gold(name + ': showing ' + spots.length + ' wrong or missing blocks.'))
   } else {
-    event.player.tell(Text.gold(name + ': ' + s.pct + '% matches the blueprint').append(Text.gray(' (' + s.lastOff + ' blocks off, ' + SPOOK_MATCH + '% needed).')))
+    event.player.tell(Text.gold(name + ': ' + s.pct + '% matches the blueprint').append(Text.gray(' (' + s.lastOff + ' blocks off, ' + SPOOK_MATCH + '% needed). The quest counts it once the quest is unlocked.')))
   }
-  event.cancel()
 })

@@ -21,9 +21,15 @@
       "trigger": "exposure:frame_exposed",
       "conditions": {
         "entities_in_frame": [
-          {
-            "type": "#spooktacular:archive/rootoffear_wilted"
-          }
+          [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "#spooktacular:archive/rootoffear_wilted"
+              }
+            }
+          ]
         ]
       }
     }

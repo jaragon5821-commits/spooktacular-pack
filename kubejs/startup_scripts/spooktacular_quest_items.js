@@ -1,5 +1,6 @@
 // priority: 100
-// Chop's Spooktacular quest rework: Town Charter blocks (one per town building) and the Festival Ribbon.
+// Chop's Spooktacular quest rework: Town Charter blocks (one per town building) and the Festival Ribbons
+// (one per event, so a ribbon only hands in at the event it was won at).
 // The Charter marks a building's anchor (middle of the front path); spooktacular_quests_charters.js checks the build.
 
 global.SPOOK_CHARTERS = {
@@ -24,6 +25,19 @@ global.SPOOK_CHARTERS = {
   "crypt": "Catacombs and Occult Crypt"
 }
 
+global.SPOOK_RIBBONS = {
+  "song": "Guess the Song",
+  "costume": "Costume Contest",
+  "matinee": "Midnight Matinee",
+  "tombstones": "Musical Tombstones",
+  "scavenger": "Pumpkin Scavenger Hunt",
+  "anomaly": "Anomaly Hunt",
+  "cornfield": "Cornfield Labyrinth",
+  "cart_derby": "Pumpkin Cart Derby",
+  "carving": "Pumpkin Carving Showdown",
+  "skeet": "Belfry Skeet Shoot"
+}
+
 StartupEvents.registry('block', event => {
   Object.keys(global.SPOOK_CHARTERS).forEach(key => {
     event.create('spooktacular:charter_' + key)
@@ -36,10 +50,12 @@ StartupEvents.registry('block', event => {
 })
 
 StartupEvents.registry('item', event => {
-  event.create('spooktacular:festival_ribbon')
-    .displayName('Festival Ribbon')
-    .texture('spooktacular:item/festival_ribbon')
-    .maxStackSize(16)
-    .rarity('epic')
-    .glow(true)
+  Object.keys(global.SPOOK_RIBBONS).forEach(key => {
+    event.create('spooktacular:ribbon_' + key)
+      .displayName('Festival Ribbon: ' + global.SPOOK_RIBBONS[key])
+      .texture('spooktacular:item/festival_ribbon')
+      .maxStackSize(16)
+      .rarity('epic')
+      .glow(true)
+  })
 })

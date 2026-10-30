@@ -36,103 +36,7 @@
 			]
 			title: "Q-DS01: Something Wrong With the Walls"
 			x: 0.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Along the Way.", "", "A road that goes on a little longer every time you look back."]
-			icon: "minecraft:ender_eye"
-			id: "1F31DC45757584C0"
-			invisible: true
-			rewards: [
-				{
-					id: "56F3BF1D35CEFCD8"
-					item: "exposure:color_film"
-					type: "item"
-				}
-				{
-					id: "118FF0A214BE4EFB"
-					type: "xp"
-					xp: 500
-				}
-			]
-			size: 1.0d
-			subtitle: "Dreamspace"
-			tasks: [
-				{
-					dimension: "dreamshift:along_the_way"
-					id: "790E53B0C9CAE75E"
-					title: "Enter Along the Way"
-					type: "dimension"
-				}
-			]
-			title: "Q-DS02: Along the Way"
-			x: 0.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in And You Were Here For Me.", "", "Someone left a light on. Someone was waiting. You do not remember agreeing to this."]
-			icon: "minecraft:ender_eye"
-			id: "1FF3F8998E8ECD3F"
-			invisible: true
-			rewards: [
-				{
-					id: "61815A9F1B9EDBED"
-					item: "exposure:color_film"
-					type: "item"
-				}
-				{
-					id: "19331F07A92C0516"
-					type: "xp"
-					xp: 500
-				}
-			]
-			size: 1.0d
-			subtitle: "Dreamspace"
-			tasks: [
-				{
-					dimension: "dreamshift:and_you_were_here_for_me"
-					id: "168A86078B57D63D"
-					title: "Enter And You Were Here For Me"
-					type: "dimension"
-				}
-			]
-			title: "Q-DS03: And You Were Here For Me"
-			x: 2.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Deep Dreamspace.", "", "The floor is further down than it should be. The dream seems to be holding its breath."]
-			icon: "minecraft:ender_eye"
-			id: "1C06F72BBF8E6B78"
-			invisible: true
-			rewards: [
-				{
-					id: "7F4F78CC837388E1"
-					item: "exposure:color_film"
-					type: "item"
-				}
-				{
-					id: "1A4498C83D3B2935"
-					type: "xp"
-					xp: 500
-				}
-			]
-			size: 1.0d
-			subtitle: "Dreamspace"
-			tasks: [
-				{
-					dimension: "dreamshift:deep_dreamspace"
-					id: "1FD3A3DF7FD06F50"
-					title: "Enter Deep Dreamspace"
-					type: "dimension"
-				}
-			]
-			title: "Q-DS04: Deep Dreamspace"
-			x: 4.0d
-			y: 3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
@@ -162,14 +66,263 @@
 					type: "dimension"
 				}
 			]
-			title: "Q-DS05: The Dreamspace"
-			x: 6.0d
-			y: 3.0d
+			title: "Q-DS02: The Dreamspace"
+			x: 0.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Dystopic Upbringing.", "", "Rows of identical rooms, all lit for a child who left long ago."]
+			description: ["Wake up in Deep Dreamspace.", "", "The floor is further down than it should be. The dream seems to be holding its breath."]
 			icon: "minecraft:ender_eye"
+			id: "1C06F72BBF8E6B78"
+			invisible: true
+			rewards: [
+				{
+					id: "7F4F78CC837388E1"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "1A4498C83D3B2935"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					dimension: "dreamshift:deep_dreamspace"
+					id: "1FD3A3DF7FD06F50"
+					title: "Enter Deep Dreamspace"
+					type: "dimension"
+				}
+			]
+			title: "Q-DS03: Deep Dreamspace"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Along the Way.", "", "A road that goes on a little longer every time you look back."]
+			icon: "minecraft:book"
+			id: "1F31DC45757584C0"
+			invisible: true
+			rewards: [
+				{
+					id: "56F3BF1D35CEFCD8"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "118FF0A214BE4EFB"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "790E53B0C9CAE75E"
+					title: "Wake up in Along the Way"
+					type: "custom"
+				}
+			]
+			title: "Q-DS04: Along the Way"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in And You Were Here For Me.", "", "Someone left a light on. Someone was waiting. You do not remember agreeing to this."]
+			icon: "minecraft:book"
+			id: "1FF3F8998E8ECD3F"
+			invisible: true
+			rewards: [
+				{
+					id: "61815A9F1B9EDBED"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "19331F07A92C0516"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "168A86078B57D63D"
+					title: "Wake up in And You Were Here For Me"
+					type: "custom"
+				}
+			]
+			title: "Q-DS05: And You Were Here For Me"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Angelic Station.", "", "You do not remember falling asleep."]
+			icon: "minecraft:book"
+			id: "1626794FC4EA576E"
+			invisible: true
+			rewards: [
+				{
+					id: "175B2C109FC0302A"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "7CED11107B73DE22"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "35518D718973D7CC"
+					title: "Wake up in Angelic Station"
+					type: "custom"
+				}
+			]
+			title: "Q-DS06: Angelic Station"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Bloomed Gap.", "", "You do not remember falling asleep."]
+			icon: "minecraft:book"
+			id: "1D150177422ED286"
+			invisible: true
+			rewards: [
+				{
+					id: "4732CFFA5BDB204F"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "3ADA1566D7AD44F6"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "1B04708253BAAD26"
+					title: "Wake up in Bloomed Gap"
+					type: "custom"
+				}
+			]
+			title: "Q-DS07: Bloomed Gap"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Delphic Horize.", "", "You do not remember falling asleep."]
+			icon: "minecraft:book"
+			id: "16505452A7A0962A"
+			invisible: true
+			rewards: [
+				{
+					id: "75E306893834FC28"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "161E9FDE2A876EDF"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "167AAEF3F7531BAB"
+					title: "Wake up in Delphic Horize"
+					type: "custom"
+				}
+			]
+			title: "Q-DS08: Delphic Horize"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Dystopian Studio.", "", "The lights lead somewhere beyond the party."]
+			icon: "minecraft:book"
+			id: "19B6B88C1D4C4CE1"
+			invisible: true
+			rewards: [
+				{
+					id: "1C98E8E4DB9DB27A"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "1DE0A462180467C6"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "1F3C26C4BAD1E46E"
+					title: "Wake up in Dystopian Studio"
+					type: "custom"
+				}
+			]
+			title: "Q-DS09: Dystopian Studio"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Dystopic Ruins.", "", "You do not remember falling asleep."]
+			icon: "minecraft:book"
+			id: "5F648A9929F6B756"
+			invisible: true
+			rewards: [
+				{
+					id: "47903295B0A9D7FA"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "638904E9EE4ED285"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "1CA679AB887BAAD6"
+					title: "Wake up in Dystopic Ruins"
+					type: "custom"
+				}
+			]
+			title: "Q-DS10: Dystopic Ruins"
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Dystopic Upbring.", "", "Rows of identical rooms, all lit for a child who left long ago."]
+			icon: "minecraft:book"
 			id: "109DABA0303AD359"
 			invisible: true
 			rewards: [
@@ -188,20 +341,19 @@
 			subtitle: "Dreamspace"
 			tasks: [
 				{
-					dimension: "dreamshift:dystopic_upbring"
 					id: "1FD93B800FDD3D49"
-					title: "Enter Dystopic Upbringing"
-					type: "dimension"
+					title: "Wake up in Dystopic Upbring"
+					type: "custom"
 				}
 			]
-			title: "Q-DS06: Dystopic Upbringing"
-			x: 8.0d
-			y: 3.0d
+			title: "Q-DS11: Dystopic Upbring"
+			x: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
 			description: ["Wake up in Enxir.", "", "A name that fits no language. The air tastes like metal and old paper."]
-			icon: "minecraft:ender_eye"
+			icon: "minecraft:book"
 			id: "1A3EF266A1DCCED3"
 			invisible: true
 			rewards: [
@@ -220,20 +372,19 @@
 			subtitle: "Dreamspace"
 			tasks: [
 				{
-					dimension: "dreamshift:enxir"
 					id: "128E7D634E0D33D9"
-					title: "Enter Enxir"
-					type: "dimension"
+					title: "Wake up in Enxir"
+					type: "custom"
 				}
 			]
-			title: "Q-DS07: Enxir"
-			x: 10.0d
-			y: 3.0d
+			title: "Q-DS12: Enxir"
+			x: 2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Pink Lone House.", "", "Read its name backwards. The house is pink, alone and very patient."]
-			icon: "minecraft:ender_eye"
+			description: ["Wake up in Esuoh Enol Knip.", "", "You do not remember falling asleep."]
+			icon: "minecraft:book"
 			id: "1C12471E9B6FD288"
 			invisible: true
 			rewards: [
@@ -252,20 +403,81 @@
 			subtitle: "Dreamspace"
 			tasks: [
 				{
-					dimension: "dreamshift:esuoh_enol_knip"
 					id: "7B4A55D503880501"
-					title: "Enter Pink Lone House"
-					type: "dimension"
+					title: "Wake up in Esuoh Enol Knip"
+					type: "custom"
 				}
 			]
-			title: "Q-DS08: Pink Lone House"
-			x: 0.0d
-			y: 5.0d
+			title: "Q-DS13: Esuoh Enol Knip"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Familiar Backrooms.", "", "You do not remember falling asleep."]
+			icon: "minecraft:book"
+			id: "2F6E522A947BBB1F"
+			invisible: true
+			rewards: [
+				{
+					id: "13E207A54059BC2D"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "31E64D7B3F757122"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "45C83E0A0E3B6AAC"
+					title: "Wake up in Familiar Backrooms"
+					type: "custom"
+				}
+			]
+			title: "Q-DS14: Familiar Backrooms"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Familiar Eye Exam.", "", "You do not remember falling asleep."]
+			icon: "minecraft:book"
+			id: "1ECE0AB4F0307A40"
+			invisible: true
+			rewards: [
+				{
+					id: "663694BB518623A2"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "79B49B2FFC6454B7"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "1173B4FA305840F0"
+					title: "Wake up in Familiar Eye Exam"
+					type: "custom"
+				}
+			]
+			title: "Q-DS15: Familiar Eye Exam"
+			x: 8.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
 			description: ["Wake up in Floating Barn House.", "", "A farmhouse adrift in empty air. The windows are lit and nobody is milking the cows."]
-			icon: "minecraft:ender_eye"
+			icon: "minecraft:book"
 			id: "4C4A76298B53CA02"
 			invisible: true
 			rewards: [
@@ -284,20 +496,112 @@
 			subtitle: "Dreamspace"
 			tasks: [
 				{
-					dimension: "dreamshift:floating_barn_house"
 					id: "6B56CBE3A881DCB2"
-					title: "Enter Floating Barn House"
-					type: "dimension"
+					title: "Wake up in Floating Barn House"
+					type: "custom"
 				}
 			]
-			title: "Q-DS09: Floating Barn House"
-			x: 2.0d
-			y: 5.0d
+			title: "Q-DS16: Floating Barn House"
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Forgotten Home.", "", "You do not remember falling asleep."]
+			icon: "minecraft:book"
+			id: "04D65FF116098C64"
+			invisible: true
+			rewards: [
+				{
+					id: "1125E1576EE63AF2"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "4AB7A58D4E1B3AD5"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "0D68A1EEFF4313C6"
+					title: "Wake up in Forgotten Home"
+					type: "custom"
+				}
+			]
+			title: "Q-DS17: Forgotten Home"
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Frutigo Aero.", "", "You do not remember falling asleep."]
+			icon: "minecraft:book"
+			id: "10BF1BE12056438F"
+			invisible: true
+			rewards: [
+				{
+					id: "1916FAAA3E6EE5F4"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "1518A625613D308D"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "574ADEFD0CDD5D51"
+					title: "Wake up in Frutigo Aero"
+					type: "custom"
+				}
+			]
+			title: "Q-DS18: Frutigo Aero"
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Instant Ln.", "", "Stay inside when night comes."]
+			icon: "minecraft:book"
+			id: "3FC2ED5E4ABD3EA3"
+			invisible: true
+			rewards: [
+				{
+					id: "15A67F6CE0CD4FA3"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "06538D5265B66630"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "1E5C67346F3D6845"
+					title: "Wake up in Instant Ln"
+					type: "custom"
+				}
+			]
+			title: "Q-DS19: Instant Ln"
+			x: 16.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
 			description: ["Wake up in It Was Cold.", "", "You remember the cold more than anything. Something remembers you back."]
-			icon: "minecraft:ender_eye"
+			icon: "minecraft:book"
 			id: "50FFC04223F1F316"
 			invisible: true
 			rewards: [
@@ -316,20 +620,50 @@
 			subtitle: "Dreamspace"
 			tasks: [
 				{
-					dimension: "dreamshift:it_was_cold"
 					id: "4B2B9813285C35B5"
-					title: "Enter It Was Cold"
-					type: "dimension"
+					title: "Wake up in It Was Cold"
+					type: "custom"
 				}
 			]
-			title: "Q-DS10: It Was Cold"
-			x: 4.0d
-			y: 5.0d
+			title: "Q-DS20: It Was Cold"
+			x: 0.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Level 7, Flooded.", "", "Water to the ankles, then the knees. Every door leads deeper."]
-			icon: "minecraft:ender_eye"
+			description: ["Wake up in Journey's Station.", "", "You do not remember falling asleep."]
+			icon: "minecraft:book"
+			id: "215DB5B298E45412"
+			invisible: true
+			rewards: [
+				{
+					id: "1C74DC7BC2E81A59"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "1A56A8ADB53DE30C"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "3D511F9AED222136"
+					title: "Wake up in Journey's Station"
+					type: "custom"
+				}
+			]
+			title: "Q-DS21: Journey's Station"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Level 7 FLOODED.", "", "Water to the ankles, then the knees. Every door leads deeper."]
+			icon: "minecraft:book"
 			id: "1197FB7C2600BA8B"
 			invisible: true
 			rewards: [
@@ -348,20 +682,19 @@
 			subtitle: "Dreamspace"
 			tasks: [
 				{
-					dimension: "dreamshift:level_7_flooded"
 					id: "447C1D52F6FEBDDC"
-					title: "Enter Level 7, Flooded"
-					type: "dimension"
+					title: "Wake up in Level 7 FLOODED"
+					type: "custom"
 				}
 			]
-			title: "Q-DS11: Level 7, Flooded"
-			x: 6.0d
-			y: 5.0d
+			title: "Q-DS22: Level 7 FLOODED"
+			x: 4.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in The Lone Theatre.", "", "An empty house with the film still running. Someone saved you a seat."]
-			icon: "minecraft:ender_eye"
+			description: ["Wake up in Lone Theatre.", "", "An empty house with the film still running. Someone saved you a seat."]
+			icon: "minecraft:book"
 			id: "6857AE8C87EEB915"
 			invisible: true
 			rewards: [
@@ -380,20 +713,50 @@
 			subtitle: "Dreamspace"
 			tasks: [
 				{
-					dimension: "dreamshift:lone_theatre"
 					id: "1482689D5B627EC7"
-					title: "Enter The Lone Theatre"
-					type: "dimension"
+					title: "Wake up in Lone Theatre"
+					type: "custom"
 				}
 			]
-			title: "Q-DS12: The Lone Theatre"
+			title: "Q-DS23: Lone Theatre"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Lost Homes.", "", "You do not remember falling asleep."]
+			icon: "minecraft:book"
+			id: "5C14250F54383C8E"
+			invisible: true
+			rewards: [
+				{
+					id: "18094EB39B81724C"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "057029EA9909BD05"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "1575B593CCF700FF"
+					title: "Wake up in Lost Homes"
+					type: "custom"
+				}
+			]
+			title: "Q-DS24: Lost Homes"
 			x: 8.0d
-			y: 5.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
 			description: ["Wake up in Mosaic Meters.", "", "Tiled halls that hum with measuring. Something is counting your steps."]
-			icon: "minecraft:ender_eye"
+			icon: "minecraft:book"
 			id: "1DE9657AE058E2B8"
 			invisible: true
 			rewards: [
@@ -412,20 +775,236 @@
 			subtitle: "Dreamspace"
 			tasks: [
 				{
-					dimension: "dreamshift:mosaic_meters"
 					id: "1F8B6F92BAE844A5"
-					title: "Enter Mosaic Meters"
-					type: "dimension"
+					title: "Wake up in Mosaic Meters"
+					type: "custom"
 				}
 			]
-			title: "Q-DS13: Mosaic Meters"
+			title: "Q-DS25: Mosaic Meters"
 			x: 10.0d
-			y: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Mossy Rooms.", "", "You do not remember falling asleep."]
+			icon: "minecraft:book"
+			id: "578DA6D13FFAB7F9"
+			invisible: true
+			rewards: [
+				{
+					id: "62E3355BD71D59C6"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "631D67857B030EF3"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "21119E7E39EB5D35"
+					title: "Wake up in Mossy Rooms"
+					type: "custom"
+				}
+			]
+			title: "Q-DS26: Mossy Rooms"
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Motel Treats.", "", "Sleep to wake up."]
+			icon: "minecraft:book"
+			id: "18D93CB0557FCCAE"
+			invisible: true
+			rewards: [
+				{
+					id: "1DEFA570815BD274"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "175C6D3AAF30EDFA"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "16C2ADC4A4EEC34E"
+					title: "Wake up in Motel Treats"
+					type: "custom"
+				}
+			]
+			title: "Q-DS27: Motel Treats"
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Offices Neighborhood.", "", "There’s something inside that chest."]
+			icon: "minecraft:book"
+			id: "1E5DEBF3DCF79D36"
+			invisible: true
+			rewards: [
+				{
+					id: "5774FF49646FF146"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "1EE87BB86A7761CB"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "4D55D804909DAFF7"
+					title: "Wake up in Offices Neighborhood"
+					type: "custom"
+				}
+			]
+			title: "Q-DS28: Offices Neighborhood"
+			x: 16.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Opacitic Fruin.", "", "You do not remember falling asleep."]
+			icon: "minecraft:book"
+			id: "195D90063FD8F8F5"
+			invisible: true
+			rewards: [
+				{
+					id: "12BDF4AD8EA698AB"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "3AE7C834833C1494"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "0CC5C1FE3E4ACD23"
+					title: "Wake up in Opacitic Fruin"
+					type: "custom"
+				}
+			]
+			title: "Q-DS29: Opacitic Fruin"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Opacitic Lunic.", "", "Something ahead feels thinner."]
+			icon: "minecraft:book"
+			id: "2B63E3A4C4DE3CFF"
+			invisible: true
+			rewards: [
+				{
+					id: "1FE4ED32D06A76FC"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "16320DBEE174D7C1"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "1C8FBBC2280362D1"
+					title: "Wake up in Opacitic Lunic"
+					type: "custom"
+				}
+			]
+			title: "Q-DS30: Opacitic Lunic"
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Overgrowth.", "", "You do not remember falling asleep."]
+			icon: "minecraft:book"
+			id: "1CA149F6A536AE6A"
+			invisible: true
+			rewards: [
+				{
+					id: "16E70F4C1F04ADEC"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "14EE1289B3141378"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "456AD0F3681C6A05"
+					title: "Wake up in Overgrowth"
+					type: "custom"
+				}
+			]
+			title: "Q-DS31: Overgrowth"
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Paragraph Aisle.", "", "You do not remember falling asleep."]
+			icon: "minecraft:book"
+			id: "1DEF91DEDD97BF2A"
+			invisible: true
+			rewards: [
+				{
+					id: "160A7C8B3554473E"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "4E02EE5B89851200"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "1A7577D0EBF5844B"
+					title: "Wake up in Paragraph Aisle"
+					type: "custom"
+				}
+			]
+			title: "Q-DS32: Paragraph Aisle"
+			x: 6.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
 			description: ["Wake up in Pastel Longevity.", "", "Soft colours, soft music, and no sign of anything ever ending."]
-			icon: "minecraft:ender_eye"
+			icon: "minecraft:book"
 			id: "1E789079468E524C"
 			invisible: true
 			rewards: [
@@ -444,20 +1023,329 @@
 			subtitle: "Dreamspace"
 			tasks: [
 				{
-					dimension: "dreamshift:pastel_longevity"
 					id: "1DE25A440D76A854"
-					title: "Enter Pastel Longevity"
-					type: "dimension"
+					title: "Wake up in Pastel Longevity"
+					type: "custom"
 				}
 			]
-			title: "Q-DS14: Pastel Longevity"
+			title: "Q-DS33: Pastel Longevity"
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Pink Lone House.", "", "You do not remember falling asleep."]
+			icon: "minecraft:book"
+			id: "75494EBC01FFA122"
+			invisible: true
+			rewards: [
+				{
+					id: "10C7DF8E38A958EB"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "147B8600B91A9C1F"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "1D5D802EB5996606"
+					title: "Wake up in Pink Lone House"
+					type: "custom"
+				}
+			]
+			title: "Q-DS34: Pink Lone House"
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Pocket Horizon.", "", "You do not remember falling asleep."]
+			icon: "minecraft:book"
+			id: "1E652102F19B51AA"
+			invisible: true
+			rewards: [
+				{
+					id: "182F9BBF6ADBF1D8"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "2B75C70A37E097AE"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "67CE931994BA6A55"
+					title: "Wake up in Pocket Horizon"
+					type: "custom"
+				}
+			]
+			title: "Q-DS35: Pocket Horizon"
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Remembered Home.", "", "You do not remember falling asleep."]
+			icon: "minecraft:book"
+			id: "197FE2644380A4BF"
+			invisible: true
+			rewards: [
+				{
+					id: "4D1A02FA7052B0B0"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "764A0389496C479A"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "12F515FD3A15E826"
+					title: "Wake up in Remembered Home"
+					type: "custom"
+				}
+			]
+			title: "Q-DS36: Remembered Home"
+			x: 14.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Residence of the Clouds.", "", "You do not remember falling asleep."]
+			icon: "minecraft:book"
+			id: "129DBFDDD0D3B77D"
+			invisible: true
+			rewards: [
+				{
+					id: "68AA20FCD2AA98BF"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "66AE2063000EA875"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "0B09C03AD657EA19"
+					title: "Wake up in Residence of the Clouds"
+					type: "custom"
+				}
+			]
+			title: "Q-DS37: Residence of the Clouds"
+			x: 16.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Retired Wish.", "", "Follow the road."]
+			icon: "minecraft:book"
+			id: "19D620E85853E232"
+			invisible: true
+			rewards: [
+				{
+					id: "71A3CAA14DBA47C7"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "1D592CE98B943537"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "6354F5B459B5FD38"
+					title: "Wake up in Retired Wish"
+					type: "custom"
+				}
+			]
+			title: "Q-DS38: Retired Wish"
 			x: 0.0d
-			y: 7.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Rhythm Valley.", "", "Sleep to wake up."]
+			icon: "minecraft:book"
+			id: "691B63848A5063B9"
+			invisible: true
+			rewards: [
+				{
+					id: "1614451045897944"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "711BD7F31933FF34"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "140DA952C56BE99E"
+					title: "Wake up in Rhythm Valley"
+					type: "custom"
+				}
+			]
+			title: "Q-DS39: Rhythm Valley"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Road to Serenity.", "", "You do not remember falling asleep."]
+			icon: "minecraft:book"
+			id: "35C5B4ADD313FEB9"
+			invisible: true
+			rewards: [
+				{
+					id: "14CDBF880C0384FA"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "2A34E97076D8D4DB"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "685D8E2350DC08B9"
+					title: "Wake up in Road to Serenity"
+					type: "custom"
+				}
+			]
+			title: "Q-DS40: Road to Serenity"
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Route 66.", "", "You do not remember falling asleep."]
+			icon: "minecraft:book"
+			id: "005FBB021C82B385"
+			invisible: true
+			rewards: [
+				{
+					id: "35F415D3E43822A8"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "1F466F590311B669"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "16669A77B8E4EB94"
+					title: "Wake up in Route 66"
+					type: "custom"
+				}
+			]
+			title: "Q-DS41: Route 66"
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Silk Circus.", "", "You do not remember falling asleep."]
+			icon: "minecraft:book"
+			id: "26822495839273F5"
+			invisible: true
+			rewards: [
+				{
+					id: "191F505950BF247B"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "1712A70BDA068FF8"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "2F6F140F6BBF2575"
+					title: "Wake up in Silk Circus"
+					type: "custom"
+				}
+			]
+			title: "Q-DS42: Silk Circus"
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Skiezone.", "", "You do not remember falling asleep."]
+			icon: "minecraft:book"
+			id: "5C93F94BC8E67006"
+			invisible: true
+			rewards: [
+				{
+					id: "19FD66049AE14324"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "1C6024A155E5DA45"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "686F9489B9E88C18"
+					title: "Wake up in Skiezone"
+					type: "custom"
+				}
+			]
+			title: "Q-DS43: Skiezone"
+			x: 10.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
 			description: ["Wake up in Skiezone Funzone.", "", "Bright signs and cheerful noise. Nobody has come to play for a very long time."]
-			icon: "minecraft:ender_eye"
+			icon: "minecraft:book"
 			id: "286B4AC490584120"
 			invisible: true
 			rewards: [
@@ -476,20 +1364,19 @@
 			subtitle: "Dreamspace"
 			tasks: [
 				{
-					dimension: "dreamshift:skiezone_funzone"
 					id: "18A4F5C589CA175C"
-					title: "Enter Skiezone Funzone"
-					type: "dimension"
+					title: "Wake up in Skiezone Funzone"
+					type: "custom"
 				}
 			]
-			title: "Q-DS15: Skiezone Funzone"
-			x: 2.0d
-			y: 7.0d
+			title: "Q-DS44: Skiezone Funzone"
+			x: 12.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Static Avenue.", "", "A street of hissing screens. Faces flicker in the snow, then turn to look."]
-			icon: "minecraft:ender_eye"
+			description: ["Wake up in Static Ave.", "", "A street of hissing screens. Faces flicker in the snow, then turn to look."]
+			icon: "minecraft:book"
 			id: "16DF704E21FCE25A"
 			invisible: true
 			rewards: [
@@ -508,20 +1395,81 @@
 			subtitle: "Dreamspace"
 			tasks: [
 				{
-					dimension: "dreamshift:static_ave"
 					id: "54053DBB43C6F1FA"
-					title: "Enter Static Avenue"
-					type: "dimension"
+					title: "Wake up in Static Ave"
+					type: "custom"
 				}
 			]
-			title: "Q-DS16: Static Avenue"
-			x: 4.0d
-			y: 7.0d
+			title: "Q-DS45: Static Ave"
+			x: 14.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Sundew Ln.", "", "You do not remember falling asleep."]
+			icon: "minecraft:book"
+			id: "1313684183C145C0"
+			invisible: true
+			rewards: [
+				{
+					id: "1A49FE77C07D073A"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "5EAFDC9982BEEB9F"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "110C7076B73B578A"
+					title: "Wake up in Sundew Ln"
+					type: "custom"
+				}
+			]
+			title: "Q-DS46: Sundew Ln"
+			x: 16.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Tanger Ring.", "", "You do not remember falling asleep."]
+			icon: "minecraft:book"
+			id: "25233EA3138DDE03"
+			invisible: true
+			rewards: [
+				{
+					id: "10F9585E9087A0A3"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "1DB560AA0E15F5D9"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "15F5D0B8C4063397"
+					title: "Wake up in Tanger Ring"
+					type: "custom"
+				}
+			]
+			title: "Q-DS47: Tanger Ring"
+			x: 0.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
 			description: ["Wake up in The Ungate.", "", "A gate with nothing on either side. It opens anyway."]
-			icon: "minecraft:ender_eye"
+			icon: "minecraft:book"
 			id: "1B66A96DE1DE1BC5"
 			invisible: true
 			rewards: [
@@ -540,20 +1488,81 @@
 			subtitle: "Dreamspace"
 			tasks: [
 				{
-					dimension: "dreamshift:the_ungate"
 					id: "1973CC0903B1B979"
-					title: "Enter The Ungate"
-					type: "dimension"
+					title: "Wake up in The Ungate"
+					type: "custom"
 				}
 			]
-			title: "Q-DS17: The Ungate"
+			title: "Q-DS48: The Ungate"
+			x: 2.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Timezones.", "", "You do not remember falling asleep."]
+			icon: "minecraft:book"
+			id: "621F8C4F6E5064F8"
+			invisible: true
+			rewards: [
+				{
+					id: "72528B5E73813526"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "5D40C6B4EADD7B73"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "23DF808D6B688C78"
+					title: "Wake up in Timezones"
+					type: "custom"
+				}
+			]
+			title: "Q-DS49: Timezones"
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Unauthorized Chime.", "", "You do not remember falling asleep."]
+			icon: "minecraft:book"
+			id: "10027818BD1ADE7B"
+			invisible: true
+			rewards: [
+				{
+					id: "73EC8D078711BFD7"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "1C7B45D7AF0137CD"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "1B7FA6D70690B0D0"
+					title: "Wake up in Unauthorized Chime"
+					type: "custom"
+				}
+			]
+			title: "Q-DS50: Unauthorized Chime"
 			x: 6.0d
-			y: 7.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
 			description: ["Wake up in Unauthorized Church.", "", "The doors were never meant to open. The pews are already full."]
-			icon: "minecraft:ender_eye"
+			icon: "minecraft:book"
 			id: "173AF7B8F73D4EE5"
 			invisible: true
 			rewards: [
@@ -572,20 +1581,50 @@
 			subtitle: "Dreamspace"
 			tasks: [
 				{
-					dimension: "dreamshift:unauthorized_church"
 					id: "1683F7A4D1353169"
-					title: "Enter Unauthorized Church"
-					type: "dimension"
+					title: "Wake up in Unauthorized Church"
+					type: "custom"
 				}
 			]
-			title: "Q-DS18: Unauthorized Church"
+			title: "Q-DS51: Unauthorized Church"
 			x: 8.0d
-			y: 7.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Unified Oblivion.", "", "The city is the only way forward."]
+			icon: "minecraft:book"
+			id: "1CB5C7E61AD833BC"
+			invisible: true
+			rewards: [
+				{
+					id: "68E8D8421BE81996"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "166536CB1DC427EE"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "4724EB70D4AEB814"
+					title: "Wake up in Unified Oblivion"
+					type: "custom"
+				}
+			]
+			title: "Q-DS52: Unified Oblivion"
+			x: 10.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
 			description: ["Wake up in What's Above Is Blue.", "", "A wide, empty sky. You should not look up too long."]
-			icon: "minecraft:ender_eye"
+			icon: "minecraft:book"
 			id: "1EDCB4140B697318"
 			invisible: true
 			rewards: [
@@ -604,18 +1643,48 @@
 			subtitle: "Dreamspace"
 			tasks: [
 				{
-					dimension: "dreamshift:whats_above_is_blue"
 					id: "163BDD30FBE3C22C"
-					title: "Enter What's Above Is Blue"
-					type: "dimension"
+					title: "Wake up in What's Above Is Blue"
+					type: "custom"
 				}
 			]
-			title: "Q-DS19: What's Above Is Blue"
-			x: 10.0d
-			y: 7.0d
+			title: "Q-DS53: What's Above Is Blue"
+			x: 12.0d
+			y: 10.0d
 		}
 		{
-			dependencies: ["1F31DC45757584C0", "1FF3F8998E8ECD3F", "1C06F72BBF8E6B78", "3CD216ACE1406F52", "109DABA0303AD359", "1A3EF266A1DCCED3", "1C12471E9B6FD288", "4C4A76298B53CA02", "50FFC04223F1F316", "1197FB7C2600BA8B", "6857AE8C87EEB915", "1DE9657AE058E2B8", "1E789079468E524C", "286B4AC490584120", "16DF704E21FCE25A", "1B66A96DE1DE1BC5", "173AF7B8F73D4EE5", "1EDCB4140B697318"]
+			dependencies: ["156C60BEE67E3DDF"]
+			description: ["Wake up in Whirl Gap.", "", "You do not remember falling asleep."]
+			icon: "minecraft:book"
+			id: "186841EA76D79665"
+			invisible: true
+			rewards: [
+				{
+					id: "1EF0ED19B94BD6D1"
+					item: "exposure:color_film"
+					type: "item"
+				}
+				{
+					id: "680736FED7CB290E"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Dreamspace"
+			tasks: [
+				{
+					id: "1861CF7A8F7CE21C"
+					title: "Wake up in Whirl Gap"
+					type: "custom"
+				}
+			]
+			title: "Q-DS54: Whirl Gap"
+			x: 14.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["3CD216ACE1406F52", "1C06F72BBF8E6B78", "1F31DC45757584C0", "1FF3F8998E8ECD3F", "1626794FC4EA576E", "1D150177422ED286", "16505452A7A0962A", "19B6B88C1D4C4CE1", "5F648A9929F6B756", "109DABA0303AD359", "1A3EF266A1DCCED3", "1C12471E9B6FD288", "2F6E522A947BBB1F", "1ECE0AB4F0307A40", "4C4A76298B53CA02", "04D65FF116098C64", "10BF1BE12056438F", "3FC2ED5E4ABD3EA3", "50FFC04223F1F316", "215DB5B298E45412", "1197FB7C2600BA8B", "6857AE8C87EEB915", "5C14250F54383C8E", "1DE9657AE058E2B8", "578DA6D13FFAB7F9", "18D93CB0557FCCAE", "1E5DEBF3DCF79D36", "195D90063FD8F8F5", "2B63E3A4C4DE3CFF", "1CA149F6A536AE6A", "1DEF91DEDD97BF2A", "1E789079468E524C", "75494EBC01FFA122", "1E652102F19B51AA", "197FE2644380A4BF", "129DBFDDD0D3B77D", "19D620E85853E232", "691B63848A5063B9", "35C5B4ADD313FEB9", "005FBB021C82B385", "26822495839273F5", "5C93F94BC8E67006", "286B4AC490584120", "16DF704E21FCE25A", "1313684183C145C0", "25233EA3138DDE03", "1B66A96DE1DE1BC5", "621F8C4F6E5064F8", "10027818BD1ADE7B", "173AF7B8F73D4EE5", "1CB5C7E61AD833BC", "1EDCB4140B697318", "186841EA76D79665"]
 			description: ["Visit any 5 dreamspaces.", "", "You are starting to know your way around."]
 			hide_dependency_lines: true
 			icon: "minecraft:nether_star"
@@ -635,12 +1704,12 @@
 			]
 			size: 1.0d
 			subtitle: "5 dreamspaces"
-			title: "Q-DS20: Lucid Dreamer"
-			x: 1.0d
-			y: 10.0d
+			title: "Q-DSM1: Lucid Dreamer"
+			x: 6.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["1F31DC45757584C0", "1FF3F8998E8ECD3F", "1C06F72BBF8E6B78", "3CD216ACE1406F52", "109DABA0303AD359", "1A3EF266A1DCCED3", "1C12471E9B6FD288", "4C4A76298B53CA02", "50FFC04223F1F316", "1197FB7C2600BA8B", "6857AE8C87EEB915", "1DE9657AE058E2B8", "1E789079468E524C", "286B4AC490584120", "16DF704E21FCE25A", "1B66A96DE1DE1BC5", "173AF7B8F73D4EE5", "1EDCB4140B697318"]
+			dependencies: ["3CD216ACE1406F52", "1C06F72BBF8E6B78", "1F31DC45757584C0", "1FF3F8998E8ECD3F", "1626794FC4EA576E", "1D150177422ED286", "16505452A7A0962A", "19B6B88C1D4C4CE1", "5F648A9929F6B756", "109DABA0303AD359", "1A3EF266A1DCCED3", "1C12471E9B6FD288", "2F6E522A947BBB1F", "1ECE0AB4F0307A40", "4C4A76298B53CA02", "04D65FF116098C64", "10BF1BE12056438F", "3FC2ED5E4ABD3EA3", "50FFC04223F1F316", "215DB5B298E45412", "1197FB7C2600BA8B", "6857AE8C87EEB915", "5C14250F54383C8E", "1DE9657AE058E2B8", "578DA6D13FFAB7F9", "18D93CB0557FCCAE", "1E5DEBF3DCF79D36", "195D90063FD8F8F5", "2B63E3A4C4DE3CFF", "1CA149F6A536AE6A", "1DEF91DEDD97BF2A", "1E789079468E524C", "75494EBC01FFA122", "1E652102F19B51AA", "197FE2644380A4BF", "129DBFDDD0D3B77D", "19D620E85853E232", "691B63848A5063B9", "35C5B4ADD313FEB9", "005FBB021C82B385", "26822495839273F5", "5C93F94BC8E67006", "286B4AC490584120", "16DF704E21FCE25A", "1313684183C145C0", "25233EA3138DDE03", "1B66A96DE1DE1BC5", "621F8C4F6E5064F8", "10027818BD1ADE7B", "173AF7B8F73D4EE5", "1CB5C7E61AD833BC", "1EDCB4140B697318", "186841EA76D79665"]
 			description: ["Visit any 10 dreamspaces.", "", "Your feet move on their own now."]
 			hide_dependency_lines: true
 			icon: "minecraft:nether_star"
@@ -661,17 +1730,42 @@
 			]
 			size: 1.0d
 			subtitle: "10 dreamspaces"
-			title: "Q-DS21: Sleepwalker"
-			x: 5.0d
-			y: 10.0d
+			title: "Q-DSM2: Sleepwalker"
+			x: 8.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["1F31DC45757584C0", "1FF3F8998E8ECD3F", "1C06F72BBF8E6B78", "3CD216ACE1406F52", "109DABA0303AD359", "1A3EF266A1DCCED3", "1C12471E9B6FD288", "4C4A76298B53CA02", "50FFC04223F1F316", "1197FB7C2600BA8B", "6857AE8C87EEB915", "1DE9657AE058E2B8", "1E789079468E524C", "286B4AC490584120", "16DF704E21FCE25A", "1B66A96DE1DE1BC5", "173AF7B8F73D4EE5", "1EDCB4140B697318"]
-			description: ["Visit all 18 dreamspaces.", "", "You can no longer say where you started."]
+			dependencies: ["3CD216ACE1406F52", "1C06F72BBF8E6B78", "1F31DC45757584C0", "1FF3F8998E8ECD3F", "1626794FC4EA576E", "1D150177422ED286", "16505452A7A0962A", "19B6B88C1D4C4CE1", "5F648A9929F6B756", "109DABA0303AD359", "1A3EF266A1DCCED3", "1C12471E9B6FD288", "2F6E522A947BBB1F", "1ECE0AB4F0307A40", "4C4A76298B53CA02", "04D65FF116098C64", "10BF1BE12056438F", "3FC2ED5E4ABD3EA3", "50FFC04223F1F316", "215DB5B298E45412", "1197FB7C2600BA8B", "6857AE8C87EEB915", "5C14250F54383C8E", "1DE9657AE058E2B8", "578DA6D13FFAB7F9", "18D93CB0557FCCAE", "1E5DEBF3DCF79D36", "195D90063FD8F8F5", "2B63E3A4C4DE3CFF", "1CA149F6A536AE6A", "1DEF91DEDD97BF2A", "1E789079468E524C", "75494EBC01FFA122", "1E652102F19B51AA", "197FE2644380A4BF", "129DBFDDD0D3B77D", "19D620E85853E232", "691B63848A5063B9", "35C5B4ADD313FEB9", "005FBB021C82B385", "26822495839273F5", "5C93F94BC8E67006", "286B4AC490584120", "16DF704E21FCE25A", "1313684183C145C0", "25233EA3138DDE03", "1B66A96DE1DE1BC5", "621F8C4F6E5064F8", "10027818BD1ADE7B", "173AF7B8F73D4EE5", "1CB5C7E61AD833BC", "1EDCB4140B697318", "186841EA76D79665"]
+			description: ["Visit any 25 dreamspaces.", "", "Some of these places remember you."]
+			hide_dependency_lines: true
+			icon: "minecraft:nether_star"
+			id: "1BF2DA14E5F1D0C5"
+			min_required_dependencies: 25
+			rewards: [
+				{
+					id: "2B96A3F700467E2D"
+					item: "simplehats:hatbag_epic"
+					type: "item"
+				}
+				{
+					id: "14B5FCA25DBB7D5B"
+					type: "xp"
+					xp: 4500
+				}
+			]
+			size: 1.0d
+			subtitle: "25 dreamspaces"
+			title: "Q-DSM3: Dreamwalker"
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3CD216ACE1406F52", "1C06F72BBF8E6B78", "1F31DC45757584C0", "1FF3F8998E8ECD3F", "1626794FC4EA576E", "1D150177422ED286", "16505452A7A0962A", "19B6B88C1D4C4CE1", "5F648A9929F6B756", "109DABA0303AD359", "1A3EF266A1DCCED3", "1C12471E9B6FD288", "2F6E522A947BBB1F", "1ECE0AB4F0307A40", "4C4A76298B53CA02", "04D65FF116098C64", "10BF1BE12056438F", "3FC2ED5E4ABD3EA3", "50FFC04223F1F316", "215DB5B298E45412", "1197FB7C2600BA8B", "6857AE8C87EEB915", "5C14250F54383C8E", "1DE9657AE058E2B8", "578DA6D13FFAB7F9", "18D93CB0557FCCAE", "1E5DEBF3DCF79D36", "195D90063FD8F8F5", "2B63E3A4C4DE3CFF", "1CA149F6A536AE6A", "1DEF91DEDD97BF2A", "1E789079468E524C", "75494EBC01FFA122", "1E652102F19B51AA", "197FE2644380A4BF", "129DBFDDD0D3B77D", "19D620E85853E232", "691B63848A5063B9", "35C5B4ADD313FEB9", "005FBB021C82B385", "26822495839273F5", "5C93F94BC8E67006", "286B4AC490584120", "16DF704E21FCE25A", "1313684183C145C0", "25233EA3138DDE03", "1B66A96DE1DE1BC5", "621F8C4F6E5064F8", "10027818BD1ADE7B", "173AF7B8F73D4EE5", "1CB5C7E61AD833BC", "1EDCB4140B697318", "186841EA76D79665"]
+			description: ["Visit all 53 dreamspaces.", "", "You can no longer say where you started."]
 			hide_dependency_lines: true
 			icon: "minecraft:nether_star"
 			id: "1B59324F8FD2ADB3"
-			min_required_dependencies: 18
+			min_required_dependencies: 53
 			rewards: [
 				{
 					id: "05141AAFE98BEB1E"
@@ -690,10 +1784,10 @@
 				}
 			]
 			size: 1.0d
-			subtitle: "18 dreamspaces"
-			title: "Q-DS22: Lost in the Dream"
-			x: 9.0d
-			y: 10.0d
+			subtitle: "53 dreamspaces"
+			title: "Q-DSM4: Lost in the Dream"
+			x: 12.0d
+			y: -3.0d
 		}
 	]
 	title: "🌙 CHAPTER 8: THE DREAMSPACES"

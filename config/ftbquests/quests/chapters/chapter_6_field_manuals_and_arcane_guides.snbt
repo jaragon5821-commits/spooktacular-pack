@@ -1076,6 +1076,92 @@
 			x: -20.0d
 			y: 7.0d
 		}
+		{
+			description: ["Craft a Trading Post.", "", "It lets you trade with every villager working nearby from a single screen."]
+			icon: "tradingpost:trading_post"
+			id: "19386AAF3BFF6CBA"
+			rewards: [
+				{
+					count: 8
+					id: "6FB44BED1967A750"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "1875B09C8AF7DEB5"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "One counter, every trader"
+			tasks: [
+				{
+					id: "19436CEDDC6B8C41"
+					item: "tradingpost:trading_post"
+					title: "Craft a Trading Post"
+					type: "item"
+				}
+			]
+			title: "Q-GD33: The Trading Post"
+			x: -18.0d
+			y: 7.0d
+		}
+		{
+			description: ["Craft a Market.", "", "Trade emeralds for seeds, saplings and young animals to grow the town's farms."]
+			icon: "farmingforblockheads:market"
+			id: "09D6771FCFB7B292"
+			rewards: [
+				{
+					count: 8
+					id: "17F7872DE3607079"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "10806FCA119F4B79"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.0d
+			subtitle: "Farming for Blockheads"
+			tasks: [
+				{
+					id: "5EDF7404114AF327"
+					item: "farmingforblockheads:market"
+					title: "Craft a Market"
+					type: "item"
+				}
+			]
+			title: "Q-GD34: The Seed Market"
+			x: -16.0d
+			y: 7.0d
+		}
+		{
+			description: ["Open the FTB Chunks map, claim the chunks around your home, then tick the box.", "", "Claimed land belongs to your team. Others cannot break or place blocks there."]
+			icon: "minecraft:book"
+			id: "785F3CD8E45872CC"
+			rewards: [
+				{
+					id: "1904DBBF785E909F"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.0d
+			subtitle: "FTB Chunks"
+			tasks: [
+				{
+					id: "10DFA4C0CFB28D2F"
+					title: "I claimed my land"
+					type: "checkmark"
+				}
+			]
+			title: "Q-GD35: Staking a Claim"
+			x: -14.0d
+			y: 7.0d
+		}
 	]
 	title: "🛠 CHAPTER 6: FIELD MANUALS"
 }

@@ -26,11 +26,11 @@ hash = "b5c55b47bfc1817e8e495c17cded815fa5b52193b440d2766a263d19d887c150"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_1_hallowstown.snbt"
-hash = "f23bb9f86e1f23854d2aeb3826238724a67edfd1b0abdcdbff747bc3a1d9b553"
+hash = "73487fdfb688625a0861573434bf93b52ed86407f76b8c5069eee49b500f8c9c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_2_events_and_minigames.snbt"
-hash = "4962c17a63d5106c15e6bd1eb4353d8ba8d2ab89fad59d9d9f6dbd851b062976"
+hash = "3669b034b7faa3b2e73f70795425a46ffc1be8510f56f6c92beff033f9d5c4f7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_3_life_and_occult_rites.snbt"
@@ -38,15 +38,15 @@ hash = "1ffb6b0d4562882e331018ef4f47c6dfdb08814745fead712a738856a3945321"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_4_liminal_trials.snbt"
-hash = "c62569cb7ef1cb9a6fb6769bc6930329aa5838f7c7cb3f74725f71e6d4502161"
+hash = "93d311aea9d996f2d9267202109e04516131df347c9519e16c53fbca3f518ff5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_5_boss_showdowns.snbt"
-hash = "34fe65b2ae22b8997ecb0d2fea471a7cf74547b77477f3ffe26c9ebbe328444b"
+hash = "cfd02566c54d22a738d375786605744c844b65e06ed19dbe7a2f9f17732e6e0e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_6_field_manuals_and_arcane_guides.snbt"
-hash = "105fb938ba654d9d5fee8b8753176085f962ab7f54c18dc232b3c92f58a95f5b"
+hash = "f96f059f12f342513a97b6a699b5d3c7211d051a25cb73acdfdcc9e1e649017f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_7_workshop_guides.snbt"
@@ -54,7 +54,7 @@ hash = "523ffd3f57f3839ad86ee36b9572840576a387a62665a4a8f3cefe67b22ded50"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_8_dreamshift.snbt"
-hash = "7b90a230bbeb5dfcf1fa9f2ee2626d9ae01780e61e6ee1119319a648fbe2710a"
+hash = "285218a98d949dd5154f78bcc13e7c8cc76f807e251a962e6364c6b91d38baaf"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -166,75 +166,75 @@ hash = "a13a88673643cfb50fe17ba25efed08bb37763b8f039fbf9826808b976aaa81e"
 
 [[files]]
 file = "kubejs/client_scripts/spooktacular_quest_tooltips.js"
-hash = "b3727e489f05caecca79aa56798e9cfaca90af0330f59af71bea8b54adf3cad5"
+hash = "41b14fcc85613c49d9c7e40102841946f5837bf1ded117a854e2d4a96bd75f51"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/alexscaves_underzealot.json"
-hash = "c15dd8a0f39c35bdfc9996247f3cfd3a7b58a26a6175856bd0e8227ea7b334c7"
+hash = "0ffee5d0534ca269eb7449fda00debb1d77e908a9d0c33517957ebdd8b871e36"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/alexscaves_watcher.json"
-hash = "b1c28fb93fc04cb591b804b9c27eb20a8dee6810d654c06c51656168b56c340b"
+hash = "56a3eec5119d2abd45a8b3fc0e2fe58158b9bd8f542c20c9731649ce8b6aae70"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/boiled_reimagined_the_boiled_one.json"
-hash = "2357ab5b559751bc5ace7a76ddb4caad7b00c5b1dc79a73595f20bd5f1c50f96"
+hash = "00458dbc5559e08d97344739e6320216c0d5d249ed38088f351a2cb4432957a6"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/cave_dweller_cave_dweller.json"
-hash = "ed5a851a4e6dd0d544b6fa5015ba9b570990c69f1ac3db4bea0e7ed3ba004571"
+hash = "08f0b2451c5beace567cb559a05c21eb6565dad616604f36198ddc49eacb6156"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/corner_entity_corner_entity.json"
-hash = "50f253ec10498ac7d2a1e2acd256c8e218a21db544ff45afeab7c47f20789025"
+hash = "69cc2831ffc020feb1aa882d2b304a77cb1c4f91684bdb70bae2363f027d7bfc"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/cryptid_vx_cryptid.json"
-hash = "d15ebfd21896a326fdfd7f1d074ee49ca9a7e6cd52e499149b46efbfcd5872b1"
+hash = "a54276d4b0648b7777718b5679abc8a6cf433c8e45eaebfcd1d79da36a2e4047"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/darkdoppelganger_dark_doppelganger.json"
-hash = "564f57443acd58eb5980c3210c7901f0d62b993c0a434e62ed0926e8834c20e2"
+hash = "87b96c934e367004f69978075b3caae146120051aab34e31da7786093b9be440"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/distantfriends_friend.json"
-hash = "95a9c138779bd6b9aec34572bc49c2bf0d7e7ca3a2551cae17e37ca8f3505335"
+hash = "598223a3ba7206f45def3112202edd0cd821fc08369a0331faaf37298aae0f8d"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/eyesinthedarkness_eyes.json"
-hash = "ff8f1221b8f12653cb584371dd4af515a5112aef4ed836fcd9b387d19a776ad3"
+hash = "8950152bd059aa6b1538aaf7f161bd2997274961a40909ba40f86cab6549f93e"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/graveyard_ghoul.json"
-hash = "12ba837e16644cf69094e687ed91590f845b5b357ebe6a7d3fab3b1f38ef7940"
+hash = "bd8d4b0395694d01455a4ded2a9916a3580d388e438c51e2dc361eaafd9d0a40"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/graveyard_nightmare.json"
-hash = "d5eb8fd8e455e89f7bfae13744202776bcb7eb763bc862824d3b8f7e93c56b54"
+hash = "30c7d6220d9d3372b66ec28f97171d044584274e34117efcb433677eae57d060"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/graveyard_reaper.json"
-hash = "0d12e7ab32b73f44708ad2958fff038db9e692003587e993fa194bbf30fe10fd"
+hash = "9d6c390834557e8f08e895386793bc78e458a0adad2b1a7d75064a1beee22a3c"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/krampus_vx_krampus.json"
-hash = "e7b3789c333d38046b4a208be1928b9eed5079d753b6a9fc32c6675d4f5e647e"
+hash = "5f9dcc6bad609a15f530d5ab0ef12d732b00961c6ef12509ef4e2eb8423da144"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/minecraft_bat.json"
-hash = "c60db1a83d792ee0bc170186765a86b5105ca8944c0128844c502850718b8a7e"
+hash = "af9350f0e2c84391142fa5ba727aca6c9ca1fa0c092e5d385ed7f70908d0a73d"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/minecraft_creeper.json"
-hash = "78aa24646691e1cb8b2ed2b1def70379571ffdde1438e60a2e5cfb4144cd3bc4"
+hash = "b1418ef21f11278aaf9936681a40f4d9b14dd239cd8a526a4eb87ae9ce3b327a"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/minecraft_phantom.json"
-hash = "52bd8b7576b01e87f2ede2764d3199683a27941948c1711b8929f0f56c18c54c"
+hash = "1f39e6aa57f92fd280b7eead561c892a6769b8387b15f03437c015ed61f5d9c5"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/palewatcher_pale_watcher.json"
-hash = "6d8281aa70ec9e30f3f6bebccfb54b53d26538038de0e7b81dd1fae834166447"
+hash = "2b17520c0cdab19fd0a3731701b09a01a114933afb93d174727603de3a0809e8"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/root.json"
@@ -242,47 +242,47 @@ hash = "7755d1f9aedca3a833a8cf75191ed2971363051caf04eadc4726ffd56dd3c824"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/rootoffear_wilted.json"
-hash = "6bfe095952a50c09f4c5d31088f1126e9b28f042189afafaafa461d2f98f740e"
+hash = "300f5d50f57208d04315f9544fdfd63bf01707719eacc2cf2d52f9555cbd7203"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/skarrier_mobs_dragger.json"
-hash = "cd20405b83172705bf3fffc4163e84b8ab50468a4cfcab3159bf945d2f1ce514"
+hash = "ff633594d96062b6489a812371382260f863e9e46ff702f1d39b525af526a4e1"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/skarrier_mobs_tunnel_gore.json"
-hash = "15ebee9f56aec616274707ff73aeeb1e4115f21c40e2b1ac04ad5d4cf09d3369"
+hash = "6e21ce0c345c4d6b2807907c8cf3b3add22f24c69e28d530827038d24189cc12"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/skarrier_mobs_wrought.json"
-hash = "2c18f285fed0743c98fbd8adbef404d74745101e6de9aa7e6824f7b5af1fea61"
+hash = "48c053751fe0890938739e5eda1a3cd4707508f43ecc31e81f1192830e3f085d"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/the_knocker_knocker.json"
-hash = "f8f2493bb471fe3754c47e62d0ec5a3864fd58b8a7e349ed2e5f6754f363f3b6"
+hash = "d83f0430fdf027f17af592c9542fccd14f88f48bba10d0be707e34ac9f5f4b17"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/the_obsessed_the_obsessed.json"
-hash = "5e70730a91aff65ccb4f07601835e1a3340bbbbbf372c09c8295cd94dc71d5e4"
+hash = "1b90ae8df87833d3c652948e77693034acd0c357e66122be3b71ec0e9d8718c9"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/the_one_who_watches_the_one_who_watches.json"
-hash = "94780e52cca90c7bab7e096a1776c56ea416ecbcabbefadb315ff72bce765d98"
+hash = "d1e53bf45ee5e4d9531427c2ce91fe66cb33cd96befbb830867a9bc63398fe31"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/undergarden_rotbeast.json"
-hash = "15aae1b2cc4b6eb16f7833f422a1283075dbe672b104a7bcb7314780d3005dc5"
+hash = "457929fb6c927371e1915d5746bcc3605405ddaf88b71aa99bac065b803d15ff"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/weeping_angels_weeping_angel.json"
-hash = "d6deccec1edf3aafec87bf9606efd47ad7a36b5146494794e764d558c10d625e"
+hash = "ea5d2979a5f21de5800200afc5f0a48c68f66553c0a4b53bb78fe8e088a0e91c"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/whisperwoods_hidebehind.json"
-hash = "3a3fc8566313f63d92a5121762e8d6dac0ffbb2fb94f1707d788376ecf210a22"
+hash = "705130f8c7397625b90b2bcccea42fa8160f21cb7c25c9fb48e436b6590ca0ea"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/whisperwoods_wisp.json"
-hash = "a8059648c7ca56ac7fe12c212273442d834b21a22df7fa0c7ce4d963ade55510"
+hash = "a72aa676725ce6d45b078fe40d2c0cdda2c8368bce63323cd7b3c0b9f28590e5"
 
 [[files]]
 file = "kubejs/data/spooktacular/blueprints/apothecary.json"
@@ -478,19 +478,19 @@ hash = "4397c6ff59b2aabf82af483c278b159756ecdf7499f6a176d3d4fcd442408ec3"
 
 [[files]]
 file = "kubejs/server_scripts/spooktacular_quests_autotest.js"
-hash = "305acd94910b4fe2038de1a0858e12d86a815b32c56324ff4d83e7927f7225bb"
+hash = "ff942db428515a6a8f3f2d8ffc733991af1f789cb4b67b55193ace069a4b1675"
 
 [[files]]
 file = "kubejs/server_scripts/spooktacular_quests_charters.js"
-hash = "6c256f32a326bd8181e85440e2b248612d684d38cf204240c8e488244f0cd269"
+hash = "7a2c58d375fb9ba505a61c8dd327dd750a7f87d1f451b9e56891bc883e7561c5"
 
 [[files]]
 file = "kubejs/server_scripts/spooktacular_quests_data.js"
-hash = "88c19ebbc5f213db960c27fbe6d5ca923fae8ecad3865fa96855bafb61b9e250"
+hash = "35729c140fda2935f0551c097b11d138cfdd71a4035596524a1944a8456354c6"
 
 [[files]]
 file = "kubejs/server_scripts/spooktacular_quests_fanfare.js"
-hash = "9ca636c993014a02d924f8a5b461b470b2a35fd0f294b8347d6211267566d9e1"
+hash = "c840ce266a4b08208d143c70a39f8f1c56b549ed6da84607d2526f4644df0285"
 
 [[files]]
 file = "kubejs/server_scripts/spooktacular_quests_selftest.js"
@@ -498,7 +498,7 @@ hash = "c5a77b14a690045433cb5dba1c5953db36fb49636f8e08a1aae0e9d7a6ecf238"
 
 [[files]]
 file = "kubejs/startup_scripts/spooktacular_quest_items.js"
-hash = "836fe320fafb3f615d2ea710656e10cf5e5385e58cc5909c423af670d4bb9361"
+hash = "209a153734a92e1f2ad31af14ddacb8e5278a35d7790ac6f1e09e1142d8816e4"
 
 [[files]]
 file = "mods/accessories.pw.toml"

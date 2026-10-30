@@ -4,7 +4,7 @@
 //   and sounds only, nothing is left in the world. The Colossal Scarecrow gets fireworks plus a particle dome.
 // - Archive: "Entity Found!" title and sound for the team when a creature is first photographed.
 // - Milestones (Safari, Dreamspaces): completed here as a backup when enough of their quests are done.
-// - /ribbon <player>: hosts hand an event winner a Festival Ribbon.
+// - /ribbon <player> <event>: hosts hand an event winner that event's Festival Ribbon.
 // Uses spookCharters / spookBlueprint / spookRotate from spooktacular_quests_charters.js.
 
 // Rhino gives every pass of a `for (let ...)` loop the same variable, so closures made inside one all see
@@ -255,17 +255,34 @@ PlayerEvents.loggedIn(event => {
   })
 })
 
-// /ribbon <player>: give the winner of an event a Festival Ribbon (hand it in at the event's quest).
+// /ribbon <player> <event>: give the winner of an event that event's Festival Ribbon (hand it in at the event's quest).
+const SpookStringArg = Java.loadClass('com.mojang.brigadier.arguments.StringArgumentType')
 ServerEvents.commandRegistry(event => {
   const { commands: Commands, arguments: Arguments } = event
+  let events = Object.keys(global.SPOOK_RIBBONS)
   event.register(Commands.literal('ribbon')
     .requires(src => src.hasPermission(2))
     .then(Commands.argument('player', Arguments.PLAYER.create(event))
       .executes(ctx => {
-        let player = Arguments.PLAYER.getResult(ctx, 'player')
-        player.give(Item.of('spooktacular:festival_ribbon'))
-        ctx.source.server.runCommandSilent('tellraw @a ["",{"text":"🎀 ","color":"gold"},{"text":"' + player.username + ' won a Festival Ribbon!","color":"gold","bold":true}]')
-        ctx.source.server.runCommandSilent('playsound minecraft:ui.toast.challenge_complete master @a ~ ~ ~ 0.6 1.2')
-        return 1
-      })))
+        ctx.source.sendFailure(Text.red('Name the event too: /ribbon <player> <event>. Events: ' + events.join(', ')))
+        return 0
+      })
+      .then(Commands.argument('event', SpookStringArg.word())
+        .suggests((ctx, builder) => {
+          events.forEach(k => builder.suggest(k))
+          return builder.buildFuture()
+        })
+        .executes(ctx => {
+          let player = Arguments.PLAYER.getResult(ctx, 'player')
+          let key = String(SpookStringArg.getString(ctx, 'event'))
+          if (!global.SPOOK_RIBBONS[key]) {
+            ctx.source.sendFailure(Text.red('Unknown event "' + key + '". Events: ' + events.join(', ')))
+            return 0
+          }
+          let name = global.SPOOK_RIBBONS[key]
+          player.give(Item.of('spooktacular:ribbon_' + key))
+          ctx.source.server.runCommandSilent('tellraw @a ["",{"text":"\u2605 ","color":"gold"},{"text":"' + player.username + ' won ' + name + '!","color":"gold","bold":true}]')
+          ctx.source.server.runCommandSilent('playsound minecraft:ui.toast.challenge_complete master @a ~ ~ ~ 0.6 1.2')
+          return 1
+        }))))
 })

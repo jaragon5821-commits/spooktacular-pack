@@ -1369,11 +1369,11 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["A stone figure with its hands over its face was seen in a different place each time someone looked back. Search old ruins and dark corners, with a friend."]
+			description: ["A stone figure with its hands over its face was seen in a different place each time someone looked back. Search old ruins and dark corners, with a friend.", "", "Where: Dark places at night in the Overworld, often near old ruins. It only moves while nobody is looking at it.", "", "How: load film into a camera, get within about 15 blocks with nothing in between, and take the picture while it is in the middle of the frame. Zooming in (scroll while looking through the camera) lets you shoot from farther away."]
 			icon: "exposure:camera"
 			id: "0A938A8548E66FB1"
 			size: 1.0d
-			subtitle: "Unconfirmed sighting"
+			subtitle: "Archive file: Weeping Angels"
 			tasks: [
 				{
 					advancement: "spooktacular:archive/weeping_angels_weeping_angel"
@@ -1389,11 +1389,11 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["Miners tell of footsteps that copy their own and stop when they stop. It lives in dark caves, deep underground."]
+			description: ["Miners tell of footsteps that copy their own and stop when they stop. It lives in dark caves, deep underground.", "", "Where: Deep, dark caves after you have spent a while underground. You usually hear it before you see it.", "", "How: load film into a camera, get within about 15 blocks with nothing in between, and take the picture while it is in the middle of the frame. Zooming in (scroll while looking through the camera) lets you shoot from farther away."]
 			icon: "exposure:camera"
 			id: "12A7A5A49F534DAC"
 			size: 1.0d
-			subtitle: "Unconfirmed sighting"
+			subtitle: "Archive file: Cave Dweller"
 			tasks: [
 				{
 					advancement: "spooktacular:archive/cave_dweller_cave_dweller"
@@ -1409,11 +1409,11 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["Something skinless and crimson walks the Overworld after dark. Watch the treelines at night and keep your torches lit."]
+			description: ["Something skinless and crimson walks the Overworld after dark. Watch the treelines at night and keep your torches lit.", "", "Where: Rarely, on the Overworld surface at night. It goes after anyone carrying a light.", "", "How: load film into a camera, get within about 15 blocks with nothing in between, and take the picture while it is in the middle of the frame. Zooming in (scroll while looking through the camera) lets you shoot from farther away."]
 			icon: "exposure:camera"
 			id: "12F3C3837BC683D8"
 			size: 1.0d
-			subtitle: "Unconfirmed sighting"
+			subtitle: "Archive file: The Boiled One"
 			tasks: [
 				{
 					advancement: "spooktacular:archive/boiled_reimagined_the_boiled_one"
@@ -1429,11 +1429,11 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["Someone who looks like a friend waves from a far hill, but your friends are all in town. Scan open daytime meadows and ridges."]
+			description: ["Someone who looks like a friend waves from a far hill, but your friends are all in town. Scan open daytime meadows and ridges.", "", "Where: Open plains and hills in daylight, far away from you. It disappears if you walk toward it, so zoom in instead.", "", "How: load film into a camera, get within about 15 blocks with nothing in between, and take the picture while it is in the middle of the frame. Zooming in (scroll while looking through the camera) lets you shoot from farther away."]
 			icon: "exposure:camera"
 			id: "00857921235BB778"
 			size: 1.0d
-			subtitle: "Unconfirmed sighting"
+			subtitle: "Archive file: Distant Friends"
 			tasks: [
 				{
 					advancement: "spooktacular:archive/distantfriends_friend"
@@ -1449,11 +1449,11 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["Travelers in the deep spruce and whisperwood forests feel watched, then find only a trunk behind them. Walk the thick woods with a friend."]
+			description: ["Travelers in the deep spruce and whisperwood forests feel watched, then find only a trunk behind them. Walk the thick woods with a friend.", "", "Where: Thick, dark forests at night. It hides behind tree trunks and only peeks out.", "", "How: load film into a camera, get within about 15 blocks with nothing in between, and take the picture while it is in the middle of the frame. Zooming in (scroll while looking through the camera) lets you shoot from farther away."]
 			icon: "exposure:camera"
 			id: "4D1077D1371570A1"
 			size: 1.0d
-			subtitle: "Unconfirmed sighting"
+			subtitle: "Archive file: Hidebehind"
 			tasks: [
 				{
 					advancement: "spooktacular:archive/whisperwoods_hidebehind"
@@ -1469,11 +1469,11 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["Chains rattle somewhere in the snowy hills at night. Search cold, snowy biomes after dark."]
+			description: ["Chains rattle somewhere in the snowy hills at night. Search cold, snowy biomes after dark.", "", "Where: Snowy biomes at night.", "", "How: load film into a camera, get within about 15 blocks with nothing in between, and take the picture while it is in the middle of the frame. Zooming in (scroll while looking through the camera) lets you shoot from farther away."]
 			icon: "exposure:camera"
 			id: "7C942FF36AD0A661"
 			size: 1.0d
-			subtitle: "Unconfirmed sighting"
+			subtitle: "Archive file: Krampus"
 			tasks: [
 				{
 					advancement: "spooktacular:archive/krampus_vx_krampus"
@@ -1489,11 +1489,11 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["Pale lights drift over the swamp at night and lead travelers off the path. Look over murky swamps and bogs after dark."]
+			description: ["Pale lights drift over the swamp at night and lead travelers off the path. Look over murky swamps and bogs after dark.", "", "Where: Swamps at night. It looks like a floating light.", "", "How: load film into a camera, get within about 15 blocks with nothing in between, and take the picture while it is in the middle of the frame. Zooming in (scroll while looking through the camera) lets you shoot from farther away."]
 			icon: "exposure:camera"
 			id: "162A4B7F0BE9607F"
 			size: 1.0d
-			subtitle: "Unconfirmed sighting"
+			subtitle: "Archive file: Will-o'-the-Wisp"
 			tasks: [
 				{
 					advancement: "spooktacular:archive/whisperwoods_wisp"
@@ -1509,11 +1509,11 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["Players who go sleepless for several nights say winged shadows begin to circle overhead. Stay awake through the night, then look up."]
+			description: ["Players who go sleepless for several nights say winged shadows begin to circle overhead. Stay awake through the night, then look up.", "", "Where: Skip sleeping for three nights or more. On the next night they swoop down from the sky.", "", "How: load film into a camera, get within about 15 blocks with nothing in between, and take the picture while it is in the middle of the frame. Zooming in (scroll while looking through the camera) lets you shoot from farther away."]
 			icon: "exposure:camera"
 			id: "14BBBBA6947795F3"
 			size: 1.0d
-			subtitle: "Unconfirmed sighting"
+			subtitle: "Archive file: Midnight Nightmares"
 			tasks: [
 				{
 					advancement: "spooktacular:archive/minecraft_phantom"
@@ -1529,11 +1529,11 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["It makes no sound until it is right behind you. Look for it in the Overworld at night and in dark caves."]
+			description: ["It makes no sound until it is right behind you. Look for it in the Overworld at night and in dark caves.", "", "Where: Almost anywhere dark: the surface at night, caves and unlit rooms.", "", "How: load film into a camera, get within about 15 blocks with nothing in between, and take the picture while it is in the middle of the frame. Zooming in (scroll while looking through the camera) lets you shoot from farther away."]
 			icon: "exposure:camera"
 			id: "1E56AEFE460FA493"
 			size: 1.0d
-			subtitle: "Unconfirmed sighting"
+			subtitle: "Archive file: Creepers"
 			tasks: [
 				{
 					advancement: "spooktacular:archive/minecraft_creeper"
@@ -1549,11 +1549,11 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["The caretaker hears digging among the graves after dark. Visit a graveyard at night."]
+			description: ["The caretaker hears digging among the graves after dark. Visit a graveyard at night.", "", "Where: Graveyards and crypts at night.", "", "How: load film into a camera, get within about 15 blocks with nothing in between, and take the picture while it is in the middle of the frame. Zooming in (scroll while looking through the camera) lets you shoot from farther away."]
 			icon: "exposure:camera"
 			id: "7A722E0F714B44EB"
 			size: 1.0d
-			subtitle: "Unconfirmed sighting"
+			subtitle: "Archive file: Ghoul"
 			tasks: [
 				{
 					advancement: "spooktacular:archive/graveyard_ghoul"
@@ -1569,11 +1569,11 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["Two pale eyes open in places with no light at all. Stand in a dark cave or room and wait."]
+			description: ["Two pale eyes open in places with no light at all. Stand in a dark cave or room and wait.", "", "Where: Completely dark spots, like an unlit cave or a closed room with no torches. Its eyes vanish once you light the area.", "", "How: load film into a camera, get within about 15 blocks with nothing in between, and take the picture while it is in the middle of the frame. Zooming in (scroll while looking through the camera) lets you shoot from farther away."]
 			icon: "exposure:camera"
 			id: "0CCB944D0EE81639"
 			size: 1.0d
-			subtitle: "Unconfirmed sighting"
+			subtitle: "Archive file: Eyes in the Darkness"
 			tasks: [
 				{
 					advancement: "spooktacular:archive/eyesinthedarkness_eyes"
@@ -1589,11 +1589,11 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["Residents of enclosed rooms see a shape in the corners that is gone when they turn. Check dark, closed rooms."]
+			description: ["Residents of enclosed rooms see a shape in the corners that is gone when they turn. Check dark, closed rooms.", "", "Where: Dark, closed rooms and hallways at night. Check the corners.", "", "How: load film into a camera, get within about 15 blocks with nothing in between, and take the picture while it is in the middle of the frame. Zooming in (scroll while looking through the camera) lets you shoot from farther away."]
 			icon: "exposure:camera"
 			id: "1063854B63E4CCA1"
 			size: 1.0d
-			subtitle: "Unconfirmed sighting"
+			subtitle: "Archive file: Corner Entity"
 			tasks: [
 				{
 					advancement: "spooktacular:archive/corner_entity_corner_entity"
@@ -1609,11 +1609,11 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["Hunters in the woods say a dead tree followed them home. Walk the forests at night."]
+			description: ["Hunters in the woods say a dead tree followed them home. Walk the forests at night.", "", "Where: Forests at night. It looks like a dead tree until it moves.", "", "How: load film into a camera, get within about 15 blocks with nothing in between, and take the picture while it is in the middle of the frame. Zooming in (scroll while looking through the camera) lets you shoot from farther away."]
 			icon: "exposure:camera"
 			id: "46CB0096F9876A60"
 			size: 1.0d
-			subtitle: "Unconfirmed sighting"
+			subtitle: "Archive file: The Wilted"
 			tasks: [
 				{
 					advancement: "spooktacular:archive/rootoffear_wilted"
@@ -1629,11 +1629,11 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["Miners say the stone itself growls in the deepslate seams. Mine deep and listen."]
+			description: ["Miners say the stone itself growls in the deepslate seams. Mine deep and listen.", "", "Where: Deep caves, down at deepslate level.", "", "How: load film into a camera, get within about 15 blocks with nothing in between, and take the picture while it is in the middle of the frame. Zooming in (scroll while looking through the camera) lets you shoot from farther away."]
 			icon: "exposure:camera"
 			id: "700B26A2925FAFDB"
 			size: 1.0d
-			subtitle: "Unconfirmed sighting"
+			subtitle: "Archive file: Tunnel Gore"
 			tasks: [
 				{
 					advancement: "spooktacular:archive/skarrier_mobs_tunnel_gore"
@@ -1649,11 +1649,11 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["Something with long arms waits along ravine edges and drags the unwary down. Walk deep ravines and cliff ledges with care."]
+			description: ["Something with long arms waits along ravine edges and drags the unwary down. Walk deep ravines and cliff ledges with care.", "", "Where: Deep caves and ravines. Watch the ledges.", "", "How: load film into a camera, get within about 15 blocks with nothing in between, and take the picture while it is in the middle of the frame. Zooming in (scroll while looking through the camera) lets you shoot from farther away."]
 			icon: "exposure:camera"
 			id: "12232D569C093375"
 			size: 1.0d
-			subtitle: "Unconfirmed sighting"
+			subtitle: "Archive file: The Dragger"
 			tasks: [
 				{
 					advancement: "spooktacular:archive/skarrier_mobs_dragger"
@@ -1669,11 +1669,11 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["A rhythmic clank carries through stone floors in the deep caves. Follow the sound underground."]
+			description: ["A rhythmic clank carries through stone floors in the deep caves. Follow the sound underground.", "", "Where: Deep caves. Follow the clanking.", "", "How: load film into a camera, get within about 15 blocks with nothing in between, and take the picture while it is in the middle of the frame. Zooming in (scroll while looking through the camera) lets you shoot from farther away."]
 			icon: "exposure:camera"
 			id: "7DF72BE2FE8A2781"
 			size: 1.0d
-			subtitle: "Unconfirmed sighting"
+			subtitle: "Archive file: The Wrought"
 			tasks: [
 				{
 					advancement: "spooktacular:archive/skarrier_mobs_wrought"
@@ -1689,11 +1689,11 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["A faint fluttering and squeaking is heard in unlit caves. Find a dark cave and look up."]
+			description: ["A faint fluttering and squeaking is heard in unlit caves. Find a dark cave and look up.", "", "Where: Any dark cave. Look up at the ceiling.", "", "How: load film into a camera, get within about 15 blocks with nothing in between, and take the picture while it is in the middle of the frame. Zooming in (scroll while looking through the camera) lets you shoot from farther away."]
 			icon: "exposure:camera"
 			id: "22ACC857CB2C5BBA"
 			size: 1.0d
-			subtitle: "Unconfirmed sighting"
+			subtitle: "Archive file: The Phantom Resonance"
 			tasks: [
 				{
 					advancement: "spooktacular:archive/minecraft_bat"
@@ -1709,11 +1709,11 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["People who camp near graves wake up to a shape standing over them. Spend a night in the graveyard, awake."]
+			description: ["People who camp near graves wake up to a shape standing over them. Spend a night in the graveyard, awake.", "", "Where: Dark places on the surface at night, most often around graveyards.", "", "How: load film into a camera, get within about 15 blocks with nothing in between, and take the picture while it is in the middle of the frame. Zooming in (scroll while looking through the camera) lets you shoot from farther away."]
 			icon: "exposure:camera"
 			id: "68C5501F315F11F4"
 			size: 1.0d
-			subtitle: "Unconfirmed sighting"
+			subtitle: "Archive file: The Graveyard"
 			tasks: [
 				{
 					advancement: "spooktacular:archive/graveyard_nightmare"
@@ -1729,11 +1729,11 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["A tall dark figure stands on distant hills, and it always faces you. Climb to a high place and scan the horizon."]
+			description: ["A tall dark figure stands on distant hills, and it always faces you. Climb to a high place and scan the horizon.", "", "Where: Far away on the surface, standing still and staring at you. It vanishes if you get close, so zoom in from a distance.", "", "How: load film into a camera, get within about 15 blocks with nothing in between, and take the picture while it is in the middle of the frame. Zooming in (scroll while looking through the camera) lets you shoot from farther away."]
 			icon: "exposure:camera"
 			id: "6FB0D2FA2F3CEC64"
 			size: 1.0d
-			subtitle: "Unconfirmed sighting"
+			subtitle: "Archive file: The One Who Watches"
 			tasks: [
 				{
 					advancement: "spooktacular:archive/the_one_who_watches_the_one_who_watches"
@@ -1749,11 +1749,11 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["A chalk white figure stands between the dark trunks at dusk. Walk forest edges at twilight."]
+			description: ["A chalk white figure stands between the dark trunks at dusk. Walk forest edges at twilight.", "", "Where: Forest edges at dusk and at night, between the trees.", "", "How: load film into a camera, get within about 15 blocks with nothing in between, and take the picture while it is in the middle of the frame. Zooming in (scroll while looking through the camera) lets you shoot from farther away."]
 			icon: "exposure:camera"
 			id: "168551BA8696B15E"
 			size: 1.0d
-			subtitle: "Unconfirmed sighting"
+			subtitle: "Archive file: The Pale Watcher"
 			tasks: [
 				{
 					advancement: "spooktacular:archive/palewatcher_pale_watcher"
@@ -1769,11 +1769,11 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["Three slow knocks sound on doors after midnight, and nobody is there. Stay in a house at night and listen."]
+			description: ["Three slow knocks sound on doors after midnight, and nobody is there. Stay in a house at night and listen.", "", "Where: At night, while you are inside a house. Open the door after it knocks.", "", "How: load film into a camera, get within about 15 blocks with nothing in between, and take the picture while it is in the middle of the frame. Zooming in (scroll while looking through the camera) lets you shoot from farther away."]
 			icon: "exposure:camera"
 			id: "1C07452AA8194D8C"
 			size: 1.0d
-			subtitle: "Unconfirmed sighting"
+			subtitle: "Archive file: The Knocker"
 			tasks: [
 				{
 					advancement: "spooktacular:archive/the_knocker_knocker"
@@ -1789,11 +1789,11 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["A figure appears a little closer each dusk, and it always chooses one person. Walk alone after dark and look behind you."]
+			description: ["A figure appears a little closer each dusk, and it always chooses one person. Walk alone after dark and look behind you.", "", "Where: At night it picks one player and follows them. Look behind you.", "", "How: load film into a camera, get within about 15 blocks with nothing in between, and take the picture while it is in the middle of the frame. Zooming in (scroll while looking through the camera) lets you shoot from farther away."]
 			icon: "exposure:camera"
 			id: "146FB797FC3E5247"
 			size: 1.0d
-			subtitle: "Unconfirmed sighting"
+			subtitle: "Archive file: The Obsessed"
 			tasks: [
 				{
 					advancement: "spooktacular:archive/the_obsessed_the_obsessed"
@@ -1809,11 +1809,11 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["Hunters speak of a crooked, antlered beast in the pine woods at night. Search dense forests after dark."]
+			description: ["Hunters speak of a crooked, antlered beast in the pine woods at night. Search dense forests after dark.", "", "Where: Dense forests at night.", "", "How: load film into a camera, get within about 15 blocks with nothing in between, and take the picture while it is in the middle of the frame. Zooming in (scroll while looking through the camera) lets you shoot from farther away."]
 			icon: "exposure:camera"
 			id: "3D9BBDB0E950C02E"
 			size: 1.0d
-			subtitle: "Unconfirmed sighting"
+			subtitle: "Archive file: The Cryptid"
 			tasks: [
 				{
 					advancement: "spooktacular:archive/cryptid_vx_cryptid"
@@ -1829,11 +1829,11 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["A hooded figure with a scythe walks the graveyards at night. Visit a graveyard after dark."]
+			description: ["A hooded figure with a scythe walks the graveyards at night. Visit a graveyard after dark.", "", "Where: Graveyards at night.", "", "How: load film into a camera, get within about 15 blocks with nothing in between, and take the picture while it is in the middle of the frame. Zooming in (scroll while looking through the camera) lets you shoot from farther away."]
 			icon: "exposure:camera"
 			id: "1A414FCBF40C063C"
 			size: 1.0d
-			subtitle: "Unconfirmed sighting"
+			subtitle: "Archive file: Reaper"
 			tasks: [
 				{
 					advancement: "spooktacular:archive/graveyard_reaper"
@@ -1849,11 +1849,11 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["Some travelers saw their own reflection detach and walk away. Look for it at night."]
+			description: ["Some travelers saw their own reflection detach and walk away. Look for it at night.", "", "Where: The surface at night. It looks like a dark copy of a player.", "", "How: load film into a camera, get within about 15 blocks with nothing in between, and take the picture while it is in the middle of the frame. Zooming in (scroll while looking through the camera) lets you shoot from farther away."]
 			icon: "exposure:camera"
 			id: "13EB13BF92F53D0D"
 			size: 1.0d
-			subtitle: "Unconfirmed sighting"
+			subtitle: "Archive file: Dark Doppelganger"
 			tasks: [
 				{
 					advancement: "spooktacular:archive/darkdoppelganger_dark_doppelganger"
@@ -1869,11 +1869,11 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["Hooded cultists chant in the glowing caves of the Forlorn Hollows. Dig down to the Forlorn Hollows biome."]
+			description: ["Hooded cultists chant in the glowing caves of the Forlorn Hollows. Dig down to the Forlorn Hollows biome.", "", "Where: The Forlorn Hollows cave biome, deep underground. They dig out of the ground near the glowing guano.", "", "How: load film into a camera, get within about 15 blocks with nothing in between, and take the picture while it is in the middle of the frame. Zooming in (scroll while looking through the camera) lets you shoot from farther away."]
 			icon: "exposure:camera"
 			id: "6B128FE185995890"
 			size: 1.0d
-			subtitle: "Unconfirmed sighting"
+			subtitle: "Archive file: Underzealot"
 			tasks: [
 				{
 					advancement: "spooktacular:archive/alexscaves_underzealot"
@@ -1889,11 +1889,11 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["Cave explorers describe a luminous moth with eyes on the ceiling of the Forlorn Hollows. Look up in the deep dark."]
+			description: ["Cave explorers describe a luminous moth with eyes on the ceiling of the Forlorn Hollows. Look up in the deep dark.", "", "Where: The Forlorn Hollows cave biome, deep underground.", "", "How: load film into a camera, get within about 15 blocks with nothing in between, and take the picture while it is in the middle of the frame. Zooming in (scroll while looking through the camera) lets you shoot from farther away."]
 			icon: "exposure:camera"
 			id: "1C29AE196B88D79D"
 			size: 1.0d
-			subtitle: "Unconfirmed sighting"
+			subtitle: "Archive file: Watcher"
 			tasks: [
 				{
 					advancement: "spooktacular:archive/alexscaves_watcher"
@@ -1909,11 +1909,11 @@
 		}
 		{
 			dependencies: ["31DEFF7A83AD87ED"]
-			description: ["Heavy steps shake the Undergarden's fungal forests. Cross the Undergarden portal and walk the glowing woods."]
+			description: ["Heavy steps shake the Undergarden's fungal forests. Cross the Undergarden portal and walk the glowing woods.", "", "Where: The Undergarden dimension. Walk its dark fungal forests.", "", "How: load film into a camera, get within about 15 blocks with nothing in between, and take the picture while it is in the middle of the frame. Zooming in (scroll while looking through the camera) lets you shoot from farther away."]
 			icon: "exposure:camera"
 			id: "0A8BD9D6B8D727BA"
 			size: 1.0d
-			subtitle: "Unconfirmed sighting"
+			subtitle: "Archive file: Rotbeast"
 			tasks: [
 				{
 					advancement: "spooktacular:archive/undergarden_rotbeast"

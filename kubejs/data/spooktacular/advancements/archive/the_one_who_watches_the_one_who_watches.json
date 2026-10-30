@@ -21,9 +21,15 @@
       "trigger": "exposure:frame_exposed",
       "conditions": {
         "entities_in_frame": [
-          {
-            "type": "#spooktacular:archive/the_one_who_watches_the_one_who_watches"
-          }
+          [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "#spooktacular:archive/the_one_who_watches_the_one_who_watches"
+              }
+            }
+          ]
         ]
       }
     }

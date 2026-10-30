@@ -1,7 +1,10 @@
 // priority: -30
-// TEST BRANCH ONLY: automatic quest-rework test. Runs only in the world "Hallowstown Quest Test" (a copy of the
-// Hallowstown Review world, every blueprint built), when the first player joins. Results go to the server log as
-// [QuestAutoTest] PASS / FAIL lines. Remove before the release goes to main.
+// TEST BRANCH ONLY: automatic quest-rework test. Runs only when kubejs/config/spook_autotest.json says
+// {"run": true} (the file is not part of the pack; the tester creates it), in the world "Hallowstown Quest Test"
+// (a copy of the Hallowstown Review world, every blueprint built), when the first player joins. It switches
+// itself off again when done. Results go to the server log as [QuestAutoTest] PASS / FAIL lines.
+// Optional: "slipCommands": [...] are run as the player at the end (for slippage screenshots), and
+// "slipOnly": true skips the quest checks. Remove before the release goes to main.
 
 // Charter spots in the review world (anchor = middle of the front path, every building faces south, so the
 // player faces north). The crypt Charter sits one block in front of the cemetery's.
@@ -17,6 +20,7 @@ const SPOOK_TEST = {
   safari1: '28CEEE6FFD02E9DB', ds01: '156C60BEE67E3DDF', ds05: '3CD216ACE1406F52'
 }
 let spookTestRan = false
+const SPOOK_TEST_CONFIG = 'kubejs/config/spook_autotest.json'
 
 function spookTestLog(ok, what) {
   console.info('[QuestAutoTest] ' + (ok ? 'PASS ' : 'FAIL ') + what)
@@ -28,9 +32,18 @@ PlayerEvents.tick(event => {
   let server = event.server
   if (spookTestRan || event.player.age < 200) return
   let lvl = String(server.worldData.levelName)
-  if (lvl != 'Hallowstown Quest Test' && lvl != 'Hallowstown Review') return
+  if (lvl != 'Hallowstown Quest Test' && lvl != 'Hallowstown Review') { spookTestRan = true; return }
+  let cfg = JsonIO.read(SPOOK_TEST_CONFIG)
   spookTestRan = true
+  if (!cfg || cfg.run !== true) return
+  JsonIO.write(SPOOK_TEST_CONFIG, { run: false, note: 'switched off after a run; set run to true to test again' })
   let p = event.player, name = p.username, q = p.data.ftbquests
+  if (cfg.slipOnly === true) {
+    p.teleportTo('minecraft:overworld', -148.5, 64, -20.5, 180, 0)
+    server.runCommandSilent('time set 18000')
+    spookTestSlips(server, name, cfg.slipCommands)
+    return
+  }
   let step = (ticks, label, fn) => server.scheduleInTicks(ticks, () => {
     try { fn() } catch (e) { console.error('[QuestAutoTest] ERROR in ' + label + ': ' + e) }
   })
@@ -89,14 +102,43 @@ PlayerEvents.tick(event => {
       spookFanfare(server, 'scarecrow', global.SPOOK_CHARTERS.scarecrow)
     }))
   })
-  // 5. Archive: a creeper photo advancement should complete its Rumor and Entity Found quests.
-  step(2600, 'archive grant', () => {
-    server.runCommandSilent('advancement grant ' + name + ' only spooktacular:archive/minecraft_creeper')
+  // 5. Archive: a creeper in front of the camera. Calls Exposure's own photo trigger with the creeper "in frame",
+  //    the same call the camera makes when a picture is taken. Also checks the frame detection itself.
+  step(2560, 'photo setup', () => {
+    p.teleportTo('minecraft:overworld', -148.5, 64, -26.5, 180, 0)
+    server.runCommandSilent('execute as ' + name + ' at @s run summon minecraft:creeper ^ ^ ^5 {NoAI:1b,Silent:1b,PersistenceRequired:1b,Tags:["spooktest"]}')
+  })
+  step(2600, 'photo', () => {
+    let Triggers = Java.loadClass('io.github.mortuusars.exposure.Exposure$ExposureCriteriaTriggers')
+    let Frame = Java.loadClass('io.github.mortuusars.exposure.world.camera.frame.Frame')
+    let ArrayList = Java.loadClass('java.util.ArrayList')
+    let creeper = p.level.getEntitiesWithin(AABB.of(p.x - 10, p.y - 3, p.z - 10, p.x + 10, p.y + 5, p.z + 10)).filter(e => e.type == 'minecraft:creeper')[0]
+    spookTestLog(!!creeper, 'test creeper is standing in front of the player')
+    try {
+      let EIF = Java.loadClass('io.github.mortuusars.exposure.world.camera.frame.EntitiesInFrame')
+      let POV = Java.loadClass('io.github.mortuusars.exposure.util.PointOfView')
+      let seen = EIF.get(p, new POV(p.getEyePosition(), p.getLookAngle()), 70.0)
+      let names = []
+      seen.forEach(e => names.push(String(e.type)))
+      spookTestLog(names.indexOf('minecraft:creeper') >= 0, 'camera frame check sees the creeper (' + names.join(' ') + ')')
+    } catch (e) { console.info('[QuestAutoTest] frame check not run: ' + e) }
+    let stack = Item.of('exposure:camera')
+    try {
+      Triggers.FRAME_EXPOSED.trigger(p, p, stack, Frame.EMPTY, new ArrayList(), new ArrayList())
+      spookTestLog(true, 'a photo with nothing in it does not crash the camera')
+    } catch (e) { spookTestLog(false, 'a photo with nothing in it crashed: ' + e) }
+    try {
+      let list = new ArrayList()
+      list.add(creeper)
+      Triggers.FRAME_EXPOSED.trigger(p, p, stack, Frame.EMPTY, new ArrayList(), list)
+      spookTestLog(true, 'a photo of the creeper does not crash the camera')
+    } catch (e) { spookTestLog(false, 'a photo of the creeper crashed: ' + e) }
+    server.runCommandSilent('kill @e[tag=spooktest]')
   })
   step(2700, 'archive check', () => {
     let pair = global.SPOOK_QUEST_DATA.archive['spooktacular:archive/minecraft_creeper']
-    spookTestLog(q.isCompleted(pair[0]), 'Entity Found: Creepers completed from the photo advancement')
-    spookTestLog(q.isCompleted(pair[1]), 'Rumor for Creepers completed from the photo advancement')
+    spookTestLog(q.isCompleted(pair[0]), 'Entity Found: Creepers completed from the photo')
+    spookTestLog(q.isCompleted(pair[1]), 'Rumor for Creepers completed from the photo')
     // 6. Seven more creatures -> Safari Milestone I (8 of 28)
     Object.keys(global.SPOOK_QUEST_DATA.archive).slice(0, 8).forEach(adv =>
       server.runCommandSilent('advancement grant ' + name + ' only ' + adv))
@@ -109,8 +151,9 @@ PlayerEvents.tick(event => {
   })
   // 7. Ribbon command and the Winner's Bag crate.
   step(3000, 'ribbon', () => {
-    server.runCommandSilent('ribbon ' + name)
-    spookTestLog(p.inventory.find('spooktacular:festival_ribbon') >= 0, '/ribbon gave a Festival Ribbon')
+    server.runCommandSilent('ribbon ' + name + ' song')
+    spookTestLog(p.inventory.find('spooktacular:ribbon_song') >= 0, '/ribbon <player> song gave the Guess the Song ribbon')
+    spookTestLog(p.inventory.find('spooktacular:ribbon_carving') < 0, 'no other event ribbon was given')
     let LootCrate = Java.loadClass('dev.ftb.mods.ftbquests.quest.loot.LootCrate')
     spookTestLog(LootCrate.LOOT_CRATES.get('winners_bag') != null, "Winner's Bag loot crate exists")
   })
@@ -124,9 +167,69 @@ PlayerEvents.tick(event => {
     spookTestLog(q.isCompleted(SPOOK_TEST.ds05), 'Dreamspace quest completed on arrival')
     p.teleportTo('minecraft:overworld', -148.5, 64, -26.5, 180, 0)
   })
-  step(3400, 'done', () => {
+  // 9. An instanced dreamspace (Paragraph Aisle, the library) should complete its own quest.
+  let dreamTask = null
+  Object.keys(global.SPOOK_QUEST_DATA.customTasks).forEach(t => { if (global.SPOOK_QUEST_DATA.customTasks[t] == 'dream:paragraph_aisle') dreamTask = t })
+  step(3200, 'slip go', () => {
+    let usage = []
+    let d = server.commands.dispatcher
+    d.root.children.forEach(n => {
+      if (String(n.name) != 'dreamshift') return
+      let all = d.getAllUsage(n, server.createCommandSourceStack(), true)
+      for (var i = 0; i < all.length; i++) usage.push('/dreamshift ' + all[i])
+    })
+    console.info('[QuestAutoTest] dreamshift commands: ' + usage.join(' | '))
+    let r = server.runCommand('execute as ' + name + ' at @s run dreamshift slip paragraph_aisle')
+    console.info('[QuestAutoTest] dreamshift slip paragraph_aisle -> ' + r)
+  })
+  step(3300, 'slip check', () => {
+    console.info('[QuestAutoTest] now in ' + spookDim(p.level))
+    spookTestLog(spookDim(p.level).indexOf('paragraph_aisle') >= 0, 'slipped into Paragraph Aisle')
+    spookTestLog(dreamTask != null && q.isCompleted(dreamTask), 'Paragraph Aisle quest completed on arrival')
+    server.runCommandSilent('execute as ' + name + ' run dreamshift return')
+  })
+  step(3400, 'gate', () => {
+    if (spookDim(p.level) != 'minecraft:overworld') p.teleportTo('minecraft:overworld', -148.5, 64, -26.5, 180, 0)
+    // every Charter was registered in step 3, but the Cathedral's earlier quests were never done
+    let fan = global.SPOOK_QUEST_DATA.fanfare, cathedral = null
+    Object.keys(fan).forEach(id => { if (fan[id].indexOf('cathedral') >= 0) cathedral = id })
+    spookTestLog(cathedral != null && !q.isCompleted(cathedral), 'Cathedral quest stays incomplete while its earlier quests are not done')
+  })
+  // 10. Mega Torch: ordinary hostiles are blocked near it, the Archive's horror mobs are not.
+  step(3450, 'torch place', () => {
+    server.runCommandSilent('setblock -140 64 -20 torchmaster:megatorch')
+    ;['minecraft:zombie', 'minecraft:skeleton', 'cave_dweller:cave_dweller', 'the_knocker:knocker', 'weeping_angels:weeping_angel', 'graveyard:ghoul']
+      .forEach(t => server.runCommandSilent('summon ' + t + ' -130 64 -12 {NoAI:1b,Silent:1b,PersistenceRequired:1b,Tags:["spooktorch"]}'))
+  })
+  step(3470, 'torch check', () => {
+    let H = Java.loadClass('net.xalcon.torchmaster.common.logic.entityblocking.EntityBlockingEventHandler')
+    let pos = new SpookBlockPos(-130, 64, -12)
+    let horror = ['cave_dweller:cave_dweller', 'the_knocker:knocker', 'weeping_angels:weeping_angel', 'graveyard:ghoul']
+    p.level.getEntitiesWithin(AABB.of(-135, 60, -17, -125, 70, -7)).forEach(e => {
+      let t = String(e.type)
+      if (!e.tags.contains('spooktorch')) return
+      let blocked = H.shouldBlockEntity(e, pos)
+      let want = horror.indexOf(t) < 0
+      spookTestLog(blocked == want, 'Mega Torch ' + (blocked ? 'blocks ' : 'allows ') + t)
+    })
+    server.runCommandSilent('kill @e[tag=spooktorch]')
+    server.runCommandSilent('setblock -140 64 -20 minecraft:air')
+  })
+  step(3600, 'done', () => {
     server.runCommandSilent('forceload remove all')
     server.runCommandSilent('setblock -149 74 -6 minecraft:air')
+    let old = []
+    spookCharters(server).getAllKeys().forEach(k => old.push(String(k)))
+    old.forEach(k => spookCharters(server).remove(k))
     console.info('[QuestAutoTest] finished')
+    if (cfg.slipCommands) spookTestSlips(server, name, cfg.slipCommands)
   })
 })
+
+// Slippage screenshots: run the configured commands as the player, near the Scarecrow.
+function spookTestSlips(server, name, cmds) {
+  (cmds || []).forEach((c, i) => server.scheduleInTicks(40 + i * 20, () => {
+    let r = server.runCommand('execute as ' + name + ' at @s run ' + c)
+    console.info('[QuestAutoTest] slip command "' + c + '" -> ' + r)
+  }))
+}

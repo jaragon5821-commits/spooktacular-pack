@@ -21,9 +21,15 @@
       "trigger": "exposure:frame_exposed",
       "conditions": {
         "entities_in_frame": [
-          {
-            "type": "#spooktacular:archive/skarrier_mobs_wrought"
-          }
+          [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "#spooktacular:archive/skarrier_mobs_wrought"
+              }
+            }
+          ]
         ]
       }
     }
