@@ -349,6 +349,39 @@
 			x: -13.0d
 			y: -9.5d
 		}
+		{
+			can_repeat: true
+			description: ["Played an event and didn't win? The host can still give you a Participation Ribbon. Hand it in here for a Good Sport Bag.", "", "Hosts: /ribbon <player> participation.", "", "Winning was never the point. (It was the point.)"]
+			icon: "spooktacular:ribbon_participation"
+			id: "73670ADC7E8F8FFA"
+			rewards: [
+				{
+					id: "2767E000FF7AC1BF"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "good_sport_bag"
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 1.0d
+			subtitle: "Participation award"
+			tasks: [
+				{
+					consume_items: true
+					id: "05BF9094A0C733BC"
+					item: "spooktacular:ribbon_participation"
+					title: "Hand in a Participation Ribbon"
+					type: "item"
+				}
+			]
+			title: "Q-EV00: A for Effort"
+			x: -20.0d
+			y: -12.5d
+		}
 	]
 	title: "🎭 CHAPTER 2: FESTIVE NIGHTLIFE AND CONTESTS"
 }

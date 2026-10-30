@@ -58,4 +58,10 @@ StartupEvents.registry('item', event => {
       .rarity('epic')
       .glow(true)
   })
+  // everyone who played but didn't win: hand in at "A for Effort" for a Good Sport Bag
+  event.create('spooktacular:ribbon_participation')
+    .displayName('Participation Ribbon')
+    .texture('spooktacular:item/festival_ribbon')
+    .maxStackSize(16)
+    .rarity('uncommon')
 })

@@ -1,0 +1,76 @@
+{
+	icon: "ftbquests:lootcrate"
+	id: "5A1B2C3D4E5F6006"
+	loot_crate: {
+		color: 11184810
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		glow: false
+		item_name: "Good Sport Bag"
+		string_id: "good_sport_bag"
+	}
+	loot_size: 2
+	order_index: 5
+	rewards: [
+		{
+			count: 2
+			item: "minecraft:diamond"
+			weight: 3.0f
+		}
+		{
+			count: 12
+			item: "minecraft:emerald"
+			weight: 3.0f
+		}
+		{
+			count: 2
+			item: "minecraft:golden_apple"
+			weight: 2.5f
+		}
+		{
+			count: 16
+			item: "minecraft:iron_ingot"
+			weight: 2.5f
+		}
+		{
+			count: 12
+			item: "minecraft:experience_bottle"
+			weight: 2.5f
+		}
+		{
+			item: "simplehats:hatbag_rare"
+			weight: 2.0f
+		}
+		{
+			count: 2
+			item: "relics:relic_experience_bottle"
+			weight: 1.5f
+		}
+		{
+			item: "irons_spellbooks:rare_ink"
+			weight: 1.0f
+		}
+		{
+			item: "sophisticatedbackpacks:iron_backpack"
+			weight: 1.0f
+		}
+		{
+			item: "minecraft:totem_of_undying"
+			weight: 0.3f
+		}
+		{
+			item: "artifacts:whoopee_cushion"
+			weight: 0.5f
+		}
+		{
+			count: 16
+			item: "hauntedharvest:candy_corn"
+			weight: 3.0f
+		}
+	]
+	title: "Good Sport Bag"
+	use_title: true
+}

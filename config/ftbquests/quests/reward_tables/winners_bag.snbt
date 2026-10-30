@@ -16,19 +16,12 @@
 	order_index: 4
 	rewards: [
 		{
-			count: 4
-			item: "minecraft:diamond"
-			weight: 3.0f
+			item: "minecraft:elytra"
+			weight: 0.4f
 		}
 		{
-			count: 3
-			item: "minecraft:golden_apple"
-			weight: 2.5f
-		}
-		{
-			count: 16
-			item: "minecraft:emerald"
-			weight: 2.5f
+			item: "minecraft:netherite_ingot"
+			weight: 0.6f
 		}
 		{
 			count: 2
@@ -36,51 +29,116 @@
 			weight: 1.5f
 		}
 		{
+			count: 6
+			item: "minecraft:diamond"
+			weight: 3.0f
+		}
+		{
 			item: "minecraft:totem_of_undying"
 			weight: 1.0f
 		}
 		{
 			item: "minecraft:enchanted_golden_apple"
-			weight: 0.5f
+			weight: 0.6f
 		}
 		{
-			item: "simplehats:hatbag_epic"
-			weight: 1.5f
-		}
-		{
-			item: "simplehats:hatbag_rare"
-			weight: 2.5f
-		}
-		{
-			count: 4
-			item: "relics:relic_experience_bottle"
+			count: 3
+			item: "minecraft:golden_apple"
 			weight: 2.0f
 		}
 		{
-			item: "waystones:warp_stone"
+			item: "minecraft:diamond_helmet"
+			weight: 0.8f
+		}
+		{
+			item: "minecraft:diamond_chestplate"
+			weight: 0.8f
+		}
+		{
+			item: "minecraft:diamond_leggings"
+			weight: 0.8f
+		}
+		{
+			item: "minecraft:diamond_boots"
+			weight: 0.8f
+		}
+		{
+			item: "spartanweaponry:diamond_katana"
+			weight: 0.7f
+		}
+		{
+			item: "spartanweaponry:diamond_scythe"
+			weight: 0.7f
+		}
+		{
+			item: "spartanweaponry:diamond_greatsword"
+			weight: 0.7f
+		}
+		{
+			item: "spartanweaponry:diamond_longbow"
+			weight: 0.7f
+		}
+		{
+			item: "spartanshields:diamond_tower_shield"
+			weight: 0.7f
+		}
+		{
+			item: "sophisticatedbackpacks:gold_backpack"
 			weight: 1.0f
 		}
 		{
-			item: "irons_spellbooks:rare_ink"
-			weight: 1.5f
+			item: "sophisticatedbackpacks:diamond_backpack"
+			weight: 0.4f
+		}
+		{
+			item: "artifacts:crystal_heart"
+			weight: 0.5f
+		}
+		{
+			item: "artifacts:flame_pendant"
+			weight: 0.6f
+		}
+		{
+			item: "artifacts:cloud_in_a_bottle"
+			weight: 0.6f
+		}
+		{
+			item: "artifacts:running_shoes"
+			weight: 0.6f
+		}
+		{
+			item: "artifacts:night_vision_goggles"
+			weight: 0.6f
+		}
+		{
+			item: "artifacts:lucky_scarf"
+			weight: 0.5f
+		}
+		{
+			item: "enigmaticlegacy:magnet_ring"
+			weight: 0.6f
+		}
+		{
+			item: "simplehats:hatbag_epic"
+			weight: 1.2f
 		}
 		{
 			item: "irons_spellbooks:epic_ink"
 			weight: 0.6f
 		}
 		{
-			item: "artifacts:crystal_heart"
-			weight: 0.4f
+			item: "waystones:warp_stone"
+			weight: 1.0f
 		}
 		{
-			count: 16
-			item: "minecraft:experience_bottle"
-			weight: 2.0f
+			count: 4
+			item: "relics:relic_experience_bottle"
+			weight: 1.5f
 		}
 		{
 			count: 16
 			item: "hauntedharvest:candy_corn"
-			weight: 2.0f
+			weight: 1.5f
 		}
 	]
 	title: "Winner's Bag"

@@ -256,10 +256,11 @@ PlayerEvents.loggedIn(event => {
 })
 
 // /ribbon <player> <event>: give the winner of an event that event's Festival Ribbon (hand it in at the event's quest).
+// /ribbon <player> participation: a Participation Ribbon for everyone else who played.
 const SpookStringArg = Java.loadClass('com.mojang.brigadier.arguments.StringArgumentType')
 ServerEvents.commandRegistry(event => {
   const { commands: Commands, arguments: Arguments } = event
-  let events = Object.keys(global.SPOOK_RIBBONS)
+  let events = Object.keys(global.SPOOK_RIBBONS).concat(['participation'])
   event.register(Commands.literal('ribbon')
     .requires(src => src.hasPermission(2))
     .then(Commands.argument('player', Arguments.PLAYER.create(event))
@@ -275,6 +276,12 @@ ServerEvents.commandRegistry(event => {
         .executes(ctx => {
           let player = Arguments.PLAYER.getResult(ctx, 'player')
           let key = String(SpookStringArg.getString(ctx, 'event'))
+          if (key == 'participation') {
+            player.give(Item.of('spooktacular:ribbon_participation'))
+            player.tell(Text.yellow('You got a Participation Ribbon. Better luck next time! Hand it in at "A for Effort" in Chapter 2.'))
+            ctx.source.server.runCommandSilent('playsound minecraft:entity.villager.no master ' + player.username + ' ~ ~ ~ 0.8 1.0')
+            return 1
+          }
           if (!global.SPOOK_RIBBONS[key]) {
             ctx.source.sendFailure(Text.red('Unknown event "' + key + '". Events: ' + events.join(', ')))
             return 0

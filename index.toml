@@ -30,7 +30,7 @@ hash = "56b5d1bc917b23be1bec2238cd50d74489cdab96cfb4bef315779c5fbb192392"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_2_events_and_minigames.snbt"
-hash = "daecc62d970211a32c16ce1294e60256815d9d95d64082e5726495d272b8fce4"
+hash = "2a3bb6e2fbb65e3efac09f77a70500fa1f32962a97260bd0aa1cce20f41a2370"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_3_life_and_occult_rites.snbt"
@@ -65,6 +65,10 @@ file = "config/ftbquests/quests/reward_tables/cryptid_hunter_crate.snbt"
 hash = "cd9611e43a0d60447eb5db0044ad874418a86af0b59c84da0f1fe965eb968fc6"
 
 [[files]]
+file = "config/ftbquests/quests/reward_tables/good_sport_bag.snbt"
+hash = "b27a63e7b61b951d39af79c7f5bdf05ed5495012f0827d7eb97a35a92db38e9f"
+
+[[files]]
 file = "config/ftbquests/quests/reward_tables/hallowstown_culinary_basket.snbt"
 hash = "04d6eef982255deddc76775eac0efac3557828e3ae6aba9df891af0a20a3e662"
 
@@ -78,7 +82,7 @@ hash = "70c9614483161f11d3d38fd0849ece423e40ec3a3a979b60f73ad66bc82b9597"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/winners_bag.snbt"
-hash = "895511642b131f6d53d78cc2ec8c70dddac5f3688fc127d272e2ef7df563d9b8"
+hash = "d77ccbe25078e8cdbda70e1e5afccb36a82c5969626726b1c107d2d99b7dd277"
 
 [[files]]
 file = "config/immersive_portals.json"
@@ -166,7 +170,7 @@ hash = "a13a88673643cfb50fe17ba25efed08bb37763b8f039fbf9826808b976aaa81e"
 
 [[files]]
 file = "kubejs/client_scripts/spooktacular_quest_tooltips.js"
-hash = "41b14fcc85613c49d9c7e40102841946f5837bf1ded117a854e2d4a96bd75f51"
+hash = "43e8ba43a6fd5af1195ffac3b220d25eb320b7445b7d1654dee34d828532c139"
 
 [[files]]
 file = "kubejs/data/spooktacular/advancements/archive/alexscaves_underzealot.json"
@@ -482,7 +486,7 @@ hash = "0d05e21b6230496e894bd7975124f4e545b83121329596b5d7fc542d99a3c8c7"
 
 [[files]]
 file = "kubejs/server_scripts/spooktacular_quests_charters.js"
-hash = "eafd4fdd10cebe700023c170698cdfe71e9612b8a1a711dff535d3c67b787487"
+hash = "3707dbd5bd9729106bbc20e52accb9b8c9f6ca56ee99a35abae3fdb064bd8987"
 
 [[files]]
 file = "kubejs/server_scripts/spooktacular_quests_data.js"
@@ -490,7 +494,7 @@ hash = "35729c140fda2935f0551c097b11d138cfdd71a4035596524a1944a8456354c6"
 
 [[files]]
 file = "kubejs/server_scripts/spooktacular_quests_fanfare.js"
-hash = "c840ce266a4b08208d143c70a39f8f1c56b549ed6da84607d2526f4644df0285"
+hash = "04b60981d022df1a70e495d3223a6a89bd3f3e337cd771865225a109c15d222f"
 
 [[files]]
 file = "kubejs/server_scripts/spooktacular_quests_selftest.js"
@@ -498,7 +502,7 @@ hash = "c5a77b14a690045433cb5dba1c5953db36fb49636f8e08a1aae0e9d7a6ecf238"
 
 [[files]]
 file = "kubejs/startup_scripts/spooktacular_quest_items.js"
-hash = "209a153734a92e1f2ad31af14ddacb8e5278a35d7790ac6f1e09e1142d8816e4"
+hash = "0f1ac784be93ae0d8ab9c4a42d8bcd16240455b4ab8ccb22dc8680fb45c19d78"
 
 [[files]]
 file = "mods/accessories.pw.toml"
@@ -1898,11 +1902,6 @@ metafile = true
 [[files]]
 file = "mods/reliquified-artifacts.pw.toml"
 hash = "8cb6145cf9efd3c8dbe80ae791f033312063200ea0cb45b7aa112de04163c093"
-metafile = true
-
-[[files]]
-file = "mods/renderscale.pw.toml"
-hash = "df4c91aa684ab5cbc228097bf2c7445c977fc48c3d3d2d651cdbfd9c95aa83e1"
 metafile = true
 
 [[files]]

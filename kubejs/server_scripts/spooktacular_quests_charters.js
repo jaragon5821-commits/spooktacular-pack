@@ -212,8 +212,12 @@ function spookCharterClick(event, key) {
   }
   if (event.player.crouching) {
     let spots = (s.lastWrong || []).slice(0, 60)
-    spots.forEach(p => event.server.runCommandSilent('particle minecraft:dust 1 0.4 0 1.5 ' + (p[0] + 0.5) + ' ' + (p[1] + 0.5) + ' ' + (p[2] + 0.5) + ' 0.2 0.2 0.2 0 6 force ' + event.player.username))
-    event.player.tell(Text.gold(name + ': showing ' + spots.length + ' wrong or missing blocks.'))
+    // one dot per block, redrawn every half second for 8 seconds so there's time to walk over and look
+    let server = event.server, who = event.player.username
+    spookTimes(16, n => server.scheduleInTicks(n * 10, () => {
+      spots.forEach(p => server.runCommandSilent('particle minecraft:dust 1 0.4 0 1.2 ' + (p[0] + 0.5) + ' ' + (p[1] + 0.5) + ' ' + (p[2] + 0.5) + ' 0 0 0 0 1 force ' + who))
+    }))
+    event.player.tell(Text.gold(name + ': showing ' + spots.length + ' wrong or missing blocks for 8 seconds.'))
   } else {
     event.player.tell(Text.gold(name + ': ' + s.pct + '% matches the blueprint').append(Text.gray(' (' + s.lastOff + ' blocks off, ' + SPOOK_MATCH + '% needed). The quest counts it once the quest is unlocked.')))
   }

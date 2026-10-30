@@ -6,6 +6,10 @@ ItemEvents.tooltip(event => {
       Text.gray('Hand it in at that event\'s quest in Chapter 2 for a Winner\'s Bag.')
     ])
   })
+  event.add('spooktacular:ribbon_participation', [
+    Text.yellow('You showed up. That counts for something. Not much, but something.'),
+    Text.gray('Hand it in at "A for Effort" in Chapter 2 for a Good Sport Bag.')
+  ])
   Object.keys(global.SPOOK_CHARTERS || {}).forEach(key => {
     event.add('spooktacular:charter_' + key, [
       Text.gray('Place on the middle of the front path, facing the door.'),
