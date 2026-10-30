@@ -46,22 +46,14 @@ function spookShowSpot(server, key) {
   }
 }
 
-// Runs a show command. While global.spookFanfareDebug > 0 (set by the test script), the next commands are run
-// loudly and logged with their result.
+// Runs a show command quietly.
 function spookRun(server, command) {
-  if (global.spookFanfareDebug > 0) {
-    global.spookFanfareDebug--
-    let r = server.runCommand(command)
-    console.info('[Fanfare] ' + r + ' <- ' + command)
-    return r
-  }
   return server.runCommandSilent(command)
 }
 
 function spookShow(server, s) {
   let pre = 'execute in ' + s.dim + ' run '
   let f = n => Number(n).toFixed(2)
-  console.info('[Fanfare] show at ' + s.dim + ' ' + s.x + ' ' + s.y + ' ' + s.z + ' top ' + s.top + ' w ' + s.w)
   return {
     p: (particle, x, y, z, spread, speed, count) => spookRun(server, pre + 'particle ' + particle + ' ' + f(x) + ' ' + f(y) + ' ' + f(z) + ' ' + spread + ' ' + spread + ' ' + spread + ' ' + speed + ' ' + count + ' force'),
     snd: (sound, vol, pitch) => server.runCommandSilent(pre + 'playsound ' + sound + ' master @a[x=' + f(s.x) + ',y=' + f(s.y) + ',z=' + f(s.z) + ',distance=..128] ' + f(s.x) + ' ' + f(s.y) + ' ' + f(s.z) + ' ' + vol + ' ' + pitch),

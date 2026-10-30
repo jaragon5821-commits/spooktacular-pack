@@ -481,10 +481,6 @@ file = "kubejs/data/spooktacular/tags/entity_types/archive/whisperwoods_wisp.jso
 hash = "4397c6ff59b2aabf82af483c278b159756ecdf7499f6a176d3d4fcd442408ec3"
 
 [[files]]
-file = "kubejs/server_scripts/spooktacular_quests_autotest.js"
-hash = "0d05e21b6230496e894bd7975124f4e545b83121329596b5d7fc542d99a3c8c7"
-
-[[files]]
 file = "kubejs/server_scripts/spooktacular_quests_charters.js"
 hash = "3707dbd5bd9729106bbc20e52accb9b8c9f6ca56ee99a35abae3fdb064bd8987"
 
@@ -494,11 +490,7 @@ hash = "35729c140fda2935f0551c097b11d138cfdd71a4035596524a1944a8456354c6"
 
 [[files]]
 file = "kubejs/server_scripts/spooktacular_quests_fanfare.js"
-hash = "04b60981d022df1a70e495d3223a6a89bd3f3e337cd771865225a109c15d222f"
-
-[[files]]
-file = "kubejs/server_scripts/spooktacular_quests_selftest.js"
-hash = "c5a77b14a690045433cb5dba1c5953db36fb49636f8e08a1aae0e9d7a6ecf238"
+hash = "bb62f7a3ceeeb2e0f6b150189203a248f8077a6f29ae033d92455ad205cca2ff"
 
 [[files]]
 file = "kubejs/startup_scripts/spooktacular_quest_items.js"
