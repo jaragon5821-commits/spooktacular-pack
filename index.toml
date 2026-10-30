@@ -2054,11 +2054,6 @@ hash = "ae0052e396367fcc0d6d5e7adb39dc9acb5988a81c2f4cf4ff552efda1cefab4"
 metafile = true
 
 [[files]]
-file = "mods/renderscale.pw.toml"
-hash = "df4c91aa684ab5cbc228097bf2c7445c977fc48c3d3d2d651cdbfd9c95aa83e1"
-metafile = true
-
-[[files]]
 file = "mods/se-leafculling.pw.toml"
 hash = "b863bcbb10cadae50dc77aeb28588c4b413a79bddab4fae255ac62736bc5e4e4"
 metafile = true
