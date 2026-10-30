@@ -30,7 +30,7 @@ hash = "56b5d1bc917b23be1bec2238cd50d74489cdab96cfb4bef315779c5fbb192392"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_2_events_and_minigames.snbt"
-hash = "3669b034b7faa3b2e73f70795425a46ffc1be8510f56f6c92beff033f9d5c4f7"
+hash = "daecc62d970211a32c16ce1294e60256815d9d95d64082e5726495d272b8fce4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_3_life_and_occult_rites.snbt"
@@ -42,7 +42,7 @@ hash = "93d311aea9d996f2d9267202109e04516131df347c9519e16c53fbca3f518ff5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_5_boss_showdowns.snbt"
-hash = "cfd02566c54d22a738d375786605744c844b65e06ed19dbe7a2f9f17732e6e0e"
+hash = "b55d2ad52cf9f7ade3759fe69b1edfec93cc1d405523921f73aae047ce80eb45"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_6_field_manuals_and_arcane_guides.snbt"
@@ -54,7 +54,7 @@ hash = "523ffd3f57f3839ad86ee36b9572840576a387a62665a4a8f3cefe67b22ded50"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_8_dreamshift.snbt"
-hash = "285218a98d949dd5154f78bcc13e7c8cc76f807e251a962e6364c6b91d38baaf"
+hash = "6a2e46951367d6e22d5ee09e2ace99f393933c0570e37fbcd2c1b600e8cb3b45"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -482,7 +482,7 @@ hash = "a5efc4ee9b2d7a88997e5deccee70fb6d32b81e54b130430415e81e518e2925f"
 
 [[files]]
 file = "kubejs/server_scripts/spooktacular_quests_charters.js"
-hash = "7a2c58d375fb9ba505a61c8dd327dd750a7f87d1f451b9e56891bc883e7561c5"
+hash = "39306b755c920ab2280062e32fcbd67e9c5c424c9e8e58792464136959579a29"
 
 [[files]]
 file = "kubejs/server_scripts/spooktacular_quests_data.js"
