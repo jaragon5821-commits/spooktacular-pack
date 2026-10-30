@@ -699,8 +699,8 @@
 				}
 			]
 			title: "Q-BS15: Night Watch"
-			x: -10.0d
-			y: -4.0d
+			x: -19.0d
+			y: -1.5d
 		}
 		{
 			can_repeat: true
@@ -732,8 +732,8 @@
 				}
 			]
 			title: "Q-BS16: Bone Patrol"
-			x: -8.0d
-			y: -4.0d
+			x: -17.0d
+			y: -1.5d
 		}
 		{
 			can_repeat: true
@@ -765,8 +765,8 @@
 				}
 			]
 			title: "Q-BS17: Web Sweep"
-			x: -6.0d
-			y: -4.0d
+			x: -15.0d
+			y: -1.5d
 		}
 		{
 			can_repeat: true
@@ -798,8 +798,8 @@
 				}
 			]
 			title: "Q-BS18: Caravan Raiders"
-			x: -4.0d
-			y: -4.0d
+			x: -13.0d
+			y: -1.5d
 		}
 	]
 	title: "⚔ CHAPTER 5: BOSS SHOWDOWNS AND MONSTER HUNTERS"

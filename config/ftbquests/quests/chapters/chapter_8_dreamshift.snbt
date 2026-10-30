@@ -135,7 +135,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in And You Were Here For Me.", "", "Someone left a light on. Someone was waiting. You do not remember agreeing to this."]
+			description: ["Wake up in and you were here for me.", "", "Somewhere high and quiet, kept like a memory of someone who stayed.", "", "Time is stuck at night."]
 			icon: "minecraft:book"
 			id: "1FF3F8998E8ECD3F"
 			invisible: true
@@ -166,7 +166,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Angelic Station.", "", "You do not remember falling asleep."]
+			description: ["Wake up in Angelic Station.", "", "A station too clean and too bright. The trains are always about to arrive."]
 			icon: "minecraft:book"
 			id: "1626794FC4EA576E"
 			invisible: true
@@ -197,7 +197,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Bloomed Gap.", "", "You do not remember falling asleep."]
+			description: ["Wake up in Bloomed Gap.", "", "Flowers grow over a gap high above the ground. Mind your step.", "", "Time is stuck at sunset."]
 			icon: "minecraft:book"
 			id: "1D150177422ED286"
 			invisible: true
@@ -228,7 +228,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Delphic Horize.", "", "You do not remember falling asleep."]
+			description: ["Wake up in Delphic Horize.", "", "An open horizon that seems to know what you're about to do.", "", "Time is stuck at early morning."]
 			icon: "minecraft:book"
 			id: "16505452A7A0962A"
 			invisible: true
@@ -259,7 +259,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Dystopian Studio.", "", "The lights lead somewhere beyond the party."]
+			description: ["Wake up in Dystopian Studio.", "", "A studio built for a show nobody remembers airing.", "", "Time is stuck at night."]
 			icon: "minecraft:book"
 			id: "19B6B88C1D4C4CE1"
 			invisible: true
@@ -290,7 +290,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Dystopic Ruins.", "", "You do not remember falling asleep."]
+			description: ["Wake up in Dystopic Ruins.", "", "Broken towers high above everything, under a night that never moves.", "", "Time is stuck at night."]
 			icon: "minecraft:book"
 			id: "5F648A9929F6B756"
 			invisible: true
@@ -321,7 +321,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Dystopic Upbring.", "", "Rows of identical rooms, all lit for a child who left long ago."]
+			description: ["Wake up in Dystopic Upbring.", "", "A rain-soaked place that feels like a childhood seen through a cracked window.", "", "Time is stuck at sunset, in the rain."]
 			icon: "minecraft:book"
 			id: "109DABA0303AD359"
 			invisible: true
@@ -352,7 +352,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Enxir.", "", "A name that fits no language. The air tastes like metal and old paper."]
+			description: ["Wake up in Enxir.", "", "A strange place with a name nobody can explain. Watch for anything that moves.", "", "Time is stuck at sunset."]
 			icon: "minecraft:book"
 			id: "1A3EF266A1DCCED3"
 			invisible: true
@@ -383,7 +383,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Esuoh Enol Knip.", "", "You do not remember falling asleep."]
+			description: ["Wake up in Esuoh Enol Knip.", "", "Something familiar, turned the wrong way round. Even the name reads backwards.", "", "Time is stuck at sunset."]
 			icon: "minecraft:book"
 			id: "1C12471E9B6FD288"
 			invisible: true
@@ -414,7 +414,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Familiar Backrooms.", "", "You do not remember falling asleep."]
+			description: ["Wake up in Familiar Backrooms.", "", "Yellow halls and a hum that never stops. You've been here before. Haven't you?", "", "Time is stuck at midday."]
 			icon: "minecraft:book"
 			id: "2F6E522A947BBB1F"
 			invisible: true
@@ -445,7 +445,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Familiar Eye Exam.", "", "You do not remember falling asleep."]
+			description: ["Wake up in Familiar Eye Exam.", "", "A waiting room for an appointment you never booked."]
 			icon: "minecraft:book"
 			id: "1ECE0AB4F0307A40"
 			invisible: true
@@ -476,7 +476,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Floating Barn House.", "", "A farmhouse adrift in empty air. The windows are lit and nobody is milking the cows."]
+			description: ["Wake up in Floating Barn House.", "", "A farmhouse that came loose from the ground and never came back down."]
 			icon: "minecraft:book"
 			id: "4C4A76298B53CA02"
 			invisible: true
@@ -507,7 +507,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Forgotten Home.", "", "You do not remember falling asleep."]
+			description: ["Wake up in Forgotten Home.", "", "A house someone forgot about, still waiting in the dark.", "", "Time is stuck at night."]
 			icon: "minecraft:book"
 			id: "04D65FF116098C64"
 			invisible: true
@@ -538,7 +538,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Frutigo Aero.", "", "You do not remember falling asleep."]
+			description: ["Wake up in Frutigo Aero.", "", "Glossy, bubbly and cheerful in a way that feels a little too perfect."]
 			icon: "minecraft:book"
 			id: "10BF1BE12056438F"
 			invisible: true
@@ -569,7 +569,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Instant Ln.", "", "Stay inside when night comes."]
+			description: ["Wake up in Instant Ln.", "", "A neat little street in the morning light. Everything is ready. Nobody is home.", "", "Time is stuck at early morning."]
 			icon: "minecraft:book"
 			id: "3FC2ED5E4ABD3EA3"
 			invisible: true
@@ -600,7 +600,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in It Was Cold.", "", "You remember the cold more than anything. Something remembers you back."]
+			description: ["Wake up in it was cold.", "", "That's all anyone remembers about it."]
 			icon: "minecraft:book"
 			id: "50FFC04223F1F316"
 			invisible: true
@@ -631,7 +631,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Journey's Station.", "", "You do not remember falling asleep."]
+			description: ["Wake up in Journey's Station.", "", "A platform high above the world for travellers who never quite left."]
 			icon: "minecraft:book"
 			id: "215DB5B298E45412"
 			invisible: true
@@ -662,7 +662,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Level 7 FLOODED.", "", "Water to the ankles, then the knees. Every door leads deeper."]
+			description: ["Wake up in Level 7 FLOODED.", "", "The water got in. You'll be wading for a while."]
 			icon: "minecraft:book"
 			id: "1197FB7C2600BA8B"
 			invisible: true
@@ -693,7 +693,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Lone Theatre.", "", "An empty house with the film still running. Someone saved you a seat."]
+			description: ["Wake up in Lone Theatre.", "", "A theatre alone in a thunderstorm. The show goes on without an audience.", "", "Time is stuck at night, in a thunderstorm."]
 			icon: "minecraft:book"
 			id: "6857AE8C87EEB915"
 			invisible: true
@@ -724,7 +724,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Lost Homes.", "", "You do not remember falling asleep."]
+			description: ["Wake up in Lost Homes.", "", "Houses that lost their people, lit only by the night.", "", "Time is stuck at night."]
 			icon: "minecraft:book"
 			id: "5C14250F54383C8E"
 			invisible: true
@@ -755,7 +755,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Mosaic Meters.", "", "Tiled halls that hum with measuring. Something is counting your steps."]
+			description: ["Wake up in Mosaic Meters.", "", "Tiles on tiles on tiles, measured out further than they should go."]
 			icon: "minecraft:book"
 			id: "1DE9657AE058E2B8"
 			invisible: true
@@ -786,7 +786,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Mossy Rooms.", "", "You do not remember falling asleep."]
+			description: ["Wake up in Mossy Rooms.", "", "Rooms left alone so long the moss moved in."]
 			icon: "minecraft:book"
 			id: "578DA6D13FFAB7F9"
 			invisible: true
@@ -817,7 +817,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Motel Treats.", "", "Sleep to wake up."]
+			description: ["Wake up in Motel Treats.", "", "A roadside motel at dusk. The vending machine is still humming.", "", "Time is stuck at sunset."]
 			icon: "minecraft:book"
 			id: "18D93CB0557FCCAE"
 			invisible: true
@@ -848,7 +848,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Offices Neighborhood.", "", "There’s something inside that chest."]
+			description: ["Wake up in Offices Neighborhood.", "", "Cubicles laid out like a suburb. Somebody still clocks in here."]
 			icon: "minecraft:book"
 			id: "1E5DEBF3DCF79D36"
 			invisible: true
@@ -879,7 +879,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Opacitic Fruin.", "", "You do not remember falling asleep."]
+			description: ["Wake up in Opacitic Fruin.", "", "A hazy place high above the ground, half there and half not."]
 			icon: "minecraft:book"
 			id: "195D90063FD8F8F5"
 			invisible: true
@@ -910,7 +910,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Opacitic Lunic.", "", "Something ahead feels thinner."]
+			description: ["Wake up in Opacitic Lunic.", "", "The twin of another hazy place, washed in moonlight."]
 			icon: "minecraft:book"
 			id: "2B63E3A4C4DE3CFF"
 			invisible: true
@@ -941,7 +941,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Overgrowth.", "", "You do not remember falling asleep."]
+			description: ["Wake up in Overgrowth.", "", "Nature took this place back long before you arrived."]
 			icon: "minecraft:book"
 			id: "1CA149F6A536AE6A"
 			invisible: true
@@ -972,7 +972,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Paragraph Aisle.", "", "You do not remember falling asleep."]
+			description: ["Wake up in Paragraph Aisle.", "", "A library with shelves that go on forever. Keep your voice down.", "", "Time is stuck at early morning."]
 			icon: "minecraft:book"
 			id: "1DEF91DEDD97BF2A"
 			invisible: true
@@ -1003,7 +1003,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Pastel Longevity.", "", "Soft colours, soft music, and no sign of anything ever ending."]
+			description: ["Wake up in Pastel Longevity.", "", "Soft colours in the morning sun, far above the ground. It feels too calm.", "", "Time is stuck at early morning."]
 			icon: "minecraft:book"
 			id: "1E789079468E524C"
 			invisible: true
@@ -1034,7 +1034,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Pink Lone House.", "", "You do not remember falling asleep."]
+			description: ["Wake up in Pink Lone House.", "", "A lonely pink house on its own. It looks friendly from a distance."]
 			icon: "minecraft:book"
 			id: "75494EBC01FFA122"
 			invisible: true
@@ -1065,7 +1065,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Pocket Horizon.", "", "You do not remember falling asleep."]
+			description: ["Wake up in Pocket Horizon.", "", "A whole little world folded up small, under a bright midday sky.", "", "Time is stuck at midday."]
 			icon: "minecraft:book"
 			id: "1E652102F19B51AA"
 			invisible: true
@@ -1096,7 +1096,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Remembered Home.", "", "You do not remember falling asleep."]
+			description: ["Wake up in Remembered Home.", "", "A home in the morning light, exactly as you remember it. Almost.", "", "Time is stuck at early morning."]
 			icon: "minecraft:book"
 			id: "197FE2644380A4BF"
 			invisible: true
@@ -1127,7 +1127,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Residence of the Clouds.", "", "You do not remember falling asleep."]
+			description: ["Wake up in Residence of the Clouds.", "", "A home in the sky at midnight.", "", "Time is stuck at early morning."]
 			icon: "minecraft:book"
 			id: "129DBFDDD0D3B77D"
 			invisible: true
@@ -1158,7 +1158,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Retired Wish.", "", "Follow the road."]
+			description: ["Wake up in Retired Wish.", "", "A wish someone stopped making, left up high at dusk.", "", "Time is stuck at sunset."]
 			icon: "minecraft:book"
 			id: "19D620E85853E232"
 			invisible: true
@@ -1189,7 +1189,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Rhythm Valley.", "", "Sleep to wake up."]
+			description: ["Wake up in Rhythm Valley.", "", "A valley at night that seems to keep its own beat.", "", "Time is stuck at night."]
 			icon: "minecraft:book"
 			id: "691B63848A5063B9"
 			invisible: true
@@ -1220,7 +1220,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Road to Serenity.", "", "You do not remember falling asleep."]
+			description: ["Wake up in Road to Serenity.", "", "A peaceful morning road. It has to lead somewhere.", "", "Time is stuck at early morning."]
 			icon: "minecraft:book"
 			id: "35C5B4ADD313FEB9"
 			invisible: true
@@ -1251,7 +1251,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Route 66.", "", "You do not remember falling asleep."]
+			description: ["Wake up in Route 66.", "", "The old highway, empty in both directions."]
 			icon: "minecraft:book"
 			id: "005FBB021C82B385"
 			invisible: true
@@ -1282,7 +1282,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Silk Circus.", "", "You do not remember falling asleep."]
+			description: ["Wake up in Silk Circus.", "", "The tents are up and the music is playing. Where is everyone?"]
 			icon: "minecraft:book"
 			id: "26822495839273F5"
 			invisible: true
@@ -1313,7 +1313,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Skiezone.", "", "You do not remember falling asleep."]
+			description: ["Wake up in SKIEZONE.", "", "Way up in the clouds, bright and early.", "", "Time is stuck at early morning."]
 			icon: "minecraft:book"
 			id: "5C93F94BC8E67006"
 			invisible: true
@@ -1344,7 +1344,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Skiezone Funzone.", "", "Bright signs and cheerful noise. Nobody has come to play for a very long time."]
+			description: ["Wake up in SKIEZONE FUNZONE.", "", "The sky's playground, open late.", "", "Time is stuck at night."]
 			icon: "minecraft:book"
 			id: "286B4AC490584120"
 			invisible: true
@@ -1375,7 +1375,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Static Ave.", "", "A street of hissing screens. Faces flicker in the snow, then turn to look."]
+			description: ["Wake up in Static Ave.", "", "A street at night where everything hums with static.", "", "Time is stuck at night."]
 			icon: "minecraft:book"
 			id: "16DF704E21FCE25A"
 			invisible: true
@@ -1406,7 +1406,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Sundew Ln.", "", "You do not remember falling asleep."]
+			description: ["Wake up in Sundew Ln.", "", "A sticky-sweet little lane at sunset.", "", "Time is stuck at sunset."]
 			icon: "minecraft:book"
 			id: "1313684183C145C0"
 			invisible: true
@@ -1437,7 +1437,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Tanger Ring.", "", "You do not remember falling asleep."]
+			description: ["Wake up in TANGER RING.", "", "A ring of something bright in the morning. Go round and see.", "", "Time is stuck at early morning."]
 			icon: "minecraft:book"
 			id: "25233EA3138DDE03"
 			invisible: true
@@ -1468,7 +1468,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in The Ungate.", "", "A gate with nothing on either side. It opens anyway."]
+			description: ["Wake up in The Ungate.", "", "A gate that doesn't lead anywhere. Or doesn't lead back."]
 			icon: "minecraft:book"
 			id: "1B66A96DE1DE1BC5"
 			invisible: true
@@ -1499,7 +1499,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Timezones.", "", "You do not remember falling asleep."]
+			description: ["Wake up in TIMEZONES.", "", "Every clock here disagrees, and it is always night.", "", "Time is stuck at night."]
 			icon: "minecraft:book"
 			id: "621F8C4F6E5064F8"
 			invisible: true
@@ -1530,7 +1530,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Unauthorized Chime.", "", "You do not remember falling asleep."]
+			description: ["Wake up in Unauthorized Chime.", "", "You weren't supposed to hear it. High up, in the dark.", "", "Time is stuck at night."]
 			icon: "minecraft:book"
 			id: "10027818BD1ADE7B"
 			invisible: true
@@ -1561,7 +1561,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Unauthorized Church.", "", "The doors were never meant to open. The pews are already full."]
+			description: ["Wake up in Unauthorized Church.", "", "A church in the snow at night that doesn't want visitors.", "", "Time is stuck at night, in falling snow."]
 			icon: "minecraft:book"
 			id: "173AF7B8F73D4EE5"
 			invisible: true
@@ -1592,7 +1592,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Unified Oblivion.", "", "The city is the only way forward."]
+			description: ["Wake up in Unified Oblivion.", "", "Everything blends together up here in the morning haze.", "", "Time is stuck at early morning."]
 			icon: "minecraft:book"
 			id: "1CB5C7E61AD833BC"
 			invisible: true
@@ -1623,7 +1623,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in What's Above Is Blue.", "", "A wide, empty sky. You should not look up too long."]
+			description: ["Wake up in What's Above Is Blue.", "", "Look up. Then try not to."]
 			icon: "minecraft:book"
 			id: "1EDCB4140B697318"
 			invisible: true
@@ -1654,7 +1654,7 @@
 		}
 		{
 			dependencies: ["156C60BEE67E3DDF"]
-			description: ["Wake up in Whirl Gap.", "", "You do not remember falling asleep."]
+			description: ["Wake up in Whirl Gap.", "", "Something spins far above the world."]
 			icon: "minecraft:book"
 			id: "186841EA76D79665"
 			invisible: true

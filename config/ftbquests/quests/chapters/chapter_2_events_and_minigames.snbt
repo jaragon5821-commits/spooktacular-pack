@@ -10,7 +10,7 @@
 		{
 			can_repeat: true
 			dependencies: ["27991E4AB94352BF"]
-			description: ["Win the concert and hand in your Festival Ribbon. The host gives the winner this event's Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "A player plays mystery tunes on an Immersive Melodies instrument. The audience guesses the song."]
+			description: ["Win the concert and hand in your Festival Ribbon. The host gives the winner this event's Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Opens after the Old Town Theatre (Q-HT01). Until then the hand-in button stays grey, even with the ribbon.", "", "A player plays mystery tunes on an Immersive Melodies instrument. The audience guesses the song."]
 			icon: {
 				Count: 1
 				id: "immersive_melodies:lute"
@@ -48,7 +48,7 @@
 		{
 			can_repeat: true
 			dependencies: ["777B0848E5B19526"]
-			description: ["Win the costume contest at the Halloween Bar and hand in your Festival Ribbon. The host gives the winner this event's Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Gather with friends for cider and pumpkin pie."]
+			description: ["Win the costume contest at the Halloween Bar and hand in your Festival Ribbon. The host gives the winner this event's Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Opens after the Tavern (Q-HT03). Until then the hand-in button stays grey, even with the ribbon.", "", "Gather with friends for cider and pumpkin pie."]
 			icon: "kaleidoscope_cookery:teapot"
 			id: "49317351A131FD14"
 			rewards: [
@@ -115,7 +115,7 @@
 		{
 			can_repeat: true
 			dependencies: ["6DE25B0EBB8675EC"]
-			description: ["Win the tournament and hand in your Festival Ribbon. The host gives the winner this event's Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Dance with Emotecraft while the music plays. When it stops, sit on a tombstone. Last three standing win."]
+			description: ["Win the tournament and hand in your Festival Ribbon. The host gives the winner this event's Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Opens after Solemn Grounds (Q-HT04). Until then the hand-in button stays grey, even with the ribbon.", "", "Dance with Emotecraft while the music plays. When it stops, sit on a tombstone. Last three standing win."]
 			icon: "spookify:tomb_stone"
 			id: "28732D2C5F87BDFB"
 			rewards: [
@@ -182,7 +182,7 @@
 		{
 			can_repeat: true
 			dependencies: ["6C597A979787E452", "54BFAB7B97A92B74"]
-			description: ["Win the photo vote and hand in your Festival Ribbon. The host gives the winner this event's Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Take your Exposure camera into the woods and photograph the strangest thing you can find."]
+			description: ["Win the photo vote and hand in your Festival Ribbon. The host gives the winner this event's Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Opens after Print to Paper (Q-GD03) and the Grand Archive (Q-HT16). Until then the hand-in button stays grey, even with the ribbon.", "", "Take your Exposure camera into the woods and photograph the strangest thing you can find."]
 			icon: "exposure:stacked_photographs"
 			id: "5B42D3CC16158582"
 			rewards: [
@@ -216,7 +216,7 @@
 		{
 			can_repeat: true
 			dependencies: ["01769DC4E6CC537B"]
-			description: ["Reach the centre altar and ring the bell to win. Hand in your Festival Ribbon. The host gives the winner this event's Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "You get 90 seconds, empty pockets and no map."]
+			description: ["Reach the centre altar and ring the bell to win. Hand in your Festival Ribbon. The host gives the winner this event's Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Opens after the Autumn Orchard (Q-HT10). Until then the hand-in button stays grey, even with the ribbon.", "", "You get 90 seconds, empty pockets and no map."]
 			icon: "hauntedharvest:corn"
 			id: "159A08CC15F40C40"
 			rewards: [
@@ -250,7 +250,7 @@
 		{
 			can_repeat: true
 			dependencies: ["28C3841D89C1FD27"]
-			description: ["Win the 3-lap cart derby and hand in your Festival Ribbon. The host gives the winner this event's Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Hitch a horse to a cart or stagecoach. Throwing eggs and snowballs at rivals is fair play."]
+			description: ["Win the 3-lap cart derby and hand in your Festival Ribbon. The host gives the winner this event's Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Opens after the Gourdian Ward (Q-HT05). Until then the hand-in button stays grey, even with the ribbon.", "", "Hitch a horse to a cart or stagecoach. Throwing eggs and snowballs at rivals is fair play."]
 			icon: "astikorcartsredux:oak_hand_cart"
 			id: "1B6C05A06E968BCF"
 			rewards: [
@@ -284,7 +284,7 @@
 		{
 			can_repeat: true
 			dependencies: ["2AE8B83641AEC2A5"]
-			description: ["Win the town vote and hand in your Festival Ribbon. The host gives the winner this event's Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Each contestant carves one pumpkin in 5 minutes beside the Colossal Scarecrow."]
+			description: ["Win the town vote and hand in your Festival Ribbon. The host gives the winner this event's Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Opens after the Silent Protector (Q-HT06). Until then the hand-in button stays grey, even with the ribbon.", "", "Each contestant carves one pumpkin in 5 minutes beside the Colossal Scarecrow."]
 			icon: "dynamic_pumpkin_carving:carver"
 			id: "798DB3E31EEFF14B"
 			rewards: [
@@ -318,7 +318,7 @@
 		{
 			can_repeat: true
 			dependencies: ["2D4FCF3F34B9E999"]
-			description: ["Score highest in the archery derby and hand in your Festival Ribbon. The host gives the winner this event's Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Shoot targets from the Clocktower parapet. Bonus targets are worth double when the bell tolls."]
+			description: ["Score highest in the archery derby and hand in your Festival Ribbon. The host gives the winner this event's Festival Ribbon. Hand it in here to claim the Winner's Bag.", "", "Opens after the Midnight Spire (Q-HT11). Until then the hand-in button stays grey, even with the ribbon.", "", "Shoot targets from the Clocktower parapet. Bonus targets are worth double when the bell tolls."]
 			icon: "minecraft:bow"
 			id: "155C8CAA98AE8122"
 			rewards: [

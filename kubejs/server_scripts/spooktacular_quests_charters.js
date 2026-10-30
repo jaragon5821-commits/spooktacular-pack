@@ -11,6 +11,8 @@ const SPOOK_MATCH = 90            // percent of checked blocks that must match
 const SPOOK_SLICE = 1500          // blocks compared per check
 const SPOOK_RANGE = 128           // a player must be this close to the Charter for checks to run
 const SpookBlockPos = Java.loadClass('net.minecraft.core.BlockPos')
+const SpookHand = Java.loadClass('net.minecraft.world.InteractionHand')
+console.info('[Charter] hand check: enum==string ' + (SpookHand.MAIN_HAND == 'MAIN_HAND') + ', String() ' + String(SpookHand.MAIN_HAND))
 
 const spookBlueprints = {}        // key -> {palette, blocks}
 const spookScan = {}              // key -> scan state {pos, i, good, total, wrong[], pct}
@@ -188,7 +190,8 @@ Object.keys(global.SPOOK_QUEST_DATA.customTasks).forEach(taskId => {
 // A right-click with no result yet runs the whole check at once, so it answers even before the quest unlocks.
 BlockEvents.rightClicked(event => {
   let key = spookCharterKey(event.block.id)
-  if (!key || event.hand != 'MAIN_HAND') return
+  // event.hand is a Java enum; compare its name, since enum == 'MAIN_HAND' is false in Rhino
+  if (!key || String(event.hand) != 'MAIN_HAND') return
   event.cancel()
   let name = global.SPOOK_CHARTERS[key]
   let c = spookCharters(event.server).getCompound(key)
