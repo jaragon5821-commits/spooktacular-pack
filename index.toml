@@ -26,7 +26,7 @@ hash = "b5c55b47bfc1817e8e495c17cded815fa5b52193b440d2766a263d19d887c150"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_1_hallowstown.snbt"
-hash = "73487fdfb688625a0861573434bf93b52ed86407f76b8c5069eee49b500f8c9c"
+hash = "56b5d1bc917b23be1bec2238cd50d74489cdab96cfb4bef315779c5fbb192392"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_2_events_and_minigames.snbt"

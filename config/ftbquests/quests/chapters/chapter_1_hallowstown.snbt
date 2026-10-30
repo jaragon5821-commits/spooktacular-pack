@@ -11,7 +11,7 @@
 	quests: [
 		{
 			dependencies: ["484CC116C514D530"]
-			description: ["Walk up to the Old Theatre at spawn to complete this quest.", "", "It is the oldest building in town. Nobody remembers who last turned the lights on."]
+			description: ["Visit the Old Theatre at spawn, then click the checkmark.", "", "It is the oldest building in town. Nobody remembers who last turned the lights on."]
 			icon: "exposure:camera"
 			id: "27991E4AB94352BF"
 			rewards: [
@@ -36,7 +36,7 @@
 			tasks: [
 				{
 					id: "733F624561E13F51"
-					title: "Visit the Old Theatre"
+					title: "I visited the Old Theatre"
 					type: "checkmark"
 				}
 			]
