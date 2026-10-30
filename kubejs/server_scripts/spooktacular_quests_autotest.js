@@ -45,6 +45,19 @@ PlayerEvents.tick(event => {
     server.runCommandSilent('time set 18000')
     p.teleportTo('minecraft:overworld', -148.5, 64, -22.5, 180, 0)
     spookTestSlips(server, name, cfg.slipCommands || ['dreamshift slippage create'])
+    if (cfg.charterClick === true) {
+      // right-click the Spire's Charter through the same code the real click uses (a script can't click)
+      let a = SPOOK_TEST_ANCHORS.spire
+      server.runCommandSilent('setblock ' + a[0] + ' ' + a[1] + ' ' + a[2] + ' spooktacular:charter_spire')
+      spookCharters(server).put('spire', { x: a[0], y: a[1], z: a[2], dim: 'minecraft:overworld', facing: 'north' })
+      delete spookScan.spire
+      server.scheduleInTicks(60, () => {
+        try {
+          spookCharterClick({ server: server, player: p, block: { x: a[0], y: a[1], z: a[2] } }, 'spire')
+          console.info('[QuestAutoTest] charter click ran, see chat line above')
+        } catch (e) { console.error('[QuestAutoTest] ERROR in charter click: ' + e) }
+      })
+    }
     return
   }
   let step = (ticks, label, fn) => server.scheduleInTicks(ticks, () => {

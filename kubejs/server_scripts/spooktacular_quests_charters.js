@@ -11,8 +11,6 @@ const SPOOK_MATCH = 90            // percent of checked blocks that must match
 const SPOOK_SLICE = 1500          // blocks compared per check
 const SPOOK_RANGE = 128           // a player must be this close to the Charter for checks to run
 const SpookBlockPos = Java.loadClass('net.minecraft.core.BlockPos')
-const SpookHand = Java.loadClass('net.minecraft.world.InteractionHand')
-console.info('[Charter] hand check: enum==string ' + (SpookHand.MAIN_HAND == 'MAIN_HAND') + ', String() ' + String(SpookHand.MAIN_HAND))
 
 const spookBlueprints = {}        // key -> {palette, blocks}
 const spookScan = {}              // key -> scan state {pos, i, good, total, wrong[], pct}
@@ -190,9 +188,12 @@ Object.keys(global.SPOOK_QUEST_DATA.customTasks).forEach(taskId => {
 // A right-click with no result yet runs the whole check at once, so it answers even before the quest unlocks.
 BlockEvents.rightClicked(event => {
   let key = spookCharterKey(event.block.id)
-  // event.hand is a Java enum; compare its name, since enum == 'MAIN_HAND' is false in Rhino
   if (!key || String(event.hand) != 'MAIN_HAND') return
-  event.cancel()
+  spookCharterClick(event, key)
+  event.cancel()   // KubeJS 6: cancel() ends the handler at once, so it must come last
+})
+
+function spookCharterClick(event, key) {
   let name = global.SPOOK_CHARTERS[key]
   let c = spookCharters(event.server).getCompound(key)
   if (!c || !c.contains('x') || c.getInt('x') != event.block.x || c.getInt('y') != event.block.y || c.getInt('z') != event.block.z) {
@@ -216,4 +217,4 @@ BlockEvents.rightClicked(event => {
   } else {
     event.player.tell(Text.gold(name + ': ' + s.pct + '% matches the blueprint').append(Text.gray(' (' + s.lastOff + ' blocks off, ' + SPOOK_MATCH + '% needed). The quest counts it once the quest is unlocked.')))
   }
-})
+}
